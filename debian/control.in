@@ -5,8 +5,8 @@ Priority: optional
 Standards-Version: 3.8.4
 Build-Depends: autoconf, libtool, texinfo (>= 4.7-2.2), texlive-base,
  libncurses5-dev, libreadline-dev, bison, gettext, debhelper (>= 7),
- dejagnu, gcj-jdk | gcj, gobjc, mig [@gnu@], cdbs (>= 0.4.17),
- libkvm-dev [@kfreebsd@], type-handling (>= 0.2.1), libunwind7-dev [ia64],
+ dejagnu, gcj-jdk | gcj, gobjc, mig [hurd-any], cdbs (>= 0.4.17),
+ libkvm-dev [kfreebsd-any], libunwind7-dev [ia64],
  flex | flex-old, libexpat1-dev, g++-multilib [i386 powerpc s390 sparc],
  lib64readline6-dev [i386 powerpc s390 sparc], python-dev, zlib1g-dev,
  procps, lsb-release, bzip2
