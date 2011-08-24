@@ -1,13 +1,17 @@
 gdb (7.3-2) UNRELEASED; urgency=low
 
-  * Applied patches from upstream stable branch:
-    - PR13073/tui Skip empty registers in tui
-    - Init match property on NetBSD
-    - Add 'cpu' to source release
-  * Stop using deprecated type-handling Build-Depends
+  * debian/patches/: Applied patches from upstream stable branch:
+    - PR13073/tui Skip empty registers in tui (0000)
+    - Init match property on NetBSD (0001)
+    - Add 'cpu' to source release (0002)
+  * debian/control.in: Stop using deprecated type-handling Build-Depends
     Thanks Guillem Jover. (Closes: #639164)
+  * debian/control.in: Mention D language support in description
+    - Also mention other supported languages. (Closes: #595892)
+  * debian/control.in: Add Vcs-Git, Vcs-Browser and Homepage fields.
+  * debian/control.in: Bump Standards-Version
 
- -- Hector Oron <zumbi@debian.org>  Wed, 24 Aug 2011 19:38:32 +0100
+ -- Hector Oron <zumbi@debian.org>  Wed, 24 Aug 2011 20:02:33 +0100
 
 gdb (7.3-1) unstable; urgency=low
 
