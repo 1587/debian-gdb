@@ -1,3 +1,10 @@
+gdb (7.3-2) unstable; urgency=low
+
+  * Stop using deprecated type-handling Build-Depends
+    Thanks Guillem Jover. (Closes: #639164)
+
+ -- Hector Oron <zumbi@debian.org>  Wed, 24 Aug 2011 19:18:24 +0100
+
 gdb (7.3-1) unstable; urgency=low
 
   * New upstream release, including:
