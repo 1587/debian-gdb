@@ -1,9 +1,13 @@
-gdb (7.3-2) unstable; urgency=low
+gdb (7.3-2) UNRELEASED; urgency=low
 
+  * Applied patches from upstream stable branch:
+    - PR13073/tui Skip empty registers in tui
+    - Init match property on NetBSD
+    - Add 'cpu' to source release
   * Stop using deprecated type-handling Build-Depends
     Thanks Guillem Jover. (Closes: #639164)
 
- -- Hector Oron <zumbi@debian.org>  Wed, 24 Aug 2011 19:18:24 +0100
+ -- Hector Oron <zumbi@debian.org>  Wed, 24 Aug 2011 19:38:32 +0100
 
 gdb (7.3-1) unstable; urgency=low
 
