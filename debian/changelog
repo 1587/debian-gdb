@@ -1,3 +1,9 @@
+gdb (7.4.1-1+m68k.1) unreleased; urgency=low
+
+  * Add m68k-thread-debugging.patch from upstream.
+
+ -- Thorsten Glaser <tg@mirbsd.de>  Sat, 28 Apr 2012 14:48:53 +0000
+
 gdb (7.4.1-1) unstable; urgency=low
 
   * New upstream release:
