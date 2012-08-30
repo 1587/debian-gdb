@@ -1,3 +1,10 @@
+gdb (7.4.1-1.1+sh4) unreleased; urgency=low
+
+  * Non-maintainer upload.
+  * Update sh4 patch.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Thu, 30 Aug 2012 05:34:22 +0000
+
 gdb (7.4.1-1.1) unstable; urgency=low
 
   * Non-maintainer upload.
