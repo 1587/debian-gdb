@@ -1,15 +1,18 @@
 2012-03-08  Andreas Schwab  <schwab@linux-m68k.org>
 
-	* m68klinux-nat.c: Include "gdb_proc_service.h".
-	(PTRACE_GET_THREAD_AREA): Define.
-	(ps_get_thread_area): New function.
+       * m68klinux-nat.c: Include "gdb_proc_service.h".
+       (PTRACE_GET_THREAD_AREA): Define.
+       (ps_get_thread_area): New function.
 
---- a/gdb/m68klinux-nat.c
-+++ b/gdb/m68klinux-nat.c
-@@ -51,6 +51,13 @@
+Index: gdb-7.4.1/gdb/m68klinux-nat.c
+===================================================================
+--- gdb-7.4.1.orig/gdb/m68klinux-nat.c	2012-01-06 04:43:19.000000000 +0000
++++ gdb-7.4.1/gdb/m68klinux-nat.c	2012-09-19 22:19:06.000000000 +0000
+@@ -51,7 +51,14 @@
  
  /* Prototypes for supply_gregset etc.  */
  #include "gregset.h"
+-
 +
 +/* Defines ps_err_e, struct ps_prochandle.  */
 +#include "gdb_proc_service.h"
@@ -17,10 +20,11 @@
 +#ifndef PTRACE_GET_THREAD_AREA
 +#define PTRACE_GET_THREAD_AREA 25
 +#endif
- 
++
  /* This table must line up with gdbarch_register_name in "m68k-tdep.c".  */
  static const int regmap[] =
-@@ -556,6 +563,24 @@ fetch_core_registers (struct regcache *r
+ {
+@@ -556,6 +563,24 @@
  }
  
  
@@ -28,7 +32,7 @@
 +
 +ps_err_e
 +ps_get_thread_area (const struct ps_prochandle *ph,
-+		    lwpid_t lwpid, int idx, void **base)
++                  lwpid_t lwpid, int idx, void **base)
 +{
 +  if (ptrace (PTRACE_GET_THREAD_AREA, lwpid, NULL, base) < 0)
 +    return PS_ERR;
