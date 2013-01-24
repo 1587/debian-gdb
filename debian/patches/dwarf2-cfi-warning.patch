@@ -21,11 +21,11 @@ sets.
  gdb/dwarf2-frame.c |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-Index: gdb-7.4/gdb/dwarf2-frame.c
+Index: gdb-7.5/gdb/dwarf2-frame.c
 ===================================================================
---- gdb-7.4.orig/gdb/dwarf2-frame.c	2011-11-17 15:58:35.000000000 +0000
-+++ gdb-7.4/gdb/dwarf2-frame.c	2011-11-17 17:01:03.229359137 +0000
-@@ -1157,7 +1157,7 @@
+--- gdb-7.5.orig/gdb/dwarf2-frame.c	2012-08-06 19:21:51.000000000 +0000
++++ gdb-7.5/gdb/dwarf2-frame.c	2012-11-12 20:16:08.000000000 +0000
+@@ -1169,7 +1169,7 @@
  	   DWARF2 register numbers.  */
  	if (fs->regs.reg[column].how == DWARF2_FRAME_REG_UNSPECIFIED)
  	  {

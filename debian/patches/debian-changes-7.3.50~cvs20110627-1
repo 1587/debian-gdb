@@ -29,33 +29,33 @@ Forwarded: <no|not-needed|url proving that it has been forwarded>
 Reviewed-By: <name and email of someone who approved the patch>
 Last-Update: <YYYY-MM-DD>
 
-Index: gdb-7.4/gdb/main.c
+Index: gdb-7.5/gdb/main.c
 ===================================================================
---- gdb-7.4.orig/gdb/main.c	2011-11-17 15:58:35.000000000 +0000
-+++ gdb-7.4/gdb/main.c	2011-11-17 17:03:51.853359064 +0000
-@@ -822,7 +822,7 @@
+--- gdb-7.5.orig/gdb/main.c	2012-07-20 17:59:05.000000000 +0000
++++ gdb-7.5/gdb/main.c	2012-11-12 20:27:57.000000000 +0000
+@@ -846,7 +846,7 @@
       debugging or what directory you are in.  */
  
    if (home_gdbinit && !inhibit_gdbinit)
 -    catch_command_errors (source_script, home_gdbinit, 0, RETURN_MASK_ALL);
 +    catch_command_errors (source_script, home_gdbinit, -1, RETURN_MASK_ALL);
  
-   /* Now perform all the actions indicated by the arguments.  */
-   if (cdarg != NULL)
-@@ -901,7 +901,7 @@
-   /* Read the .gdbinit file in the current directory, *if* it isn't
-      the same as the $HOME/.gdbinit file (it should exist, also).  */
-   if (local_gdbinit && !inhibit_gdbinit)
--    catch_command_errors (source_script, local_gdbinit, 0, RETURN_MASK_ALL);
-+    catch_command_errors (source_script, local_gdbinit, -1, RETURN_MASK_ALL);
+   /* Process '-ix' and '-iex' options early.  */
+   for (i = 0; VEC_iterate (cmdarg_s, cmdarg_vec, i, cmdarg_p); i++)
+@@ -950,7 +950,7 @@
+ 	{
+ 	  auto_load_local_gdbinit_loaded = 1;
  
-   /* Now that all .gdbinit's have been read and all -d options have been
-      processed, we can read any scripts mentioned in SYMARG.
-Index: gdb-7.4/gdb/cli/cli-cmds.c
+-	  catch_command_errors (source_script, local_gdbinit, 0,
++	  catch_command_errors (source_script, local_gdbinit, -1,
+ 				RETURN_MASK_ALL);
+ 	}
+     }
+Index: gdb-7.5/gdb/cli/cli-cmds.c
 ===================================================================
---- gdb-7.4.orig/gdb/cli/cli-cmds.c	2011-11-17 17:03:20.505359078 +0000
-+++ gdb-7.4/gdb/cli/cli-cmds.c	2011-11-17 17:03:51.853359064 +0000
-@@ -1608,6 +1608,10 @@
+--- gdb-7.5.orig/gdb/cli/cli-cmds.c	2012-11-12 20:23:53.000000000 +0000
++++ gdb-7.5/gdb/cli/cli-cmds.c	2012-11-12 20:27:03.000000000 +0000
+@@ -1687,6 +1687,10 @@
  }
  
  

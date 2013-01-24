@@ -8,11 +8,11 @@ longer be necessary.
  gdb/valops.c |    4 +++-
  1 file changed, 3 insertions(+), 1 deletion(-)
 
-Index: gdb-7.4/gdb/valops.c
+Index: gdb-7.5/gdb/valops.c
 ===================================================================
---- gdb-7.4.orig/gdb/valops.c	2011-11-17 15:58:35.000000000 +0000
-+++ gdb-7.4/gdb/valops.c	2011-11-17 17:00:55.453359139 +0000
-@@ -3171,8 +3171,10 @@
+--- gdb-7.5.orig/gdb/valops.c	2012-06-24 07:28:10.000000000 +0000
++++ gdb-7.5/gdb/valops.c	2012-11-12 20:15:31.000000000 +0000
+@@ -3217,8 +3217,10 @@
  	return 1;
      }
  

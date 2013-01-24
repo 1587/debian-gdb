@@ -7,11 +7,11 @@ place; the generic mourn inferior should do this, perhaps.
  gdb/linux-thread-db.c |    3 +++
  1 file changed, 3 insertions(+)
 
-Index: gdb-7.4/gdb/linux-thread-db.c
+Index: gdb-7.5/gdb/linux-thread-db.c
 ===================================================================
---- gdb-7.4.orig/gdb/linux-thread-db.c	2011-11-17 15:58:35.000000000 +0000
-+++ gdb-7.4/gdb/linux-thread-db.c	2011-11-17 17:03:42.573359067 +0000
-@@ -1437,6 +1437,9 @@
+--- gdb-7.5.orig/gdb/linux-thread-db.c	2012-07-07 12:11:31.000000000 +0000
++++ gdb-7.5/gdb/linux-thread-db.c	2012-11-12 20:24:04.000000000 +0000
+@@ -1541,6 +1541,9 @@
       the inferior, so that we don't try to uninsert them.  */
    remove_thread_event_breakpoints ();
  

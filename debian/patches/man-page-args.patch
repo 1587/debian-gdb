@@ -2,11 +2,11 @@
  gdb/gdb.1 |   27 ++++++++++++++++++++++++++-
  1 file changed, 26 insertions(+), 1 deletion(-)
 
-Index: gdb-7.4/gdb/gdb.1
+Index: gdb-7.5/gdb/gdb.1
 ===================================================================
---- gdb-7.4.orig/gdb/gdb.1	2011-08-23 21:25:40.000000000 +0100
-+++ gdb-7.4/gdb/gdb.1	2011-11-17 17:03:46.313359066 +0000
-@@ -39,10 +39,25 @@
+--- gdb-7.5.orig/gdb/gdb.1	2012-05-09 21:06:13.000000000 +0000
++++ gdb-7.5/gdb/gdb.1	2012-11-12 20:24:10.000000000 +0000
+@@ -42,10 +42,25 @@
  .I dir\c
  \&\|]
  .RB "[\|" \c
@@ -33,7 +33,7 @@ Index: gdb-7.4/gdb/gdb.1
  .ad b
  .SH DESCRIPTION
  The purpose of a debugger such as GDB is to allow you to see what is
-@@ -352,6 +367,16 @@
+@@ -362,6 +377,16 @@
  Run using \c
  .I device\c
  \& for your program's standard input and output.
