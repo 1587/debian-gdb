@@ -1,10 +1,10 @@
 
 Temporary support for LinuxThreads signal handling on GNU/kFreeBSD (see #669043)
 
-Index: gdb-7.5/gdb/common/signals.c
+Index: gdb/gdb/common/signals.c
 ===================================================================
---- gdb-7.5.orig/gdb/common/signals.c	2012-05-24 16:51:37.000000000 +0000
-+++ gdb-7.5/gdb/common/signals.c	2012-11-12 20:28:43.000000000 +0000
+--- gdb.orig/gdb/common/signals.c	2013-01-30 00:42:18.000000000 -0500
++++ gdb/gdb/common/signals.c	2013-01-30 01:00:09.000000000 -0500
 @@ -334,6 +334,15 @@
      return GDB_SIGNAL_INFO;
  #endif
@@ -21,10 +21,10 @@ Index: gdb-7.5/gdb/common/signals.c
  #if defined (REALTIME_LO)
    if (hostsig >= REALTIME_LO && hostsig < REALTIME_HI)
      {
-Index: gdb-7.5/include/gdb/signals.def
+Index: gdb/include/gdb/signals.def
 ===================================================================
---- gdb-7.5.orig/include/gdb/signals.def	2012-05-24 16:51:39.000000000 +0000
-+++ gdb-7.5/include/gdb/signals.def	2012-11-12 20:30:45.000000000 +0000
+--- gdb.orig/include/gdb/signals.def	2013-01-30 00:42:18.000000000 -0500
++++ gdb/include/gdb/signals.def	2013-01-30 01:00:09.000000000 -0500
 @@ -194,7 +194,11 @@
  SET (TARGET_EXC_SOFTWARE, 149, "EXC_SOFTWARE", "Software generated exception")
  SET (TARGET_EXC_BREAKPOINT, 150, "EXC_BREAKPOINT", "Breakpoint")

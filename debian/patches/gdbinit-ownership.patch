@@ -6,10 +6,10 @@ several problems with the implementation.  It needs to be revisited.
  gdb/main.c         |    4 ++--
  2 files changed, 43 insertions(+), 3 deletions(-)
 
-Index: gdb-7.5/gdb/cli/cli-cmds.c
+Index: gdb/gdb/cli/cli-cmds.c
 ===================================================================
---- gdb-7.5.orig/gdb/cli/cli-cmds.c	2012-08-06 18:33:57.000000000 +0000
-+++ gdb-7.5/gdb/cli/cli-cmds.c	2012-11-12 20:23:53.000000000 +0000
+--- gdb.orig/gdb/cli/cli-cmds.c	2013-01-27 16:12:09.000000000 -0500
++++ gdb/gdb/cli/cli-cmds.c	2013-01-27 16:14:59.000000000 -0500
 @@ -54,6 +54,8 @@
  #include "tui/tui.h"	/* For tui_active et.al.  */
  #endif
@@ -19,30 +19,31 @@ Index: gdb-7.5/gdb/cli/cli-cmds.c
  #include <fcntl.h>
  
  /* Prototypes for local command functions */
-@@ -580,13 +582,47 @@
+@@ -580,7 +582,9 @@
           If the source command was invoked interactively, throw an
  	 error.  Otherwise (e.g. if it was invoked by a script),
  	 silently ignore the error.  */
 -      if (from_tty)
 +      /* Or, if this was an automatic load during startup, ignore the
-+	 error.  */
++        error.  */
 +      if (from_tty > 0)
  	perror_with_name (file);
        else
  	return;
-     }
+@@ -588,6 +592,38 @@
  
    old_cleanups = make_cleanup (xfree, full_path);
+   make_cleanup_fclose (stream);
 +
 +  if (stream == NULL)
 +    {
 +      if (from_tty)
-+	perror_with_name (file);
++       perror_with_name (file);
 +      else
-+	{
-+	  do_cleanups (old_cleanups);
-+	  return;
-+	}
++       {
++         do_cleanups (old_cleanups);
++         return;
++       }
 +    }
 +
 +#ifdef HAVE_GETUID
@@ -51,20 +52,20 @@ Index: gdb-7.5/gdb/cli/cli-cmds.c
 +      struct stat statbuf;
 +      int fd = fileno (stream);
 +      if (fstat (fd, &statbuf) < 0)
-+	{
-+	  make_cleanup_fclose (stream);
-+	  perror_with_name (file);
-+	}
-+      if (statbuf.st_uid != getuid() || (statbuf.st_mode & S_IWOTH))
-+	{
-+	  warning ("not using untrusted file \"%s\"", file);
-+	  fclose (stream);
-+	  do_cleanups (old_cleanups);
-+	  return;
-+	}
++       {
++         make_cleanup_fclose (stream);
++         perror_with_name (file);
++       }
++      if (statbuf.st_uid != getuid () || (statbuf.st_mode & S_IWOTH))
++       {
++         warning ("not using untrusted file \"%s\"", file);
++         fclose (stream);
++         do_cleanups (old_cleanups);
++         return;
++       }
 +    }
 +#endif
 +
-   make_cleanup_fclose (stream);
    /* The python support reopens the file, so we need to pass full_path here
       in case the file was found on the search path.  It's useful to do this
+      anyway so that error messages show the actual file used.  But only do
