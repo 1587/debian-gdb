@@ -10,110 +10,22 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 
 Index: gdb/gdb/gdb.1
 ===================================================================
---- gdb.orig/gdb/gdb.1	2013-01-27 16:15:00.000000000 -0500
-+++ gdb/gdb/gdb.1	2013-01-27 16:31:17.000000000 -0500
-@@ -223,97 +223,11 @@
- `\|\c
- .B \-x\c
+--- gdb.orig/gdb/gdb.1	2013-05-19 00:35:19.122910757 +0200
++++ gdb/gdb/gdb.1	2013-05-19 00:37:08.730909686 +0200
+@@ -226,6 +226,12 @@
  \&\|' option is used.
--
--.TP
--.B \-help
--.TP
--.B \-h
--List all options, with brief explanations.
--
--.TP
--.BI "\-symbols=" "file"\c
--.TP
--.BI "\-s " "file"\c
--\&
--Read symbol table from file \c
--.I file\c
--\&.
--
--.TP
--.B \-write
--Enable writing into executable and core files.
--
--.TP
--.BI "\-exec=" "file"\c
--.TP
--.BI "\-e " "file"\c
--\&
--Use file \c
--.I file\c
--\& as the executable file to execute when
--appropriate, and for examining pure data in conjunction with a core
--dump.
--
--.TP
--.BI "\-se=" "file"\c
--\&
--Read symbol table from file \c
--.I file\c
--\& and use it as the executable
--file.
--
--.TP
--.BI "\-core=" "file"\c
- .TP
--.BI "\-c " "file"\c
--\&
--Use file \c
--.I file\c
--\& as a core dump to examine.
--
--.TP
--.BI "\-command=" "file"\c
--.TP
--.BI "\-x " "file"\c
--\&
--Execute GDB commands from file \c
--.I file\c
--\&.  
--
--.TP
--.BI "\-ex " "command"\c
--\&
--Execute given GDB \c
--.I command\c
--\&.
--
--.TP
--.BI "\-directory=" "directory"\c
--.TP
--.BI "\-d " "directory"\c
-+.BI "\-b " "bps"\c
- \&
--Add \c
--.I directory\c
--\& to the path to search for source files.
--.PP
--
--.TP
--.B \-nx
--.TP
--.B \-n
--Do not execute commands from any `\|\c
--.B .gdbinit\c
--\&\|' initialization files.
--Normally, the commands in these files are executed after all the
--command options and arguments have been processed.
--
--
--.TP
--.B \-quiet
--.TP
--.B \-q
--``Quiet''.  Do not print the introductory and copyright messages.  These
--messages are also suppressed in batch mode.
-+Set the line speed (baud rate or bits per second) of any serial
-+interface used by GDB for remote debugging.
  
  .TP
- .B \-batch
-@@ -341,6 +255,12 @@
++.BI "\-b " "bps"\c
++\&
++Set the line speed (baud rate or bits per second) of any serial
++interface used by GDB for remote debugging.
++
++.TP
+ .B \-help
+ .TP
+ .B \-h
+@@ -344,6 +350,12 @@
  terminates) is not issued when running in batch mode.
  
  .TP
@@ -126,7 +38,7 @@ Index: gdb/gdb/gdb.1
  .BI "\-cd=" "directory"\c
  \&
  Run GDB using \c
-@@ -349,9 +269,28 @@
+@@ -352,9 +364,28 @@
  instead of the current directory.
  
  .TP
@@ -144,20 +56,20 @@ Index: gdb/gdb/gdb.1
 +appropriate, and for examining pure data in conjunction with a core
 +dump.
 +
- .TP
--.B \-f
++.TP
 +.BI "\-ex " "command"\c
 +\&
 +Execute given GDB \c
 +.I command\c
 +\&.
 +
-+.TP
+ .TP
+-.B \-f
 +.B \-f, \-fullname
  Emacs sets this option when it runs GDB as a subprocess.  It tells GDB
  to output the full file name and line number in a standard,
  recognizable fashion each time a stack frame is displayed (which
-@@ -366,10 +305,34 @@
+@@ -369,10 +400,34 @@
  a signal to display the source code for the frame.
  
  .TP
@@ -196,7 +108,7 @@ Index: gdb/gdb/gdb.1
  
  .TP
  .BI "\-tty=" "device"\c
-@@ -389,6 +352,15 @@
+@@ -392,6 +447,15 @@
  Run GDB using a text (console) user interface.
  .PP
  
@@ -210,5 +122,5 @@ Index: gdb/gdb/gdb.1
 +.I file\c
 +\&.
  .SH "SEE ALSO"
- .RB "`\|" gdb "\|'"
- entry in
+ The full documentation for
+ .B gdb

@@ -1,6 +1,6 @@
 @c This file is part of the GDB manual.
 @c
-@c Copyright (C) 2003-2006, 2008-2012 Free Software Foundation, Inc.
+@c Copyright (C) 2003-2013 Free Software Foundation, Inc.
 @c
 @c See the file gdbint.texinfo for copying conditions.
 @c
@@ -18,6 +18,7 @@
 @deftypefun void target_changed (struct target_ops *@var{target})
 @deftypefun void executable_changed (void)
 @deftypefun void inferior_created (struct target_ops *@var{objfile}, int @var{from_tty})
+@deftypefun void record_changed (struct inferior *@var{inferior}, int @var{started})
 @deftypefun void solib_loaded (struct so_list *@var{solib})
 @deftypefun void solib_unloaded (struct so_list *@var{solib})
 @deftypefun void new_objfile (struct objfile *@var{objfile})
@@ -29,16 +30,18 @@
 @deftypefun void breakpoint_created (struct breakpoint *@var{b})
 @deftypefun void breakpoint_deleted (struct breakpoint *@var{b})
 @deftypefun void breakpoint_modified (struct breakpoint *@var{b})
-@deftypefun void tracepoint_created (int @var{tpnum})
-@deftypefun void tracepoint_deleted (int @var{tpnum})
-@deftypefun void tracepoint_modified (int @var{tpnum})
+@deftypefun void traceframe_changed (int @var{tfnum}, int @var{tpnum})
 @deftypefun void architecture_changed (struct gdbarch *@var{newarch})
 @deftypefun void thread_ptid_changed (ptid_t @var{old_ptid}, ptid_t @var{new_ptid})
 @deftypefun void inferior_added (struct inferior *@var{inf})
 @deftypefun void inferior_appeared (struct inferior *@var{inf})
 @deftypefun void inferior_exit (struct inferior *@var{inf})
 @deftypefun void inferior_removed (struct inferior *@var{inf})
-@deftypefun void memory_changed (CORE_ADDR @var{addr}, int @var{len}, const bfd_byte *@var{data})
+@deftypefun void memory_changed (struct inferior *@var{inferior}, CORE_ADDR @var{addr}, ssize_t @var{len}, const bfd_byte *@var{data})
 @deftypefun void before_prompt (const char *@var{current_prompt})
 @deftypefun void gdb_datadir_changed (void)
+@deftypefun void command_param_changed (const char *@var{param}, const char *@var{value})
+@deftypefun void tsv_created (const struct trace_state_variable *@var{tsv})
+@deftypefun void tsv_deleted (const struct trace_state_variable *@var{tsv})
+@deftypefun void tsv_modified (const struct trace_state_variable *@var{tsv})
 @deftypefun void test_notification (int @var{somearg})
