@@ -1,3 +1,10 @@
+gdb (7.6-2) unstable; urgency=low
+
+  * Fix truncated maintainer field. (Closes: #709118)
+  * d/control{,.in}: link 64-bit arch against expat.
+
+ -- Hector Oron <zumbi@debian.org>  Tue, 21 May 2013 12:58:01 +0200
+
 gdb (7.6-1) unstable; urgency=low
 
   * Imported Upstream version 7.6
