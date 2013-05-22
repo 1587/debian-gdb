@@ -46,6 +46,7 @@ Description: The GNU Debugger
 
 Package: gdb64
 Architecture: i386 powerpc s390 sparc
+Replaces: gdb-multiarch (<< 7.6-1)
 Depends: ${shlibs:Depends}, gdb (= ${binary:Version}), ${misc:Depends}
 Description: The GNU Debugger (64-bit)
  GDB is a source-level debugger, capable of breaking programs at
