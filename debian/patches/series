@@ -4,3 +4,4 @@ linux-clear-thread-list.patch
 man-page-args.patch
 man-page-order.patch
 linuxthreads_signal_handling.patch
+solve_PATH_MAX_issue.patch
