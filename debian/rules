@@ -221,7 +221,7 @@ build-minimal-stamp:
 
 check-stamp:
 ifeq ($(run_tests),yes)
-	-ulimit -c unlimited ; \
+	ulimit -c unlimited || true; \
 	  $(MAKE) $(NJOBS) -C $(DEB_BUILDDIR)/gdb check
 endif
 	touch $@
@@ -251,10 +251,8 @@ binary-post-install/gdb$(TS) ::
 	fi
 ifeq ($(run_tests),yes)
 	install -d debian/gdb$(TS)/usr/share/doc/gdb
-	if [ -f $(DEB_BUILDDIR)/gdb/testsuite/gdb.sum ]; then \
-		install -m 644 $(DEB_BUILDDIR)/gdb/testsuite/gdb.sum \
-		  debian/gdb$(TS)/usr/share/doc/gdb/check.log;\
-	fi
+	install -m 644 $(DEB_BUILDDIR)/gdb/testsuite/gdb.sum \
+		debian/gdb$(TS)/usr/share/doc/gdb/check.log
 endif
 
 ifneq ($(DEB_CROSS),yes)
