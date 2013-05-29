@@ -299,7 +299,8 @@ binary-post-install/gdb-minimal ::
 binary-post-install/gdb-source ::
 	install -d debian/gdb-source/usr/src
 	mkdir -p $(BUILDDIRSOURCE)
-	tar --exclude build -cf - . | (cd $(BUILDDIRSOURCE) && tar -xf -)
+	tar --exclude build --exclude .git -cf - . \
+	  | (cd $(BUILDDIRSOURCE) && tar -xf -)
 	cd $(BUILDDIRSOURCE) && debian/rules clean
 	cd $(dir $(BUILDDIRSOURCE)) \
 	  && tar -cjf $(shell pwd)/debian/gdb-source/usr/src/gdb.tar.bz2 \
