@@ -7,15 +7,6 @@ gdb (7.6-3) unstable; urgency=low
     - add replaces gdb-multiarch (<< 7.6-1). (Closes: #709232)
   * d/p/gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch:
     - fix refuses to print errno. (Closes: #581707)
-
-  [ Samuel Bronson ]
-  * d/rules: ensure gdb.sum (test result summary) is generated
-    - Don't abort test suite on "ulimit -c unlimited" failure.
-    - Abort building immediately on failure to invoke the test suite, to save
-      buildd time.
-      [This made the change below somewhat pointless. Oops.]
-
-  [ Héctor Orón Martínez ]
   * d/rules:
     - check if gdb.sum exists before installing in shared doc.
 
