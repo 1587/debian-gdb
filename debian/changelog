@@ -7,14 +7,16 @@ gdb (7.6-3) unstable; urgency=low
     - add replaces gdb-multiarch (<< 7.6-1). (Closes: #709232)
   * d/p/gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch:
     - fix refuses to print errno. (Closes: #581707)
-  * d/rules:
-    - check if gdb.sum exists before installing in shared doc.
 
   [ Svante Signell ]
-  * d/p/solve_PATH_MAX_issue.patch:
-    - new patch fixes FTBFS on hurd. (Closes: #709508)
+  * d/p/solve_PATH_MAX_issue.patch: new patch fixes FTBFS on hurd.
+    (Closes: #709508)
 
- -- Héctor Orón Martínez <zumbi@debian.org>  Fri, 24 May 2013 11:37:49 +0200
+  [ Samuel Bronson ]
+  * debian/rules: Don't abort test suite on "ulimit -c unlimited" failure;
+    do abort building early on failure to invoke the test suite.
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Fri, 24 May 2013 10:09:03 +0200
 
 gdb (7.6-2) unstable; urgency=low
 
