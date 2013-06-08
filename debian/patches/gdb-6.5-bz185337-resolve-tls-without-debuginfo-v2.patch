@@ -1,4 +1,7 @@
-https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=185337
+Bug-Debian: http://bugs.debian.org/581707
+Bug-Redhat: https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=185337
+Author: Jan Kratochvil <jan.kratochvil@redhat.com>
+Origin: vendor, http://pkgs.fedoraproject.org/cgit/gdb.git/tree/gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch?id=e6e9cf3987dc51070b7b58db9967209f23a8c3d3
 
 2008-02-24  Jan Kratochvil  <jan.kratochvil@redhat.com>
 

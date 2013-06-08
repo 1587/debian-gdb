@@ -1,3 +1,11 @@
+Description: Patch out a PATH_MAX usage, for Hurd's benefit
+
+Author: Svante Signell <svante.signell@gmail.com>
+Bug-Debian: http://bugs.debian.org/709508
+Forwarded: http://sourceware.org/ml/gdb-patches/2013-05/msg00878.html
+Reviewed-By: Héctor Orón Martínez <zumbi@debian.org>
+Last-Update: 2013-06-08
+
 --- a/gdb/nto-tdep.c	2013-05-23 14:28:24.000000000 +0000
 +++ b/gdb/nto-tdep.c	2013-05-23 15:01:24.000000000 +0000
 @@ -147,9 +147,11 @@ nto_find_and_open_solib (char *solib, un
