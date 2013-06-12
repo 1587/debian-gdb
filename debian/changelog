@@ -1,3 +1,25 @@
+gdb (7.6-4) UNRELEASED; urgency=low
+
+  * d/rules: Exclude .git from gdb-source package.
+  * d/control{,.in}: Bump ia64 B-D to libunwind8-dev for transition.
+  * d/NEWS: Fix version number so lintian will shut up about it.
+  * d/patches:
+    - Remove no-longer-used patches:
+      + 0000-tui-skip-registers-pr-tui-13073.patch: Old Backport
+      + 0001-netbsd-init-match-property-field.patch: Old Backport
+      + 0002-add-cpu-to-source-release.patch: Old Backport
+      + m68k-thread-debugging.patch: Old Backport or Merged Upstream
+      + gdbinit-ownership.patch: handled differently upstream
+      + member-field-symtab.patch: the patched code disappeared
+    - Add/reformat metadata:
+      + gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
+      + solve_PATH_MAX_issue.patch
+      + linuxthreads_signal_handling.patch
+  * d/control{,.in}: Reformat relationship fields.
+  * d/control{,.in}: disable gdb64 on i386 and s390 (use multi-arch instead).
+
+ -- Samuel Bronson <naesten@gmail.com>  Wed, 12 Jun 2013 17:37:42 -0400
+
 gdb (7.6-3) unstable; urgency=low
 
   [ Héctor Orón Martínez ]
