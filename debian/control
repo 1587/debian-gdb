@@ -18,7 +18,7 @@ Build-Depends:
                dejagnu,
                flex | flex-old,
                procps,
-               g++-multilib [i386 powerpc s390 sparc],
+               g++-multilib [powerpc sparc],
                gcj-jdk | gcj,
                gobjc,
                mig [hurd-any],
@@ -26,9 +26,9 @@ Build-Depends:
                texinfo (>= 4.7-2.2),
                texlive-base,
 # Libdev deps
-               libexpat1-dev, lib64expat1-dev [i386 powerpc s390 sparc],
-               libncurses5-dev, lib64ncurses5-dev [i386 powerpc s390 sparc],
-               libreadline-dev, lib64readline6-dev [i386 powerpc s390 sparc],
+               libexpat1-dev, lib64expat1-dev [powerpc sparc],
+               libncurses5-dev, lib64ncurses5-dev [powerpc sparc],
+               libreadline-dev, lib64readline6-dev [powerpc sparc],
                zlib1g-dev,
                libbz2-dev,
                liblzma-dev,
@@ -68,7 +68,7 @@ Description: The GNU Debugger
  disabled.
 
 Package: gdb64
-Architecture: i386 powerpc s390 sparc
+Architecture: powerpc sparc
 Replaces: gdb-multiarch (<< 7.6-1)
 Depends: gdb (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: The GNU Debugger (64-bit)
