@@ -1,5 +1,11 @@
 
-Temporary support for LinuxThreads signal handling on GNU/kFreeBSD (see #669043)
+Description: Temporary support for LinuxThreads signal handling on GNU/kFreeBSD
+
+Author: Robert Millan <rmh@debian.org>
+Bug-Debian: http://bugs.debian.org/550361
+Bug-Debian: http://bugs.debian.org/669043
+Bug-Debian: http://bugs.debian.org/698200
+Origin: vendor, http://bugs.debian.org/669043
 
 Index: gdb/gdb/common/signals.c
 ===================================================================
