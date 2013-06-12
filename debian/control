@@ -4,23 +4,46 @@ Uploaders: Luca Bruno <lucab@debian.org>, Samuel Bronson <naesten@gmail.com>
 Section: devel
 Priority: optional
 Standards-Version: 3.9.4
-Build-Depends: autoconf, libtool, texinfo (>= 4.7-2.2), texlive-base,
- libncurses5-dev, libreadline-dev, bison, gettext, debhelper (>= 7.0.50),
- dejagnu, gcj-jdk | gcj, gobjc, mig [hurd-any], cdbs (>= 0.4.17),
- libkvm-dev [kfreebsd-any], libunwind8-dev [ia64],
- flex | flex-old, libexpat1-dev, lib64expat1-dev [i386 powerpc s390 sparc],
- g++-multilib [i386 powerpc s390 sparc],
- lib64readline6-dev [i386 powerpc s390 sparc], python-dev, zlib1g-dev,
- libbz2-dev, liblzma-dev,
- lib64ncurses5-dev [i386 powerpc s390 sparc], procps, lsb-release, bzip2
+Build-Depends:
+# Packaging deps
+               cdbs (>= 0.4.17),
+               debhelper (>= 7.0.50),
+               lsb-release,
+               bzip2,
+# Other tool deps
+               autoconf,
+               libtool,
+               gettext,
+               bison,
+               dejagnu,
+               flex | flex-old,
+               procps,
+               g++-multilib [i386 powerpc s390 sparc],
+               gcj-jdk | gcj,
+               gobjc,
+               mig [hurd-any],
+# TeX[info] deps
+               texinfo (>= 4.7-2.2),
+               texlive-base,
+# Libdev deps
+               libexpat1-dev, lib64expat1-dev [i386 powerpc s390 sparc],
+               libncurses5-dev, lib64ncurses5-dev [i386 powerpc s390 sparc],
+               libreadline-dev, lib64readline6-dev [i386 powerpc s390 sparc],
+               zlib1g-dev,
+               libbz2-dev,
+               liblzma-dev,
+               python-dev,
+               libkvm-dev [kfreebsd-any],
+               libunwind8-dev [ia64],
 Vcs-Git: git://anonscm.debian.org/crosstoolchain/gdb.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=crosstoolchain/gdb.git
 Homepage: http://www.gnu.org/s/gdb/
 
 Package: gdb
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
- gdbserver [amd64 armel armhf i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32]
+Depends: gdbserver [amd64 armel armhf i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32],
+         ${misc:Depends},
+         ${shlibs:Depends}
 Recommends: libc-dbg
 Suggests: gdb-doc
 Description: The GNU Debugger
@@ -32,7 +55,7 @@ Description: The GNU Debugger
 
 Package: gdb-minimal
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: gdb
 Description: The GNU Debugger
  GDB is a source-level debugger, capable of breaking programs at
@@ -47,7 +70,7 @@ Description: The GNU Debugger
 Package: gdb64
 Architecture: i386 powerpc s390 sparc
 Replaces: gdb-multiarch (<< 7.6-1)
-Depends: ${shlibs:Depends}, gdb (= ${binary:Version}), ${misc:Depends}
+Depends: gdb (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: The GNU Debugger (64-bit)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
@@ -57,7 +80,7 @@ Description: The GNU Debugger (64-bit)
 
 Package: gdb-multiarch
 Architecture: any
-Depends: ${shlibs:Depends}, gdb (= ${binary:Version}), ${misc:Depends}
+Depends: gdb (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: The GNU Debugger (with support for multiple architectures)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
@@ -70,8 +93,7 @@ Description: The GNU Debugger (with support for multiple architectures)
 
 Package: gdbserver
 Architecture: amd64 armel armhf i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32
-# Also supports mips64, but dpkg doesn't know of any mips64 ABIs yet
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: gdb (<< 7.0.1-1)
 Description: The GNU Debugger (remote server)
  GDB is a source-level debugger, capable of breaking programs at
