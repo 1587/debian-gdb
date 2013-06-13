@@ -98,7 +98,7 @@ ifeq (,$(findstring linux, $(DEB_HOST_GNU_SYSTEM)))
 endif
 
 ifeq ($(DEB_HOST_GNU_CPU),ia64)
-  arch_config_args := --with-libunwind
+  arch_config_args := --with-libunwind-ia64
 endif
 
 ifdef GDB_TARGET
