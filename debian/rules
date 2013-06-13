@@ -118,13 +118,13 @@ export INSTALL
 # We pass srcdir explicitly to avoid an extra '/.' at the end of it.  That
 # causes a harmless, but ugly, testsuite failure in maint.exp.
 EXTRA_FLAGS := --disable-gdbtk --disable-shared \
-	--srcdir=$(shell pwd) --with-system-readline \
+	--srcdir=$(shell pwd) --with-system-readline --with-expat \
 	$(arch_config_args) --build=$(DEB_BUILD_GNU_TYPE)
 
-# Debian does not include 64-bit expat packages yet, so --with-expat
-# is here rather than in EXTRA_FLAGS.  Similarly Python.
+# Debian does not include 64-bit Python packages, so --with-python
+# is here rather than in EXTRA_FLAGS.
 DEB_CONFIGURE_EXTRA_FLAGS := --host=$(DEB_HOST_GNU_TYPE) $(EXTRA_FLAGS) \
-	--enable-tui --with-expat --with-python
+	--enable-tui --with-python
 
 # 64-bit flags
 DEB_CONFIGURE_FLAGS_64 := --host=$(HOST64) $(EXTRA_FLAGS) \
