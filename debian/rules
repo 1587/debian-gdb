@@ -6,16 +6,16 @@ DEB_BUILDDIR := $(ALL_BUILDDIR)/objdir
 DEB_DH_INSTALL_SOURCEDIR := $(shell pwd)/debian/tmp
 #DEB_DH_STRIP_ARGS := --dbg-package=gdb-dbg
 
+# Override CDBS's default CFLAGS, which also includes -Wall; gdb
+# does not handle -Wunused well with -Werror, but defaults to
+# -Werror.
+DEB_WARNING_FLAGS :=
+
 # This implements the .deb package creation using debhelper.
 include /usr/share/cdbs/1/rules/debhelper.mk
 
 # This implements building using a configure script and Makefile.
 include /usr/share/cdbs/1/class/autotools.mk
-
-# Override CDBS's default CFLAGS, which also includes -Wall; gdb
-# does not handle -Wunused well with -Werror, but defaults to
-# -Werror.
-CFLAGS = -g $(DEB_OPT_FLAG)
 
 # Always install into debian/tmp, even if we are only building one package.
 DEB_DESTDIR := $(shell pwd)/debian/tmp
