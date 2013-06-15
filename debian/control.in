@@ -41,7 +41,7 @@ Homepage: http://www.gnu.org/s/gdb/
 
 Package: gdb@TS@
 Architecture: any
-Depends: gdbserver [amd64 armel armhf i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32],
+Depends: gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32],
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: libc-dbg
@@ -92,7 +92,7 @@ Description: The GNU Debugger (with support for multiple architectures)
  target architectures.
 
 Package: gdbserver
-Architecture: amd64 armel armhf i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32
+Architecture: amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: gdb (<< 7.0.1-1)
 Description: The GNU Debugger (remote server)
