@@ -178,7 +178,7 @@ ifneq (,$(filter parallel=%,$(subst $(COMMA), ,$(DEB_BUILD_OPTIONS))))
 endif
 
 DEB_MAKE_BUILD_TARGET = $(NJOBS) all
-distribution := $(shell lsb_release -is | tr A-Z a-z)
+distribution := $(shell lsb_release -is)
 
 BUILDDIRSOURCE := $(ALL_BUILDDIR)/gdb
 BUILDDIRMIN := $(ALL_BUILDDIR)/gdb-minimal
@@ -186,7 +186,7 @@ BUILDDIRMIN := $(ALL_BUILDDIR)/gdb-minimal
 post-patches::
 	if ! test -f gdb/version.in.backup; then \
 	  mv -f gdb/version.in gdb/version.in.backup; \
-	  sed -e 's/$$/-$(distribution)/' < gdb/version.in.backup > gdb/version.in; \
+	  sed -e 's/$$/ ($(distribution) $(DEB_VERSION))/' < gdb/version.in.backup > gdb/version.in; \
 	fi
 
 # This should probably be common-post-build-arch, but that runs during
