@@ -46,7 +46,7 @@ Depends: gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powe
          ${shlibs:Depends}
 Recommends: libc-dbg
 Suggests: gdb-doc
-Description: The GNU Debugger
+Description: GNU Debugger
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
@@ -57,7 +57,7 @@ Package: gdb-minimal
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: gdb
-Description: The GNU Debugger (minimal version)
+Description: GNU Debugger (minimal version)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
@@ -71,7 +71,7 @@ Package: gdb64
 Architecture: powerpc sparc
 Replaces: gdb-multiarch (<< 7.6-1)
 Depends: gdb (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
-Description: The GNU Debugger (64-bit)
+Description: GNU Debugger (64-bit)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
@@ -84,7 +84,7 @@ Description: The GNU Debugger (64-bit)
 Package: gdb-multiarch
 Architecture: any
 Depends: gdb (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
-Description: The GNU Debugger (with support for multiple architectures)
+Description: GNU Debugger (with support for multiple architectures)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
@@ -98,7 +98,7 @@ Package: gdbserver
 Architecture: amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 s390 s390x x32
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: gdb (<< 7.0.1-1)
-Description: The GNU Debugger (remote server)
+Description: GNU Debugger (remote server)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
@@ -111,7 +111,7 @@ Description: The GNU Debugger (remote server)
 Package: gdb-source
 Architecture: all
 Depends: ${misc:Depends}
-Description: The GNU Debugger (source)
+Description: GNU Debugger (source)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
