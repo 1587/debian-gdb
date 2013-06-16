@@ -1,6 +1,4 @@
-dwarf2-cfi-warning.patch 
 gdb-fortran-main.patch 
-linux-clear-thread-list.patch
 man-page-args.patch
 man-page-order.patch
 linuxthreads_signal_handling.patch
