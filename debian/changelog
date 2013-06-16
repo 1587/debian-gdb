@@ -11,14 +11,27 @@ gdb (7.6-4) UNRELEASED; urgency=low
       + m68k-thread-debugging.patch: Old Backport or Merged Upstream
       + gdbinit-ownership.patch: handled differently upstream
       + member-field-symtab.patch: the patched code disappeared
+    - Drop patches for problems that have gone away:
+      + dwarf2-cfi-warning.patch: I'm not seeing any spam without this.
+      + linux-clear-thread-list.patch: #303736 is gone even without this.
     - Add/reformat metadata:
       + gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
       + solve_PATH_MAX_issue.patch
       + linuxthreads_signal_handling.patch
   * d/control{,.in}: Reformat relationship fields.
   * d/control{,.in}: disable gdb64 on i386 and s390 (use multi-arch instead).
+  * d/rules:
+    - Allow gdb-minimal to use expat.
+    - Get hardening flags working.
+    - Explicitly configure gdb64 --with-expat.
+    - s/--with-libunwind/--with-libunwind-ia64/; the former is depracated.
+    - Make gdb --version report exact package version much as
+      gcc --version does.
+  * Build gdbserver on arm64.
+  * Avoid identical short or long descriptions between packages.
+  * Remove stray "The" from short descriptions.
 
- -- Samuel Bronson <naesten@gmail.com>  Wed, 12 Jun 2013 17:37:42 -0400
+ -- Samuel Bronson <naesten@gmail.com>  Sun, 16 Jun 2013 20:05:35 -0400
 
 gdb (7.6-3) unstable; urgency=low
 
