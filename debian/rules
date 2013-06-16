@@ -17,6 +17,10 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 # This implements building using a configure script and Makefile.
 include /usr/share/cdbs/1/class/autotools.mk
 
+# The top-level configure script fails to pass these down properly ...
+export CPPFLAGS
+export LDFLAGS
+
 # Always install into debian/tmp, even if we are only building one package.
 DEB_DESTDIR := $(shell pwd)/debian/tmp
 
@@ -206,7 +210,7 @@ build64-stamp:
 build/gdb-multiarch:: build-multiarch-stamp
 build-multiarch-stamp:
 	mkdir -p $(BUILDDIRMULTIARCH)
-	cd $(BUILDDIRMULTIARCH) && \
+	cd $(BUILDDIRMULTIARCH) && CFLAGS="$(CFLAGS)" \
 	  $(shell pwd)/configure $(DEB_CONFIGURE_FLAGS_MULTIARCH)
 	cd $(BUILDDIRMULTIARCH) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
 	touch $@
@@ -214,7 +218,7 @@ build-multiarch-stamp:
 build/gdb-minimal:: build-minimal-stamp
 build-minimal-stamp:
 	mkdir -p $(BUILDDIRMIN)
-	cd $(BUILDDIRMIN) && \
+	cd $(BUILDDIRMIN) && CFLAGS="$(CFLAGS)" \
 	  $(shell pwd)/configure $(DEB_CONFIGURE_FLAGS_MIN)
 	cd $(BUILDDIRMIN) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
 	touch $@
