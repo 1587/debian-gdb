@@ -19,7 +19,6 @@ gdb (7.6-4) UNRELEASED; urgency=low
       + solve_PATH_MAX_issue.patch
       + linuxthreads_signal_handling.patch
   * d/control{,.in}: Reformat relationship fields.
-  * d/control{,.in}: disable gdb64 on i386 and s390 (use multi-arch instead).
   * d/rules:
     - Allow gdb-minimal to use expat.
     - Get hardening flags working.
