@@ -4,3 +4,4 @@ man-page-order.patch
 linuxthreads_signal_handling.patch
 solve_PATH_MAX_issue.patch
 gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
+upstream-print_insn_rl78-workaround.patch
