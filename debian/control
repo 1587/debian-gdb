@@ -34,7 +34,7 @@ Build-Depends:
                liblzma-dev,
                python-dev,
                libkvm-dev [kfreebsd-any],
-               libunwind8-dev [ia64],
+               libunwind7-dev [ia64],
 Vcs-Git: git://anonscm.debian.org/crosstoolchain/gdb.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=crosstoolchain/gdb.git
 Homepage: http://www.gnu.org/s/gdb/
