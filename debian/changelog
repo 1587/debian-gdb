@@ -1,3 +1,10 @@
+gdb (7.6-5) unstable; urgency=low
+
+  [ Samuel Bronson ]
+  * d/control{,.in}: revert to B-D on libunwind7-dev [ia64].
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Sat, 06 Jul 2013 12:17:24 +0200
+
 gdb (7.6-4) unstable; urgency=low
 
   [ Samuel Bronson ]
