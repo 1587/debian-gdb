@@ -19,6 +19,8 @@ gdb (7.6.1-1) UNRELEASED; urgency=low
       * PR gdb/15415 (gdb resolves symbolic links when passing argv[0])
       * PR cli/15603 (CTRL-C can no longer interrupt inferior)
       * PR gdb/15604 (gdbserver socket leak 7.5 regression)
+  * Backport ARM Linux `catch syscall' support from my upstream
+    patch. (Closes: #709937)
   
  -- Samuel Bronson <naesten@gmail.com>  Mon, 02 Sep 2013 21:04:20 -0400
 
