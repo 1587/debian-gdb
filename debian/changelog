@@ -1,3 +1,18 @@
+gdb (7.6.2-1) unstable; urgency=low
+
+  * Imported upstream version 7.6.2
+    - GDB 7.6.2 provides the following fixes and improvements to GDB 7.6.1:
+      * PR breakpoint/16251 (AArch64 hardware breakpoint error after fork)
+      * PR gdb/16303 (GDB 7.6.1 does not work with binutils 2.24 on MIPS16
+        and microMIPS)
+  * d/rules: Revert configuring with "MULTIARCH_TARGET=all" and go back
+    to static list of targets. "all" is broken and does not work at least on
+    ARM. (LP: #1233185). Thanks Martin Pitt for report.
+    (Closes: #725078)
+  * d/rules: Add aarch64-linux-gnu to multiarch target list.
+
+ -- Hector Oron <zumbi@debian.org>  Sat, 18 Jan 2014 14:28:01 +0100
+
 gdb (7.6.1-1) unstable; urgency=low
 
   [ Samuel Bronson ]

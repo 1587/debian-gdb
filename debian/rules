@@ -137,38 +137,41 @@ DEB_CONFIGURE_FLAGS_64 := --host=$(HOST64) $(EXTRA_FLAGS) \
 # multiarch targets; this is taken from the binutils-multiarch package but
 # doesn't seem like a terribly nice list; see
 # <20110117211551.GA7216@bee.dooz.org> for discussion -- locally updated
-#MULTIARCH_TARGETS := \
-#	alpha-linux-gnu \
-#	arm-linux-gnu \
-#	arm-linux-gnueabi \
-#	arm-linux-gnueabihf \
-#	hppa-linux-gnu \
-#	i686-linux-gnu \
-#	ia64-linux-gnu \
-#	m68k-linux-gnu \
-#	m68k-rtems \
-#	mips-linux-gnu \
-#	mipsel-linux-gnu \
-#	mips64-linux-gnu \
-#	mips64el-linux-gnu \
-#	powerpc-linux-gnu \
-#	powerpcspe-linux-gnu \
-#	ppc64-linux-gnu \
-#	s390-linux-gnu \
-#	s390x-linux-gnu \
-#	sh-linux-gnu \
-#	sh64-linux-gnu \
-#	sparc-linux-gnu \
-#	sparc64-linux-gnu \
-#	x86_64-linux-gnu \
-#	m32r-linux-gnu \
-#	spu
-#	--enable-targets=`set -- $(MULTIARCH_TARGETS); IFS=,; echo "$$*"`
-MULTIARCH_TARGETS := all
+MULTIARCH_TARGETS := \
+	aarch64-linux-gnu \
+	alpha-linux-gnu \
+	arm-linux-gnu \
+	arm-linux-gnueabi \
+	arm-linux-gnueabihf \
+	hppa-linux-gnu \
+	i686-linux-gnu \
+	ia64-linux-gnu \
+	m68k-linux-gnu \
+	m68k-rtems \
+	mips-linux-gnu \
+	mipsel-linux-gnu \
+	mips64-linux-gnu \
+	mips64el-linux-gnu \
+	powerpc-linux-gnu \
+	powerpc-linux-gnuspe \
+	ppc64-linux-gnu \
+	s390-linux-gnu \
+	s390x-linux-gnu \
+	sh-linux-gnu \
+	sh64-linux-gnu \
+	sparc-linux-gnu \
+	sparc64-linux-gnu \
+	x86_64-linux-gnu \
+	m32r-linux-gnu \
+	spu
+
+# broken, see https://launchpad.net/bugs/1233185
+#MULTIARCH_TARGETS := all
+#	--enable-targets=$(MULTIARCH_TARGETS) \
 # multiarch flags
 DEB_CONFIGURE_FLAGS_MULTIARCH := $(DEB_CONFIGURE_EXTRA_FLAGS) \
 	--enable-64-bit-bfd \
-	--enable-targets=$(MULTIARCH_TARGETS) \
+	--enable-targets=`set -- $(MULTIARCH_TARGETS); IFS=,; echo "$$*"` \
 	--disable-sim
 
 # Minimal flags

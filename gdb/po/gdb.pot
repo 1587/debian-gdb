@@ -8,70 +8,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-30 18:28+0000\n"
+"POT-Creation-Date: 2013-12-08 08:35+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: aarch64-linux-nat.c:330 gdbserver/linux-aarch64-low.c:620
+#: aarch64-linux-nat.c:331 gdbserver/linux-aarch64-low.c:621
 msgid "Unexpected error setting hardware debug registers"
 msgstr ""
 
-#: aarch64-linux-nat.c:473 aarch64-linux-nat.c:497 arm-linux-nat.c:281
+#: aarch64-linux-nat.c:474 aarch64-linux-nat.c:498 arm-linux-nat.c:281
 #: arm-linux-nat.c:320 arm-linux-nat.c:354
 msgid "Unable to fetch general registers."
 msgstr ""
 
-#: aarch64-linux-nat.c:506 arm-linux-nat.c:372
+#: aarch64-linux-nat.c:507 arm-linux-nat.c:372
 msgid "Unable to store general registers."
 msgstr ""
 
-#: aarch64-linux-nat.c:526 aarch64-linux-nat.c:553
+#: aarch64-linux-nat.c:527 aarch64-linux-nat.c:554
 msgid "Unable to fetch FP/SIMD registers."
 msgstr ""
 
-#: aarch64-linux-nat.c:567
+#: aarch64-linux-nat.c:568
 msgid "Unable to store FP/SIMD registers."
 msgstr ""
 
-#: aarch64-linux-nat.c:793
+#: aarch64-linux-nat.c:794
 #, possible-c-format
 msgid ""
-"Unexpected number of hardware watchpoint registers reported by ptrace, got %"
-"d, expected %d."
+"Unexpected number of hardware watchpoint registers reported by ptrace, got "
+"%d, expected %d."
 msgstr ""
 
-#: aarch64-linux-nat.c:801
+#: aarch64-linux-nat.c:802
 msgid "Unable to determine the number of hardware watchpoints available."
 msgstr ""
 
-#: aarch64-linux-nat.c:813
+#: aarch64-linux-nat.c:814
 #, possible-c-format
 msgid ""
-"Unexpected number of hardware breakpoint registers reported by ptrace, got %"
-"d, expected %d."
+"Unexpected number of hardware breakpoint registers reported by ptrace, got "
+"%d, expected %d."
 msgstr ""
 
-#: aarch64-linux-nat.c:821
+#: aarch64-linux-nat.c:822
 msgid "Unable to determine the number of hardware breakpoints available."
 msgstr ""
 
-#: aarch64-linux-nat.c:1007
+#: aarch64-linux-nat.c:1008
 msgid "Unrecognized breakpoint/watchpoint type"
 msgstr ""
 
-#: aarch64-linux-nat.c:1500
+#: aarch64-linux-nat.c:1501
 msgid "Set whether to show variables that mirror the AArch64 debug registers."
 msgstr ""
 
-#: aarch64-linux-nat.c:1501
+#: aarch64-linux-nat.c:1502
 msgid "Show whether to show variables that mirror the AArch64 debug registers."
 msgstr ""
 
-#: aarch64-linux-nat.c:1502 i386-nat.c:847 mips-linux-nat.c:1146
+#: aarch64-linux-nat.c:1503 i386-nat.c:847 mips-linux-nat.c:1146
 msgid ""
 "Use \"on\" to enable, \"off\" to disable.\n"
 "If enabled, the debug registers values are shown when GDB inserts\n"
@@ -634,8 +635,8 @@ msgstr ""
 #: ada-lang.c:10530
 #, possible-c-format
 msgid ""
-"Undefined name, ambiguous name, or renaming used in component association: %"
-"s."
+"Undefined name, ambiguous name, or renaming used in component association: "
+"%s."
 msgstr ""
 
 #: ada-lang.c:10533
@@ -1239,50 +1240,6 @@ msgstr ""
 msgid "Enables debugging output (used to debug GDB)."
 msgstr ""
 
-#: alphabsd-nat.c:96 alphabsd-nat.c:128 amd64bsd-nat.c:54 amd64bsd-nat.c:88
-#: amd64-linux-nat.c:176 amd64-linux-nat.c:231 hppabsd-nat.c:134
-#: hppabsd-nat.c:164 hppanbsd-nat.c:172 hppanbsd-nat.c:202 i386bsd-nat.c:141
-#: i386bsd-nat.c:192 i386-linux-nat.c:260 i386-linux-nat.c:275
-#: m32r-linux-nat.c:115 m32r-linux-nat.c:164 m68kbsd-nat.c:121
-#: m68kbsd-nat.c:151 m68klinux-nat.c:272 m68klinux-nat.c:287 m88kbsd-nat.c:73
-#: m88kbsd-nat.c:89 mips64obsd-nat.c:87 mips64obsd-nat.c:103
-#: mips-linux-nat.c:264 mips-linux-nat.c:346 mipsnbsd-nat.c:52
-#: mipsnbsd-nat.c:83 ppcfbsd-nat.c:128 ppcfbsd-nat.c:156 ppcnbsd-nat.c:93
-#: ppcnbsd-nat.c:124 ppcobsd-nat.c:82 ppcobsd-nat.c:118 s390-nat.c:247
-#: s390-nat.c:264 shnbsd-nat.c:54 shnbsd-nat.c:75 sparc-nat.c:175
-#: sparc-nat.c:211 tilegx-linux-nat.c:142 tilegx-linux-nat.c:162
-#: vaxbsd-nat.c:73 vaxbsd-nat.c:89 xtensa-linux-nat.c:194
-#: xtensa-linux-nat.c:213
-msgid "Couldn't get registers"
-msgstr ""
-
-#: alphabsd-nat.c:110 alphabsd-nat.c:147 amd64bsd-nat.c:67 amd64bsd-nat.c:106
-#: amd64-linux-nat.c:203 amd64-linux-nat.c:266 hppabsd-nat.c:145
-#: hppabsd-nat.c:179 hppanbsd-nat.c:183 hppanbsd-nat.c:217 i386bsd-nat.c:165
-#: i386bsd-nat.c:172 i386bsd-nat.c:228 i386-linux-nat.c:324
-#: i386-linux-nat.c:338 m68kbsd-nat.c:132 m68kbsd-nat.c:166
-#: m68klinux-nat.c:369 m68klinux-nat.c:383 mipsnbsd-nat.c:66
-#: mipsnbsd-nat.c:102 ppcobsd-nat.c:99 ppcobsd-nat.c:139 s390-nat.c:284
-#: s390-nat.c:301 sparc-nat.c:187
-msgid "Couldn't get floating point status"
-msgstr ""
-
-#: alphabsd-nat.c:134 amd64bsd-nat.c:94 amd64-linux-nat.c:236
-#: hppabsd-nat.c:170 hppanbsd-nat.c:208 i386bsd-nat.c:198 i386-linux-nat.c:280
-#: m32r-linux-nat.c:169 m68kbsd-nat.c:157 m68klinux-nat.c:292 m88kbsd-nat.c:95
-#: mips64obsd-nat.c:109 mipsnbsd-nat.c:89 ppcfbsd-nat.c:162 ppcnbsd-nat.c:131
-#: ppcobsd-nat.c:129 s390-nat.c:269 sparc-nat.c:216 tilegx-linux-nat.c:167
-#: vaxbsd-nat.c:95 xtensa-linux-nat.c:221
-msgid "Couldn't write registers"
-msgstr ""
-
-#: alphabsd-nat.c:153 amd64bsd-nat.c:112 amd64-linux-nat.c:271
-#: hppabsd-nat.c:185 hppanbsd-nat.c:223 i386bsd-nat.c:234 i386-linux-nat.c:343
-#: m68kbsd-nat.c:172 m68klinux-nat.c:388 mipsnbsd-nat.c:108 ppcobsd-nat.c:146
-#: s390-nat.c:306
-msgid "Couldn't write floating point status"
-msgstr ""
-
 #: alpha-nat.c:131
 #, possible-c-format
 msgid "Register %s not found in core file."
@@ -1331,52 +1288,63 @@ msgid ""
 "(more likely) you have encountered a bug in GDB.\n"
 msgstr ""
 
-#: alpha-tdep.c:1881 mips-tdep.c:8892
+#: alpha-tdep.c:1881 mips-tdep.c:8898
 msgid "Set the distance searched for the start of a function."
 msgstr ""
 
-#: alpha-tdep.c:1882 mips-tdep.c:8893
+#: alpha-tdep.c:1882 mips-tdep.c:8899
 msgid "Show the distance searched for the start of a function."
 msgstr ""
 
-#: alpha-tdep.c:1883 mips-tdep.c:8894
+#: alpha-tdep.c:1883 mips-tdep.c:8900
 msgid ""
 "If you are debugging a stripped executable, GDB needs to search through the\n"
 "program for the start of a function.  This command sets the distance of the\n"
 "search.  The only need to set it is when debugging a stripped executable."
 msgstr ""
 
-#: amd64bsd-nat.c:142 i386bsd-nat.c:273
-msgid "Couldn't read debug registers"
+#: alphabsd-nat.c:96 alphabsd-nat.c:128 amd64-linux-nat.c:176
+#: amd64-linux-nat.c:231 amd64bsd-nat.c:54 amd64bsd-nat.c:88 hppabsd-nat.c:134
+#: hppabsd-nat.c:164 hppanbsd-nat.c:172 hppanbsd-nat.c:202
+#: i386-linux-nat.c:260 i386-linux-nat.c:275 i386bsd-nat.c:141
+#: i386bsd-nat.c:192 m32r-linux-nat.c:115 m32r-linux-nat.c:164
+#: m68kbsd-nat.c:121 m68kbsd-nat.c:151 m68klinux-nat.c:272 m68klinux-nat.c:287
+#: m88kbsd-nat.c:73 m88kbsd-nat.c:89 mips-linux-nat.c:264 mips-linux-nat.c:346
+#: mips64obsd-nat.c:87 mips64obsd-nat.c:103 mipsnbsd-nat.c:52
+#: mipsnbsd-nat.c:83 ppcfbsd-nat.c:128 ppcfbsd-nat.c:156 ppcnbsd-nat.c:93
+#: ppcnbsd-nat.c:124 ppcobsd-nat.c:82 ppcobsd-nat.c:118 s390-nat.c:247
+#: s390-nat.c:264 shnbsd-nat.c:54 shnbsd-nat.c:75 sparc-nat.c:175
+#: sparc-nat.c:211 tilegx-linux-nat.c:142 tilegx-linux-nat.c:162
+#: vaxbsd-nat.c:73 vaxbsd-nat.c:89 xtensa-linux-nat.c:194
+#: xtensa-linux-nat.c:213
+msgid "Couldn't get registers"
 msgstr ""
 
-#: amd64bsd-nat.c:154 i386bsd-nat.c:285
-msgid "Couldn't get debug registers"
+#: alphabsd-nat.c:110 alphabsd-nat.c:147 amd64-linux-nat.c:203
+#: amd64-linux-nat.c:266 amd64bsd-nat.c:67 amd64bsd-nat.c:106
+#: hppabsd-nat.c:145 hppabsd-nat.c:179 hppanbsd-nat.c:183 hppanbsd-nat.c:217
+#: i386-linux-nat.c:324 i386-linux-nat.c:338 i386bsd-nat.c:165
+#: i386bsd-nat.c:172 i386bsd-nat.c:228 m68kbsd-nat.c:132 m68kbsd-nat.c:166
+#: m68klinux-nat.c:369 m68klinux-nat.c:383 mipsnbsd-nat.c:66
+#: mipsnbsd-nat.c:102 ppcobsd-nat.c:99 ppcobsd-nat.c:139 s390-nat.c:284
+#: s390-nat.c:301 sparc-nat.c:187
+msgid "Couldn't get floating point status"
 msgstr ""
 
-#: amd64bsd-nat.c:165 i386bsd-nat.c:296
-msgid "Couldn't write debug registers"
+#: alphabsd-nat.c:134 amd64-linux-nat.c:236 amd64bsd-nat.c:94
+#: hppabsd-nat.c:170 hppanbsd-nat.c:208 i386-linux-nat.c:280 i386bsd-nat.c:198
+#: m32r-linux-nat.c:169 m68kbsd-nat.c:157 m68klinux-nat.c:292 m88kbsd-nat.c:95
+#: mips64obsd-nat.c:109 mipsnbsd-nat.c:89 ppcfbsd-nat.c:162 ppcnbsd-nat.c:131
+#: ppcobsd-nat.c:129 s390-nat.c:269 sparc-nat.c:216 tilegx-linux-nat.c:167
+#: vaxbsd-nat.c:95 xtensa-linux-nat.c:221
+msgid "Couldn't write registers"
 msgstr ""
 
-#: amd64fbsd-nat.c:217
-#, possible-c-format
-msgid ""
-"offsetof (struct sigcontext, sc_rip) yields %d instead of %d.\n"
-"Please report this to <bug-gdb@gnu.org>."
-msgstr ""
-
-#: amd64fbsd-nat.c:230
-#, possible-c-format
-msgid ""
-"offsetof (struct sigcontext, sc_rsp) yields %d instead of %d.\n"
-"Please report this to <bug-gdb@gnu.org>."
-msgstr ""
-
-#: amd64fbsd-nat.c:243
-#, possible-c-format
-msgid ""
-"offsetof (struct sigcontext, sc_rbp) yields %d instead of %d.\n"
-"Please report this to <bug-gdb@gnu.org>."
+#: alphabsd-nat.c:153 amd64-linux-nat.c:271 amd64bsd-nat.c:112
+#: hppabsd-nat.c:185 hppanbsd-nat.c:223 i386-linux-nat.c:343 i386bsd-nat.c:234
+#: m68kbsd-nat.c:172 m68klinux-nat.c:388 mipsnbsd-nat.c:108 ppcobsd-nat.c:146
+#: s390-nat.c:306
+msgid "Couldn't write floating point status"
 msgstr ""
 
 #: amd64-linux-nat.c:196 amd64-linux-nat.c:255
@@ -1431,6 +1399,39 @@ msgstr ""
 #. We shouldn't get here.
 #: amd64-tdep.c:1148
 msgid "unable to find free reg"
+msgstr ""
+
+#: amd64bsd-nat.c:142 i386bsd-nat.c:273
+msgid "Couldn't read debug registers"
+msgstr ""
+
+#: amd64bsd-nat.c:154 i386bsd-nat.c:285
+msgid "Couldn't get debug registers"
+msgstr ""
+
+#: amd64bsd-nat.c:165 i386bsd-nat.c:296
+msgid "Couldn't write debug registers"
+msgstr ""
+
+#: amd64fbsd-nat.c:217
+#, possible-c-format
+msgid ""
+"offsetof (struct sigcontext, sc_rip) yields %d instead of %d.\n"
+"Please report this to <bug-gdb@gnu.org>."
+msgstr ""
+
+#: amd64fbsd-nat.c:230
+#, possible-c-format
+msgid ""
+"offsetof (struct sigcontext, sc_rsp) yields %d instead of %d.\n"
+"Please report this to <bug-gdb@gnu.org>."
+msgstr ""
+
+#: amd64fbsd-nat.c:243
+#, possible-c-format
+msgid ""
+"offsetof (struct sigcontext, sc_rbp) yields %d instead of %d.\n"
+"Please report this to <bug-gdb@gnu.org>."
 msgstr ""
 
 #: arch-utils.c:215 m32c-tdep.c:2598 m32c-tdep.c:2619
@@ -1610,47 +1611,6 @@ msgstr ""
 msgid "arm_linux_init_abi: Floating point model not supported"
 msgstr ""
 
-#: armnbsd-nat.c:87
-msgid "unable to fetch general register"
-msgstr ""
-
-#: armnbsd-nat.c:140 armnbsd-nat.c:188 armnbsd-nat.c:226
-msgid "unable to fetch general registers"
-msgstr ""
-
-#: armnbsd-nat.c:158
-msgid "unable to fetch floating-point register"
-msgstr ""
-
-#: armnbsd-nat.c:288 armnbsd-nat.c:371
-#, possible-c-format
-msgid "unable to write register %d to inferior"
-msgstr ""
-
-#: armnbsd-nat.c:336
-msgid "unable to store general registers"
-msgstr ""
-
-#: armnbsd-nat.c:350
-msgid "unable to fetch floating-point registers"
-msgstr ""
-
-#: armnbsd-nat.c:393
-msgid "unable to store floating-point registers"
-msgstr ""
-
-#: armnbsd-nat.c:445
-msgid "wrong size of register set in core file"
-msgstr ""
-
-#: armnbsd-nat.c:457
-msgid "wrong size of FPA register set in core file"
-msgstr ""
-
-#: armnbsd-tdep.c:64 arm-tdep.c:10246
-msgid "arm_gdbarch_init: bad byte order for float format"
-msgstr ""
-
 #. multiply
 #: arm-tdep.c:1576 arm-tdep.c:4734 arm-tdep.c:4755 arm-tdep.c:4870
 msgid "Invalid update to pc in instruction"
@@ -1828,6 +1788,10 @@ msgstr ""
 msgid "unknown ARM EABI version 0x%x"
 msgstr ""
 
+#: arm-tdep.c:10246 armnbsd-tdep.c:64
+msgid "arm_gdbarch_init: bad byte order for float format"
+msgstr ""
+
 #: arm-tdep.c:10425
 #, possible-c-format
 msgid "arm_dump_tdep: Lowest pc = 0x%lx"
@@ -1958,6 +1922,43 @@ msgid ""
 "Process record doesnt support thumb32 instruction 0x%0x at address %s.\n"
 msgstr ""
 
+#: armnbsd-nat.c:87
+msgid "unable to fetch general register"
+msgstr ""
+
+#: armnbsd-nat.c:140 armnbsd-nat.c:188 armnbsd-nat.c:226
+msgid "unable to fetch general registers"
+msgstr ""
+
+#: armnbsd-nat.c:158
+msgid "unable to fetch floating-point register"
+msgstr ""
+
+#: armnbsd-nat.c:288 armnbsd-nat.c:371
+#, possible-c-format
+msgid "unable to write register %d to inferior"
+msgstr ""
+
+#: armnbsd-nat.c:336
+msgid "unable to store general registers"
+msgstr ""
+
+#: armnbsd-nat.c:350
+msgid "unable to fetch floating-point registers"
+msgstr ""
+
+#: armnbsd-nat.c:393
+msgid "unable to store floating-point registers"
+msgstr ""
+
+#: armnbsd-nat.c:445
+msgid "wrong size of register set in core file"
+msgstr ""
+
+#: armnbsd-nat.c:457
+msgid "wrong size of FPA register set in core file"
+msgstr ""
+
 #: auto-load.c:58
 #, possible-c-format
 msgid "Debugging output for files of 'set auto-load ...' is %s.\n"
@@ -2073,8 +2074,8 @@ msgstr ""
 #: auto-load.c:515
 #, possible-c-format
 msgid ""
-"auto-load: Loading canned sequences of commands script \"%s\" for objfile \"%"
-"s\".\n"
+"auto-load: Loading canned sequences of commands script \"%s\" for objfile "
+"\"%s\".\n"
 msgstr ""
 
 #: auto-load.c:744 auto-load.c:775
@@ -2835,8 +2836,8 @@ msgstr ""
 msgid " %02x"
 msgstr ""
 
-#: ax-general.c:383 darwin-nat.c:545 darwin-nat-info.c:294
-#: darwin-nat-info.c:587 darwin-nat-info.c:795
+#: ax-general.c:383 darwin-nat-info.c:294 darwin-nat-info.c:587
+#: darwin-nat-info.c:795 darwin-nat.c:545
 msgid "\n"
 msgstr ""
 
@@ -4691,6 +4692,117 @@ msgstr ""
 msgid "A %s in expression, near `%s'."
 msgstr ""
 
+#: c-lang.c:67 c-lang.c:600
+msgid "unhandled c_string_type"
+msgstr ""
+
+#: c-lang.c:319
+#, possible-c-format
+msgid "Error reading string from inferior: %s"
+msgstr ""
+
+#: c-lang.c:353
+#, possible-c-format
+msgid "Trying to read string with inappropriate type `%s'."
+msgstr ""
+
+#: c-lang.c:357
+msgid "Trying to read string with inappropriate type."
+msgstr ""
+
+#: c-lang.c:458
+msgid "Malformed escape sequence"
+msgstr ""
+
+#: c-lang.c:485
+msgid "\\x used with no following hex digits."
+msgstr ""
+
+#: c-lang.c:507
+msgid "\\u used with no following hex digits"
+msgstr ""
+
+#: c-lang.c:659
+msgid "Could not convert character constant to target character set"
+msgstr ""
+
+#. To avoid memory corruption.
+#: c-lang.c:685 eval.c:923
+msgid "Too many array elements"
+msgstr ""
+
+#: c-typeprint.c:389
+msgid "type not handled in c_type_print_varspec_prefix()"
+msgstr ""
+
+#: c-typeprint.c:756
+msgid "type not handled in c_type_print_varspec_suffix()"
+msgstr ""
+
+#: c-typeprint.c:793
+#, possible-c-format
+msgid "[with %s = "
+msgstr ""
+
+#: c-typeprint.c:808
+msgid "] "
+msgstr ""
+
+#: c-typeprint.c:847 m2-typeprint.c:87
+msgid "<type unknown>"
+msgstr ""
+
+#: c-typeprint.c:875
+msgid "<unnamed typedef>"
+msgstr ""
+
+#: c-typeprint.c:967
+msgid "<incomplete type>\n"
+msgstr ""
+
+#: c-typeprint.c:970
+msgid "<no data fields>\n"
+msgstr ""
+
+#: c-typeprint.c:1202
+#, possible-c-format
+msgid "<undefined type> %s;\n"
+msgstr ""
+
+#: c-typeprint.c:1252
+#, possible-c-format
+msgid "<badly mangled name '%s'>"
+msgstr ""
+
+#: c-typeprint.c:1378
+msgid "struct <unknown>"
+msgstr ""
+
+#. This should not occur.
+#: c-typeprint.c:1387
+msgid "<range type>"
+msgstr ""
+
+#. At least for dump_symtab, it is important that this not
+#. be an error ().
+#: c-typeprint.c:1409
+#, possible-c-format
+msgid "<invalid type code %d>"
+msgstr ""
+
+#: c-valprint.c:160 valprint.c:391
+msgid "Could not determine the array high bound"
+msgstr ""
+
+#: c-valprint.c:226
+#, possible-c-format
+msgid "%d vtable entries"
+msgstr ""
+
+#: c-valprint.c:559
+msgid " [incomplete object]"
+msgstr ""
+
 #: charset.c:218
 #, possible-c-format
 msgid "The host character set is \"auto; currently %s\".\n"
@@ -4812,320 +4924,6 @@ msgid ""
 "character sets as needed.\n"
 "To see a list of the character sets GDB supports, type\n"
 "`set target-wide-charset'<TAB>"
-msgstr ""
-
-#: c-lang.c:67 c-lang.c:600
-msgid "unhandled c_string_type"
-msgstr ""
-
-#: c-lang.c:319
-#, possible-c-format
-msgid "Error reading string from inferior: %s"
-msgstr ""
-
-#: c-lang.c:353
-#, possible-c-format
-msgid "Trying to read string with inappropriate type `%s'."
-msgstr ""
-
-#: c-lang.c:357
-msgid "Trying to read string with inappropriate type."
-msgstr ""
-
-#: c-lang.c:458
-msgid "Malformed escape sequence"
-msgstr ""
-
-#: c-lang.c:485
-msgid "\\x used with no following hex digits."
-msgstr ""
-
-#: c-lang.c:507
-msgid "\\u used with no following hex digits"
-msgstr ""
-
-#: c-lang.c:659
-msgid "Could not convert character constant to target character set"
-msgstr ""
-
-#. To avoid memory corruption.
-#: c-lang.c:685 eval.c:923
-msgid "Too many array elements"
-msgstr ""
-
-#: cli/cli-dump.c:76
-msgid "Missing filename."
-msgstr ""
-
-#: cli/cli-dump.c:117 cli/cli-dump.c:137
-#, possible-c-format
-msgid "Failed to open %s: %s."
-msgstr ""
-
-#: cli/cli-dump.c:122
-#, possible-c-format
-msgid "'%s' is not a recognized file format."
-msgstr ""
-
-#: cli/cli-dump.c:141
-#, possible-c-format
-msgid "bfd_openw_with_cleanup: %s."
-msgstr ""
-
-#. Append to existing file.
-#. FIXME -- doesn't work...
-#: cli/cli-dump.c:145
-msgid "bfd_openw does not work with append."
-msgstr ""
-
-#: cli/cli-dump.c:148
-#, possible-c-format
-msgid "bfd_openw_with_cleanup: unknown mode %s."
-msgstr ""
-
-#: cli/cli-dump.c:164
-msgid ""
-"\"dump\" must be followed by a subcommand.\n"
-"\n"
-msgstr ""
-
-#: cli/cli-dump.c:171
-msgid ""
-"\"append\" must be followed by a subcommand.\n"
-"\n"
-msgstr ""
-
-#: cli/cli-dump.c:206
-#, possible-c-format
-msgid "writing dump file '%s' (%s)"
-msgstr ""
-
-#: cli/cli-dump.c:227
-msgid "Missing start address."
-msgstr ""
-
-#: cli/cli-dump.c:232
-msgid "Missing stop address."
-msgstr ""
-
-#: cli/cli-dump.c:238
-msgid "Invalid memory address range (start >= end)."
-msgstr ""
-
-#: cli/cli-dump.c:278
-#, possible-c-format
-msgid "No value to %s."
-msgstr ""
-
-#: cli/cli-dump.c:281
-msgid "Invalid expression."
-msgstr ""
-
-#: cli/cli-dump.c:300
-msgid "value is not an lval: address assumed to be zero"
-msgstr ""
-
-#. No, no useable data in this section.
-#: cli/cli-dump.c:460
-#, possible-c-format
-msgid "skipping section %s...\n"
-msgstr ""
-
-#: cli/cli-dump.c:479
-#, possible-c-format
-msgid "Failed to read bfd file %s: '%s'."
-msgstr ""
-
-#: cli/cli-dump.c:502 cli/cli-dump.c:554
-#, possible-c-format
-msgid "restore: memory write failed (%s)."
-msgstr ""
-
-#: cli/cli-dump.c:525
-#, possible-c-format
-msgid "Start address is greater than length of binary file %s."
-msgstr ""
-
-#: cli/cli-dump.c:600
-msgid "Start must be less than end."
-msgstr ""
-
-#: cli/cli-dump.c:669
-msgid "Dump target code/data to a local file."
-msgstr ""
-
-#: cli/cli-dump.c:674
-msgid "Append target code/data to a local file."
-msgstr ""
-
-#: cli/cli-dump.c:690
-msgid "Write target code/data to an srec file."
-msgstr ""
-
-#: cli/cli-dump.c:696
-msgid "Write target code/data to an intel hex file."
-msgstr ""
-
-#: cli/cli-dump.c:702
-msgid "Write target code/data to a tekhex file."
-msgstr ""
-
-#: cli/cli-dump.c:708
-msgid "Write target code/data to a raw binary file."
-msgstr ""
-
-#: cli/cli-dump.c:714
-msgid "Append target code/data to a raw binary file."
-msgstr ""
-
-#: cli/cli-dump.c:719
-msgid ""
-"Write contents of memory to an srec file.\n"
-"Arguments are FILE START STOP.  Writes the contents of memory\n"
-"within the range [START .. STOP) to the specified FILE in srec format."
-msgstr ""
-
-#: cli/cli-dump.c:725
-msgid ""
-"Write the value of an expression to an srec file.\n"
-"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
-"to the specified FILE in srec format."
-msgstr ""
-
-#: cli/cli-dump.c:731
-msgid ""
-"Write contents of memory to an ihex file.\n"
-"Arguments are FILE START STOP.  Writes the contents of memory within\n"
-"the range [START .. STOP) to the specified FILE in intel hex format."
-msgstr ""
-
-#: cli/cli-dump.c:737
-msgid ""
-"Write the value of an expression to an ihex file.\n"
-"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
-"to the specified FILE in intel hex format."
-msgstr ""
-
-#: cli/cli-dump.c:743
-msgid ""
-"Write contents of memory to a tekhex file.\n"
-"Arguments are FILE START STOP.  Writes the contents of memory\n"
-"within the range [START .. STOP) to the specified FILE in tekhex format."
-msgstr ""
-
-#: cli/cli-dump.c:749
-msgid ""
-"Write the value of an expression to a tekhex file.\n"
-"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
-"to the specified FILE in tekhex format."
-msgstr ""
-
-#: cli/cli-dump.c:755
-msgid ""
-"Write contents of memory to a raw binary file.\n"
-"Arguments are FILE START STOP.  Writes the contents of memory\n"
-"within the range [START .. STOP) to the specified FILE in binary format."
-msgstr ""
-
-#: cli/cli-dump.c:761
-msgid ""
-"Write the value of an expression to a raw binary file.\n"
-"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
-"to the specified FILE in raw target ordered bytes."
-msgstr ""
-
-#: cli/cli-dump.c:767
-msgid ""
-"Append contents of memory to a raw binary file.\n"
-"Arguments are FILE START STOP.  Writes the contents of memory within the\n"
-"range [START .. STOP) to the specified FILE in raw target ordered bytes."
-msgstr ""
-
-#: cli/cli-dump.c:773
-msgid ""
-"Append the value of an expression to a raw binary file.\n"
-"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
-"to the specified FILE in raw target ordered bytes."
-msgstr ""
-
-#: cli/cli-dump.c:779
-msgid ""
-"Restore the contents of FILE to target memory.\n"
-"Arguments are FILE OFFSET START END where all except FILE are optional.\n"
-"OFFSET will be added to the base address of the file (default zero).\n"
-"If START and END are given, only the file contents within that range\n"
-"(file relative) will be restored to target memory."
-msgstr ""
-
-#: cli/cli-setshow.c:75
-msgid "\"on\", \"off\" or \"auto\" expected."
-msgstr ""
-
-#: cli/cli-setshow.c:104
-msgid "\"on\" or \"off\" expected."
-msgstr ""
-
-#: cli/cli-setshow.c:217
-msgid "filename to set it to."
-msgstr ""
-
-#: cli/cli-setshow.c:279 cli/cli-setshow.c:306 cli/cli-setshow.c:402
-msgid "integer to set it to."
-msgstr ""
-
-#: cli/cli-setshow.c:290 cli/cli-setshow.c:317 cli/cli-setshow.c:406
-#, possible-c-format
-msgid "integer %s out of range"
-msgstr ""
-
-#: cli/cli-setshow.c:355
-#, possible-c-format
-msgid "Requires an argument. Valid arguments are %s."
-msgstr ""
-
-#: cli/cli-setshow.c:384
-#, possible-c-format
-msgid "Undefined item: \"%s\"."
-msgstr ""
-
-#: cli/cli-setshow.c:387
-#, possible-c-format
-msgid "Ambiguous item \"%s\"."
-msgstr ""
-
-#: cli/cli-setshow.c:408
-msgid "only -1 is allowed to set as unlimited"
-msgstr ""
-
-#: cli/cli-setshow.c:418
-msgid "gdb internal error: bad var_type in do_setshow_command"
-msgstr ""
-
-#: cli/cli-setshow.c:580
-msgid "do_show_command: invalid var_auto_boolean"
-msgstr ""
-
-#: cli/cli-setshow.c:610
-msgid "gdb internal error: bad var_type in do_show_command"
-msgstr ""
-
-#: cli/cli-decode.c:1428
-#, possible-c-format
-msgid "Undefined %scommand: \"%s\".  Try \"help%s%.*s\"."
-msgstr ""
-
-#: cli/cli-decode.c:1461
-#, possible-c-format
-msgid "Lack of needed %scommand"
-msgstr ""
-
-#: cli/cli-decode.c:1526
-#, possible-c-format
-msgid "Ambiguous %scommand \"%s\": %s."
-msgstr ""
-
-#: cli/cli-decode.c:1861
-msgid "Invalid command"
 msgstr ""
 
 #: cli/cli-cmds.c:212
@@ -5654,153 +5452,6 @@ msgid ""
 "when GDB is started."
 msgstr ""
 
-#: cli/cli-script.c:90
-msgid "if/while commands require arguments."
-msgstr ""
-
-#: cli/cli-script.c:125
-msgid "Error reading in canned sequence of commands."
-msgstr ""
-
-#: cli/cli-script.c:327
-msgid "Max user call depth exceeded -- command aborted."
-msgstr ""
-
-#: cli/cli-script.c:349
-msgid "Error executing canned sequence of commands."
-msgstr ""
-
-#: cli/cli-script.c:578
-msgid "Invalid control type in canned commands structure."
-msgstr ""
-
-#: cli/cli-script.c:654
-msgid "arg_cleanup called with no user args.\n"
-msgstr ""
-
-#: cli/cli-script.c:693
-#, possible-c-format
-msgid "user defined function may only have %d arguments."
-msgstr ""
-
-#: cli/cli-script.c:792
-#, possible-c-format
-msgid "Missing argument %d in user function."
-msgstr ""
-
-#: cli/cli-script.c:892
-msgid "Control nesting too deep!"
-msgstr ""
-
-#: cli/cli-script.c:1088
-msgid "Recursed on a simple control type."
-msgstr ""
-
-#: cli/cli-script.c:1091
-msgid "Allocated body is smaller than this command type needs."
-msgstr ""
-
-#: cli/cli-script.c:1405
-msgid "name of command to define"
-msgstr ""
-
-#: cli/cli-script.c:1427
-#, possible-c-format
-msgid "\"%s\" is not a prefix command."
-msgstr ""
-
-#: cli/cli-script.c:1438
-#, possible-c-format
-msgid "Junk in argument list: \"%s\""
-msgstr ""
-
-#: cli/cli-script.c:1487
-#, possible-c-format
-msgid "Redefine command \"%s\"? "
-msgstr ""
-
-#: cli/cli-script.c:1489
-#, possible-c-format
-msgid "Really redefine built-in command \"%s\"? "
-msgstr ""
-
-#: cli/cli-script.c:1491
-#, possible-c-format
-msgid "Command \"%s\" not redefined."
-msgstr ""
-
-#: cli/cli-script.c:1518
-#, possible-c-format
-msgid "Your new `%s' command does not hook any existing command."
-msgstr ""
-
-#: cli/cli-script.c:1521
-msgid "Proceed? "
-msgstr ""
-
-#. Should never come here as hookc would be 0.
-#: cli/cli-script.c:1563 complaints.c:304 exceptions.c:159 exceptions.c:176
-#: exceptions.c:203 exceptions.c:253 hppa-tdep.c:3090 hppa-tdep.c:3103
-#: infcall.c:669 infcmd.c:1484 infrun.c:3313 language.c:446 mi/mi-out.c:337
-#: mi/mi-out.c:355 mips-tdep.c:265 mips-tdep.c:418 mips-tdep.c:2109
-#: mips-tdep.c:5561 mips-tdep.c:6677 mn10300-tdep.c:126 reggroups.c:219
-#: remote.c:6831 utils.c:895 utils.c:914
-msgid "bad switch"
-msgstr ""
-
-#: cli/cli-script.c:1583
-#, possible-c-format
-msgid "Command \"%s\" is built-in."
-msgstr ""
-
-#: cli/cli-script.c:1638
-msgid "called with NULL file pointer!"
-msgstr ""
-
-#: cli/cli-script.c:1664
-#, possible-c-format
-msgid ""
-"%s:%d: Error in sourced command file:\n"
-"%s"
-msgstr ""
-
-#: cli/cli-script.c:1667
-msgid "bad reason"
-msgstr ""
-
-#: cli/cli-script.c:1710
-msgid ""
-"Document a user-defined command.\n"
-"Give command name as argument.  Give documentation on following lines.\n"
-"End with a line of just \"end\"."
-msgstr ""
-
-#: cli/cli-script.c:1714
-msgid ""
-"Define a new command name.  Command name is argument.\n"
-"Definition appears on following lines, one command per line.\n"
-"End with a line of just \"end\".\n"
-"Use the \"document\" command to give documentation for the new command.\n"
-"Commands defined in this way may have up to ten arguments."
-msgstr ""
-
-#: cli/cli-script.c:1721
-msgid ""
-"Execute nested commands WHILE the conditional expression is non zero.\n"
-"The conditional expression must follow the word `while' and must in turn be\n"
-"followed by a new line.  The nested commands must be entered one per line,\n"
-"and should be terminated by the word `end'."
-msgstr ""
-
-#: cli/cli-script.c:1727
-msgid ""
-"Execute nested commands once IF the conditional expression is non zero.\n"
-"The conditional expression must follow the word `if' and must in turn be\n"
-"followed by a new line.  The nested commands must be entered one per line,\n"
-"and should be terminated by the word 'else' or `end'.  If an else clause\n"
-"is used, the same rules apply to its nested commands as to the first ones."
-msgstr ""
-
 #: cli/cli-logging.c:46
 #, possible-c-format
 msgid "The current logfile is \"%s\".\n"
@@ -5929,6 +5580,409 @@ msgstr ""
 msgid "Disable logging."
 msgstr ""
 
+#: cli/cli-setshow.c:75
+msgid "\"on\", \"off\" or \"auto\" expected."
+msgstr ""
+
+#: cli/cli-setshow.c:104
+msgid "\"on\" or \"off\" expected."
+msgstr ""
+
+#: cli/cli-setshow.c:217
+msgid "filename to set it to."
+msgstr ""
+
+#: cli/cli-setshow.c:279 cli/cli-setshow.c:306 cli/cli-setshow.c:402
+msgid "integer to set it to."
+msgstr ""
+
+#: cli/cli-setshow.c:290 cli/cli-setshow.c:317 cli/cli-setshow.c:406
+#, possible-c-format
+msgid "integer %s out of range"
+msgstr ""
+
+#: cli/cli-setshow.c:355
+#, possible-c-format
+msgid "Requires an argument. Valid arguments are %s."
+msgstr ""
+
+#: cli/cli-setshow.c:384
+#, possible-c-format
+msgid "Undefined item: \"%s\"."
+msgstr ""
+
+#: cli/cli-setshow.c:387
+#, possible-c-format
+msgid "Ambiguous item \"%s\"."
+msgstr ""
+
+#: cli/cli-setshow.c:408
+msgid "only -1 is allowed to set as unlimited"
+msgstr ""
+
+#: cli/cli-setshow.c:418
+msgid "gdb internal error: bad var_type in do_setshow_command"
+msgstr ""
+
+#: cli/cli-setshow.c:580
+msgid "do_show_command: invalid var_auto_boolean"
+msgstr ""
+
+#: cli/cli-setshow.c:610
+msgid "gdb internal error: bad var_type in do_show_command"
+msgstr ""
+
+#: cli/cli-dump.c:76
+msgid "Missing filename."
+msgstr ""
+
+#: cli/cli-dump.c:117 cli/cli-dump.c:137
+#, possible-c-format
+msgid "Failed to open %s: %s."
+msgstr ""
+
+#: cli/cli-dump.c:122
+#, possible-c-format
+msgid "'%s' is not a recognized file format."
+msgstr ""
+
+#: cli/cli-dump.c:141
+#, possible-c-format
+msgid "bfd_openw_with_cleanup: %s."
+msgstr ""
+
+#. Append to existing file.
+#. FIXME -- doesn't work...
+#: cli/cli-dump.c:145
+msgid "bfd_openw does not work with append."
+msgstr ""
+
+#: cli/cli-dump.c:148
+#, possible-c-format
+msgid "bfd_openw_with_cleanup: unknown mode %s."
+msgstr ""
+
+#: cli/cli-dump.c:164
+msgid ""
+"\"dump\" must be followed by a subcommand.\n"
+"\n"
+msgstr ""
+
+#: cli/cli-dump.c:171
+msgid ""
+"\"append\" must be followed by a subcommand.\n"
+"\n"
+msgstr ""
+
+#: cli/cli-dump.c:206
+#, possible-c-format
+msgid "writing dump file '%s' (%s)"
+msgstr ""
+
+#: cli/cli-dump.c:227
+msgid "Missing start address."
+msgstr ""
+
+#: cli/cli-dump.c:232
+msgid "Missing stop address."
+msgstr ""
+
+#: cli/cli-dump.c:238
+msgid "Invalid memory address range (start >= end)."
+msgstr ""
+
+#: cli/cli-dump.c:278
+#, possible-c-format
+msgid "No value to %s."
+msgstr ""
+
+#: cli/cli-dump.c:281
+msgid "Invalid expression."
+msgstr ""
+
+#: cli/cli-dump.c:300
+msgid "value is not an lval: address assumed to be zero"
+msgstr ""
+
+#. No, no useable data in this section.
+#: cli/cli-dump.c:460
+#, possible-c-format
+msgid "skipping section %s...\n"
+msgstr ""
+
+#: cli/cli-dump.c:479
+#, possible-c-format
+msgid "Failed to read bfd file %s: '%s'."
+msgstr ""
+
+#: cli/cli-dump.c:502 cli/cli-dump.c:554
+#, possible-c-format
+msgid "restore: memory write failed (%s)."
+msgstr ""
+
+#: cli/cli-dump.c:525
+#, possible-c-format
+msgid "Start address is greater than length of binary file %s."
+msgstr ""
+
+#: cli/cli-dump.c:600
+msgid "Start must be less than end."
+msgstr ""
+
+#: cli/cli-dump.c:669
+msgid "Dump target code/data to a local file."
+msgstr ""
+
+#: cli/cli-dump.c:674
+msgid "Append target code/data to a local file."
+msgstr ""
+
+#: cli/cli-dump.c:690
+msgid "Write target code/data to an srec file."
+msgstr ""
+
+#: cli/cli-dump.c:696
+msgid "Write target code/data to an intel hex file."
+msgstr ""
+
+#: cli/cli-dump.c:702
+msgid "Write target code/data to a tekhex file."
+msgstr ""
+
+#: cli/cli-dump.c:708
+msgid "Write target code/data to a raw binary file."
+msgstr ""
+
+#: cli/cli-dump.c:714
+msgid "Append target code/data to a raw binary file."
+msgstr ""
+
+#: cli/cli-dump.c:719
+msgid ""
+"Write contents of memory to an srec file.\n"
+"Arguments are FILE START STOP.  Writes the contents of memory\n"
+"within the range [START .. STOP) to the specified FILE in srec format."
+msgstr ""
+
+#: cli/cli-dump.c:725
+msgid ""
+"Write the value of an expression to an srec file.\n"
+"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
+"to the specified FILE in srec format."
+msgstr ""
+
+#: cli/cli-dump.c:731
+msgid ""
+"Write contents of memory to an ihex file.\n"
+"Arguments are FILE START STOP.  Writes the contents of memory within\n"
+"the range [START .. STOP) to the specified FILE in intel hex format."
+msgstr ""
+
+#: cli/cli-dump.c:737
+msgid ""
+"Write the value of an expression to an ihex file.\n"
+"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
+"to the specified FILE in intel hex format."
+msgstr ""
+
+#: cli/cli-dump.c:743
+msgid ""
+"Write contents of memory to a tekhex file.\n"
+"Arguments are FILE START STOP.  Writes the contents of memory\n"
+"within the range [START .. STOP) to the specified FILE in tekhex format."
+msgstr ""
+
+#: cli/cli-dump.c:749
+msgid ""
+"Write the value of an expression to a tekhex file.\n"
+"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
+"to the specified FILE in tekhex format."
+msgstr ""
+
+#: cli/cli-dump.c:755
+msgid ""
+"Write contents of memory to a raw binary file.\n"
+"Arguments are FILE START STOP.  Writes the contents of memory\n"
+"within the range [START .. STOP) to the specified FILE in binary format."
+msgstr ""
+
+#: cli/cli-dump.c:761
+msgid ""
+"Write the value of an expression to a raw binary file.\n"
+"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
+"to the specified FILE in raw target ordered bytes."
+msgstr ""
+
+#: cli/cli-dump.c:767
+msgid ""
+"Append contents of memory to a raw binary file.\n"
+"Arguments are FILE START STOP.  Writes the contents of memory within the\n"
+"range [START .. STOP) to the specified FILE in raw target ordered bytes."
+msgstr ""
+
+#: cli/cli-dump.c:773
+msgid ""
+"Append the value of an expression to a raw binary file.\n"
+"Arguments are FILE EXPRESSION.  Writes the value of EXPRESSION\n"
+"to the specified FILE in raw target ordered bytes."
+msgstr ""
+
+#: cli/cli-dump.c:779
+msgid ""
+"Restore the contents of FILE to target memory.\n"
+"Arguments are FILE OFFSET START END where all except FILE are optional.\n"
+"OFFSET will be added to the base address of the file (default zero).\n"
+"If START and END are given, only the file contents within that range\n"
+"(file relative) will be restored to target memory."
+msgstr ""
+
+#: cli/cli-script.c:90
+msgid "if/while commands require arguments."
+msgstr ""
+
+#: cli/cli-script.c:125
+msgid "Error reading in canned sequence of commands."
+msgstr ""
+
+#: cli/cli-script.c:327
+msgid "Max user call depth exceeded -- command aborted."
+msgstr ""
+
+#: cli/cli-script.c:349
+msgid "Error executing canned sequence of commands."
+msgstr ""
+
+#: cli/cli-script.c:578
+msgid "Invalid control type in canned commands structure."
+msgstr ""
+
+#: cli/cli-script.c:654
+msgid "arg_cleanup called with no user args.\n"
+msgstr ""
+
+#: cli/cli-script.c:693
+#, possible-c-format
+msgid "user defined function may only have %d arguments."
+msgstr ""
+
+#: cli/cli-script.c:792
+#, possible-c-format
+msgid "Missing argument %d in user function."
+msgstr ""
+
+#: cli/cli-script.c:892
+msgid "Control nesting too deep!"
+msgstr ""
+
+#: cli/cli-script.c:1088
+msgid "Recursed on a simple control type."
+msgstr ""
+
+#: cli/cli-script.c:1091
+msgid "Allocated body is smaller than this command type needs."
+msgstr ""
+
+#: cli/cli-script.c:1405
+msgid "name of command to define"
+msgstr ""
+
+#: cli/cli-script.c:1427
+#, possible-c-format
+msgid "\"%s\" is not a prefix command."
+msgstr ""
+
+#: cli/cli-script.c:1438
+#, possible-c-format
+msgid "Junk in argument list: \"%s\""
+msgstr ""
+
+#: cli/cli-script.c:1487
+#, possible-c-format
+msgid "Redefine command \"%s\"? "
+msgstr ""
+
+#: cli/cli-script.c:1489
+#, possible-c-format
+msgid "Really redefine built-in command \"%s\"? "
+msgstr ""
+
+#: cli/cli-script.c:1491
+#, possible-c-format
+msgid "Command \"%s\" not redefined."
+msgstr ""
+
+#: cli/cli-script.c:1518
+#, possible-c-format
+msgid "Your new `%s' command does not hook any existing command."
+msgstr ""
+
+#: cli/cli-script.c:1521
+msgid "Proceed? "
+msgstr ""
+
+#. Should never come here as hookc would be 0.
+#: cli/cli-script.c:1563 complaints.c:304 exceptions.c:159 exceptions.c:176
+#: exceptions.c:203 exceptions.c:253 hppa-tdep.c:3090 hppa-tdep.c:3103
+#: infcall.c:669 infcmd.c:1484 infrun.c:3313 language.c:446 mi/mi-out.c:337
+#: mi/mi-out.c:355 mips-tdep.c:265 mips-tdep.c:424 mips-tdep.c:2115
+#: mips-tdep.c:5567 mips-tdep.c:6683 mn10300-tdep.c:126 reggroups.c:219
+#: remote.c:6831 utils.c:895 utils.c:914
+msgid "bad switch"
+msgstr ""
+
+#: cli/cli-script.c:1583
+#, possible-c-format
+msgid "Command \"%s\" is built-in."
+msgstr ""
+
+#: cli/cli-script.c:1638
+msgid "called with NULL file pointer!"
+msgstr ""
+
+#: cli/cli-script.c:1664
+#, possible-c-format
+msgid ""
+"%s:%d: Error in sourced command file:\n"
+"%s"
+msgstr ""
+
+#: cli/cli-script.c:1667
+msgid "bad reason"
+msgstr ""
+
+#: cli/cli-script.c:1710
+msgid ""
+"Document a user-defined command.\n"
+"Give command name as argument.  Give documentation on following lines.\n"
+"End with a line of just \"end\"."
+msgstr ""
+
+#: cli/cli-script.c:1714
+msgid ""
+"Define a new command name.  Command name is argument.\n"
+"Definition appears on following lines, one command per line.\n"
+"End with a line of just \"end\".\n"
+"Use the \"document\" command to give documentation for the new command.\n"
+"Commands defined in this way may have up to ten arguments."
+msgstr ""
+
+#: cli/cli-script.c:1721
+msgid ""
+"Execute nested commands WHILE the conditional expression is non zero.\n"
+"The conditional expression must follow the word `while' and must in turn be\n"
+"followed by a new line.  The nested commands must be entered one per line,\n"
+"and should be terminated by the word `end'."
+msgstr ""
+
+#: cli/cli-script.c:1727
+msgid ""
+"Execute nested commands once IF the conditional expression is non zero.\n"
+"The conditional expression must follow the word `if' and must in turn be\n"
+"followed by a new line.  The nested commands must be entered one per line,\n"
+"and should be terminated by the word 'else' or `end'.  If an else clause\n"
+"is used, the same rules apply to its nested commands as to the first ones."
+msgstr ""
+
 #: cli/cli-utils.c:53
 msgid "History value must have integer type."
 msgstr ""
@@ -5947,6 +6001,25 @@ msgstr ""
 
 #: cli/cli-utils.c:207
 msgid "Args must be numbers or '$' variables."
+msgstr ""
+
+#: cli/cli-decode.c:1428
+#, possible-c-format
+msgid "Undefined %scommand: \"%s\".  Try \"help%s%.*s\"."
+msgstr ""
+
+#: cli/cli-decode.c:1461
+#, possible-c-format
+msgid "Lack of needed %scommand"
+msgstr ""
+
+#: cli/cli-decode.c:1526
+#, possible-c-format
+msgid "Ambiguous %scommand \"%s\": %s."
+msgstr ""
+
+#: cli/cli-decode.c:1861
+msgid "Invalid command"
 msgstr ""
 
 #: coff-pe-read.c:175
@@ -6103,36 +6176,42 @@ msgstr ""
 msgid "Unexpected type for symbol %s"
 msgstr ""
 
-#: common/agent.c:138
-msgid "Error reading helper thread's id in lib"
+#: common/common-utils.c:137
+msgid "vasprintf call failed"
 msgstr ""
 
-#: common/agent.c:174
+#. ??? TODO: handle other escape sequences.
+#: common/format.c:90
 #, possible-c-format
-msgid "error opening sync socket: %s"
+msgid "Unrecognized escape character \\%c in format string."
 msgstr ""
 
-#: common/agent.c:183
-msgid "string overflow allocating socket name"
+#: common/format.c:295
+msgid "`*' not supported for precision or width in printf"
 msgstr ""
 
-#: common/agent.c:191
+#: common/format.c:298
+msgid "Format specifier `n' not supported in printf"
+msgstr ""
+
+#: common/format.c:301
+msgid "Incomplete format specifier at end of format string"
+msgstr ""
+
+#: common/format.c:304
 #, possible-c-format
-msgid ""
-"error connecting sync socket (%s): %s. Make sure the directory exists and "
-"that it is writable."
+msgid "Unrecognized format specifier '%c' in printf"
 msgstr ""
 
-#: common/agent.c:226
-msgid "unable to write"
+#: common/format.c:308
+#, possible-c-format
+msgid "Inappropriate modifiers to format specifier '%c' in printf"
 msgstr ""
 
-#: common/agent.c:312
-msgid "Error reading command response"
-msgstr ""
-
-#: common/agent.c:344
-msgid "Error reading capability of agent"
+#: common/linux-procfs.c:43 common/linux-procfs.c:89 linux-tdep.c:295
+#: linux-tdep.c:382 linux-tdep.c:395 linux-tdep.c:530
+#, possible-c-format
+msgid "unable to open /proc file '%s'"
 msgstr ""
 
 #: common/linux-ptrace.c:43
@@ -6215,15 +6294,36 @@ msgid ""
 "i386 NX (non-executable pages) support detected!"
 msgstr ""
 
-#: common/signals.c:350
-msgid "GDB bug: target.c (gdb_signal_from_host): unrecognized real-time signal"
+#: common/agent.c:138
+msgid "Error reading helper thread's id in lib"
 msgstr ""
 
-#. The user might be trying to do "signal SIGSAK" where this system
-#. doesn't have SIGSAK.
-#: common/signals.c:645
+#: common/agent.c:174
 #, possible-c-format
-msgid "Signal %s does not exist on this system."
+msgid "error opening sync socket: %s"
+msgstr ""
+
+#: common/agent.c:183
+msgid "string overflow allocating socket name"
+msgstr ""
+
+#: common/agent.c:191
+#, possible-c-format
+msgid ""
+"error connecting sync socket (%s): %s. Make sure the directory exists and "
+"that it is writable."
+msgstr ""
+
+#: common/agent.c:226
+msgid "unable to write"
+msgstr ""
+
+#: common/agent.c:312
+msgid "Error reading command response"
+msgstr ""
+
+#: common/agent.c:344
+msgid "Error reading capability of agent"
 msgstr ""
 
 #: common/linux-btrace.c:235
@@ -6260,16 +6360,6 @@ msgstr ""
 msgid "test branch tracing: expected killed. status: %d."
 msgstr ""
 
-#: common/linux-procfs.c:43 common/linux-procfs.c:89 linux-tdep.c:295
-#: linux-tdep.c:382 linux-tdep.c:395 linux-tdep.c:530
-#, possible-c-format
-msgid "unable to open /proc file '%s'"
-msgstr ""
-
-#: common/common-utils.c:137
-msgid "vasprintf call failed"
-msgstr ""
-
 #: common/gdb_assert.h:54
 #, possible-c-format
 msgid "%s: Assertion `%s' failed."
@@ -6280,32 +6370,15 @@ msgstr ""
 msgid "Assertion `%s' failed."
 msgstr ""
 
-#. ??? TODO: handle other escape sequences.
-#: common/format.c:90
+#: common/signals.c:350
+msgid "GDB bug: target.c (gdb_signal_from_host): unrecognized real-time signal"
+msgstr ""
+
+#. The user might be trying to do "signal SIGSAK" where this system
+#. doesn't have SIGSAK.
+#: common/signals.c:645
 #, possible-c-format
-msgid "Unrecognized escape character \\%c in format string."
-msgstr ""
-
-#: common/format.c:295
-msgid "`*' not supported for precision or width in printf"
-msgstr ""
-
-#: common/format.c:298
-msgid "Format specifier `n' not supported in printf"
-msgstr ""
-
-#: common/format.c:301
-msgid "Incomplete format specifier at end of format string"
-msgstr ""
-
-#: common/format.c:304
-#, possible-c-format
-msgid "Unrecognized format specifier '%c' in printf"
-msgstr ""
-
-#: common/format.c:308
-#, possible-c-format
-msgid "Inappropriate modifiers to format specifier '%c' in printf"
+msgid "Signal %s does not exist on this system."
 msgstr ""
 
 #: complaints.c:319
@@ -6327,6 +6400,14 @@ msgstr ""
 
 #: copying.c:652 copying.c:659
 msgid "Various kinds of warranty you do not have."
+msgstr ""
+
+#: core-regset.c:75 m68klinux-nat.c:541
+msgid "Wrong size gregset in core file."
+msgstr ""
+
+#: core-regset.c:85 m68klinux-nat.c:551
+msgid "Wrong size fpregset in core file."
 msgstr ""
 
 #: corefile.c:172
@@ -6453,14 +6534,6 @@ msgstr ""
 #: corelow.c:970
 #, possible-c-format
 msgid "init_core_ops: core target already exists (\"%s\")."
-msgstr ""
-
-#: core-regset.c:75 m68klinux-nat.c:541
-msgid "Wrong size gregset in core file."
-msgstr ""
-
-#: core-regset.c:85 m68klinux-nat.c:551
-msgid "Wrong size fpregset in core file."
 msgstr ""
 
 #: cp-abi.c:43
@@ -6734,405 +6807,6 @@ msgstr ""
 
 #: cris-tdep.c:4144
 msgid "cris_gdbarch_init: unknown CRIS version"
-msgstr ""
-
-#: c-typeprint.c:389
-msgid "type not handled in c_type_print_varspec_prefix()"
-msgstr ""
-
-#: c-typeprint.c:756
-msgid "type not handled in c_type_print_varspec_suffix()"
-msgstr ""
-
-#: c-typeprint.c:793
-#, possible-c-format
-msgid "[with %s = "
-msgstr ""
-
-#: c-typeprint.c:808
-msgid "] "
-msgstr ""
-
-#: c-typeprint.c:847 m2-typeprint.c:87
-msgid "<type unknown>"
-msgstr ""
-
-#: c-typeprint.c:875
-msgid "<unnamed typedef>"
-msgstr ""
-
-#: c-typeprint.c:967
-msgid "<incomplete type>\n"
-msgstr ""
-
-#: c-typeprint.c:970
-msgid "<no data fields>\n"
-msgstr ""
-
-#: c-typeprint.c:1202
-#, possible-c-format
-msgid "<undefined type> %s;\n"
-msgstr ""
-
-#: c-typeprint.c:1252
-#, possible-c-format
-msgid "<badly mangled name '%s'>"
-msgstr ""
-
-#: c-typeprint.c:1378
-msgid "struct <unknown>"
-msgstr ""
-
-#. This should not occur.
-#: c-typeprint.c:1387
-msgid "<range type>"
-msgstr ""
-
-#. At least for dump_symtab, it is important that this not
-#. be an error ().
-#: c-typeprint.c:1409
-#, possible-c-format
-msgid "<invalid type code %d>"
-msgstr ""
-
-#: c-valprint.c:160 valprint.c:391
-msgid "Could not determine the array high bound"
-msgstr ""
-
-#: c-valprint.c:226
-#, possible-c-format
-msgid "%d vtable entries"
-msgstr ""
-
-#: c-valprint.c:559
-msgid " [incomplete object]"
-msgstr ""
-
-#: darwin-nat.c:187
-#, possible-c-format
-msgid "[%d inferior]: "
-msgstr ""
-
-#: darwin-nat.c:199
-msgid "[UNKNOWN]"
-msgstr ""
-
-#: darwin-nat.c:201
-#, possible-c-format
-msgid "Mach error at \"%s:%u\" in function \"%s\": %s (0x%lx)"
-msgstr ""
-
-#: darwin-nat.c:233
-#, c-format
-msgid "unknown (%d)"
-msgstr ""
-
-#: darwin-nat.c:258
-#, possible-c-format
-msgid "ptrace (%s, %d, 0x%x, %d): %d (%s)\n"
-msgstr ""
-
-#: darwin-nat.c:260
-msgid "no error"
-msgstr ""
-
-#: darwin-nat.c:326
-#, possible-c-format
-msgid " new_ix:%d/%d, old_ix:%d/%d, new_id:%x old_id:%x\n"
-msgstr ""
-
-#: darwin-nat.c:485
-msgid "message header:\n"
-msgstr ""
-
-#: darwin-nat.c:486
-#, possible-c-format
-msgid " bits: 0x%x\n"
-msgstr ""
-
-#: darwin-nat.c:487
-#, possible-c-format
-msgid " size: 0x%x\n"
-msgstr ""
-
-#: darwin-nat.c:488
-#, possible-c-format
-msgid " remote-port: 0x%x\n"
-msgstr ""
-
-#: darwin-nat.c:489
-#, possible-c-format
-msgid " local-port: 0x%x\n"
-msgstr ""
-
-#: darwin-nat.c:490
-#, possible-c-format
-msgid " reserved: 0x%x\n"
-msgstr ""
-
-#: darwin-nat.c:491
-#, possible-c-format
-msgid " id: 0x%x\n"
-msgstr ""
-
-#: darwin-nat.c:510
-#, possible-c-format
-msgid "body: descriptor_count=%u\n"
-msgstr ""
-
-#: darwin-nat.c:519
-#, possible-c-format
-msgid " descr %d: type=%u (port) name=0x%x, dispo=%d\n"
-msgstr ""
-
-#: darwin-nat.c:523
-#, possible-c-format
-msgid " descr %d: type=%u\n"
-msgstr ""
-
-#: darwin-nat.c:533
-#, possible-c-format
-msgid "NDR: mig=%02x if=%02x encod=%02x int=%02x char=%02x float=%02x\n"
-msgstr ""
-
-#: darwin-nat.c:541
-msgid "  data:"
-msgstr ""
-
-#: darwin-nat.c:683
-#, possible-c-format
-msgid "darwin_resume_thread: state=%d, thread=0x%x, step=%d nsignal=%d\n"
-msgstr ""
-
-#: darwin-nat.c:696
-#, possible-c-format
-msgid "ptrace THUP: res=%d\n"
-msgstr ""
-
-#: darwin-nat.c:703
-#, possible-c-format
-msgid "darwin_resume_thread: kill 0x%x %d: %d\n"
-msgstr ""
-
-#: darwin-nat.c:711
-#, possible-c-format
-msgid "darwin_set_sstep (thread=%x, enable=%d)\n"
-msgstr ""
-
-#: darwin-nat.c:801
-#, possible-c-format
-msgid "darwin_resume: pid=%d, tid=0x%x, step=%d, signal=%d\n"
-msgstr ""
-
-#. Should not happen...
-#: darwin-nat.c:881
-#, possible-c-format
-msgid "darwin_wait: ill-formatted message (id=%x)\n"
-msgstr ""
-
-#: darwin-nat.c:894
-#, possible-c-format
-msgid "darwin_wait: thread=%x, got %s\n"
-msgstr ""
-
-#: darwin-nat.c:917
-#, possible-c-format
-msgid "  (signal %d: %s)\n"
-msgstr ""
-
-#: darwin-nat.c:962
-#, possible-c-format
-msgid "wait4: res=%d: %s\n"
-msgstr ""
-
-#: darwin-nat.c:978
-#, possible-c-format
-msgid "darwin_wait: pid=%d exit, status=%x\n"
-msgstr ""
-
-#: darwin-nat.c:988
-#, possible-c-format
-msgid "darwin_wait: pid=%d\n"
-msgstr ""
-
-#: darwin-nat.c:995
-#, possible-c-format
-msgid "Bad local-port: %x\n"
-msgstr ""
-
-#: darwin-nat.c:1045
-#, possible-c-format
-msgid "darwin_wait: waiting for a message pid=%d thread=%lx\n"
-msgstr ""
-
-#: darwin-nat.c:1079
-#, possible-c-format
-msgid "mach_msg: ret=%x\n"
-msgstr ""
-
-#: darwin-nat.c:1113
-#, possible-c-format
-msgid "darwin_wait: mach_msg(pending) ret=%x\n"
-msgstr ""
-
-#: darwin-nat.c:1131
-#, possible-c-format
-msgid "darwin_wait: thread %x hit a non-gdb breakpoint\n"
-msgstr ""
-
-#: darwin-nat.c:1135
-msgid "darwin_wait: unhandled pending message\n"
-msgstr ""
-
-#: darwin-nat.c:1259
-#, possible-c-format
-msgid "cannot kill: %s"
-msgstr ""
-
-#: darwin-nat.c:1333
-#, possible-c-format
-msgid "Failed to kill inferior: kill (%d, 9) returned [%s]"
-msgstr ""
-
-#: darwin-nat.c:1361
-#, possible-c-format
-msgid ""
-"Unable to find Mach task port for process-id %d: %s (0x%lx).\n"
-" (please check gdb is codesigned - see taskgated(8))"
-msgstr ""
-
-#: darwin-nat.c:1366
-#, possible-c-format
-msgid "inferior task: 0x%x, pid: %d\n"
-msgstr ""
-
-#: darwin-nat.c:1477
-#, possible-c-format
-msgid "unable to create a pipe: %s"
-msgstr ""
-
-#. Trying to masturbate?
-#: darwin-nat.c:1564 gnu-nat.c:2167 inf-ptrace.c:204 inf-ttrace.c:747
-msgid "I refuse to debug myself!"
-msgstr ""
-
-#: darwin-nat.c:1571 inf-ptrace.c:219 inf-ttrace.c:754 remote.c:4459
-#, possible-c-format
-msgid "Attaching to program: %s, %s\n"
-msgstr ""
-
-#: darwin-nat.c:1574 inf-ptrace.c:222 inf-ttrace.c:757 procfs.c:3064
-#: remote.c:4462
-#, possible-c-format
-msgid "Attaching to %s\n"
-msgstr ""
-
-#: darwin-nat.c:1581
-#, possible-c-format
-msgid "Can't attach to process %d: %s (%d)"
-msgstr ""
-
-#: darwin-nat.c:1626 inf-ptrace.c:281 inf-ttrace.c:802 procfs.c:3090
-#: remote.c:4380
-#, possible-c-format
-msgid "Detaching from program: %s, %s\n"
-msgstr ""
-
-#: darwin-nat.c:1642
-#, possible-c-format
-msgid "Unable to detach from process-id %d: %s (%d)"
-msgstr ""
-
-#: darwin-nat.c:1670
-#, c-format
-msgid "Thread 0x%lx of process %u"
-msgstr ""
-
-#: darwin-nat.c:1703
-#, possible-c-format
-msgid "darwin_read_write_inferior(task=%x, %s, len=%d)\n"
-msgstr ""
-
-#: darwin-nat.c:1712
-#, possible-c-format
-msgid "darwin_read_write_inferior: mach_vm_read failed at %s: %s"
-msgstr ""
-
-#: darwin-nat.c:1744
-#, possible-c-format
-msgid "darwin_read_write_inferior: mach_vm_region_recurse failed at %s: %s\n"
-msgstr ""
-
-#: darwin-nat.c:1752
-#, possible-c-format
-msgid ""
-"darwin_read_write_inferior: mach_vm_region_recurse addr=%s, start=%s, len=%"
-"s\n"
-msgstr ""
-
-#: darwin-nat.c:1761
-#, possible-c-format
-msgid "No memory at %s (vs %s+0x%x).  Nothing written"
-msgstr ""
-
-#: darwin-nat.c:1779
-#, possible-c-format
-msgid "darwin_read_write_inf: mach_vm_protect max failed at %s: %s"
-msgstr ""
-
-#: darwin-nat.c:1794
-#, possible-c-format
-msgid "darwin_read_write_inf: mach_vm_protect failed at %s (len=0x%lx): %s"
-msgstr ""
-
-#: darwin-nat.c:1808
-#, possible-c-format
-msgid "darwin_read_write_inferior: mach_vm_write failed: %s"
-msgstr ""
-
-#: darwin-nat.c:1859
-#, possible-c-format
-msgid "darwin_xfer_memory(%s, %d, %c)\n"
-msgstr ""
-
-#: darwin-nat.c:1877
-#, possible-c-format
-msgid "darwin_xfer_partial(%s, %d, rbuf=%s, wbuf=%s) pid=%u\n"
-msgstr ""
-
-#: darwin-nat.c:2036
-msgid "Darwin child process"
-msgstr ""
-
-#: darwin-nat.c:2038
-msgid "Darwin child process (started by the \"run\" command)."
-msgstr ""
-
-#: darwin-nat.c:2062
-#, possible-c-format
-msgid "GDB task: 0x%lx, pid: %d\n"
-msgstr ""
-
-#: darwin-nat.c:2066
-msgid "Set if printing inferior communication debugging statements."
-msgstr ""
-
-#: darwin-nat.c:2067
-msgid "Show if printing inferior communication debugging statements."
-msgstr ""
-
-#: darwin-nat.c:2073
-msgid "Set if mach exceptions are caught."
-msgstr ""
-
-#: darwin-nat.c:2074
-msgid "Show if mach exceptions are caught."
-msgstr ""
-
-#: darwin-nat.c:2075
-msgid ""
-"When this mode is on, all low level exceptions are reported before being\n"
-"reported by the kernel."
 msgstr ""
 
 #: darwin-nat-info.c:53
@@ -7602,6 +7276,333 @@ msgstr ""
 msgid "Disp mach exceptions."
 msgstr ""
 
+#: darwin-nat.c:187
+#, possible-c-format
+msgid "[%d inferior]: "
+msgstr ""
+
+#: darwin-nat.c:199
+msgid "[UNKNOWN]"
+msgstr ""
+
+#: darwin-nat.c:201
+#, possible-c-format
+msgid "Mach error at \"%s:%u\" in function \"%s\": %s (0x%lx)"
+msgstr ""
+
+#: darwin-nat.c:233
+#, c-format
+msgid "unknown (%d)"
+msgstr ""
+
+#: darwin-nat.c:258
+#, possible-c-format
+msgid "ptrace (%s, %d, 0x%x, %d): %d (%s)\n"
+msgstr ""
+
+#: darwin-nat.c:260
+msgid "no error"
+msgstr ""
+
+#: darwin-nat.c:326
+#, possible-c-format
+msgid " new_ix:%d/%d, old_ix:%d/%d, new_id:%x old_id:%x\n"
+msgstr ""
+
+#: darwin-nat.c:485
+msgid "message header:\n"
+msgstr ""
+
+#: darwin-nat.c:486
+#, possible-c-format
+msgid " bits: 0x%x\n"
+msgstr ""
+
+#: darwin-nat.c:487
+#, possible-c-format
+msgid " size: 0x%x\n"
+msgstr ""
+
+#: darwin-nat.c:488
+#, possible-c-format
+msgid " remote-port: 0x%x\n"
+msgstr ""
+
+#: darwin-nat.c:489
+#, possible-c-format
+msgid " local-port: 0x%x\n"
+msgstr ""
+
+#: darwin-nat.c:490
+#, possible-c-format
+msgid " reserved: 0x%x\n"
+msgstr ""
+
+#: darwin-nat.c:491
+#, possible-c-format
+msgid " id: 0x%x\n"
+msgstr ""
+
+#: darwin-nat.c:510
+#, possible-c-format
+msgid "body: descriptor_count=%u\n"
+msgstr ""
+
+#: darwin-nat.c:519
+#, possible-c-format
+msgid " descr %d: type=%u (port) name=0x%x, dispo=%d\n"
+msgstr ""
+
+#: darwin-nat.c:523
+#, possible-c-format
+msgid " descr %d: type=%u\n"
+msgstr ""
+
+#: darwin-nat.c:533
+#, possible-c-format
+msgid "NDR: mig=%02x if=%02x encod=%02x int=%02x char=%02x float=%02x\n"
+msgstr ""
+
+#: darwin-nat.c:541
+msgid "  data:"
+msgstr ""
+
+#: darwin-nat.c:683
+#, possible-c-format
+msgid "darwin_resume_thread: state=%d, thread=0x%x, step=%d nsignal=%d\n"
+msgstr ""
+
+#: darwin-nat.c:696
+#, possible-c-format
+msgid "ptrace THUP: res=%d\n"
+msgstr ""
+
+#: darwin-nat.c:703
+#, possible-c-format
+msgid "darwin_resume_thread: kill 0x%x %d: %d\n"
+msgstr ""
+
+#: darwin-nat.c:711
+#, possible-c-format
+msgid "darwin_set_sstep (thread=%x, enable=%d)\n"
+msgstr ""
+
+#: darwin-nat.c:801
+#, possible-c-format
+msgid "darwin_resume: pid=%d, tid=0x%x, step=%d, signal=%d\n"
+msgstr ""
+
+#. Should not happen...
+#: darwin-nat.c:881
+#, possible-c-format
+msgid "darwin_wait: ill-formatted message (id=%x)\n"
+msgstr ""
+
+#: darwin-nat.c:894
+#, possible-c-format
+msgid "darwin_wait: thread=%x, got %s\n"
+msgstr ""
+
+#: darwin-nat.c:917
+#, possible-c-format
+msgid "  (signal %d: %s)\n"
+msgstr ""
+
+#: darwin-nat.c:962
+#, possible-c-format
+msgid "wait4: res=%d: %s\n"
+msgstr ""
+
+#: darwin-nat.c:978
+#, possible-c-format
+msgid "darwin_wait: pid=%d exit, status=%x\n"
+msgstr ""
+
+#: darwin-nat.c:988
+#, possible-c-format
+msgid "darwin_wait: pid=%d\n"
+msgstr ""
+
+#: darwin-nat.c:995
+#, possible-c-format
+msgid "Bad local-port: %x\n"
+msgstr ""
+
+#: darwin-nat.c:1045
+#, possible-c-format
+msgid "darwin_wait: waiting for a message pid=%d thread=%lx\n"
+msgstr ""
+
+#: darwin-nat.c:1079
+#, possible-c-format
+msgid "mach_msg: ret=%x\n"
+msgstr ""
+
+#: darwin-nat.c:1113
+#, possible-c-format
+msgid "darwin_wait: mach_msg(pending) ret=%x\n"
+msgstr ""
+
+#: darwin-nat.c:1131
+#, possible-c-format
+msgid "darwin_wait: thread %x hit a non-gdb breakpoint\n"
+msgstr ""
+
+#: darwin-nat.c:1135
+msgid "darwin_wait: unhandled pending message\n"
+msgstr ""
+
+#: darwin-nat.c:1259
+#, possible-c-format
+msgid "cannot kill: %s"
+msgstr ""
+
+#: darwin-nat.c:1333
+#, possible-c-format
+msgid "Failed to kill inferior: kill (%d, 9) returned [%s]"
+msgstr ""
+
+#: darwin-nat.c:1361
+#, possible-c-format
+msgid ""
+"Unable to find Mach task port for process-id %d: %s (0x%lx).\n"
+" (please check gdb is codesigned - see taskgated(8))"
+msgstr ""
+
+#: darwin-nat.c:1366
+#, possible-c-format
+msgid "inferior task: 0x%x, pid: %d\n"
+msgstr ""
+
+#: darwin-nat.c:1477
+#, possible-c-format
+msgid "unable to create a pipe: %s"
+msgstr ""
+
+#. Trying to masturbate?
+#: darwin-nat.c:1564 gnu-nat.c:2167 inf-ptrace.c:204 inf-ttrace.c:747
+msgid "I refuse to debug myself!"
+msgstr ""
+
+#: darwin-nat.c:1571 inf-ptrace.c:219 inf-ttrace.c:754 remote.c:4459
+#, possible-c-format
+msgid "Attaching to program: %s, %s\n"
+msgstr ""
+
+#: darwin-nat.c:1574 inf-ptrace.c:222 inf-ttrace.c:757 procfs.c:3064
+#: remote.c:4462
+#, possible-c-format
+msgid "Attaching to %s\n"
+msgstr ""
+
+#: darwin-nat.c:1581
+#, possible-c-format
+msgid "Can't attach to process %d: %s (%d)"
+msgstr ""
+
+#: darwin-nat.c:1626 inf-ptrace.c:281 inf-ttrace.c:802 procfs.c:3090
+#: remote.c:4380
+#, possible-c-format
+msgid "Detaching from program: %s, %s\n"
+msgstr ""
+
+#: darwin-nat.c:1642
+#, possible-c-format
+msgid "Unable to detach from process-id %d: %s (%d)"
+msgstr ""
+
+#: darwin-nat.c:1670
+#, c-format
+msgid "Thread 0x%lx of process %u"
+msgstr ""
+
+#: darwin-nat.c:1703
+#, possible-c-format
+msgid "darwin_read_write_inferior(task=%x, %s, len=%d)\n"
+msgstr ""
+
+#: darwin-nat.c:1712
+#, possible-c-format
+msgid "darwin_read_write_inferior: mach_vm_read failed at %s: %s"
+msgstr ""
+
+#: darwin-nat.c:1744
+#, possible-c-format
+msgid "darwin_read_write_inferior: mach_vm_region_recurse failed at %s: %s\n"
+msgstr ""
+
+#: darwin-nat.c:1752
+#, possible-c-format
+msgid ""
+"darwin_read_write_inferior: mach_vm_region_recurse addr=%s, start=%s, len="
+"%s\n"
+msgstr ""
+
+#: darwin-nat.c:1761
+#, possible-c-format
+msgid "No memory at %s (vs %s+0x%x).  Nothing written"
+msgstr ""
+
+#: darwin-nat.c:1779
+#, possible-c-format
+msgid "darwin_read_write_inf: mach_vm_protect max failed at %s: %s"
+msgstr ""
+
+#: darwin-nat.c:1794
+#, possible-c-format
+msgid "darwin_read_write_inf: mach_vm_protect failed at %s (len=0x%lx): %s"
+msgstr ""
+
+#: darwin-nat.c:1808
+#, possible-c-format
+msgid "darwin_read_write_inferior: mach_vm_write failed: %s"
+msgstr ""
+
+#: darwin-nat.c:1859
+#, possible-c-format
+msgid "darwin_xfer_memory(%s, %d, %c)\n"
+msgstr ""
+
+#: darwin-nat.c:1877
+#, possible-c-format
+msgid "darwin_xfer_partial(%s, %d, rbuf=%s, wbuf=%s) pid=%u\n"
+msgstr ""
+
+#: darwin-nat.c:2036
+msgid "Darwin child process"
+msgstr ""
+
+#: darwin-nat.c:2038
+msgid "Darwin child process (started by the \"run\" command)."
+msgstr ""
+
+#: darwin-nat.c:2062
+#, possible-c-format
+msgid "GDB task: 0x%lx, pid: %d\n"
+msgstr ""
+
+#: darwin-nat.c:2066
+msgid "Set if printing inferior communication debugging statements."
+msgstr ""
+
+#: darwin-nat.c:2067
+msgid "Show if printing inferior communication debugging statements."
+msgstr ""
+
+#: darwin-nat.c:2073
+msgid "Set if mach exceptions are caught."
+msgstr ""
+
+#: darwin-nat.c:2074
+msgid "Show if mach exceptions are caught."
+msgstr ""
+
+#: darwin-nat.c:2075
+msgid ""
+"When this mode is on, all low level exceptions are reported before being\n"
+"reported by the kernel."
+msgstr ""
+
 #: dbxread.c:175 mdebugread.c:3439
 #, possible-c-format
 msgid "unknown symbol type %s"
@@ -7948,6 +7949,107 @@ msgstr ""
 msgid "Print the contents of the internal dummy-frame stack."
 msgstr ""
 
+#: dwarf2-frame.c:336
+#, possible-c-format
+msgid ""
+"incomplete CFI data; DW_CFA_restore unspecified\n"
+"register %s (#%d) at %s"
+msgstr ""
+
+#. This is actually invalid DWARF, but if we ever do run across
+#. it somehow, we might as well support it.  So, instead, report
+#. it as unimplemented.
+#: dwarf2-frame.c:393
+msgid ""
+"Not implemented: computing unwound register using explicit value operator"
+msgstr ""
+
+#: dwarf2-frame.c:525
+#, possible-c-format
+msgid "bad CFI data; mismatched DW_CFA_restore_state at %s"
+msgstr ""
+
+#: dwarf2-frame.c:684
+msgid "Unknown CFI encountered."
+msgstr ""
+
+#: dwarf2-frame.c:903
+msgid "Could not compute CFA; needed to translate this expression"
+msgstr ""
+
+#: dwarf2-frame.c:933 dwarf2loc.c:2527
+#, possible-c-format
+msgid "Unable to access DWARF register number %d"
+msgstr ""
+
+#: dwarf2-frame.c:957 dwarf2-frame.c:1115
+msgid "Unknown CFA rule."
+msgstr ""
+
+#: dwarf2-frame.c:1172
+#, possible-c-format
+msgid "incomplete CFI data; unspecified registers (e.g., %s) at %s"
+msgstr ""
+
+#: dwarf2-frame.c:1367
+msgid "Unknown register rule."
+msgstr ""
+
+#: dwarf2-frame.c:1505
+msgid "can't compute CFA for this frame"
+msgstr ""
+
+#: dwarf2-frame.c:1508
+msgid ""
+"can't compute CFA for this frame: required registers or memory are "
+"unavailable"
+msgstr ""
+
+#: dwarf2-frame.c:1580
+msgid "Unsupported address size"
+msgstr ""
+
+#: dwarf2-frame.c:1597
+msgid "Unsupported encoding: DW_EH_PE_indirect"
+msgstr ""
+
+#: dwarf2-frame.c:1630 dwarf2-frame.c:1678
+msgid "Invalid or unsupported encoding"
+msgstr ""
+
+#: dwarf2-frame.c:1888
+msgid "Found a CIE when not expecting it."
+msgstr ""
+
+#: dwarf2-frame.c:2061
+msgid "Found an FDE when not expecting it."
+msgstr ""
+
+#: dwarf2-frame.c:2202
+#, possible-c-format
+msgid "Corrupt data in %s:%s; align 4 workaround apparently succeeded"
+msgstr ""
+
+#: dwarf2-frame.c:2209
+#, possible-c-format
+msgid "Corrupt data in %s:%s; align 8 workaround apparently succeeded"
+msgstr ""
+
+#: dwarf2-frame.c:2217
+#, possible-c-format
+msgid "Corrupt data in %s:%s"
+msgstr ""
+
+#: dwarf2-frame.c:2308
+#, possible-c-format
+msgid "skipping .eh_frame info of %s: %s"
+msgstr ""
+
+#: dwarf2-frame.c:2348
+#, possible-c-format
+msgid "skipping .debug_frame info of %s: %s"
+msgstr ""
+
 #: dwarf2expr.c:79
 #, possible-c-format
 msgid "Unsupported address size in DWARF expressions: %d bits"
@@ -8080,107 +8182,6 @@ msgstr ""
 
 #: dwarf2expr.c:1562
 msgid "Support for DW_OP_GNU_entry_value is unimplemented"
-msgstr ""
-
-#: dwarf2-frame.c:336
-#, possible-c-format
-msgid ""
-"incomplete CFI data; DW_CFA_restore unspecified\n"
-"register %s (#%d) at %s"
-msgstr ""
-
-#. This is actually invalid DWARF, but if we ever do run across
-#. it somehow, we might as well support it.  So, instead, report
-#. it as unimplemented.
-#: dwarf2-frame.c:393
-msgid ""
-"Not implemented: computing unwound register using explicit value operator"
-msgstr ""
-
-#: dwarf2-frame.c:525
-#, possible-c-format
-msgid "bad CFI data; mismatched DW_CFA_restore_state at %s"
-msgstr ""
-
-#: dwarf2-frame.c:684
-msgid "Unknown CFI encountered."
-msgstr ""
-
-#: dwarf2-frame.c:903
-msgid "Could not compute CFA; needed to translate this expression"
-msgstr ""
-
-#: dwarf2-frame.c:933 dwarf2loc.c:2527
-#, possible-c-format
-msgid "Unable to access DWARF register number %d"
-msgstr ""
-
-#: dwarf2-frame.c:957 dwarf2-frame.c:1115
-msgid "Unknown CFA rule."
-msgstr ""
-
-#: dwarf2-frame.c:1172
-#, possible-c-format
-msgid "incomplete CFI data; unspecified registers (e.g., %s) at %s"
-msgstr ""
-
-#: dwarf2-frame.c:1367
-msgid "Unknown register rule."
-msgstr ""
-
-#: dwarf2-frame.c:1505
-msgid "can't compute CFA for this frame"
-msgstr ""
-
-#: dwarf2-frame.c:1508
-msgid ""
-"can't compute CFA for this frame: required registers or memory are "
-"unavailable"
-msgstr ""
-
-#: dwarf2-frame.c:1580
-msgid "Unsupported address size"
-msgstr ""
-
-#: dwarf2-frame.c:1597
-msgid "Unsupported encoding: DW_EH_PE_indirect"
-msgstr ""
-
-#: dwarf2-frame.c:1630 dwarf2-frame.c:1678
-msgid "Invalid or unsupported encoding"
-msgstr ""
-
-#: dwarf2-frame.c:1888
-msgid "Found a CIE when not expecting it."
-msgstr ""
-
-#: dwarf2-frame.c:2061
-msgid "Found an FDE when not expecting it."
-msgstr ""
-
-#: dwarf2-frame.c:2202
-#, possible-c-format
-msgid "Corrupt data in %s:%s; align 4 workaround apparently succeeded"
-msgstr ""
-
-#: dwarf2-frame.c:2209
-#, possible-c-format
-msgid "Corrupt data in %s:%s; align 8 workaround apparently succeeded"
-msgstr ""
-
-#: dwarf2-frame.c:2217
-#, possible-c-format
-msgid "Corrupt data in %s:%s"
-msgstr ""
-
-#: dwarf2-frame.c:2308
-#, possible-c-format
-msgid "skipping .eh_frame info of %s: %s"
-msgstr ""
-
-#: dwarf2-frame.c:2348
-#, possible-c-format
-msgid "skipping .debug_frame info of %s: %s"
 msgstr ""
 
 #: dwarf2loc.c:249
@@ -8625,15 +8626,15 @@ msgstr ""
 #: dwarf2read.c:4653
 #, possible-c-format
 msgid ""
-"Dwarf Error: CU at offset 0x%x references unknown DWO with ID %s [in module %"
-"s]"
+"Dwarf Error: CU at offset 0x%x references unknown DWO with ID %s [in module "
+"%s]"
 msgstr ""
 
 #: dwarf2read.c:5749 dwarf2read.c:7156
 #, possible-c-format
 msgid ""
-"Dwarf Error: DW_TAG_imported_unit is not supported in type units [in module %"
-"s]"
+"Dwarf Error: DW_TAG_imported_unit is not supported in type units [in module "
+"%s]"
 msgstr ""
 
 #: dwarf2read.c:5864
@@ -9206,8 +9207,8 @@ msgstr ""
 #: dwarf2read.c:17496
 #, possible-c-format
 msgid ""
-"Dwarf Error: Cannot find DIE at 0x%x referenced from DIE at 0x%x [in module %"
-"s]"
+"Dwarf Error: Cannot find DIE at 0x%x referenced from DIE at 0x%x [in module "
+"%s]"
 msgstr ""
 
 #: dwarf2read.c:17526
@@ -9341,8 +9342,8 @@ msgstr ""
 #: dwarf2read.c:19241
 #, possible-c-format
 msgid ""
-"Dwarf Error: could not find partial DIE containing offset 0x%lx [in module %"
-"s]"
+"Dwarf Error: could not find partial DIE containing offset 0x%lx [in module "
+"%s]"
 msgstr ""
 
 #: dwarf2read.c:19254
@@ -9522,8 +9523,8 @@ msgstr ""
 #: elfread.c:788
 #, possible-c-format
 msgid ""
-"gnu-indirect-function \"%s\" has changed its resolved function_address from %"
-"s to %s"
+"gnu-indirect-function \"%s\" has changed its resolved function_address from "
+"%s to %s"
 msgstr ""
 
 #: elfread.c:1039
@@ -9880,13 +9881,65 @@ msgstr ""
 msgid "<language %s has no 'this'>"
 msgstr ""
 
+#: f-exp.y:761 m2-exp.y:727
+msgid "Overflow on numeric constant."
+msgstr ""
+
+#: f-lang.c:67
+msgid "unrecognized character type"
+msgstr ""
+
+#: f-typeprint.c:378
+#, possible-c-format
+msgid "Invalid type code (%d) in symbol table."
+msgstr ""
+
+#: f-valprint.c:64
+msgid "Lower bound may not be '*' in F77"
+msgstr ""
+
+#: f-valprint.c:227
+#, possible-c-format
+msgid "Type node corrupt! F77 arrays cannot have %d subscripts (%d Max)"
+msgstr ""
+
+#: f-valprint.c:441
+#, possible-c-format
+msgid "Contents of F77 COMMON block '%s':\n"
+msgstr ""
+
+#: f-valprint.c:444
+msgid "Contents of blank COMMON block:\n"
+msgstr ""
+
+#. We have been told to display the contents of F77 COMMON
+#. block supposedly visible in this function.  Let us
+#. first make sure that it is visible and if so, let
+#. us display its contents.
+#: f-valprint.c:483 stap-probe.c:1121
+msgid "No frame selected"
+msgstr ""
+
+#: f-valprint.c:491 stack.c:2097
+msgid "No symbol table info available.\n"
+msgstr ""
+
+#: f-valprint.c:508
+#, possible-c-format
+msgid "No common block '%s'.\n"
+msgstr ""
+
+#: f-valprint.c:510
+msgid "No common blocks.\n"
+msgstr ""
+
+#: f-valprint.c:518 f-valprint.c:521
+msgid "Print out the values contained in a Fortran COMMON block."
+msgstr ""
+
 #: fbsd-nat.c:108
 #, possible-c-format
 msgid "Couldn't open %s."
-msgstr ""
-
-#: f-exp.y:761 m2-exp.y:727
-msgid "Overflow on numeric constant."
 msgstr ""
 
 #: filesystem.c:67
@@ -10014,10 +10067,6 @@ msgstr ""
 msgid "Cannot look up value of a botched symbol `%s'."
 msgstr ""
 
-#: f-lang.c:67
-msgid "unrecognized character type"
-msgstr ""
-
 #: fork-child.c:327
 msgid "setpgrp failed in child"
 msgstr ""
@@ -10048,6 +10097,10 @@ msgstr ""
 
 #: fork-child.c:548
 msgid "Disable use of an execution wrapper."
+msgstr ""
+
+#: frame-unwind.c:132
+msgid "frame_unwind_find_by_frame failed"
 msgstr ""
 
 #: frame.c:172
@@ -10207,10 +10260,6 @@ msgstr ""
 msgid "When non-zero, frame specific internal debugging is enabled."
 msgstr ""
 
-#: frame-unwind.c:132
-msgid "frame_unwind_find_by_frame failed"
-msgstr ""
-
 #: frv-linux-tdep.c:211
 msgid "Can't read realtime sigtramp frame."
 msgstr ""
@@ -10232,54 +10281,6 @@ msgstr ""
 #: frv-tdep.c:1347
 #, possible-c-format
 msgid "Don't know how to return a %d-byte value."
-msgstr ""
-
-#: f-typeprint.c:378
-#, possible-c-format
-msgid "Invalid type code (%d) in symbol table."
-msgstr ""
-
-#: f-valprint.c:64
-msgid "Lower bound may not be '*' in F77"
-msgstr ""
-
-#: f-valprint.c:227
-#, possible-c-format
-msgid "Type node corrupt! F77 arrays cannot have %d subscripts (%d Max)"
-msgstr ""
-
-#: f-valprint.c:441
-#, possible-c-format
-msgid "Contents of F77 COMMON block '%s':\n"
-msgstr ""
-
-#: f-valprint.c:444
-msgid "Contents of blank COMMON block:\n"
-msgstr ""
-
-#. We have been told to display the contents of F77 COMMON
-#. block supposedly visible in this function.  Let us
-#. first make sure that it is visible and if so, let
-#. us display its contents.
-#: f-valprint.c:483 stap-probe.c:1121
-msgid "No frame selected"
-msgstr ""
-
-#: f-valprint.c:491 stack.c:2097
-msgid "No symbol table info available.\n"
-msgstr ""
-
-#: f-valprint.c:508
-#, possible-c-format
-msgid "No common block '%s'.\n"
-msgstr ""
-
-#: f-valprint.c:510
-msgid "No common blocks.\n"
-msgstr ""
-
-#: f-valprint.c:518 f-valprint.c:521
-msgid "Print out the values contained in a Fortran COMMON block."
 msgstr ""
 
 #: gcore.c:57
@@ -10334,6 +10335,25 @@ msgid ""
 "Argument is optional filename.  Default filename is 'core.<process_id>'."
 msgstr ""
 
+#: gdb-dlfcn.c:82 gdb-dlfcn.c:96
+#, possible-c-format
+msgid "Could not load %s: %s"
+msgstr ""
+
+#: gdb_bfd.c:235
+#, possible-c-format
+msgid "cannot close \"%s\": %s"
+msgstr ""
+
+#: gdb_bfd.c:405
+#, possible-c-format
+msgid "Can't read data for section '%s' in file '%s'"
+msgstr ""
+
+#: gdb_bfd.c:598
+msgid "List the BFDs that are currently open."
+msgstr ""
+
 #: gdbarch.c:68
 #, possible-c-format
 msgid "Architecture debugging is %s.\n"
@@ -10370,23 +10390,9 @@ msgstr ""
 msgid "When non-zero, architecture debugging is enabled."
 msgstr ""
 
-#: gdb_bfd.c:235
+#: gdbserver/thread-db.c:726
 #, possible-c-format
-msgid "cannot close \"%s\": %s"
-msgstr ""
-
-#: gdb_bfd.c:405
-#, possible-c-format
-msgid "Can't read data for section '%s' in file '%s'"
-msgstr ""
-
-#: gdb_bfd.c:598
-msgid "List the BFDs that are currently open."
-msgstr ""
-
-#: gdb-dlfcn.c:82 gdb-dlfcn.c:96
-#, possible-c-format
-msgid "Could not load %s: %s"
+msgid "libthread-db-search-path component too long, ignored: %s."
 msgstr ""
 
 #: gdbserver/ax.c:820 printcmd.c:2286
@@ -10406,17 +10412,12 @@ msgstr ""
 msgid "Unterminated format string in printf bytecode"
 msgstr ""
 
-#: gdbserver/linux-x86-low.c:1320 gdbserver/linux-tile-low.c:138
+#: gdbserver/linux-tile-low.c:138 gdbserver/linux-x86-low.c:1320
 msgid "Can't debug 64-bit process with 32-bit GDBserver"
 msgstr ""
 
 #: gdbserver/linux-x86-low.c:1323
 msgid "Can't debug x86-64 process with 32-bit GDBserver"
-msgstr ""
-
-#: gdbserver/thread-db.c:726
-#, possible-c-format
-msgid "libthread-db-search-path component too long, ignored: %s."
 msgstr ""
 
 #: gdbserver/linux-low.c:1191 linux-nat.c:1810
@@ -11058,6 +11059,23 @@ msgstr ""
 msgid "This object does not have a virtual function table\n"
 msgstr ""
 
+#: go-exp.y:1395
+#, possible-c-format
+msgid "Unknown function in `unsafe' package: %s"
+msgstr ""
+
+#: go-valprint.c:59
+msgid "Unable to read string address"
+msgstr ""
+
+#: go-valprint.c:63
+msgid "Unable to read string length"
+msgstr ""
+
+#: go-valprint.c:74
+msgid "<invalid length: "
+msgstr ""
+
 #: go32-nat.c:380
 msgid ""
 "You cannot attach to a running program on this platform.\n"
@@ -11195,23 +11213,6 @@ msgid ""
 "so use `__djgpp_base_address + (char *)&var' as the argument.\n"
 "For other segments, look up their base address in the output of\n"
 "the `info dos ldt' command."
-msgstr ""
-
-#: go-exp.y:1395
-#, possible-c-format
-msgid "Unknown function in `unsafe' package: %s"
-msgstr ""
-
-#: go-valprint.c:59
-msgid "Unable to read string address"
-msgstr ""
-
-#: go-valprint.c:63
-msgid "Unable to read string length"
-msgstr ""
-
-#: go-valprint.c:74
-msgid "<invalid length: "
 msgstr ""
 
 #: h8300-tdep.c:775 h8300-tdep.c:808
@@ -11374,31 +11375,6 @@ msgid ""
 "unwinding problems."
 msgstr ""
 
-#: i386bsd-nat.c:220
-msgid "Couldn't write XMM registers"
-msgstr ""
-
-#: i386bsd-nat.c:376
-#, possible-c-format
-msgid ""
-"offsetof (struct sigcontext, sc_pc) yields %d instead of %d.\n"
-"Please report this to <bug-gdb@gnu.org>."
-msgstr ""
-
-#: i386bsd-nat.c:389
-#, possible-c-format
-msgid ""
-"offsetof (struct sigcontext, sc_sp) yields %d instead of %d.\n"
-"Please report this to <bug-gdb@gnu.org>."
-msgstr ""
-
-#: i386bsd-nat.c:402
-#, possible-c-format
-msgid ""
-"offsetof (struct sigcontext, sc_fp) yields %d instead of %d.\n"
-"Please report this to <bug-gdb@gnu.org>."
-msgstr ""
-
 #: i386-darwin-nat.c:72 i386-darwin-nat.c:116
 #, possible-c-format
 msgid "Error calling thread_get_state for GP registers for thread 0x%lx\n"
@@ -11432,45 +11408,6 @@ msgstr ""
 #: i386-darwin-nat.c:572
 #, possible-c-format
 msgid "darwin_set_sstep: unknown flavour: %d"
-msgstr ""
-
-#: i386gnu-nat.c:76 i386gnu-nat.c:184
-#, possible-c-format
-msgid "Couldn't fetch floating-point state from %s"
-msgstr ""
-
-#: i386gnu-nat.c:124
-#, possible-c-format
-msgid "Can't fetch registers from thread %s: No such thread"
-msgstr ""
-
-#: i386gnu-nat.c:135
-#, possible-c-format
-msgid "Couldn't fetch registers from %s"
-msgstr ""
-
-#: i386gnu-nat.c:197
-#, possible-c-format
-msgid "Couldn't store floating-point state into %s"
-msgstr ""
-
-#: i386gnu-nat.c:217
-#, possible-c-format
-msgid "Couldn't store registers into thread %s: No such thread"
-msgstr ""
-
-#: i386gnu-nat.c:234
-#, possible-c-format
-msgid "Couldn't store registers into %s"
-msgstr ""
-
-#: i386gnu-nat.c:255
-#, possible-c-format
-msgid "Register %s changed after the thread was aborted"
-msgstr ""
-
-#: i386gnu-nat.c:262
-msgid "... also writing this register!  Suspicious..."
 msgstr ""
 
 #: i386-linux-nat.c:380 i386-linux-nat.c:403
@@ -11646,6 +11583,70 @@ msgid ""
 "is \"default\"."
 msgstr ""
 
+#: i386bsd-nat.c:220
+msgid "Couldn't write XMM registers"
+msgstr ""
+
+#: i386bsd-nat.c:376
+#, possible-c-format
+msgid ""
+"offsetof (struct sigcontext, sc_pc) yields %d instead of %d.\n"
+"Please report this to <bug-gdb@gnu.org>."
+msgstr ""
+
+#: i386bsd-nat.c:389
+#, possible-c-format
+msgid ""
+"offsetof (struct sigcontext, sc_sp) yields %d instead of %d.\n"
+"Please report this to <bug-gdb@gnu.org>."
+msgstr ""
+
+#: i386bsd-nat.c:402
+#, possible-c-format
+msgid ""
+"offsetof (struct sigcontext, sc_fp) yields %d instead of %d.\n"
+"Please report this to <bug-gdb@gnu.org>."
+msgstr ""
+
+#: i386gnu-nat.c:76 i386gnu-nat.c:184
+#, possible-c-format
+msgid "Couldn't fetch floating-point state from %s"
+msgstr ""
+
+#: i386gnu-nat.c:124
+#, possible-c-format
+msgid "Can't fetch registers from thread %s: No such thread"
+msgstr ""
+
+#: i386gnu-nat.c:135
+#, possible-c-format
+msgid "Couldn't fetch registers from %s"
+msgstr ""
+
+#: i386gnu-nat.c:197
+#, possible-c-format
+msgid "Couldn't store floating-point state into %s"
+msgstr ""
+
+#: i386gnu-nat.c:217
+#, possible-c-format
+msgid "Couldn't store registers into thread %s: No such thread"
+msgstr ""
+
+#: i386gnu-nat.c:234
+#, possible-c-format
+msgid "Couldn't store registers into %s"
+msgstr ""
+
+#: i386gnu-nat.c:255
+#, possible-c-format
+msgid "Register %s changed after the thread was aborted"
+msgstr ""
+
+#: i386gnu-nat.c:262
+msgid "... also writing this register!  Suspicious..."
+msgstr ""
+
 #: i387-tdep.c:125 i387-tdep.c:163 i387-tdep.c:311 i387-tdep.c:321
 #: i387-tdep.c:323 i387-tdep.c:325 i387-tdep.c:327 i387-tdep.c:329
 #: i387-tdep.c:333 tui/tui-stack.c:363 valprint.c:344
@@ -11730,6 +11731,60 @@ msgstr ""
 #, possible-c-format
 msgid ""
 "Cannot remove breakpoint at address %s, no break instruction at such address."
+msgstr ""
+
+#: inf-child.c:112 windows-nat.c:1934
+msgid "Use the \"run\" command to start a Unix child process."
+msgstr ""
+
+#: inf-loop.c:135
+msgid "Event type not recognized.\n"
+msgstr ""
+
+#: inf-ptrace.c:234
+msgid "This system does not support attaching to a process"
+msgstr ""
+
+#: inf-ptrace.c:298
+msgid "This system does not support detaching from a process"
+msgstr ""
+
+#: inf-ptrace.c:405 rs6000-nat.c:549
+#, possible-c-format
+msgid "Child process unexpectedly missing: %s.\n"
+msgstr ""
+
+#: inf-ptrace.c:629 inf-ttrace.c:1247
+#, possible-c-format
+msgid "\tUsing the running image of %s %s.\n"
+msgstr ""
+
+#: inf-ttrace.c:464
+#, possible-c-format
+msgid "Attaching after fork to child process %ld.\n"
+msgstr ""
+
+#: inf-ttrace.c:478
+#, possible-c-format
+msgid "Detaching after fork from child process %ld.\n"
+msgstr ""
+
+#: inf-ttrace.c:704
+msgid "TT_PROC_GET_FIRST_LWP_STATE ttrace call failed"
+msgstr ""
+
+#: inf-ttrace.c:725
+msgid "TT_PROC_GET_NEXT_LWP_STATE ttrace call failed"
+msgstr ""
+
+#: inf-ttrace.c:1099 linux-nat.c:1342 procfs.c:3670 procfs.c:3808
+#, possible-c-format
+msgid "[%s exited]\n"
+msgstr ""
+
+#: inf-ttrace.c:1115
+#, possible-c-format
+msgid "[%s has been terminated]\n"
 msgstr ""
 
 #: infcall.c:79
@@ -11924,10 +11979,6 @@ msgid ""
 "the context to what it was before the call.  If unset, gdb allows the\n"
 "std::terminate call to proceed.\n"
 "The default is to unwind the frame."
-msgstr ""
-
-#: inf-child.c:112 windows-nat.c:1934
-msgid "Use the \"run\" command to start a Unix child process."
 msgstr ""
 
 #: infcmd.c:115 infcmd.c:2334 infcmd.c:2722 linux-fork.c:662
@@ -12640,10 +12691,6 @@ msgstr ""
 msgid "Show printing of inferior events (e.g., inferior start and exit)."
 msgstr ""
 
-#: inf-loop.c:135
-msgid "Event type not recognized.\n"
-msgstr ""
-
 #: inflow.c:573
 msgid "This GDB does not control a terminal.\n"
 msgstr ""
@@ -12684,24 +12731,6 @@ msgid ""
 "input is not a terminal, and uses the default answer to all queries.\n"
 "If auto (the default), determine which mode to use based on the standard\n"
 "input settings."
-msgstr ""
-
-#: inf-ptrace.c:234
-msgid "This system does not support attaching to a process"
-msgstr ""
-
-#: inf-ptrace.c:298
-msgid "This system does not support detaching from a process"
-msgstr ""
-
-#: inf-ptrace.c:405 rs6000-nat.c:549
-#, possible-c-format
-msgid "Child process unexpectedly missing: %s.\n"
-msgstr ""
-
-#: inf-ptrace.c:629 inf-ttrace.c:1247
-#, possible-c-format
-msgid "\tUsing the running image of %s %s.\n"
 msgstr ""
 
 #: infrun.c:122
@@ -13233,34 +13262,6 @@ msgid ""
 "affect its execution.  Registers and memory may not be changed,\n"
 "breakpoints may not be set, and the program cannot be interrupted\n"
 "or signalled."
-msgstr ""
-
-#: inf-ttrace.c:464
-#, possible-c-format
-msgid "Attaching after fork to child process %ld.\n"
-msgstr ""
-
-#: inf-ttrace.c:478
-#, possible-c-format
-msgid "Detaching after fork from child process %ld.\n"
-msgstr ""
-
-#: inf-ttrace.c:704
-msgid "TT_PROC_GET_FIRST_LWP_STATE ttrace call failed"
-msgstr ""
-
-#: inf-ttrace.c:725
-msgid "TT_PROC_GET_NEXT_LWP_STATE ttrace call failed"
-msgstr ""
-
-#: inf-ttrace.c:1099 linux-nat.c:1342 procfs.c:3670 procfs.c:3808
-#, possible-c-format
-msgid "[%s exited]\n"
-msgstr ""
-
-#: inf-ttrace.c:1115
-#, possible-c-format
-msgid "[%s has been terminated]\n"
 msgstr ""
 
 #: interps.c:154
@@ -14784,7 +14785,7 @@ msgstr ""
 msgid "return of value > 4 is not supported."
 msgstr ""
 
-#: m68hc11-tdep.c:1317 sh64-tdep.c:1277 sh-tdep.c:1327
+#: m68hc11-tdep.c:1317 sh-tdep.c:1327 sh64-tdep.c:1277
 msgid "bad size for return value"
 msgstr ""
 
@@ -15754,6 +15755,10 @@ msgstr ""
 msgid "Error reading ECOFF debugging information: %s"
 msgstr ""
 
+#: mem-break.c:51 microblaze-linux-tdep.c:53 ppc-linux-tdep.c:223
+msgid "Software breakpoints not implemented for this target."
+msgstr ""
+
 #: memattr.c:77
 msgid "Unknown memory addresses will be treated as inaccessible.\n"
 msgstr ""
@@ -15885,10 +15890,6 @@ msgid ""
 "memory addresses will be allowed."
 msgstr ""
 
-#: mem-break.c:51 microblaze-linux-tdep.c:53 ppc-linux-tdep.c:223
-msgid "Software breakpoints not implemented for this target."
-msgstr ""
-
 #: memory-map.c:37
 msgid "Can not parse XML memory map; XML support was disabled at compile time"
 msgstr ""
@@ -15930,186 +15931,16 @@ msgid ""
 "%s is %s-endian."
 msgstr ""
 
-#: mi/mi-console.c:76
-msgid "mi_console_file_delete: bad magic number"
+#: mi/mi-cmd-file.c:39
+msgid "-file-list-exec-source-file: Usage: No args"
 msgstr ""
 
-#: mi/mi-console.c:106
-msgid "mi_console_raw_packet: bad magic number"
+#: mi/mi-cmd-file.c:49
+msgid "-file-list-exec-source-file: No symtab"
 msgstr ""
 
-#: mi/mi-console.c:134
-msgid "mi_console_file_flush: bad magic number"
-msgstr ""
-
-#: mi/mi-console.c:152
-msgid "mi_console_file_set_raw: bad magic number"
-msgstr ""
-
-#: mi/mi-getopt.c:36
-msgid "mi_getopt_long: oind out of bounds"
-msgstr ""
-
-#: mi/mi-getopt.c:62
-#, possible-c-format
-msgid "%s: Option %s requires an argument"
-msgstr ""
-
-#: mi/mi-getopt.c:74
-#, possible-c-format
-msgid "%s: Unknown option ``%s''"
-msgstr ""
-
-#: mi/mi-cmd-info.c:35
-msgid "Usage: -info-os [INFOTYPE]"
-msgstr ""
-
-#: mi/mi-cmd-env.c:75
-msgid "-environment-pwd: No arguments allowed"
-msgstr ""
-
-#: mi/mi-cmd-env.c:86
-#, possible-c-format
-msgid "-environment-pwd: error finding name of working directory: %s"
-msgstr ""
-
-#: mi/mi-cmd-env.c:98
-msgid "-environment-cd: Usage DIRECTORY"
-msgstr ""
-
-#: mi/mi-cmd-env.c:266
-msgid "-inferior-tty-show: Usage: No args"
-msgstr ""
-
-#: mi/mi-cmd-break.c:166
-msgid "-break-insert: Missing <location>"
-msgstr ""
-
-#: mi/mi-cmd-break.c:168
-msgid "-break-insert: Garbage following <location>"
-msgstr ""
-
-#: mi/mi-cmd-break.c:212
-msgid "Usage: tracepoint-number passcount"
-msgstr ""
-
-#: mi/mi-cmd-break.c:225
-#, possible-c-format
-msgid "Could not find tracepoint %d"
-msgstr ""
-
-#: mi/mi-cmd-break.c:273
-msgid "-break-watch: Missing <expression>"
-msgstr ""
-
-#: mi/mi-cmd-break.c:275
-msgid "-break-watch: Garbage following <expression>"
-msgstr ""
-
-#: mi/mi-cmd-break.c:291
-msgid "-break-watch: Unknown watchpoint type."
-msgstr ""
-
-#: mi/mi-cmd-break.c:322
-#, possible-c-format
-msgid "USAGE: %s <BKPT> [<COMMAND> [<COMMAND>...]]"
-msgstr ""
-
-#: mi/mi-cmd-break.c:326
-#, possible-c-format
-msgid "breakpoint number argument \"%s\" is not a number."
-msgstr ""
-
-#: mi/mi-cmd-break.c:329
-#, possible-c-format
-msgid "junk at the end of breakpoint number argument \"%s\"."
-msgstr ""
-
-#: mi/mi-cmd-break.c:334
-#, possible-c-format
-msgid "breakpoint %d not found."
-msgstr ""
-
-#: mi/mi-parse.c:282
-#, possible-c-format
-msgid "Undefined MI command: %s"
-msgstr ""
-
-#: mi/mi-parse.c:317
-msgid "Duplicate '--thread-group' option"
-msgstr ""
-
-#: mi/mi-parse.c:320
-msgid "Invalid thread group id"
-msgstr ""
-
-#: mi/mi-parse.c:331
-msgid "Duplicate '--thread' option"
-msgstr ""
-
-#: mi/mi-parse.c:342
-msgid "Duplicate '--frame' option"
-msgstr ""
-
-#: mi/mi-parse.c:351
-#, possible-c-format
-msgid "Invalid value for the '%s' option"
-msgstr ""
-
-#: mi/mi-parse.c:361
-#, possible-c-format
-msgid "Problem parsing arguments: %s %s"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:57
-msgid "-stack-list-frames: Usage: [FRAME_LOW FRAME_HIGH]"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:80
-msgid "-stack-list-frames: Not enough frames in stack."
-msgstr ""
-
-#: mi/mi-cmd-stack.c:107
-msgid "-stack-info-depth: Usage: [MAX_DEPTH]"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:137
-#, possible-c-format
-msgid ""
-"Unknown value for PRINT_VALUES: must be: 0 or \"%s\", 1 or \"%s\", 2 or \"%s"
-"\""
-msgstr ""
-
-#: mi/mi-cmd-stack.c:152
-msgid "-stack-list-locals: Usage: PRINT_VALUES"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:175
-msgid "-stack-list-arguments: Usage: PRINT_VALUES [FRAME_LOW FRAME_HIGH]"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:201
-msgid "-stack-list-arguments: Not enough frames in stack."
-msgstr ""
-
-#: mi/mi-cmd-stack.c:235
-msgid "Usage: PRINT_VALUES"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:449
-msgid "-stack-select-frame: Usage: FRAME_SPEC"
-msgstr ""
-
-#: mi/mi-cmd-stack.c:458
-msgid "-stack-info-frame: No arguments allowed"
-msgstr ""
-
-#: mi/mi-cmd-catch.c:74
-msgid "-catch-load/unload: Missing <library name>"
-msgstr ""
-
-#: mi/mi-cmd-catch.c:76
-msgid "-catch-load/unload: Garbage following the <library name>"
+#: mi/mi-cmd-file.c:87
+msgid "-file-list-exec-source-files: Usage: No args"
 msgstr ""
 
 #: mi/mi-cmd-disas.c:137
@@ -16153,26 +15984,6 @@ msgstr ""
 #, possible-c-format
 msgid ""
 "-interpreter-exec: interpreter \"%s\" does not support command execution"
-msgstr ""
-
-#: mi/mi-symbol-cmds.c:40
-msgid "-symbol-list-lines: Usage: SOURCE_FILENAME"
-msgstr ""
-
-#: mi/mi-symbol-cmds.c:46
-msgid "-symbol-list-lines: Unknown source file name."
-msgstr ""
-
-#: mi/mi-cmd-target.c:40
-msgid "-target-file-get: Usage: REMOTE_FILE LOCAL_FILE"
-msgstr ""
-
-#: mi/mi-cmd-target.c:64
-msgid "-target-file-put: Usage: LOCAL_FILE REMOTE_FILE"
-msgstr ""
-
-#: mi/mi-cmd-target.c:88
-msgid "-target-file-delete: Usage: REMOTE_FILE"
 msgstr ""
 
 #: mi/mi-cmd-var.c:112
@@ -16300,9 +16111,194 @@ msgstr ""
 msgid "-var-set-update-range: Usage: VAROBJ FROM TO"
 msgstr ""
 
-#: mi/mi-cmds.c:248
+#: mi/mi-cmd-env.c:75
+msgid "-environment-pwd: No arguments allowed"
+msgstr ""
+
+#: mi/mi-cmd-env.c:86
 #, possible-c-format
-msgid "command `%s' appears to be duplicated"
+msgid "-environment-pwd: error finding name of working directory: %s"
+msgstr ""
+
+#: mi/mi-cmd-env.c:98
+msgid "-environment-cd: Usage DIRECTORY"
+msgstr ""
+
+#: mi/mi-cmd-env.c:266
+msgid "-inferior-tty-show: Usage: No args"
+msgstr ""
+
+#: mi/mi-console.c:76
+msgid "mi_console_file_delete: bad magic number"
+msgstr ""
+
+#: mi/mi-console.c:106
+msgid "mi_console_raw_packet: bad magic number"
+msgstr ""
+
+#: mi/mi-console.c:134
+msgid "mi_console_file_flush: bad magic number"
+msgstr ""
+
+#: mi/mi-console.c:152
+msgid "mi_console_file_set_raw: bad magic number"
+msgstr ""
+
+#: mi/mi-cmd-catch.c:74
+msgid "-catch-load/unload: Missing <library name>"
+msgstr ""
+
+#: mi/mi-cmd-catch.c:76
+msgid "-catch-load/unload: Garbage following the <library name>"
+msgstr ""
+
+#: mi/mi-cmd-info.c:35
+msgid "Usage: -info-os [INFOTYPE]"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:57
+msgid "-stack-list-frames: Usage: [FRAME_LOW FRAME_HIGH]"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:80
+msgid "-stack-list-frames: Not enough frames in stack."
+msgstr ""
+
+#: mi/mi-cmd-stack.c:107
+msgid "-stack-info-depth: Usage: [MAX_DEPTH]"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:137
+#, possible-c-format
+msgid ""
+"Unknown value for PRINT_VALUES: must be: 0 or \"%s\", 1 or \"%s\", 2 or \"%s"
+"\""
+msgstr ""
+
+#: mi/mi-cmd-stack.c:152
+msgid "-stack-list-locals: Usage: PRINT_VALUES"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:175
+msgid "-stack-list-arguments: Usage: PRINT_VALUES [FRAME_LOW FRAME_HIGH]"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:201
+msgid "-stack-list-arguments: Not enough frames in stack."
+msgstr ""
+
+#: mi/mi-cmd-stack.c:235
+msgid "Usage: PRINT_VALUES"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:449
+msgid "-stack-select-frame: Usage: FRAME_SPEC"
+msgstr ""
+
+#: mi/mi-cmd-stack.c:458
+msgid "-stack-info-frame: No arguments allowed"
+msgstr ""
+
+#: mi/mi-symbol-cmds.c:40
+msgid "-symbol-list-lines: Usage: SOURCE_FILENAME"
+msgstr ""
+
+#: mi/mi-symbol-cmds.c:46
+msgid "-symbol-list-lines: Unknown source file name."
+msgstr ""
+
+#: mi/mi-getopt.c:36
+msgid "mi_getopt_long: oind out of bounds"
+msgstr ""
+
+#: mi/mi-getopt.c:62
+#, possible-c-format
+msgid "%s: Option %s requires an argument"
+msgstr ""
+
+#: mi/mi-getopt.c:74
+#, possible-c-format
+msgid "%s: Unknown option ``%s''"
+msgstr ""
+
+#: mi/mi-parse.c:282
+#, possible-c-format
+msgid "Undefined MI command: %s"
+msgstr ""
+
+#: mi/mi-parse.c:317
+msgid "Duplicate '--thread-group' option"
+msgstr ""
+
+#: mi/mi-parse.c:320
+msgid "Invalid thread group id"
+msgstr ""
+
+#: mi/mi-parse.c:331
+msgid "Duplicate '--thread' option"
+msgstr ""
+
+#: mi/mi-parse.c:342
+msgid "Duplicate '--frame' option"
+msgstr ""
+
+#: mi/mi-parse.c:351
+#, possible-c-format
+msgid "Invalid value for the '%s' option"
+msgstr ""
+
+#: mi/mi-parse.c:361
+#, possible-c-format
+msgid "Problem parsing arguments: %s %s"
+msgstr ""
+
+#: mi/mi-cmd-break.c:166
+msgid "-break-insert: Missing <location>"
+msgstr ""
+
+#: mi/mi-cmd-break.c:168
+msgid "-break-insert: Garbage following <location>"
+msgstr ""
+
+#: mi/mi-cmd-break.c:212
+msgid "Usage: tracepoint-number passcount"
+msgstr ""
+
+#: mi/mi-cmd-break.c:225
+#, possible-c-format
+msgid "Could not find tracepoint %d"
+msgstr ""
+
+#: mi/mi-cmd-break.c:273
+msgid "-break-watch: Missing <expression>"
+msgstr ""
+
+#: mi/mi-cmd-break.c:275
+msgid "-break-watch: Garbage following <expression>"
+msgstr ""
+
+#: mi/mi-cmd-break.c:291
+msgid "-break-watch: Unknown watchpoint type."
+msgstr ""
+
+#: mi/mi-cmd-break.c:322
+#, possible-c-format
+msgid "USAGE: %s <BKPT> [<COMMAND> [<COMMAND>...]]"
+msgstr ""
+
+#: mi/mi-cmd-break.c:326
+#, possible-c-format
+msgid "breakpoint number argument \"%s\" is not a number."
+msgstr ""
+
+#: mi/mi-cmd-break.c:329
+#, possible-c-format
+msgid "junk at the end of breakpoint number argument \"%s\"."
+msgstr ""
+
+#: mi/mi-cmd-break.c:334
+#, possible-c-format
+msgid "breakpoint %d not found."
 msgstr ""
 
 #: mi/mi-main.c:290
@@ -16570,16 +16566,21 @@ msgstr ""
 msgid "Invalid option: %s"
 msgstr ""
 
-#: mi/mi-cmd-file.c:39
-msgid "-file-list-exec-source-file: Usage: No args"
+#: mi/mi-cmds.c:248
+#, possible-c-format
+msgid "command `%s' appears to be duplicated"
 msgstr ""
 
-#: mi/mi-cmd-file.c:49
-msgid "-file-list-exec-source-file: No symtab"
+#: mi/mi-cmd-target.c:40
+msgid "-target-file-get: Usage: REMOTE_FILE LOCAL_FILE"
 msgstr ""
 
-#: mi/mi-cmd-file.c:87
-msgid "-file-list-exec-source-files: Usage: No args"
+#: mi/mi-cmd-target.c:64
+msgid "-target-file-put: Usage: LOCAL_FILE REMOTE_FILE"
+msgstr ""
+
+#: mi/mi-cmd-target.c:88
+msgid "-target-file-delete: Usage: REMOTE_FILE"
 msgstr ""
 
 #: microblaze-tdep.c:145
@@ -16678,117 +16679,112 @@ msgstr ""
 msgid "wrong size fpregset struct in core file"
 msgstr ""
 
-#: mipsread.c:83
-#, possible-c-format
-msgid "Error reading symbol table: %s"
-msgstr ""
-
-#: mips-tdep.c:608
+#: mips-tdep.c:614
 #, possible-c-format
 msgid "mips_register_name: bad register number %d"
 msgstr ""
 
-#: mips-tdep.c:709 mips-tdep.c:738 mips-tdep.c:778
+#: mips-tdep.c:715 mips-tdep.c:744 mips-tdep.c:784
 msgid "bad register size"
 msgstr ""
 
-#: mips-tdep.c:810
+#: mips-tdep.c:816
 msgid "32-bit compatibility mode not supported"
 msgstr ""
 
-#: mips-tdep.c:890
+#: mips-tdep.c:896
 msgid "mips_register_to_value: unrecognized case"
 msgstr ""
 
-#: mips-tdep.c:938
+#: mips-tdep.c:944
 msgid "mips_value_to_register: unrecognized case"
 msgstr ""
 
-#: mips-tdep.c:1081
+#: mips-tdep.c:1087
 msgid "mips_mask_address_p: bad switch"
 msgstr ""
 
-#: mips-tdep.c:1107
+#: mips-tdep.c:1113
 msgid "show_mask_address: bad switch"
 msgstr ""
 
-#: mips-tdep.c:1344 mips-tdep.c:1430
+#: mips-tdep.c:1350 mips-tdep.c:1436
 msgid "invalid ISA"
 msgstr ""
 
-#: mips-tdep.c:2532
+#: mips-tdep.c:2538
 msgid "Invalid number of argument registers encoded in SAVE."
 msgstr ""
 
-#: mips-tdep.c:2537
+#: mips-tdep.c:2543
 msgid "Invalid number of static registers encoded in SAVE."
 msgstr ""
 
-#: mips-tdep.c:4043
+#: mips-tdep.c:4049
 #, possible-c-format
 msgid "GDB can't find the start of the function at %s."
 msgstr ""
 
-#: mips-tdep.c:6038 mips-tdep.c:6075 mips-tdep.c:6308 sh64-tdep.c:1935
+#: mips-tdep.c:6044 mips-tdep.c:6081 mips-tdep.c:6314 sh64-tdep.c:1935
 #, possible-c-format
 msgid "can't read register %d (%s)"
 msgstr ""
 
-#: mips-tdep.c:6084
+#: mips-tdep.c:6090
 msgid "mips_read_fp_register_double: bad access to odd-numbered FP register"
 msgstr ""
 
-#: mips-tdep.c:6344 sh64-tdep.c:2095 sh64-tdep.c:2153
+#: mips-tdep.c:6350 sh64-tdep.c:2095 sh64-tdep.c:2153
 msgid "Not a valid register for the current processor type"
 msgstr ""
 
-#: mips-tdep.c:6708 mips-tdep.c:6722 mips-tdep.c:6736
+#: mips-tdep.c:6714 mips-tdep.c:6728 mips-tdep.c:6742
 msgid "set mipsfpu failed"
 msgstr ""
 
-#: mips-tdep.c:7834
+#: mips-tdep.c:7840
 #, possible-c-format
 msgid "unsupported ABI %s."
 msgstr ""
 
-#: mips-tdep.c:7848
+#: mips-tdep.c:7854
 msgid "unrecognized .gcc_compiled_longXX"
 msgstr ""
 
-#: mips-tdep.c:7860
+#: mips-tdep.c:7866
 msgid "unknown ABI string"
 msgstr ""
 
-#: mips-tdep.c:7877
+#: mips-tdep.c:7883
 msgid "unknown compressed ISA string"
 msgstr ""
 
-#: mips-tdep.c:8446 mips-tdep.c:8495
+#: mips-tdep.c:8452 mips-tdep.c:8501
 msgid "unknown ABI in switch"
 msgstr ""
 
-#: mips-tdep.c:8724
+#: mips-tdep.c:8730
 #, possible-c-format
 msgid "The compressed ISA encoding used is %s.\n"
 msgstr ""
 
-#: mips-tdep.c:8804
+#: mips-tdep.c:8810
 msgid "mips_abi_strings out of sync"
 msgstr ""
 
-#: mips-tdep.c:8820 mips-tdep.c:8824
+#: mips-tdep.c:8826 mips-tdep.c:8830
 msgid "Various MIPS specific commands."
 msgstr ""
 
-#: mips-tdep.c:8829
+#: mips-tdep.c:8835
 msgid "Set the MIPS ABI used by this program."
 msgstr ""
 
-#: mips-tdep.c:8830
+#: mips-tdep.c:8836
 msgid "Show the MIPS ABI used by this program."
 msgstr ""
 
-#: mips-tdep.c:8831
+#: mips-tdep.c:8837
 msgid ""
 "This option can be set to one of:\n"
 "  auto  - the default ABI associated with the current binary\n"
@@ -16800,15 +16796,15 @@ msgid ""
 "  eabi64"
 msgstr ""
 
-#: mips-tdep.c:8849
+#: mips-tdep.c:8855
 msgid "Set the compressed ISA encoding used by MIPS code."
 msgstr ""
 
-#: mips-tdep.c:8850
+#: mips-tdep.c:8856
 msgid "Show the compressed ISA encoding used by MIPS code."
 msgstr ""
 
-#: mips-tdep.c:8851
+#: mips-tdep.c:8857
 msgid ""
 "Select the compressed ISA encoding used in functions that have no symbol\n"
 "information available.  The encoding can be set to either of:\n"
@@ -16817,71 +16813,76 @@ msgid ""
 "and is updated automatically from ELF file flags if available."
 msgstr ""
 
-#: mips-tdep.c:8865
+#: mips-tdep.c:8871
 msgid "Set use of MIPS floating-point coprocessor."
 msgstr ""
 
-#: mips-tdep.c:8868
+#: mips-tdep.c:8874
 msgid "Select single-precision MIPS floating-point coprocessor."
 msgstr ""
 
-#: mips-tdep.c:8871
+#: mips-tdep.c:8877
 msgid "Select double-precision MIPS floating-point coprocessor."
 msgstr ""
 
-#: mips-tdep.c:8877
+#: mips-tdep.c:8883
 msgid "Select no MIPS floating-point coprocessor."
 msgstr ""
 
-#: mips-tdep.c:8882
+#: mips-tdep.c:8888
 msgid "Select MIPS floating-point coprocessor automatically."
 msgstr ""
 
-#: mips-tdep.c:8885
+#: mips-tdep.c:8891
 msgid "Show current use of MIPS floating-point coprocessor target."
 msgstr ""
 
-#: mips-tdep.c:8906
+#: mips-tdep.c:8912
 msgid "Set zeroing of upper 32 bits of 64-bit addresses."
 msgstr ""
 
-#: mips-tdep.c:8907
+#: mips-tdep.c:8913
 msgid "Show zeroing of upper 32 bits of 64-bit addresses."
 msgstr ""
 
-#: mips-tdep.c:8908
+#: mips-tdep.c:8914
 msgid ""
 "Use \"on\" to enable the masking, \"off\" to disable it and \"auto\" to\n"
 "allow GDB to determine the correct value."
 msgstr ""
 
-#: mips-tdep.c:8917
+#: mips-tdep.c:8923
 msgid ""
 "Set compatibility with 64-bit MIPS target that transfers 32-bit quantities."
 msgstr ""
 
-#: mips-tdep.c:8919
+#: mips-tdep.c:8925
 msgid ""
 "Show compatibility with 64-bit MIPS target that transfers 32-bit quantities."
 msgstr ""
 
-#: mips-tdep.c:8921
+#: mips-tdep.c:8927
 msgid ""
 "Use \"on\" to enable backward compatibility with older MIPS 64 GDB+target\n"
 "that would transfer 32 bits for some registers (e.g. SR, FSR) and\n"
 "64 bits for others.  Use \"off\" to disable compatibility mode"
 msgstr ""
 
-#: mips-tdep.c:8933
+#: mips-tdep.c:8939
 msgid "Set mips debugging."
 msgstr ""
 
-#: mips-tdep.c:8934
+#: mips-tdep.c:8940
 msgid "Show mips debugging."
 msgstr ""
 
-#: mips-tdep.c:8935
+#: mips-tdep.c:8941
 msgid "When non-zero, mips specific debugging is enabled."
+msgstr ""
+
+#: mipsread.c:83
+#, possible-c-format
+msgid "Error reading symbol table: %s"
 msgstr ""
 
 #: mn10300-tdep.c:194
@@ -16961,7 +16962,7 @@ msgstr ""
 msgid "monitor_supply_register (%d):  bad value from monitor: %s."
 msgstr ""
 
-#: monitor.c:1035 nto-procfs.c:693 remote.c:5092 remote-mips.c:2274
+#: monitor.c:1035 nto-procfs.c:693 remote-mips.c:2274 remote.c:5092
 msgid ""
 "Interrupted while waiting for the program.\n"
 "Give up (and stop debugging it)? "
@@ -17400,6 +17401,32 @@ msgstr ""
 
 #: osdata.c:418
 msgid "Show OS data ARG."
+msgstr ""
+
+#: p-typeprint.c:302
+msgid "type not handled in pascal_type_print_varspec_prefix()"
+msgstr ""
+
+#: p-typeprint.c:424
+msgid "type not handled in pascal_type_print_varspec_suffix()"
+msgstr ""
+
+#: p-valprint.c:409
+#, possible-c-format
+msgid "Invalid pascal type code %d in symbol table."
+msgstr ""
+
+#: p-valprint.c:457
+#, possible-c-format
+msgid "Printing of pascal static members is %s.\n"
+msgstr ""
+
+#: p-valprint.c:893
+msgid "Set printing of pascal static members."
+msgstr ""
+
+#: p-valprint.c:894
+msgid "Show printing of pascal static members."
 msgstr ""
 
 #: parse.c:103
@@ -18285,30 +18312,13 @@ msgstr ""
 msgid "Check consistency of psymtabs and symtabs."
 msgstr ""
 
-#: p-typeprint.c:302
-msgid "type not handled in pascal_type_print_varspec_prefix()"
-msgstr ""
-
-#: p-typeprint.c:424
-msgid "type not handled in pascal_type_print_varspec_suffix()"
-msgstr ""
-
-#: p-valprint.c:409
+#. Require that BREAKPOINT be a valid breakpoint ID; throw a Python
+#. exception if it is invalid.
+#. Require that BREAKPOINT be a valid breakpoint ID; throw a Python
+#. exception if it is invalid.  This macro is for use in setter functions.
+#: python/python-internal.h:184 python/python-internal.h:194
 #, possible-c-format
-msgid "Invalid pascal type code %d in symbol table."
-msgstr ""
-
-#: p-valprint.c:457
-#, possible-c-format
-msgid "Printing of pascal static members is %s.\n"
-msgstr ""
-
-#: p-valprint.c:893
-msgid "Set printing of pascal static members."
-msgstr ""
-
-#: p-valprint.c:894
-msgid "Show printing of pascal static members."
+msgid "Breakpoint %d is invalid."
 msgstr ""
 
 #: python/py-cmd.c:125 python/py-cmd.c:220
@@ -18374,73 +18384,145 @@ msgstr ""
 msgid "This command is not documented."
 msgstr ""
 
-#. Require that INFERIOR be a valid inferior ID.
-#: python/py-infthread.c:34 python/py-infthread.c:91
-msgid "Thread no longer exists."
+#: python/py-function.c:86
+msgid "No method named 'invoke' in object."
 msgstr ""
 
-#: python/py-infthread.c:98
-msgid "Cannot delete `name' attribute."
+#. An error occurred computing the string representation of the
+#. error message.  This is rare, but we should inform the user.
+#: python/py-function.c:113
+msgid ""
+"An error occurred in a Python convenience function\n"
+"and then another occurred computing the error message.\n"
 msgstr ""
 
-#: python/py-infthread.c:106
-msgid "The value of `name' must be a string."
-msgstr ""
-
-#. Require that BREAKPOINT be a valid breakpoint ID; throw a Python
-#. exception if it is invalid.
-#. Require that BREAKPOINT be a valid breakpoint ID; throw a Python
-#. exception if it is invalid.  This macro is for use in setter functions.
-#: python/python-internal.h:184 python/python-internal.h:194
+#: python/py-function.c:133
 #, possible-c-format
-msgid "Breakpoint %d is invalid."
+msgid "Error occurred in Python convenience function: %s"
 msgstr ""
 
-#: python/py-objfile.c:112
-msgid "Cannot delete the pretty_printers attribute."
+#: python/py-function.c:136
+msgid "Error occurred in Python convenience function."
 msgstr ""
 
-#: python/py-objfile.c:119
-msgid "The pretty_printers attribute must be a list."
+#: python/py-function.c:152 python/py-prettyprint.c:655 python/python.c:250
+#: python/python.c:353 python/python.c:374
+msgid "Error while executing Python code."
 msgstr ""
 
-#: python/py-objfile.c:154
-msgid "Cannot delete the type_printers attribute."
+#: python/py-function.c:188
+msgid "This function is not documented."
 msgstr ""
 
-#: python/py-objfile.c:161
-msgid "The type_printers attribute must be a list."
+#: python/py-finishbreakpoint.c:188 python/py-finishbreakpoint.c:211
+msgid "Invalid ID for the `frame' object."
 msgstr ""
 
-#. Require a valid frame.  This must be called inside a TRY_CATCH, or
-#. another context in which a gdb exception is allowed.
-#: python/py-frame.c:54
-msgid "Frame is invalid."
+#: python/py-finishbreakpoint.c:196
+msgid "\"FinishBreakpoint\" not meaningful in the outermost frame."
 msgstr ""
 
-#: python/py-frame.c:256 python/py-block.c:394
+#: python/py-finishbreakpoint.c:203
+msgid "\"FinishBreakpoint\" cannot be set on a dummy frame."
+msgstr ""
+
+#: python/py-finishbreakpoint.c:227
+msgid "No thread currently selected."
+msgstr ""
+
+#: python/py-finishbreakpoint.c:237
+msgid "The value of `internal' must be a boolean."
+msgstr ""
+
+#. Require that INFERIOR be a valid inferior ID.
+#: python/py-inferior.c:75
+msgid "Inferior no longer exists."
+msgstr ""
+
+#: python/py-inferior.c:449
+msgid "Could not allocate memory buffer object."
+msgstr ""
+
+#: python/py-inferior.c:544
+#, possible-c-format
+msgid "Memory buffer for address %s, which is %s bytes long."
+msgstr ""
+
+#: python/py-inferior.c:576
+msgid "The memory buffer supports only one segment."
+msgstr ""
+
+#: python/py-inferior.c:654
+msgid "The pattern is not a Python buffer."
+msgstr ""
+
+#: python/py-inferior.c:669
+msgid "Search range is empty."
+msgstr ""
+
+#: python/py-inferior.c:681
+msgid "The search range is too large."
+msgstr ""
+
+#: python/py-prettyprint.c:292 valprint.c:783
+msgid "<error reading variable>"
+msgstr ""
+
+#: python/py-prettyprint.c:828
+msgid "Argument must be a gdb.Value."
+msgstr ""
+
+#: python/py-lazy-string.c:105
+msgid "Cannot create a value from NULL."
+msgstr ""
+
+#: python/py-lazy-string.c:135
+msgid "Cannot create a lazy string with address 0x0, and a non-zero length."
+msgstr ""
+
+#: python/py-lazy-string.c:143
+msgid "A lazy string's type cannot be NULL."
+msgstr ""
+
+#. Require a valid block.  All access to block_object->block should be
+#. gated by this call.
+#: python/py-block.c:64
+msgid "Block is invalid."
+msgstr ""
+
+#. Require a valid block.  This macro is called during block iterator
+#. creation, and at each next call.
+#: python/py-block.c:76
+msgid "Source block for iterator is invalid."
+msgstr ""
+
+#: python/py-block.c:322
+msgid "Symbol is null."
+msgstr ""
+
+#: python/py-block.c:394 python/py-frame.c:256
 msgid "Cannot locate object file for block."
 msgstr ""
 
-#: python/py-frame.c:309
-msgid "Could not allocate frame object."
+#: python/py-arch.c:125
+msgid "Argument 'end_pc' should be a (long) integer."
 msgstr ""
 
-#: python/py-frame.c:458 python/py-type.c:897
-msgid "Second argument must be block."
+#: python/py-arch.c:135
+msgid ""
+"Argument 'end_pc' should be greater than or equal to the argument 'start_pc'."
 msgstr ""
 
-#: python/py-frame.c:476
-#, possible-c-format
-msgid "Variable '%s' not found."
+#: python/py-arch.c:149
+msgid "Argument 'count' should be an non-negative integer."
 msgstr ""
 
-#: python/py-frame.c:487
-msgid "Argument must be a symbol or string."
+#: python/py-utils.c:81
+msgid "Expected a string or unicode object."
 msgstr ""
 
-#: python/py-frame.c:576
-msgid "Invalid frame stop reason."
+#: python/py-utils.c:319
+msgid "Overflow converting to address."
 msgstr ""
 
 #: python/py-value.c:133
@@ -18503,6 +18585,222 @@ msgstr ""
 msgid "Could not convert Python object: %s."
 msgstr ""
 
+#: python/py-breakpoint.c:125
+msgid "Cannot delete `enabled' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:132
+msgid "The value of `enabled' must be a boolean."
+msgstr ""
+
+#: python/py-breakpoint.c:164
+msgid "Cannot delete `silent' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:170
+msgid "The value of `silent' must be a boolean."
+msgstr ""
+
+#: python/py-breakpoint.c:195
+msgid "Cannot delete `thread' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:206
+msgid "Invalid thread ID."
+msgstr ""
+
+#: python/py-breakpoint.c:215
+msgid "The value of `thread' must be an integer or None."
+msgstr ""
+
+#: python/py-breakpoint.c:238
+msgid "Cannot delete `task' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:255
+msgid "Invalid task ID."
+msgstr ""
+
+#: python/py-breakpoint.c:264
+msgid "The value of `task' must be an integer or None."
+msgstr ""
+
+#: python/py-breakpoint.c:309
+msgid "Cannot delete `ignore_count' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:315
+msgid "The value of `ignore_count' must be an integer."
+msgstr ""
+
+#: python/py-breakpoint.c:345
+msgid "Cannot delete `hit_count' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:358
+msgid "The value of `hit_count' must be zero."
+msgstr ""
+
+#: python/py-breakpoint.c:440
+msgid "Cannot delete `condition' attribute."
+msgstr ""
+
+#: python/py-breakpoint.c:643
+msgid "Cannot understand watchpoint access type."
+msgstr ""
+
+#: python/py-breakpoint.c:647
+msgid "Do not understand breakpoint type to set."
+msgstr ""
+
+#: python/py-breakpoint.c:827
+msgid "Error while creating breakpoint from GDB."
+msgstr ""
+
+#: python/py-breakpoint.c:922
+msgid ""
+"Cannot set 'stop' method.  There is an existing GDB condition attached to "
+"the breakpoint."
+msgstr ""
+
+#. Require a valid symbol.  All access to symbol_object->symbol should be
+#. gated by this call.
+#: python/py-symbol.c:48
+msgid "Symbol is invalid."
+msgstr ""
+
+#: python/py-symbol.c:271
+msgid "invalid frame"
+msgstr ""
+
+#: python/py-symbol.c:275
+msgid "symbol requires a frame to compute its value"
+msgstr ""
+
+#: python/py-objfile.c:112
+msgid "Cannot delete the pretty_printers attribute."
+msgstr ""
+
+#: python/py-objfile.c:119
+msgid "The pretty_printers attribute must be a list."
+msgstr ""
+
+#: python/py-objfile.c:154
+msgid "Cannot delete the type_printers attribute."
+msgstr ""
+
+#: python/py-objfile.c:161
+msgid "The type_printers attribute must be a list."
+msgstr ""
+
+#: python/py-auto-load.c:57
+#, possible-c-format
+msgid "Auto-loading of Python scripts is %s.\n"
+msgstr ""
+
+#: python/py-auto-load.c:75
+#, possible-c-format
+msgid ""
+"auto-load: Loading Python script \"%s\" by extension for objfile \"%s\".\n"
+msgstr ""
+
+#: python/py-auto-load.c:120
+#, possible-c-format
+msgid "Invalid entry in %s section"
+msgstr ""
+
+#: python/py-auto-load.c:135
+#, possible-c-format
+msgid "Non-null-terminated path in %s: %s"
+msgstr ""
+
+#: python/py-auto-load.c:142
+#, possible-c-format
+msgid "Empty path in %s"
+msgstr ""
+
+#: python/py-auto-load.c:156
+#, possible-c-format
+msgid ""
+"auto-load: Loading Python script \"%s\" from section \"%s\" of objfile \"%s"
+"\".\n"
+msgstr ""
+
+#: python/py-auto-load.c:169
+#, possible-c-format
+msgid ""
+"Missing auto-load scripts referenced in section %s\n"
+"of file %s\n"
+"Use `info auto-load python [REGEXP]' to list them."
+msgstr ""
+
+#: python/py-auto-load.c:207
+#, possible-c-format
+msgid "Couldn't read %s section of %s"
+msgstr ""
+
+#: python/py-auto-load.c:248
+msgid "Set the debugger's behaviour regarding auto-loaded Python scripts."
+msgstr ""
+
+#: python/py-auto-load.c:249
+msgid "Show the debugger's behaviour regarding auto-loaded Python scripts."
+msgstr ""
+
+#: python/py-auto-load.c:250
+msgid ""
+"If enabled, auto-loaded Python scripts are loaded when the debugger reads\n"
+"an executable or shared library.\n"
+"This options has security implications for untrusted inferiors."
+msgstr ""
+
+#: python/py-auto-load.c:259
+msgid ""
+"Set the debugger's behaviour regarding auto-loaded Python scripts, "
+"deprecated."
+msgstr ""
+
+#: python/py-auto-load.c:262
+msgid ""
+"Show the debugger's behaviour regarding auto-loaded Python scripts, "
+"deprecated."
+msgstr ""
+
+#: python/py-auto-load.c:277
+msgid ""
+"Print the list of automatically loaded Python scripts.\n"
+"Usage: info auto-load python-scripts [REGEXP]"
+msgstr ""
+
+#: python/py-auto-load.c:281
+msgid "Print the list of automatically loaded Python scripts, deprecated."
+msgstr ""
+
+#. Require that INFERIOR be a valid inferior ID.
+#: python/py-infthread.c:34 python/py-infthread.c:91
+msgid "Thread no longer exists."
+msgstr ""
+
+#: python/py-infthread.c:98
+msgid "Cannot delete `name' attribute."
+msgstr ""
+
+#: python/py-infthread.c:106
+msgid "The value of `name' must be a string."
+msgstr ""
+
+#. Require a valid symbol table.  All access to symtab_object->symtab
+#. should be gated by this call.
+#: python/py-symtab.c:51
+msgid "Symbol Table is invalid."
+msgstr ""
+
+#. Require a valid symbol table and line object.  All access to
+#. sal_object->sal should be gated by this call.
+#: python/py-symtab.c:81
+msgid "Symbol Table and Line is invalid."
+msgstr ""
+
 #: python/py-type.c:490
 msgid "Array bound must be an integer"
 msgstr ""
@@ -18532,6 +18830,10 @@ msgstr ""
 msgid "No argument %d in template."
 msgstr ""
 
+#: python/py-type.c:897 python/py-frame.c:458
+msgid "Second argument must be block."
+msgstr ""
+
 #: python/py-type.c:929
 msgid "Template argument is optimized out"
 msgstr ""
@@ -18545,21 +18847,95 @@ msgstr ""
 msgid "'block' argument must be a Block."
 msgstr ""
 
-#: python/py-utils.c:81
-msgid "Expected a string or unicode object."
+#. Require a valid frame.  This must be called inside a TRY_CATCH, or
+#. another context in which a gdb exception is allowed.
+#: python/py-frame.c:54
+msgid "Frame is invalid."
 msgstr ""
 
-#: python/py-utils.c:319
-msgid "Overflow converting to address."
+#: python/py-frame.c:309
+msgid "Could not allocate frame object."
+msgstr ""
+
+#: python/py-frame.c:476
+#, possible-c-format
+msgid "Variable '%s' not found."
+msgstr ""
+
+#: python/py-frame.c:487
+msgid "Argument must be a symbol or string."
+msgstr ""
+
+#: python/py-frame.c:576
+msgid "Invalid frame stop reason."
+msgstr ""
+
+#: python/py-param.c:137
+msgid "String required for filename."
+msgstr ""
+
+#: python/py-param.c:170
+msgid "ENUM arguments must be a string."
+msgstr ""
+
+#: python/py-param.c:184
+msgid "The value must be member of an enumeration."
+msgstr ""
+
+#: python/py-param.c:195
+msgid "A boolean argument is required."
+msgstr ""
+
+#: python/py-param.c:208
+msgid "A boolean or None is required"
+msgstr ""
+
+#: python/py-param.c:236
+msgid "The value must be integer."
+msgstr ""
+
+#: python/py-param.c:261
+msgid "Range exceeded."
+msgstr ""
+
+#: python/py-param.c:271
+msgid "Unhandled type in parameter value."
+msgstr ""
+
+#: python/py-param.c:292
+msgid "Cannot delete a parameter's value."
+msgstr ""
+
+#: python/py-param.c:349
+msgid "Parameter must return a string value."
+msgstr ""
+
+#: python/py-param.c:577
+msgid "An enumeration is required for PARAM_ENUM."
+msgstr ""
+
+#: python/py-param.c:584
+msgid "The enumeration is not a sequence."
+msgstr ""
+
+#: python/py-param.c:594
+msgid "The enumeration is empty."
+msgstr ""
+
+#: python/py-param.c:615
+msgid "The enumeration item not a string."
+msgstr ""
+
+#: python/py-param.c:689
+msgid "Invalid parameter class argument."
+msgstr ""
+
+#: python/py-param.c:696
+msgid "Only PARAM_ENUM accepts a fourth argument."
 msgstr ""
 
 #: python/python.c:128 python/python.c:1736
 msgid "internal error: Unhandled Python exception"
-msgstr ""
-
-#: python/python.c:250 python/python.c:353 python/python.c:374
-#: python/py-function.c:152 python/py-prettyprint.c:655
-msgid "Error while executing Python code."
 msgstr ""
 
 #: python/python.c:294
@@ -18684,381 +19060,6 @@ msgid ""
 "Suggest passing --data-directory=/path/to/gdb/data-directory.\n"
 msgstr ""
 
-#. Require that INFERIOR be a valid inferior ID.
-#: python/py-inferior.c:75
-msgid "Inferior no longer exists."
-msgstr ""
-
-#: python/py-inferior.c:449
-msgid "Could not allocate memory buffer object."
-msgstr ""
-
-#: python/py-inferior.c:544
-#, possible-c-format
-msgid "Memory buffer for address %s, which is %s bytes long."
-msgstr ""
-
-#: python/py-inferior.c:576
-msgid "The memory buffer supports only one segment."
-msgstr ""
-
-#: python/py-inferior.c:654
-msgid "The pattern is not a Python buffer."
-msgstr ""
-
-#: python/py-inferior.c:669
-msgid "Search range is empty."
-msgstr ""
-
-#: python/py-inferior.c:681
-msgid "The search range is too large."
-msgstr ""
-
-#. Require a valid symbol.  All access to symbol_object->symbol should be
-#. gated by this call.
-#: python/py-symbol.c:48
-msgid "Symbol is invalid."
-msgstr ""
-
-#: python/py-symbol.c:271
-msgid "invalid frame"
-msgstr ""
-
-#: python/py-symbol.c:275
-msgid "symbol requires a frame to compute its value"
-msgstr ""
-
-#. Require a valid block.  All access to block_object->block should be
-#. gated by this call.
-#: python/py-block.c:64
-msgid "Block is invalid."
-msgstr ""
-
-#. Require a valid block.  This macro is called during block iterator
-#. creation, and at each next call.
-#: python/py-block.c:76
-msgid "Source block for iterator is invalid."
-msgstr ""
-
-#: python/py-block.c:322
-msgid "Symbol is null."
-msgstr ""
-
-#: python/py-function.c:86
-msgid "No method named 'invoke' in object."
-msgstr ""
-
-#. An error occurred computing the string representation of the
-#. error message.  This is rare, but we should inform the user.
-#: python/py-function.c:113
-msgid ""
-"An error occurred in a Python convenience function\n"
-"and then another occurred computing the error message.\n"
-msgstr ""
-
-#: python/py-function.c:133
-#, possible-c-format
-msgid "Error occurred in Python convenience function: %s"
-msgstr ""
-
-#: python/py-function.c:136
-msgid "Error occurred in Python convenience function."
-msgstr ""
-
-#: python/py-function.c:188
-msgid "This function is not documented."
-msgstr ""
-
-#. Require a valid symbol table.  All access to symtab_object->symtab
-#. should be gated by this call.
-#: python/py-symtab.c:51
-msgid "Symbol Table is invalid."
-msgstr ""
-
-#. Require a valid symbol table and line object.  All access to
-#. sal_object->sal should be gated by this call.
-#: python/py-symtab.c:81
-msgid "Symbol Table and Line is invalid."
-msgstr ""
-
-#: python/py-breakpoint.c:125
-msgid "Cannot delete `enabled' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:132
-msgid "The value of `enabled' must be a boolean."
-msgstr ""
-
-#: python/py-breakpoint.c:164
-msgid "Cannot delete `silent' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:170
-msgid "The value of `silent' must be a boolean."
-msgstr ""
-
-#: python/py-breakpoint.c:195
-msgid "Cannot delete `thread' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:206
-msgid "Invalid thread ID."
-msgstr ""
-
-#: python/py-breakpoint.c:215
-msgid "The value of `thread' must be an integer or None."
-msgstr ""
-
-#: python/py-breakpoint.c:238
-msgid "Cannot delete `task' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:255
-msgid "Invalid task ID."
-msgstr ""
-
-#: python/py-breakpoint.c:264
-msgid "The value of `task' must be an integer or None."
-msgstr ""
-
-#: python/py-breakpoint.c:309
-msgid "Cannot delete `ignore_count' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:315
-msgid "The value of `ignore_count' must be an integer."
-msgstr ""
-
-#: python/py-breakpoint.c:345
-msgid "Cannot delete `hit_count' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:358
-msgid "The value of `hit_count' must be zero."
-msgstr ""
-
-#: python/py-breakpoint.c:440
-msgid "Cannot delete `condition' attribute."
-msgstr ""
-
-#: python/py-breakpoint.c:643
-msgid "Cannot understand watchpoint access type."
-msgstr ""
-
-#: python/py-breakpoint.c:647
-msgid "Do not understand breakpoint type to set."
-msgstr ""
-
-#: python/py-breakpoint.c:827
-msgid "Error while creating breakpoint from GDB."
-msgstr ""
-
-#: python/py-breakpoint.c:922
-msgid ""
-"Cannot set 'stop' method.  There is an existing GDB condition attached to "
-"the breakpoint."
-msgstr ""
-
-#: python/py-param.c:137
-msgid "String required for filename."
-msgstr ""
-
-#: python/py-param.c:170
-msgid "ENUM arguments must be a string."
-msgstr ""
-
-#: python/py-param.c:184
-msgid "The value must be member of an enumeration."
-msgstr ""
-
-#: python/py-param.c:195
-msgid "A boolean argument is required."
-msgstr ""
-
-#: python/py-param.c:208
-msgid "A boolean or None is required"
-msgstr ""
-
-#: python/py-param.c:236
-msgid "The value must be integer."
-msgstr ""
-
-#: python/py-param.c:261
-msgid "Range exceeded."
-msgstr ""
-
-#: python/py-param.c:271
-msgid "Unhandled type in parameter value."
-msgstr ""
-
-#: python/py-param.c:292
-msgid "Cannot delete a parameter's value."
-msgstr ""
-
-#: python/py-param.c:349
-msgid "Parameter must return a string value."
-msgstr ""
-
-#: python/py-param.c:577
-msgid "An enumeration is required for PARAM_ENUM."
-msgstr ""
-
-#: python/py-param.c:584
-msgid "The enumeration is not a sequence."
-msgstr ""
-
-#: python/py-param.c:594
-msgid "The enumeration is empty."
-msgstr ""
-
-#: python/py-param.c:615
-msgid "The enumeration item not a string."
-msgstr ""
-
-#: python/py-param.c:689
-msgid "Invalid parameter class argument."
-msgstr ""
-
-#: python/py-param.c:696
-msgid "Only PARAM_ENUM accepts a fourth argument."
-msgstr ""
-
-#: python/py-lazy-string.c:105
-msgid "Cannot create a value from NULL."
-msgstr ""
-
-#: python/py-lazy-string.c:135
-msgid "Cannot create a lazy string with address 0x0, and a non-zero length."
-msgstr ""
-
-#: python/py-lazy-string.c:143
-msgid "A lazy string's type cannot be NULL."
-msgstr ""
-
-#: python/py-arch.c:125
-msgid "Argument 'end_pc' should be a (long) integer."
-msgstr ""
-
-#: python/py-arch.c:135
-msgid ""
-"Argument 'end_pc' should be greater than or equal to the argument 'start_pc'."
-msgstr ""
-
-#: python/py-arch.c:149
-msgid "Argument 'count' should be an non-negative integer."
-msgstr ""
-
-#: python/py-auto-load.c:57
-#, possible-c-format
-msgid "Auto-loading of Python scripts is %s.\n"
-msgstr ""
-
-#: python/py-auto-load.c:75
-#, possible-c-format
-msgid ""
-"auto-load: Loading Python script \"%s\" by extension for objfile \"%s\".\n"
-msgstr ""
-
-#: python/py-auto-load.c:120
-#, possible-c-format
-msgid "Invalid entry in %s section"
-msgstr ""
-
-#: python/py-auto-load.c:135
-#, possible-c-format
-msgid "Non-null-terminated path in %s: %s"
-msgstr ""
-
-#: python/py-auto-load.c:142
-#, possible-c-format
-msgid "Empty path in %s"
-msgstr ""
-
-#: python/py-auto-load.c:156
-#, possible-c-format
-msgid ""
-"auto-load: Loading Python script \"%s\" from section \"%s\" of objfile \"%s"
-"\".\n"
-msgstr ""
-
-#: python/py-auto-load.c:169
-#, possible-c-format
-msgid ""
-"Missing auto-load scripts referenced in section %s\n"
-"of file %s\n"
-"Use `info auto-load python [REGEXP]' to list them."
-msgstr ""
-
-#: python/py-auto-load.c:207
-#, possible-c-format
-msgid "Couldn't read %s section of %s"
-msgstr ""
-
-#: python/py-auto-load.c:248
-msgid "Set the debugger's behaviour regarding auto-loaded Python scripts."
-msgstr ""
-
-#: python/py-auto-load.c:249
-msgid "Show the debugger's behaviour regarding auto-loaded Python scripts."
-msgstr ""
-
-#: python/py-auto-load.c:250
-msgid ""
-"If enabled, auto-loaded Python scripts are loaded when the debugger reads\n"
-"an executable or shared library.\n"
-"This options has security implications for untrusted inferiors."
-msgstr ""
-
-#: python/py-auto-load.c:259
-msgid ""
-"Set the debugger's behaviour regarding auto-loaded Python scripts, "
-"deprecated."
-msgstr ""
-
-#: python/py-auto-load.c:262
-msgid ""
-"Show the debugger's behaviour regarding auto-loaded Python scripts, "
-"deprecated."
-msgstr ""
-
-#: python/py-auto-load.c:277
-msgid ""
-"Print the list of automatically loaded Python scripts.\n"
-"Usage: info auto-load python-scripts [REGEXP]"
-msgstr ""
-
-#: python/py-auto-load.c:281
-msgid "Print the list of automatically loaded Python scripts, deprecated."
-msgstr ""
-
-#: python/py-finishbreakpoint.c:188 python/py-finishbreakpoint.c:211
-msgid "Invalid ID for the `frame' object."
-msgstr ""
-
-#: python/py-finishbreakpoint.c:196
-msgid "\"FinishBreakpoint\" not meaningful in the outermost frame."
-msgstr ""
-
-#: python/py-finishbreakpoint.c:203
-msgid "\"FinishBreakpoint\" cannot be set on a dummy frame."
-msgstr ""
-
-#: python/py-finishbreakpoint.c:227
-msgid "No thread currently selected."
-msgstr ""
-
-#: python/py-finishbreakpoint.c:237
-msgid "The value of `internal' must be a boolean."
-msgstr ""
-
-#: python/py-prettyprint.c:292 valprint.c:783
-msgid "<error reading variable>"
-msgstr ""
-
-#: python/py-prettyprint.c:828
-msgid "Argument must be a gdb.Value."
-msgstr ""
-
 #: ravenscar-thread.c:392
 msgid "\"set ravenscar\" must be followed by the name of a setting.\n"
 msgstr ""
@@ -19141,174 +19142,6 @@ msgstr ""
 
 #: record-btrace.c:690
 msgid "Start branch trace recording."
-msgstr ""
-
-#: record.c:73
-msgid ""
-"No record target is currently active.\n"
-"Use one of the \"target record-<tab><tab>\" commands first."
-msgstr ""
-
-#: record.c:184
-#, possible-c-format
-msgid "Debugging of process record target is %s.\n"
-msgstr ""
-
-#: record.c:206
-msgid "Already at end of record list.\n"
-msgstr ""
-
-#: record.c:212
-msgid "The current record target does not support this operation.\n"
-msgstr ""
-
-#: record.c:217
-msgid ""
-"Delete the log from this point forward and begin to record the running "
-"message at current PC?"
-msgstr ""
-
-#: record.c:235
-msgid "Process record is stopped and all execution logs are deleted.\n"
-msgstr ""
-
-#: record.c:246
-msgid "\"set record\" must be followed by an apporpriate subcommand.\n"
-msgstr ""
-
-#: record.c:269
-msgid "No record target is currently active.\n"
-msgstr ""
-
-#: record.c:273
-#, possible-c-format
-msgid "Active record target: %s\n"
-msgstr ""
-
-#: record.c:311
-msgid "Command requires an argument (insn number to go to)."
-msgstr ""
-
-#: record.c:339 record.c:359
-#, possible-c-format
-msgid "Expected positive number, got: %s."
-msgstr ""
-
-#: record.c:370
-#, possible-c-format
-msgid "Junk after argument: %s."
-msgstr ""
-
-#: record.c:418 record.c:538
-#, possible-c-format
-msgid "Invalid modifier: %c."
-msgstr ""
-
-#: record.c:629
-msgid "Set debugging of record/replay feature."
-msgstr ""
-
-#: record.c:630
-msgid "Show debugging of record/replay feature."
-msgstr ""
-
-#: record.c:631
-msgid "When enabled, debugging output for record/replay feature is displayed."
-msgstr ""
-
-#: record.c:637
-msgid "Set number of instructions to print in \"record instruction-history\"."
-msgstr ""
-
-#: record.c:638
-msgid "Show number of instructions to print in \"record instruction-history\"."
-msgstr ""
-
-#: record.c:644
-msgid "Set number of function to print in \"record function-call-history\"."
-msgstr ""
-
-#: record.c:645
-msgid "Show number of functions to print in \"record function-call-history\"."
-msgstr ""
-
-#: record.c:651
-msgid "Start recording."
-msgstr ""
-
-#: record.c:657 record-full.c:2950
-msgid "Set record options"
-msgstr ""
-
-#: record.c:661 record-full.c:2954
-msgid "Show record options"
-msgstr ""
-
-#: record.c:665
-msgid "Info record options"
-msgstr ""
-
-#: record.c:670
-msgid ""
-"Save the execution log to a file.\n"
-"Argument is optional filename.\n"
-"Default filename is 'gdb_record.<process_id>'."
-msgstr ""
-
-#: record.c:677
-msgid "Delete the rest of execution log and start recording it anew."
-msgstr ""
-
-#: record.c:683
-msgid "Stop the record/replay target."
-msgstr ""
-
-#: record.c:687
-msgid ""
-"Restore the program to its state at instruction number N.\n"
-"Argument is instruction number, as shown by 'info record'."
-msgstr ""
-
-#: record.c:692
-msgid ""
-"Print disassembled instructions stored in the execution log.\n"
-"With a /m modifier, source lines are included (if available).\n"
-"With a /r modifier, raw instructions in hex are included.\n"
-"With a /f modifier, function names are omitted.\n"
-"With a /p modifier, current position markers are omitted.\n"
-"With no argument, disassembles ten more instructions after the previous "
-"disassembly.\n"
-"\"record instruction-history -\" disassembles ten instructions before a "
-"previous disassembly.\n"
-"One argument specifies an instruction number as shown by 'info record', and "
-"ten instructions are disassembled after that instruction.\n"
-"Two arguments with comma between them specify starting and ending "
-"instruction numbers to disassemble.\n"
-"If the second argument is preceded by '+' or '-', it specifies the distance "
-"from the first argument.\n"
-"The number of instructions to disassemble can be defined with \"set record "
-"instruction-history-size\"."
-msgstr ""
-
-#: record.c:712
-msgid ""
-"Prints the execution history at function granularity.\n"
-"It prints one line for each sequence of instructions that belong to the same "
-"function.\n"
-"Without modifiers, it prints the function name.\n"
-"With a /l modifier, the source file and line number range is included.\n"
-"With a /i modifier, the instruction number range is included.\n"
-"With no argument, prints ten more lines after the previous ten-line print.\n"
-"\"record function-call-history -\" prints ten lines before a previous ten-"
-"line print.\n"
-"One argument specifies a function number as shown by 'info record', and ten "
-"lines are printed after that function.\n"
-"Two arguments with comma between them specify a range of functions to "
-"print.\n"
-"If the second argument is preceded by '+' or '-', it specifies the distance "
-"from the first argument.\n"
-"The number of functions to print can be defined with \"set record function-"
-"call-history-size\"."
 msgstr ""
 
 #: record-full.c:572
@@ -19534,6 +19367,14 @@ msgid ""
 "Argument is filename.  File must be created with 'record save'."
 msgstr ""
 
+#: record-full.c:2950 record.c:657
+msgid "Set record options"
+msgstr ""
+
+#: record-full.c:2954 record.c:661
+msgid "Show record options"
+msgstr ""
+
 #: record-full.c:2959
 msgid "Set whether record/replay stops when record/replay buffer becomes full."
 msgstr ""
@@ -19579,6 +19420,166 @@ msgstr ""
 msgid ""
 "Default is OFF.\n"
 "When ON, query if PREC cannot record memory change of next instruction."
+msgstr ""
+
+#: record.c:73
+msgid ""
+"No record target is currently active.\n"
+"Use one of the \"target record-<tab><tab>\" commands first."
+msgstr ""
+
+#: record.c:184
+#, possible-c-format
+msgid "Debugging of process record target is %s.\n"
+msgstr ""
+
+#: record.c:206
+msgid "Already at end of record list.\n"
+msgstr ""
+
+#: record.c:212
+msgid "The current record target does not support this operation.\n"
+msgstr ""
+
+#: record.c:217
+msgid ""
+"Delete the log from this point forward and begin to record the running "
+"message at current PC?"
+msgstr ""
+
+#: record.c:235
+msgid "Process record is stopped and all execution logs are deleted.\n"
+msgstr ""
+
+#: record.c:246
+msgid "\"set record\" must be followed by an apporpriate subcommand.\n"
+msgstr ""
+
+#: record.c:269
+msgid "No record target is currently active.\n"
+msgstr ""
+
+#: record.c:273
+#, possible-c-format
+msgid "Active record target: %s\n"
+msgstr ""
+
+#: record.c:311
+msgid "Command requires an argument (insn number to go to)."
+msgstr ""
+
+#: record.c:339 record.c:359
+#, possible-c-format
+msgid "Expected positive number, got: %s."
+msgstr ""
+
+#: record.c:370
+#, possible-c-format
+msgid "Junk after argument: %s."
+msgstr ""
+
+#: record.c:418 record.c:538
+#, possible-c-format
+msgid "Invalid modifier: %c."
+msgstr ""
+
+#: record.c:629
+msgid "Set debugging of record/replay feature."
+msgstr ""
+
+#: record.c:630
+msgid "Show debugging of record/replay feature."
+msgstr ""
+
+#: record.c:631
+msgid "When enabled, debugging output for record/replay feature is displayed."
+msgstr ""
+
+#: record.c:637
+msgid "Set number of instructions to print in \"record instruction-history\"."
+msgstr ""
+
+#: record.c:638
+msgid "Show number of instructions to print in \"record instruction-history\"."
+msgstr ""
+
+#: record.c:644
+msgid "Set number of function to print in \"record function-call-history\"."
+msgstr ""
+
+#: record.c:645
+msgid "Show number of functions to print in \"record function-call-history\"."
+msgstr ""
+
+#: record.c:651
+msgid "Start recording."
+msgstr ""
+
+#: record.c:665
+msgid "Info record options"
+msgstr ""
+
+#: record.c:670
+msgid ""
+"Save the execution log to a file.\n"
+"Argument is optional filename.\n"
+"Default filename is 'gdb_record.<process_id>'."
+msgstr ""
+
+#: record.c:677
+msgid "Delete the rest of execution log and start recording it anew."
+msgstr ""
+
+#: record.c:683
+msgid "Stop the record/replay target."
+msgstr ""
+
+#: record.c:687
+msgid ""
+"Restore the program to its state at instruction number N.\n"
+"Argument is instruction number, as shown by 'info record'."
+msgstr ""
+
+#: record.c:692
+msgid ""
+"Print disassembled instructions stored in the execution log.\n"
+"With a /m modifier, source lines are included (if available).\n"
+"With a /r modifier, raw instructions in hex are included.\n"
+"With a /f modifier, function names are omitted.\n"
+"With a /p modifier, current position markers are omitted.\n"
+"With no argument, disassembles ten more instructions after the previous "
+"disassembly.\n"
+"\"record instruction-history -\" disassembles ten instructions before a "
+"previous disassembly.\n"
+"One argument specifies an instruction number as shown by 'info record', and "
+"ten instructions are disassembled after that instruction.\n"
+"Two arguments with comma between them specify starting and ending "
+"instruction numbers to disassemble.\n"
+"If the second argument is preceded by '+' or '-', it specifies the distance "
+"from the first argument.\n"
+"The number of instructions to disassemble can be defined with \"set record "
+"instruction-history-size\"."
+msgstr ""
+
+#: record.c:712
+msgid ""
+"Prints the execution history at function granularity.\n"
+"It prints one line for each sequence of instructions that belong to the same "
+"function.\n"
+"Without modifiers, it prints the function name.\n"
+"With a /l modifier, the source file and line number range is included.\n"
+"With a /i modifier, the instruction number range is included.\n"
+"With no argument, prints ten more lines after the previous ten-line print.\n"
+"\"record function-call-history -\" prints ten lines before a previous ten-"
+"line print.\n"
+"One argument specifies a function number as shown by 'info record', and ten "
+"lines are printed after that function.\n"
+"Two arguments with comma between them specify a range of functions to "
+"print.\n"
+"If the second argument is preceded by '+' or '-', it specifies the distance "
+"from the first argument.\n"
+"The number of functions to print can be defined with \"set record function-"
+"call-history-size\"."
 msgstr ""
 
 #: regcache.c:1054
@@ -19644,6 +19645,405 @@ msgstr ""
 msgid ""
 "Print the internal register group names.\n"
 "Takes an optional file parameter."
+msgstr ""
+
+#: remote-fileio.c:1451
+msgid "Illegal argument for \"set remote system-call-allowed\" command"
+msgstr ""
+
+#: remote-fileio.c:1458
+#, possible-c-format
+msgid "Garbage after \"show remote system-call-allowed\" command: `%s'"
+msgstr ""
+
+#: remote-fileio.c:1473
+msgid "Set if the host system(3) call is allowed for the target."
+msgstr ""
+
+#: remote-fileio.c:1477
+msgid "Show if the host system(3) call is allowed for the target."
+msgstr ""
+
+#: remote-m32r-sdi.c:329
+msgid "Cannot pass arguments to remote STDEBUG process"
+msgstr ""
+
+#: remote-m32r-sdi.c:332 remote-mips.c:2330
+msgid "No executable file specified"
+msgstr ""
+
+#: remote-m32r-sdi.c:391
+msgid "Connection refused."
+msgstr ""
+
+#: remote-m32r-sdi.c:394 remote-m32r-sdi.c:397
+msgid "Cannot connect to SDI target."
+msgstr ""
+
+#: remote-m32r-sdi.c:723 remote-m32r-sdi.c:729 remote-m32r-sdi.c:745
+#: remote.c:7051
+msgid "Remote connection closed"
+msgstr ""
+
+#: remote-m32r-sdi.c:1187
+msgid "Too many breakpoints"
+msgstr ""
+
+#: remote-m32r-sdi.c:1254
+#, possible-c-format
+msgid "Unknown option `%s'"
+msgstr ""
+
+#: remote-m32r-sdi.c:1269 symfile.c:2155
+#, possible-c-format
+msgid "\"%s\" is not an object file: %s"
+msgstr ""
+
+#: remote-m32r-sdi.c:1320
+#, possible-c-format
+msgid "Error while downloading %s section."
+msgstr ""
+
+#: remote-m32r-sdi.c:1439
+msgid "Too many watchpoints"
+msgstr ""
+
+#: remote-m32r-sdi.c:1681
+msgid "Reset SDI connection."
+msgstr ""
+
+#: remote-m32r-sdi.c:1684
+msgid "Show status of SDI connection."
+msgstr ""
+
+#: remote-m32r-sdi.c:1687
+msgid "Debug M32R/Chaos."
+msgstr ""
+
+#: remote-m32r-sdi.c:1690
+msgid "Use debug DMA mem access."
+msgstr ""
+
+#: remote-m32r-sdi.c:1692
+msgid "Use mon code mem access."
+msgstr ""
+
+#: remote-m32r-sdi.c:1695
+msgid "Set breakpoints by IB break."
+msgstr ""
+
+#: remote-m32r-sdi.c:1697
+msgid "Set breakpoints by dbt."
+msgstr ""
+
+#: remote-mips.c:676
+msgid "Watchdog has expired.  Target detached."
+msgstr ""
+
+#: remote-mips.c:680
+msgid "End of file from remote"
+msgstr ""
+
+#: remote-mips.c:682
+#, possible-c-format
+msgid "Error reading from remote: %s"
+msgstr ""
+
+#. At this point, about the only thing we can do is abort the command
+#. in progress and get back to command level as quickly as possible.
+#: remote-mips.c:717
+msgid "Remote board reset, debug protocol re-initialized."
+msgstr ""
+
+#: remote-mips.c:775
+#, possible-c-format
+msgid "Debug protocol failure:  more than %d characters before a sync."
+msgstr ""
+
+#: remote-mips.c:864
+#, possible-c-format
+msgid "MIPS protocol data packet too long: %s"
+msgstr ""
+
+#: remote-mips.c:902 remote-mips.c:1163 remote-mips.c:1204
+#, possible-c-format
+msgid "write to target failed: %s"
+msgstr ""
+
+#: remote-mips.c:1010
+msgid "Remote did not acknowledge packet"
+msgstr ""
+
+#: remote-mips.c:1041 remote-mips.c:1081
+msgid "Timed out waiting for remote packet"
+msgstr ""
+
+#: remote-mips.c:1103
+msgid "Timed out waiting for packet"
+msgstr ""
+
+#: remote-mips.c:1261
+msgid "mips_request: Trying to send command before reply"
+msgstr ""
+
+#: remote-mips.c:1281
+msgid "mips_request: Trying to get reply before command"
+msgstr ""
+
+#: remote-mips.c:1292
+msgid "Bad response from remote board"
+msgstr ""
+
+#: remote-mips.c:1368
+msgid "Failed to initialize (didn't receive packet)."
+msgstr ""
+
+#: remote-mips.c:1418
+msgid "internal error: mips_initialize called twice"
+msgstr ""
+
+#: remote-mips.c:1492
+msgid "Failed to initialize."
+msgstr ""
+
+#: remote-mips.c:1548
+msgid ""
+"To open a MIPS remote debugging connection, you need to specify what\n"
+"serial device is attached to the target board (e.g., /dev/ttya).\n"
+"If you want to use TFTP to download to the board, specify the name of a\n"
+"temporary file to be used by GDB for downloads as the second argument.\n"
+"This filename must be in the form host:filename, where host is the name\n"
+"of the host running the TFTP server, and the file must be readable by the\n"
+"world.  If the local name of the temporary file differs from the name as\n"
+"seen from the board via TFTP, specify that name as the third parameter.\n"
+msgstr ""
+
+#: remote-mips.c:1602
+msgid "Unable to open UDP port"
+msgstr ""
+
+#: remote-mips.c:1745 remote.c:4370
+msgid "Argument given to \"detach\" when remotely debugging."
+msgstr ""
+
+#: remote-mips.c:1851
+#, possible-c-format
+msgid "Remote failure: %s"
+msgstr ""
+
+#: remote-mips.c:2049
+#, possible-c-format
+msgid "Can't read register %d: %s"
+msgstr ""
+
+#: remote-mips.c:2088
+#, possible-c-format
+msgid "Can't write register %d: %s"
+msgstr ""
+
+#: remote-mips.c:2323
+msgid "Can't pass arguments to remote MIPS board; arguments ignored."
+msgstr ""
+
+#: remote-mips.c:2582
+#, possible-c-format
+msgid "mips_common_breakpoint: Attempt to clear bogus breakpoint at %s"
+msgstr ""
+
+#: remote-mips.c:2597 remote-mips.c:2650 remote-mips.c:2722
+#, possible-c-format
+msgid "mips_common_breakpoint: Bad response from remote board: %s"
+msgstr ""
+
+#: remote-mips.c:2761
+msgid "Timeout during download."
+msgstr ""
+
+#: remote-mips.c:2771
+#, possible-c-format
+msgid "Download got unexpected ack char: 0x%x, retrying."
+msgstr ""
+
+#: remote-mips.c:3528
+msgid "mips_load:  Couldn't get into monitor mode."
+msgstr ""
+
+#: remote-mips.c:3686
+msgid "Set timeout in seconds for remote MIPS serial I/O."
+msgstr ""
+
+#: remote-mips.c:3687
+msgid "Show timeout in seconds for remote MIPS serial I/O."
+msgstr ""
+
+#: remote-mips.c:3694
+msgid "Set retransmit timeout in seconds for remote MIPS serial I/O."
+msgstr ""
+
+#: remote-mips.c:3695
+msgid "Show retransmit timeout in seconds for remote MIPS serial I/O."
+msgstr ""
+
+#: remote-mips.c:3696
+msgid ""
+"This is the number of seconds to wait for an acknowledgement to a packet\n"
+"before resending the packet."
+msgstr ""
+
+#: remote-mips.c:3704
+msgid "Set the maximum number of characters to ignore when scanning for a SYN."
+msgstr ""
+
+#: remote-mips.c:3705
+msgid ""
+"Show the maximum number of characters to ignore when scanning for a SYN."
+msgstr ""
+
+#: remote-mips.c:3706
+msgid ""
+"This is the maximum number of characters GDB will ignore when trying to\n"
+"synchronize with the remote system.  A value of -1 means that there is no\n"
+"limit. (Note that these characters are printed out even though they are\n"
+"ignored.)"
+msgstr ""
+
+#: remote-mips.c:3716
+msgid "Set the prompt that GDB expects from the monitor."
+msgstr ""
+
+#: remote-mips.c:3717
+msgid "Show the prompt that GDB expects from the monitor."
+msgstr ""
+
+#: remote-mips.c:3724
+msgid "Set printing of monitor warnings."
+msgstr ""
+
+#: remote-mips.c:3725
+msgid "Show printing of monitor warnings."
+msgstr ""
+
+#: remote-mips.c:3726
+msgid ""
+"When enabled, monitor warnings about hardware breakpoints will be displayed."
+msgstr ""
+
+#: remote-mips.c:3733
+msgid "Send a packet to PMON (must be in debug mode)."
+msgstr ""
+
+#: remote-mips.c:3735
+msgid ""
+"Set zeroing of upper 32 bits of 64-bit addresses when talking to PMON "
+"targets."
+msgstr ""
+
+#: remote-mips.c:3736
+msgid ""
+"Show zeroing of upper 32 bits of 64-bit addresses when talking to PMON "
+"targets."
+msgstr ""
+
+#: remote-mips.c:3737
+msgid "Use \"on\" to enable the masking and \"off\" to disable it."
+msgstr ""
+
+#: remote-notif.c:273
+msgid "Set debugging of async remote notification."
+msgstr ""
+
+#: remote-notif.c:274
+msgid "Show debugging of async remote notification."
+msgstr ""
+
+#: remote-notif.c:275
+msgid ""
+"When non-zero, debugging output about async remote notifications is enabled."
+msgstr ""
+
+#: remote-sim.c:187
+#, possible-c-format
+msgid "Unable to create simulator instance for inferior %d."
+msgstr ""
+
+#: remote-sim.c:202
+#, possible-c-format
+msgid ""
+"Inferior %d and inferior %d would have identical simulator state.\n"
+"(This simulator does not support the running of more than one inferior.)"
+msgstr ""
+
+#: remote-sim.c:527
+msgid "Register size different to expected"
+msgstr ""
+
+#: remote-sim.c:530
+#, possible-c-format
+msgid "Register %d not updated"
+msgstr ""
+
+#: remote-sim.c:532
+#, possible-c-format
+msgid "Register %s not updated"
+msgstr ""
+
+#: remote-sim.c:571
+msgid "program to load"
+msgstr ""
+
+#: remote-sim.c:579
+msgid "GDB sim does not yet support a load offset."
+msgstr ""
+
+#: remote-sim.c:588
+msgid "unable to load program"
+msgstr ""
+
+#: remote-sim.c:615
+msgid "No executable file specified."
+msgstr ""
+
+#: remote-sim.c:617 remote-sim.c:1085
+msgid "No program loaded."
+msgstr ""
+
+#: remote-sim.c:648
+msgid "Unable to create sim inferior."
+msgstr ""
+
+#: remote-sim.c:732
+msgid "unable to create simulator instance"
+msgstr ""
+
+#: remote-sim.c:859
+#, possible-c-format
+msgid "gdbsim_resume: pid %d, step %d, signal %d\n"
+msgstr ""
+
+#: remote-sim.c:938
+#, possible-c-format
+msgid "Can't stop pid %d.  No inferior found."
+msgstr ""
+
+#: remote-sim.c:991
+#, possible-c-format
+msgid "Unable to wait for pid %d.  Inferior not found."
+msgstr ""
+
+#. PREVIOUSLY: The user may give a command before the simulator
+#. is opened. [...] (??? assuming of course one wishes to
+#. continue to allow commands to be sent to unopened simulators,
+#. which isn't entirely unreasonable).
+#. The simulator is a builtin abstraction of a remote target.
+#. Consistent with that model, access to the simulator, via sim
+#. commands, is restricted to the period when the channel to the
+#. simulator is open.
+#: remote-sim.c:1188
+msgid "Not connected to the simulator target"
+msgstr ""
+
+#: remote-sim.c:1322
+msgid "Send a command to the simulator."
 msgstr ""
 
 #. malformed packet error
@@ -19941,10 +20341,6 @@ msgstr ""
 msgid "Still connected."
 msgstr ""
 
-#: remote.c:4370 remote-mips.c:1745
-msgid "Argument given to \"detach\" when remotely debugging."
-msgstr ""
-
 #: remote.c:4373
 msgid "No process to detach from."
 msgstr ""
@@ -20147,11 +20543,6 @@ msgstr ""
 
 #: remote.c:7020
 msgid "Error finishing flash operation"
-msgstr ""
-
-#: remote.c:7051 remote-m32r-sdi.c:723 remote-m32r-sdi.c:729
-#: remote-m32r-sdi.c:745
-msgid "Remote connection closed"
 msgstr ""
 
 #: remote.c:7056 remote.c:7075
@@ -20747,396 +21138,6 @@ msgstr ""
 msgid "Show the remote pathname for \"run\""
 msgstr ""
 
-#: remote-fileio.c:1451
-msgid "Illegal argument for \"set remote system-call-allowed\" command"
-msgstr ""
-
-#: remote-fileio.c:1458
-#, possible-c-format
-msgid "Garbage after \"show remote system-call-allowed\" command: `%s'"
-msgstr ""
-
-#: remote-fileio.c:1473
-msgid "Set if the host system(3) call is allowed for the target."
-msgstr ""
-
-#: remote-fileio.c:1477
-msgid "Show if the host system(3) call is allowed for the target."
-msgstr ""
-
-#: remote-m32r-sdi.c:329
-msgid "Cannot pass arguments to remote STDEBUG process"
-msgstr ""
-
-#: remote-m32r-sdi.c:332 remote-mips.c:2330
-msgid "No executable file specified"
-msgstr ""
-
-#: remote-m32r-sdi.c:391
-msgid "Connection refused."
-msgstr ""
-
-#: remote-m32r-sdi.c:394 remote-m32r-sdi.c:397
-msgid "Cannot connect to SDI target."
-msgstr ""
-
-#: remote-m32r-sdi.c:1187
-msgid "Too many breakpoints"
-msgstr ""
-
-#: remote-m32r-sdi.c:1254
-#, possible-c-format
-msgid "Unknown option `%s'"
-msgstr ""
-
-#: remote-m32r-sdi.c:1269 symfile.c:2155
-#, possible-c-format
-msgid "\"%s\" is not an object file: %s"
-msgstr ""
-
-#: remote-m32r-sdi.c:1320
-#, possible-c-format
-msgid "Error while downloading %s section."
-msgstr ""
-
-#: remote-m32r-sdi.c:1439
-msgid "Too many watchpoints"
-msgstr ""
-
-#: remote-m32r-sdi.c:1681
-msgid "Reset SDI connection."
-msgstr ""
-
-#: remote-m32r-sdi.c:1684
-msgid "Show status of SDI connection."
-msgstr ""
-
-#: remote-m32r-sdi.c:1687
-msgid "Debug M32R/Chaos."
-msgstr ""
-
-#: remote-m32r-sdi.c:1690
-msgid "Use debug DMA mem access."
-msgstr ""
-
-#: remote-m32r-sdi.c:1692
-msgid "Use mon code mem access."
-msgstr ""
-
-#: remote-m32r-sdi.c:1695
-msgid "Set breakpoints by IB break."
-msgstr ""
-
-#: remote-m32r-sdi.c:1697
-msgid "Set breakpoints by dbt."
-msgstr ""
-
-#: remote-mips.c:676
-msgid "Watchdog has expired.  Target detached."
-msgstr ""
-
-#: remote-mips.c:680
-msgid "End of file from remote"
-msgstr ""
-
-#: remote-mips.c:682
-#, possible-c-format
-msgid "Error reading from remote: %s"
-msgstr ""
-
-#. At this point, about the only thing we can do is abort the command
-#. in progress and get back to command level as quickly as possible.
-#: remote-mips.c:717
-msgid "Remote board reset, debug protocol re-initialized."
-msgstr ""
-
-#: remote-mips.c:775
-#, possible-c-format
-msgid "Debug protocol failure:  more than %d characters before a sync."
-msgstr ""
-
-#: remote-mips.c:864
-#, possible-c-format
-msgid "MIPS protocol data packet too long: %s"
-msgstr ""
-
-#: remote-mips.c:902 remote-mips.c:1163 remote-mips.c:1204
-#, possible-c-format
-msgid "write to target failed: %s"
-msgstr ""
-
-#: remote-mips.c:1010
-msgid "Remote did not acknowledge packet"
-msgstr ""
-
-#: remote-mips.c:1041 remote-mips.c:1081
-msgid "Timed out waiting for remote packet"
-msgstr ""
-
-#: remote-mips.c:1103
-msgid "Timed out waiting for packet"
-msgstr ""
-
-#: remote-mips.c:1261
-msgid "mips_request: Trying to send command before reply"
-msgstr ""
-
-#: remote-mips.c:1281
-msgid "mips_request: Trying to get reply before command"
-msgstr ""
-
-#: remote-mips.c:1292
-msgid "Bad response from remote board"
-msgstr ""
-
-#: remote-mips.c:1368
-msgid "Failed to initialize (didn't receive packet)."
-msgstr ""
-
-#: remote-mips.c:1418
-msgid "internal error: mips_initialize called twice"
-msgstr ""
-
-#: remote-mips.c:1492
-msgid "Failed to initialize."
-msgstr ""
-
-#: remote-mips.c:1548
-msgid ""
-"To open a MIPS remote debugging connection, you need to specify what\n"
-"serial device is attached to the target board (e.g., /dev/ttya).\n"
-"If you want to use TFTP to download to the board, specify the name of a\n"
-"temporary file to be used by GDB for downloads as the second argument.\n"
-"This filename must be in the form host:filename, where host is the name\n"
-"of the host running the TFTP server, and the file must be readable by the\n"
-"world.  If the local name of the temporary file differs from the name as\n"
-"seen from the board via TFTP, specify that name as the third parameter.\n"
-msgstr ""
-
-#: remote-mips.c:1602
-msgid "Unable to open UDP port"
-msgstr ""
-
-#: remote-mips.c:1851
-#, possible-c-format
-msgid "Remote failure: %s"
-msgstr ""
-
-#: remote-mips.c:2049
-#, possible-c-format
-msgid "Can't read register %d: %s"
-msgstr ""
-
-#: remote-mips.c:2088
-#, possible-c-format
-msgid "Can't write register %d: %s"
-msgstr ""
-
-#: remote-mips.c:2323
-msgid "Can't pass arguments to remote MIPS board; arguments ignored."
-msgstr ""
-
-#: remote-mips.c:2582
-#, possible-c-format
-msgid "mips_common_breakpoint: Attempt to clear bogus breakpoint at %s"
-msgstr ""
-
-#: remote-mips.c:2597 remote-mips.c:2650 remote-mips.c:2722
-#, possible-c-format
-msgid "mips_common_breakpoint: Bad response from remote board: %s"
-msgstr ""
-
-#: remote-mips.c:2761
-msgid "Timeout during download."
-msgstr ""
-
-#: remote-mips.c:2771
-#, possible-c-format
-msgid "Download got unexpected ack char: 0x%x, retrying."
-msgstr ""
-
-#: remote-mips.c:3528
-msgid "mips_load:  Couldn't get into monitor mode."
-msgstr ""
-
-#: remote-mips.c:3686
-msgid "Set timeout in seconds for remote MIPS serial I/O."
-msgstr ""
-
-#: remote-mips.c:3687
-msgid "Show timeout in seconds for remote MIPS serial I/O."
-msgstr ""
-
-#: remote-mips.c:3694
-msgid "Set retransmit timeout in seconds for remote MIPS serial I/O."
-msgstr ""
-
-#: remote-mips.c:3695
-msgid "Show retransmit timeout in seconds for remote MIPS serial I/O."
-msgstr ""
-
-#: remote-mips.c:3696
-msgid ""
-"This is the number of seconds to wait for an acknowledgement to a packet\n"
-"before resending the packet."
-msgstr ""
-
-#: remote-mips.c:3704
-msgid "Set the maximum number of characters to ignore when scanning for a SYN."
-msgstr ""
-
-#: remote-mips.c:3705
-msgid ""
-"Show the maximum number of characters to ignore when scanning for a SYN."
-msgstr ""
-
-#: remote-mips.c:3706
-msgid ""
-"This is the maximum number of characters GDB will ignore when trying to\n"
-"synchronize with the remote system.  A value of -1 means that there is no\n"
-"limit. (Note that these characters are printed out even though they are\n"
-"ignored.)"
-msgstr ""
-
-#: remote-mips.c:3716
-msgid "Set the prompt that GDB expects from the monitor."
-msgstr ""
-
-#: remote-mips.c:3717
-msgid "Show the prompt that GDB expects from the monitor."
-msgstr ""
-
-#: remote-mips.c:3724
-msgid "Set printing of monitor warnings."
-msgstr ""
-
-#: remote-mips.c:3725
-msgid "Show printing of monitor warnings."
-msgstr ""
-
-#: remote-mips.c:3726
-msgid ""
-"When enabled, monitor warnings about hardware breakpoints will be displayed."
-msgstr ""
-
-#: remote-mips.c:3733
-msgid "Send a packet to PMON (must be in debug mode)."
-msgstr ""
-
-#: remote-mips.c:3735
-msgid ""
-"Set zeroing of upper 32 bits of 64-bit addresses when talking to PMON "
-"targets."
-msgstr ""
-
-#: remote-mips.c:3736
-msgid ""
-"Show zeroing of upper 32 bits of 64-bit addresses when talking to PMON "
-"targets."
-msgstr ""
-
-#: remote-mips.c:3737
-msgid "Use \"on\" to enable the masking and \"off\" to disable it."
-msgstr ""
-
-#: remote-notif.c:273
-msgid "Set debugging of async remote notification."
-msgstr ""
-
-#: remote-notif.c:274
-msgid "Show debugging of async remote notification."
-msgstr ""
-
-#: remote-notif.c:275
-msgid ""
-"When non-zero, debugging output about async remote notifications is enabled."
-msgstr ""
-
-#: remote-sim.c:187
-#, possible-c-format
-msgid "Unable to create simulator instance for inferior %d."
-msgstr ""
-
-#: remote-sim.c:202
-#, possible-c-format
-msgid ""
-"Inferior %d and inferior %d would have identical simulator state.\n"
-"(This simulator does not support the running of more than one inferior.)"
-msgstr ""
-
-#: remote-sim.c:527
-msgid "Register size different to expected"
-msgstr ""
-
-#: remote-sim.c:530
-#, possible-c-format
-msgid "Register %d not updated"
-msgstr ""
-
-#: remote-sim.c:532
-#, possible-c-format
-msgid "Register %s not updated"
-msgstr ""
-
-#: remote-sim.c:571
-msgid "program to load"
-msgstr ""
-
-#: remote-sim.c:579
-msgid "GDB sim does not yet support a load offset."
-msgstr ""
-
-#: remote-sim.c:588
-msgid "unable to load program"
-msgstr ""
-
-#: remote-sim.c:615
-msgid "No executable file specified."
-msgstr ""
-
-#: remote-sim.c:617 remote-sim.c:1085
-msgid "No program loaded."
-msgstr ""
-
-#: remote-sim.c:648
-msgid "Unable to create sim inferior."
-msgstr ""
-
-#: remote-sim.c:732
-msgid "unable to create simulator instance"
-msgstr ""
-
-#: remote-sim.c:859
-#, possible-c-format
-msgid "gdbsim_resume: pid %d, step %d, signal %d\n"
-msgstr ""
-
-#: remote-sim.c:938
-#, possible-c-format
-msgid "Can't stop pid %d.  No inferior found."
-msgstr ""
-
-#: remote-sim.c:991
-#, possible-c-format
-msgid "Unable to wait for pid %d.  Inferior not found."
-msgstr ""
-
-#. PREVIOUSLY: The user may give a command before the simulator
-#. is opened. [...] (??? assuming of course one wishes to
-#. continue to allow commands to be sent to unopened simulators,
-#. which isn't entirely unreasonable).
-#. The simulator is a builtin abstraction of a remote target.
-#. Consistent with that model, access to the simulator, via sim
-#. commands, is restricted to the period when the channel to the
-#. simulator is open.
-#: remote-sim.c:1188
-msgid "Not connected to the simulator target"
-msgstr ""
-
-#: remote-sim.c:1322
-msgid "Send a command to the simulator."
-msgstr ""
-
 #: reverse.c:53
 #, possible-c-format
 msgid "Already in reverse mode.  Use '%s' or 'set exec-dir forward'."
@@ -21523,58 +21524,6 @@ msgstr ""
 msgid "Print DOS serial port status."
 msgstr ""
 
-#: serial.c:378
-msgid "serial_readchar: blocking read in async mode"
-msgstr ""
-
-#: serial.c:627
-msgid ""
-"Connect the terminal directly up to the command monitor.\n"
-"Use <CR>~. or <CR>~^D to break out."
-msgstr ""
-
-#: serial.c:632
-msgid "Set default serial/parallel port configuration."
-msgstr ""
-
-#: serial.c:638
-msgid "Show default serial/parallel port configuration."
-msgstr ""
-
-#: serial.c:644
-msgid "Set filename for remote session recording."
-msgstr ""
-
-#: serial.c:645
-msgid "Show filename for remote session recording."
-msgstr ""
-
-#: serial.c:646
-msgid ""
-"This file is used to record the remote session for future playback\n"
-"by gdbserver."
-msgstr ""
-
-#: serial.c:654
-msgid "Set numerical base for remote session logging"
-msgstr ""
-
-#: serial.c:655
-msgid "Show numerical base for remote session logging"
-msgstr ""
-
-#: serial.c:662
-msgid "Set serial debugging."
-msgstr ""
-
-#: serial.c:663
-msgid "Show serial debugging."
-msgstr ""
-
-#: serial.c:664
-msgid "When non-zero, serial port debugging is enabled."
-msgstr ""
-
 #: ser-mingw.c:174
 msgid "SetCommState failed"
 msgstr ""
@@ -21667,6 +21616,76 @@ msgid ""
 "when debugging using remote targets."
 msgstr ""
 
+#: serial.c:378
+msgid "serial_readchar: blocking read in async mode"
+msgstr ""
+
+#: serial.c:627
+msgid ""
+"Connect the terminal directly up to the command monitor.\n"
+"Use <CR>~. or <CR>~^D to break out."
+msgstr ""
+
+#: serial.c:632
+msgid "Set default serial/parallel port configuration."
+msgstr ""
+
+#: serial.c:638
+msgid "Show default serial/parallel port configuration."
+msgstr ""
+
+#: serial.c:644
+msgid "Set filename for remote session recording."
+msgstr ""
+
+#: serial.c:645
+msgid "Show filename for remote session recording."
+msgstr ""
+
+#: serial.c:646
+msgid ""
+"This file is used to record the remote session for future playback\n"
+"by gdbserver."
+msgstr ""
+
+#: serial.c:654
+msgid "Set numerical base for remote session logging"
+msgstr ""
+
+#: serial.c:655
+msgid "Show numerical base for remote session logging"
+msgstr ""
+
+#: serial.c:662
+msgid "Set serial debugging."
+msgstr ""
+
+#: serial.c:663
+msgid "Show serial debugging."
+msgstr ""
+
+#: serial.c:664
+msgid "When non-zero, serial port debugging is enabled."
+msgstr ""
+
+#: sh-tdep.c:1591
+msgid "sh_register_convert_to_raw called with non DR register number"
+msgstr ""
+
+#: sh-tdep.c:2446
+msgid "Set calling convention used when calling target functions from GDB."
+msgstr ""
+
+#: sh-tdep.c:2448
+msgid "Show calling convention used when calling target functions from GDB."
+msgstr ""
+
+#: sh-tdep.c:2450
+msgid ""
+"gcc       - Use GCC calling convention (default).\n"
+"renesas   - Enforce Renesas calling convention."
+msgstr ""
+
 #: sh64-tdep.c:1472
 msgid "sh64_register_convert_to_virtual called with non DR register number"
 msgstr ""
@@ -21687,24 +21706,6 @@ msgstr ""
 
 #: sh64-tdep.c:2156
 msgid "Not a valid register for the current processor mode."
-msgstr ""
-
-#: sh-tdep.c:1591
-msgid "sh_register_convert_to_raw called with non DR register number"
-msgstr ""
-
-#: sh-tdep.c:2446
-msgid "Set calling convention used when calling target functions from GDB."
-msgstr ""
-
-#: sh-tdep.c:2448
-msgid "Show calling convention used when calling target functions from GDB."
-msgstr ""
-
-#: sh-tdep.c:2450
-msgid ""
-"gcc       - Use GCC calling convention (default).\n"
-"renesas   - Enforce Renesas calling convention."
 msgstr ""
 
 #: skip.c:83
@@ -21800,8 +21801,8 @@ msgstr ""
 #: skip.c:428
 msgid ""
 "Disable skip entries.  You can specify numbers (e.g. \"skip disable 1 3\"), "
-"ranges (e.g. \"skip disable 4-8\"), or both (e.g. \"skip disable 1 3 4-8"
-"\").\n"
+"ranges (e.g. \"skip disable 4-8\"), or both (e.g. \"skip disable 1 3 "
+"4-8\").\n"
 "\n"
 "If you don't specify any numbers or ranges, we'll disable all skip entries.\n"
 "\n"
@@ -21820,8 +21821,9 @@ msgstr ""
 
 #: skip.c:442
 msgid ""
-"Display the status of skips.  You can specify numbers (e.g. \"skip info 1 3"
-"\"), ranges (e.g. \"skip info 4-8\"), or both (e.g. \"skip info 1 3 4-8\").\n"
+"Display the status of skips.  You can specify numbers (e.g. \"skip info 1 "
+"3\"), ranges (e.g. \"skip info 4-8\"), or both (e.g. \"skip info 1 3 "
+"4-8\").\n"
 "\n"
 "If you don't specify any numbers or ranges, we'll show all skips.\n"
 "\n"
@@ -21831,141 +21833,106 @@ msgid ""
 "\tfunction    - ignored function"
 msgstr ""
 
-#: solib.c:104
+#: sol-thread.c:260
 #, possible-c-format
-msgid ""
-"The search path for loading non-absolute shared library symbol files is %s.\n"
+msgid "thread_to_lwp: td_ta_map_id2thr %s"
 msgstr ""
 
-#: solib.c:422
+#: sol-thread.c:266
 #, possible-c-format
-msgid "`%s': not in executable format: %s"
+msgid "thread_to_lwp: td_thr_get_info: %s"
 msgstr ""
 
-#: solib.c:429
+#: sol-thread.c:272
 #, possible-c-format
-msgid ""
-"`%s': Shared library architecture %s is not compatible with target "
-"architecture %s."
+msgid "thread_to_lwp: thread state not active: %s"
 msgstr ""
 
-#: solib.c:471
-msgid "Shared library file name is too long."
-msgstr ""
-
-#: solib.c:476
+#: sol-thread.c:303
 #, possible-c-format
-msgid "Can't find the file sections in `%s': %s"
+msgid "lwp_to_thread: td_ta_map_lwp2thr: %s."
 msgstr ""
 
-#: solib.c:616
+#: sol-thread.c:309
 #, possible-c-format
-msgid "Error while reading shared library symbols for %s:\n"
+msgid "lwp_to_thread: td_thr_validate: %s."
 msgstr ""
 
-#: solib.c:622
+#: sol-thread.c:315
 #, possible-c-format
-msgid "Loaded symbols for %s\n"
+msgid "lwp_to_thread: td_thr_get_info: %s."
 msgstr ""
 
-#: solib.c:811 solib.c:1262
-msgid "Error while mapping shared library sections:\n"
+#. Inactive thread.
+#: sol-thread.c:367 sol-thread.c:403
+msgid "This version of Solaris can't start inactive threads."
 msgstr ""
 
-#: solib.c:827
+#: sol-thread.c:369 sol-thread.c:405
 #, possible-c-format
-msgid ""
-"Could not load shared library symbols for %s.\n"
-"Do you need \"set solib-search-path\" or \"set sysroot\"?"
+msgid "Specified thread %ld seems to have terminated"
 msgstr ""
 
-#: solib.c:832
+#: sol-thread.c:458
+msgid "sol_thread_fetch_registers: thread == 0"
+msgstr ""
+
+#: sol-thread.c:462
 #, possible-c-format
-msgid ""
-"Could not load shared library symbols for %d libraries, e.g. %s.\n"
-"Use the \"info sharedlibrary\" command to see the complete listing.\n"
-"Do you need \"set solib-search-path\" or \"set sysroot\"?"
+msgid "sol_thread_fetch_registers: td_ta_map_id2thr: %s"
 msgstr ""
 
-#: solib.c:916
+#: sol-thread.c:469
 #, possible-c-format
-msgid "Symbols already loaded for %s\n"
+msgid "sol_thread_fetch_registers: td_thr_getgregs %s"
 msgstr ""
 
-#: solib.c:1045
-msgid "No shared libraries matched.\n"
-msgstr ""
-
-#: solib.c:1048
-msgid "No shared libraries loaded at this time.\n"
-msgstr ""
-
-#: solib.c:1054
-msgid "(*): Shared library is missing debugging information.\n"
-msgstr ""
-
-#: solib.c:1334
+#: sol-thread.c:479
 #, possible-c-format
-msgid "Autoloading of shared library symbols is %s.\n"
+msgid "sol_thread_fetch_registers: td_thr_getfpregs %s"
 msgstr ""
 
-#: solib.c:1459 xcoffsolib.c:166
-msgid "Load shared object library symbols for files matching REGEXP."
+#: sol-thread.c:514
+#, possible-c-format
+msgid "sol_thread_store_registers: td_ta_map_id2thr %s"
 msgstr ""
 
-#: solib.c:1461
-msgid "Status of loaded shared object libraries."
+#: sol-thread.c:527
+#, possible-c-format
+msgid "sol_thread_store_registers: td_thr_getgregs %s"
 msgstr ""
 
-#: solib.c:1463
-msgid "Unload all shared object library symbols."
+#: sol-thread.c:531
+#, possible-c-format
+msgid "sol_thread_store_registers: td_thr_getfpregs %s"
 msgstr ""
 
-#: solib.c:1466 xcoffsolib.c:171
-msgid "Set autoloading of shared library symbols."
+#: sol-thread.c:543
+#, possible-c-format
+msgid "sol_thread_store_registers: td_thr_setgregs %s"
 msgstr ""
 
-#: solib.c:1467 xcoffsolib.c:172
-msgid "Show autoloading of shared library symbols."
+#: sol-thread.c:547
+#, possible-c-format
+msgid "sol_thread_store_registers: td_thr_setfpregs %s"
 msgstr ""
 
-#: solib.c:1468 xcoffsolib.c:173
-msgid ""
-"If \"on\", symbols from all shared object libraries will be loaded\n"
-"automatically when the inferior begins execution, when the dynamic linker\n"
-"informs gdb that a new library has been loaded, or when attaching to the\n"
-"inferior.  Otherwise, symbols must be loaded manually, using `sharedlibrary'."
+#: sol-thread.c:607
+#, possible-c-format
+msgid "sol_thread_new_objfile: td_init: %s"
 msgstr ""
 
-#: solib.c:1479
-msgid "Set an alternate system root."
+#: sol-thread.c:635
+#, possible-c-format
+msgid "Cannot initialize thread debugging library: %s"
 msgstr ""
 
-#: solib.c:1480
-msgid "Show the current system root."
+#: sol-thread.c:1170
+msgid "info sol-thread: failed to get info for thread."
 msgstr ""
 
-#: solib.c:1481
-msgid ""
-"The system root is used to load absolute shared library symbol files.\n"
-"For other (relative) files, you can add directories using\n"
-"`set solib-search-path'."
-msgstr ""
-
-#: solib.c:1495
-msgid ""
-"Set the search path for loading non-absolute shared library symbol files."
-msgstr ""
-
-#: solib.c:1497
-msgid ""
-"Show the search path for loading non-absolute shared library symbol files."
-msgstr ""
-
-#: solib.c:1499
-msgid ""
-"This takes precedence over the environment variables PATH and "
-"LD_LIBRARY_PATH."
+#: sol-thread.c:1286
+msgid "Show info on Solaris user threads."
 msgstr ""
 
 #: solib-darwin.c:620
@@ -22377,106 +22344,141 @@ msgstr ""
 msgid "Could not relocate shared library \"%s\": bad offsets"
 msgstr ""
 
-#: sol-thread.c:260
+#: solib.c:104
 #, possible-c-format
-msgid "thread_to_lwp: td_ta_map_id2thr %s"
+msgid ""
+"The search path for loading non-absolute shared library symbol files is %s.\n"
 msgstr ""
 
-#: sol-thread.c:266
+#: solib.c:422
 #, possible-c-format
-msgid "thread_to_lwp: td_thr_get_info: %s"
+msgid "`%s': not in executable format: %s"
 msgstr ""
 
-#: sol-thread.c:272
+#: solib.c:429
 #, possible-c-format
-msgid "thread_to_lwp: thread state not active: %s"
+msgid ""
+"`%s': Shared library architecture %s is not compatible with target "
+"architecture %s."
 msgstr ""
 
-#: sol-thread.c:303
+#: solib.c:471
+msgid "Shared library file name is too long."
+msgstr ""
+
+#: solib.c:476
 #, possible-c-format
-msgid "lwp_to_thread: td_ta_map_lwp2thr: %s."
+msgid "Can't find the file sections in `%s': %s"
 msgstr ""
 
-#: sol-thread.c:309
+#: solib.c:616
 #, possible-c-format
-msgid "lwp_to_thread: td_thr_validate: %s."
+msgid "Error while reading shared library symbols for %s:\n"
 msgstr ""
 
-#: sol-thread.c:315
+#: solib.c:622
 #, possible-c-format
-msgid "lwp_to_thread: td_thr_get_info: %s."
+msgid "Loaded symbols for %s\n"
 msgstr ""
 
-#. Inactive thread.
-#: sol-thread.c:367 sol-thread.c:403
-msgid "This version of Solaris can't start inactive threads."
+#: solib.c:811 solib.c:1262
+msgid "Error while mapping shared library sections:\n"
 msgstr ""
 
-#: sol-thread.c:369 sol-thread.c:405
+#: solib.c:827
 #, possible-c-format
-msgid "Specified thread %ld seems to have terminated"
+msgid ""
+"Could not load shared library symbols for %s.\n"
+"Do you need \"set solib-search-path\" or \"set sysroot\"?"
 msgstr ""
 
-#: sol-thread.c:458
-msgid "sol_thread_fetch_registers: thread == 0"
-msgstr ""
-
-#: sol-thread.c:462
+#: solib.c:832
 #, possible-c-format
-msgid "sol_thread_fetch_registers: td_ta_map_id2thr: %s"
+msgid ""
+"Could not load shared library symbols for %d libraries, e.g. %s.\n"
+"Use the \"info sharedlibrary\" command to see the complete listing.\n"
+"Do you need \"set solib-search-path\" or \"set sysroot\"?"
 msgstr ""
 
-#: sol-thread.c:469
+#: solib.c:916
 #, possible-c-format
-msgid "sol_thread_fetch_registers: td_thr_getgregs %s"
+msgid "Symbols already loaded for %s\n"
 msgstr ""
 
-#: sol-thread.c:479
+#: solib.c:1045
+msgid "No shared libraries matched.\n"
+msgstr ""
+
+#: solib.c:1048
+msgid "No shared libraries loaded at this time.\n"
+msgstr ""
+
+#: solib.c:1054
+msgid "(*): Shared library is missing debugging information.\n"
+msgstr ""
+
+#: solib.c:1334
 #, possible-c-format
-msgid "sol_thread_fetch_registers: td_thr_getfpregs %s"
+msgid "Autoloading of shared library symbols is %s.\n"
 msgstr ""
 
-#: sol-thread.c:514
-#, possible-c-format
-msgid "sol_thread_store_registers: td_ta_map_id2thr %s"
+#: solib.c:1459 xcoffsolib.c:166
+msgid "Load shared object library symbols for files matching REGEXP."
 msgstr ""
 
-#: sol-thread.c:527
-#, possible-c-format
-msgid "sol_thread_store_registers: td_thr_getgregs %s"
+#: solib.c:1461
+msgid "Status of loaded shared object libraries."
 msgstr ""
 
-#: sol-thread.c:531
-#, possible-c-format
-msgid "sol_thread_store_registers: td_thr_getfpregs %s"
+#: solib.c:1463
+msgid "Unload all shared object library symbols."
 msgstr ""
 
-#: sol-thread.c:543
-#, possible-c-format
-msgid "sol_thread_store_registers: td_thr_setgregs %s"
+#: solib.c:1466 xcoffsolib.c:171
+msgid "Set autoloading of shared library symbols."
 msgstr ""
 
-#: sol-thread.c:547
-#, possible-c-format
-msgid "sol_thread_store_registers: td_thr_setfpregs %s"
+#: solib.c:1467 xcoffsolib.c:172
+msgid "Show autoloading of shared library symbols."
 msgstr ""
 
-#: sol-thread.c:607
-#, possible-c-format
-msgid "sol_thread_new_objfile: td_init: %s"
+#: solib.c:1468 xcoffsolib.c:173
+msgid ""
+"If \"on\", symbols from all shared object libraries will be loaded\n"
+"automatically when the inferior begins execution, when the dynamic linker\n"
+"informs gdb that a new library has been loaded, or when attaching to the\n"
+"inferior.  Otherwise, symbols must be loaded manually, using `sharedlibrary'."
 msgstr ""
 
-#: sol-thread.c:635
-#, possible-c-format
-msgid "Cannot initialize thread debugging library: %s"
+#: solib.c:1479
+msgid "Set an alternate system root."
 msgstr ""
 
-#: sol-thread.c:1170
-msgid "info sol-thread: failed to get info for thread."
+#: solib.c:1480
+msgid "Show the current system root."
 msgstr ""
 
-#: sol-thread.c:1286
-msgid "Show info on Solaris user threads."
+#: solib.c:1481
+msgid ""
+"The system root is used to load absolute shared library symbol files.\n"
+"For other (relative) files, you can add directories using\n"
+"`set solib-search-path'."
+msgstr ""
+
+#: solib.c:1495
+msgid ""
+"Set the search path for loading non-absolute shared library symbol files."
+msgstr ""
+
+#: solib.c:1497
+msgid ""
+"Show the search path for loading non-absolute shared library symbol files."
+msgstr ""
+
+#: solib.c:1499
+msgid ""
+"This takes precedence over the environment variables PATH and "
+"LD_LIBRARY_PATH."
 msgstr ""
 
 #: somread.c:73
@@ -23476,6 +23478,39 @@ msgstr ""
 msgid "Standard register ``$ps'' is not available for this target"
 msgstr ""
 
+#: symfile-mem.c:96
+msgid "add-symbol-file-from-memory not supported for this target"
+msgstr ""
+
+#: symfile-mem.c:101
+msgid "Failed to read a valid object file image from memory."
+msgstr ""
+
+#: symfile-mem.c:116
+#, possible-c-format
+msgid "Got object file from memory but can't read symbols: %s."
+msgstr ""
+
+#: symfile-mem.c:149
+msgid "add-symbol-file-from-memory requires an expression argument"
+msgstr ""
+
+#: symfile-mem.c:159
+msgid "Must use symbol-file or exec-file before add-symbol-file-from-memory."
+msgstr ""
+
+#: symfile-mem.c:214
+msgid ""
+"Could not load vsyscall page because no executable was specified\n"
+"try using the \"file\" command first."
+msgstr ""
+
+#: symfile-mem.c:242
+msgid ""
+"Load the symbols out of memory from a dynamically loaded object file.\n"
+"Give an expression for the address of the file's shared object file header."
+msgstr ""
+
 #: symfile.c:539
 #, possible-c-format
 msgid "no loadable sections found in added symbol-file %s"
@@ -23766,39 +23801,6 @@ msgid ""
 "directory as the binary, then in the `"
 msgstr ""
 
-#: symfile-mem.c:96
-msgid "add-symbol-file-from-memory not supported for this target"
-msgstr ""
-
-#: symfile-mem.c:101
-msgid "Failed to read a valid object file image from memory."
-msgstr ""
-
-#: symfile-mem.c:116
-#, possible-c-format
-msgid "Got object file from memory but can't read symbols: %s."
-msgstr ""
-
-#: symfile-mem.c:149
-msgid "add-symbol-file-from-memory requires an expression argument"
-msgstr ""
-
-#: symfile-mem.c:159
-msgid "Must use symbol-file or exec-file before add-symbol-file-from-memory."
-msgstr ""
-
-#: symfile-mem.c:214
-msgid ""
-"Could not load vsyscall page because no executable was specified\n"
-"try using the \"file\" command first."
-msgstr ""
-
-#: symfile-mem.c:242
-msgid ""
-"Load the symbols out of memory from a dynamically loaded object file.\n"
-"Give an expression for the address of the file's shared object file header."
-msgstr ""
-
 #: symmisc.c:94
 #, possible-c-format
 msgid "Byte cache statistics for '%s':\n"
@@ -24054,6 +24056,97 @@ msgstr ""
 
 #: symtab.h:768
 msgid "Section index is uninitialized"
+msgstr ""
+
+#: target-descriptions.c:365
+msgid "Architecture rejected target-supplied description"
+msgstr ""
+
+#: target-descriptions.c:373
+msgid "Target-supplied registers are not supported by the current architecture"
+msgstr ""
+
+#: target-descriptions.c:400
+msgid "Could not remove target-supplied description"
+msgstr ""
+
+#: target-descriptions.c:991 target-descriptions.c:1013
+#, possible-c-format
+msgid "Register \"%s\" has an unsupported size (%d bits)"
+msgstr ""
+
+#: target-descriptions.c:1504
+#, possible-c-format
+msgid "Attempted to add duplicate compatible architecture \"%s\""
+msgstr ""
+
+#: target-descriptions.c:1524
+#, possible-c-format
+msgid "Attempted to add duplicate property \"%s\""
+msgstr ""
+
+#: target-descriptions.c:1587
+#, possible-c-format
+msgid "The target description will be read from \"%s\".\n"
+msgstr ""
+
+#: target-descriptions.c:1590
+msgid "The target description will be read from the target.\n"
+msgstr ""
+
+#: target-descriptions.c:1625
+msgid "There is no target description to print."
+msgstr ""
+
+#: target-descriptions.c:1628
+msgid "The current target description did not come from an XML file."
+msgstr ""
+
+#: target-descriptions.c:1778
+#, possible-c-format
+msgid "C output is not supported type \"%s\"."
+msgstr ""
+
+#: target-descriptions.c:1811
+msgid "Set target description specific variables."
+msgstr ""
+
+#. allow-unknown
+#: target-descriptions.c:1815
+msgid "Show target description specific variables."
+msgstr ""
+
+#. allow-unknown
+#: target-descriptions.c:1819
+msgid "Unset target description specific variables."
+msgstr ""
+
+#: target-descriptions.c:1826
+msgid "Set the file to read for an XML target description"
+msgstr ""
+
+#: target-descriptions.c:1827
+msgid "Show the file to read for an XML target description"
+msgstr ""
+
+#: target-descriptions.c:1828
+msgid ""
+"When set, GDB will read the target description from a local\n"
+"file instead of querying the remote target."
+msgstr ""
+
+#: target-descriptions.c:1835
+msgid ""
+"Unset the file to read for an XML target description.  When unset,\n"
+"GDB will read the description from the target."
+msgstr ""
+
+#: target-descriptions.c:1840
+msgid "Print the current target description as a C source file."
+msgstr ""
+
+#: target-memory.c:430
+msgid "Error writing data to flash"
 msgstr ""
 
 #: target.c:213
@@ -24415,97 +24508,6 @@ msgstr ""
 msgid ""
 "When this permission is on, GDB may interrupt/stop the target's execution.\n"
 "Otherwise, any attempt to interrupt or stop will be ignored."
-msgstr ""
-
-#: target-descriptions.c:365
-msgid "Architecture rejected target-supplied description"
-msgstr ""
-
-#: target-descriptions.c:373
-msgid "Target-supplied registers are not supported by the current architecture"
-msgstr ""
-
-#: target-descriptions.c:400
-msgid "Could not remove target-supplied description"
-msgstr ""
-
-#: target-descriptions.c:991 target-descriptions.c:1013
-#, possible-c-format
-msgid "Register \"%s\" has an unsupported size (%d bits)"
-msgstr ""
-
-#: target-descriptions.c:1504
-#, possible-c-format
-msgid "Attempted to add duplicate compatible architecture \"%s\""
-msgstr ""
-
-#: target-descriptions.c:1524
-#, possible-c-format
-msgid "Attempted to add duplicate property \"%s\""
-msgstr ""
-
-#: target-descriptions.c:1587
-#, possible-c-format
-msgid "The target description will be read from \"%s\".\n"
-msgstr ""
-
-#: target-descriptions.c:1590
-msgid "The target description will be read from the target.\n"
-msgstr ""
-
-#: target-descriptions.c:1625
-msgid "There is no target description to print."
-msgstr ""
-
-#: target-descriptions.c:1628
-msgid "The current target description did not come from an XML file."
-msgstr ""
-
-#: target-descriptions.c:1778
-#, possible-c-format
-msgid "C output is not supported type \"%s\"."
-msgstr ""
-
-#: target-descriptions.c:1811
-msgid "Set target description specific variables."
-msgstr ""
-
-#. allow-unknown
-#: target-descriptions.c:1815
-msgid "Show target description specific variables."
-msgstr ""
-
-#. allow-unknown
-#: target-descriptions.c:1819
-msgid "Unset target description specific variables."
-msgstr ""
-
-#: target-descriptions.c:1826
-msgid "Set the file to read for an XML target description"
-msgstr ""
-
-#: target-descriptions.c:1827
-msgid "Show the file to read for an XML target description"
-msgstr ""
-
-#: target-descriptions.c:1828
-msgid ""
-"When set, GDB will read the target description from a local\n"
-"file instead of querying the remote target."
-msgstr ""
-
-#: target-descriptions.c:1835
-msgid ""
-"Unset the file to read for an XML target description.  When unset,\n"
-"GDB will read the description from the target."
-msgstr ""
-
-#: target-descriptions.c:1840
-msgid "Print the current target description as a C source file."
-msgstr ""
-
-#: target-memory.c:430
-msgid "Error writing data to flash"
 msgstr ""
 
 #: thread.c:241
@@ -25653,63 +25655,18 @@ msgstr ""
 msgid "Show the notes string to use for future tstop commands"
 msgstr ""
 
-#: tui/tui-hooks.c:87
-msgid "(y or n) "
-msgstr ""
-
-#: tui/tui-hooks.c:120
-msgid "Please answer y or n.\n"
-msgstr ""
-
-#: tui/tui.c:373
-msgid "TUI mode not allowed"
-msgstr ""
-
 #: tui/tui-stack.c:459
 msgid ""
 "Update the source window and locator to display the current execution "
 "point.\n"
 msgstr ""
 
-#: tui/tui-layout.c:388
-msgid ""
-"Change the layout of windows.\n"
-"Usage: layout prev | next | <layout_name> \n"
-"Layout names are:\n"
-"   src   : Displays source and command windows.\n"
-"   asm   : Displays disassembly and command windows.\n"
-"   split : Displays source, disassembly and command windows.\n"
-"   regs  : Displays register window. If existing layout\n"
-"           is source/command or assembly/command, the \n"
-"           register window is displayed. If the\n"
-"           source/assembly/command (split) is displayed, \n"
-"           the register window is displayed with \n"
-"           the window that has current logical focus.\n"
-msgstr ""
-
-#: tui/tui-layout.c:403
-msgid "Toggle between Source/Command and Disassembly/Command layouts.\n"
-msgstr ""
-
-#: tui/tui-layout.c:405
-msgid ""
-"Toggle between Source/Command or Disassembly/Command and \n"
-"Source/Disassembly/Command layouts.\n"
-msgstr ""
-
-#: tui/tui-layout.c:440
-msgid "Ambiguous command input."
-msgstr ""
-
-#: tui/tui-layout.c:613
-#, possible-c-format
-msgid ""
-"Invalid layout specified.\n"
-"%s"
-msgstr ""
-
 #: tui/tui-interp.c:140
 msgid "tui_exec called"
+msgstr ""
+
+#: tui/tui.c:373
+msgid "TUI mode not allowed"
 msgstr ""
 
 #: tui/tui-regs.c:611
@@ -25754,34 +25711,6 @@ msgstr ""
 
 #: tui/tui-regs.c:655
 msgid "Scroll the register window backward\n"
-msgstr ""
-
-#: tui/tui-file.c:80
-msgid "tui_file_delete: bad magic number"
-msgstr ""
-
-#: tui/tui-file.c:130
-msgid "tui_file_isatty: bad magic number"
-msgstr ""
-
-#: tui/tui-file.c:144
-msgid "tui_file_rewind: bad magic number"
-msgstr ""
-
-#: tui/tui-file.c:157
-msgid "tui_file_put: bad magic number"
-msgstr ""
-
-#: tui/tui-file.c:194
-msgid "tui_file_get_strbuf: bad magic number"
-msgstr ""
-
-#: tui/tui-file.c:209
-msgid "tui_file_adjust_strbuf: bad magic number"
-msgstr ""
-
-#: tui/tui-file.c:237
-msgid "tui_file_flush: bad magic number"
 msgstr ""
 
 #: tui/tui-win.c:211
@@ -25960,6 +25889,79 @@ msgstr ""
 #, possible-c-format
 msgid ""
 "Invalid window height specified.\n"
+"%s"
+msgstr ""
+
+#: tui/tui-hooks.c:87
+msgid "(y or n) "
+msgstr ""
+
+#: tui/tui-hooks.c:120
+msgid "Please answer y or n.\n"
+msgstr ""
+
+#: tui/tui-file.c:80
+msgid "tui_file_delete: bad magic number"
+msgstr ""
+
+#: tui/tui-file.c:130
+msgid "tui_file_isatty: bad magic number"
+msgstr ""
+
+#: tui/tui-file.c:144
+msgid "tui_file_rewind: bad magic number"
+msgstr ""
+
+#: tui/tui-file.c:157
+msgid "tui_file_put: bad magic number"
+msgstr ""
+
+#: tui/tui-file.c:194
+msgid "tui_file_get_strbuf: bad magic number"
+msgstr ""
+
+#: tui/tui-file.c:209
+msgid "tui_file_adjust_strbuf: bad magic number"
+msgstr ""
+
+#: tui/tui-file.c:237
+msgid "tui_file_flush: bad magic number"
+msgstr ""
+
+#: tui/tui-layout.c:388
+msgid ""
+"Change the layout of windows.\n"
+"Usage: layout prev | next | <layout_name> \n"
+"Layout names are:\n"
+"   src   : Displays source and command windows.\n"
+"   asm   : Displays disassembly and command windows.\n"
+"   split : Displays source, disassembly and command windows.\n"
+"   regs  : Displays register window. If existing layout\n"
+"           is source/command or assembly/command, the \n"
+"           register window is displayed. If the\n"
+"           source/assembly/command (split) is displayed, \n"
+"           the register window is displayed with \n"
+"           the window that has current logical focus.\n"
+msgstr ""
+
+#: tui/tui-layout.c:403
+msgid "Toggle between Source/Command and Disassembly/Command layouts.\n"
+msgstr ""
+
+#: tui/tui-layout.c:405
+msgid ""
+"Toggle between Source/Command or Disassembly/Command and \n"
+"Source/Disassembly/Command layouts.\n"
+msgstr ""
+
+#: tui/tui-layout.c:440
+msgid "Ambiguous command input."
+msgstr ""
+
+#: tui/tui-layout.c:613
+#, possible-c-format
+msgid ""
+"Invalid layout specified.\n"
 "%s"
 msgstr ""
 
