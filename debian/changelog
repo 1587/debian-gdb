@@ -1,3 +1,10 @@
+gdb (7.6.2-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Build using python3. Closes: #727003.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 03 May 2014 15:56:03 +0200
+
 gdb (7.6.2-1) unstable; urgency=low
 
   * Imported upstream version 7.6.2
