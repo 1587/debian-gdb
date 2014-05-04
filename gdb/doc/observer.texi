@@ -1,6 +1,6 @@
 @c This file is part of the GDB manual.
 @c
-@c Copyright (C) 2003-2013 Free Software Foundation, Inc.
+@c Copyright (C) 2003-2014 Free Software Foundation, Inc.
 @c
 @c See the file gdbint.texinfo for copying conditions.
 @c
@@ -22,6 +22,7 @@
 @deftypefun void solib_loaded (struct so_list *@var{solib})
 @deftypefun void solib_unloaded (struct so_list *@var{solib})
 @deftypefun void new_objfile (struct objfile *@var{objfile})
+@deftypefun void free_objfile (struct objfile *@var{objfile})
 @deftypefun void new_thread (struct thread_info *@var{t})
 @deftypefun void thread_exit (struct thread_info *@var{t}, int @var{silent})
 @deftypefun void thread_stop_requested (ptid_t @var{ptid})
