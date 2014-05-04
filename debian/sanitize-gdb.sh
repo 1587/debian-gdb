@@ -13,8 +13,8 @@ tardir=$(cd "$tardir" && pwd)
 version=$(basename "$tarball" | sed "s/^gdb-//; s/\.tar\.bz2\$//")
 debversion=${version}
 tarball="$tardir"/gdb-$version.tar.bz2
-dfsg="$tardir/gdb_$debversion.orig.tar.gz"
-doc="$tardir/gdb-doc_$version.orig.tar.gz"
+dfsg="$tardir/gdb_$debversion.orig.tar.xz"
+doc="$tardir/gdb-doc_$version.orig.tar.xz"
 
 dir=`cd $(dirname "$0") && pwd`
 
@@ -24,7 +24,7 @@ olddir=`pwd`
 cd "$temp"
 mkdir src
 cd src
-tar xjf "$tarball"
+tar -xf "$tarball"
 cd ..
 
 src=src/gdb-$version
@@ -93,8 +93,8 @@ cp -a "$src"/gdb/.gitignore "$dest2"/gdb/
 cp -a "$src"/gdb/version.in "$dest2"/gdb/
 cp -a "$src"/readline/[A-Z]* "$dest2"/readline/
 
-tar czf "$dfsg" gdb-$debversion
-tar czf "$doc" gdb-doc-$version
+tar --auto-compress -cf "$dfsg" gdb-$debversion
+tar --auto-compress -cf "$doc" gdb-doc-$version
 
 cd "$olddir"
 rm -rf $temp
