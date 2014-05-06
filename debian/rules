@@ -93,7 +93,7 @@ BUILDDIRMULTIARCH = $(ALL_BUILDDIR)/objdir-multiarch
 
 run_tests := yes
 
-ifneq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+ifneq (,$(filter nocheck, $(DEB_BUILD_OPTIONS)))
   run_tests := no
 endif
 
