@@ -35,8 +35,8 @@ Build-Depends:
                python3-dev,
                libkvm-dev [kfreebsd-any],
                libunwind7-dev [ia64],
-Vcs-Git: git://anonscm.debian.org/crosstoolchain/gdb.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=crosstoolchain/gdb.git
+Vcs-Git: git://anonscm.debian.org/pkg-gdb/gdb.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-gdb/gdb.git
 Homepage: http://www.gnu.org/s/gdb/
 
 Package: gdb
