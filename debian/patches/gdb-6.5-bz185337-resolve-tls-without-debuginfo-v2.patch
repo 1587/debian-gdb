@@ -44,8 +44,8 @@ glibc-debuginfo-2.7-2.x86_64: /usr/lib/debug/lib64/libc.so.6.debug:
 +      if (strcmp (exp, "errno") == 0)
 +	exp = "*((int *(*) (void)) __errno_location) ()";
        expr = parse_expression (exp);
-       old_chain = make_cleanup (free_current_contents, &expr);
-       cleanup = 1;
+       make_cleanup (free_current_contents, &expr);
+       val = evaluate_expression (expr);
 Index: gdb-7.2/gdb/testsuite/gdb.dwarf2/dw2-errno.c
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
