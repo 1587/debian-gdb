@@ -2,6 +2,32 @@ gdb (7.7-1) UNRELEASED; urgency=medium
 
   * Switch to .xz for our ".orig" tarballs
   * Imported Upstream version 7.7
+  * Update patches for new upstream version:
+      - Drop man-page-args.patch and man-page-order.patch:
+        Manpages are dead to us now (not DFSG free), and the source is in
+        texinfo now anyway.
+      - Drop upstream-arm-catch-syscall.patch and
+        upstream-print_insn_rl78-workaround.patch:
+        Already applied upstream.
+      - Update linuxthreads_signal_handling.patch and
+        gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
+  * debian/gdb-minimal.manpages: Remove because manpages are dead to us
+  * debian/rules:
+    - Update for the new release.
+      * Don't expect all tests to pass, they never do.
+        ("make check" finally stopped lying?)
+      * Adjust for "gcore" getting its source renamed and getting installed
+    - Other improvements
+      * Install contrib/ in /usr/share/doc/gdb/
+      * Carry over more configure flags to secondary packages, so
+        e.g. gdb-multiarch can find it's message catalogs
+    - Nitpicks:
+      * Replace a $(findstring ...) call with $(filter ...)
+        (It's probably not all that likely that DEB_BUILD_OPTIONS would contain
+        an item with nocheck as a substring, but still ...)
+      * Use --disable-readline; we have our own ...
+  * debian/control:
+    - Update Vcs-Git/Vcs-Browser URLs
 
  -- Samuel Bronson <naesten@gmail.com>  Sun, 04 May 2014 22:33:43 -0400
 
