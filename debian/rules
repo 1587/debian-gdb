@@ -323,7 +323,8 @@ DEB_INSTALL_CHANGELOGS_ALL =
 
 DEB_INSTALL_DOCS_gdb$(TS) = gdb/NEWS gdb/README gdb/doc/refcard.tex \
 	$(DEB_BUILDDIR)/gdb/doc/refcard.dvi \
-	$(DEB_BUILDDIR)/gdb/doc/refcard.ps
+	$(DEB_BUILDDIR)/gdb/doc/refcard.ps \
+	gdb/contrib/
 DEB_INSTALL_CHANGELOGS_gdb$(TS) = gdb/ChangeLog
 ifneq ($(DEB_CROSS),yes)
 DEB_INSTALL_MANPAGES_gdb$(TS) = debian/gcore.1
