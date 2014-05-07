@@ -207,7 +207,7 @@ build/gdb64:: build64-stamp
 build64-stamp:
 	mkdir -p $(BUILDDIR64)
 	cd $(BUILDDIR64) && CC="$(CC64)" CFLAGS="$(CFLAGS64)" AR=ar \
-	  $(shell pwd)/configure $(DEB_CONFIGURE_FLAGS_64)
+	  $(shell pwd)/configure $(DEB_CONFIGURE_NORMAL_ARGS) $(DEB_CONFIGURE_DEBUG_ARGS) $(DEB_CONFIGURE_FLAGS_64)
 	cd $(BUILDDIR64) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
 	touch $@
 
@@ -215,7 +215,7 @@ build/gdb-multiarch:: build-multiarch-stamp
 build-multiarch-stamp:
 	mkdir -p $(BUILDDIRMULTIARCH)
 	cd $(BUILDDIRMULTIARCH) && CFLAGS="$(CFLAGS)" \
-	  $(shell pwd)/configure $(DEB_CONFIGURE_FLAGS_MULTIARCH)
+	  $(shell pwd)/configure $(DEB_CONFIGURE_NORMAL_ARGS) $(DEB_CONFIGURE_DEBUG_ARGS) $(DEB_CONFIGURE_FLAGS_MULTIARCH)
 	cd $(BUILDDIRMULTIARCH) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
 	touch $@
 
@@ -223,7 +223,7 @@ build/gdb-minimal:: build-minimal-stamp
 build-minimal-stamp:
 	mkdir -p $(BUILDDIRMIN)
 	cd $(BUILDDIRMIN) && CFLAGS="$(CFLAGS)" \
-	  $(shell pwd)/configure $(DEB_CONFIGURE_FLAGS_MIN)
+	  $(shell pwd)/configure $(DEB_CONFIGURE_NORMAL_ARGS) $(DEB_CONFIGURE_DEBUG_ARGS) $(DEB_CONFIGURE_FLAGS_MIN)
 	cd $(BUILDDIRMIN) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
 	touch $@
 
