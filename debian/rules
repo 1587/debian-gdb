@@ -122,7 +122,8 @@ export INSTALL
 # We pass srcdir explicitly to avoid an extra '/.' at the end of it.  That
 # causes a harmless, but ugly, testsuite failure in maint.exp.
 EXTRA_FLAGS := --disable-gdbtk --disable-shared \
-	--srcdir=$(shell pwd) --with-system-readline --with-expat \
+	--srcdir=$(shell pwd) \
+	--disable-readline --with-system-readline --with-expat \
 	$(arch_config_args) --build=$(DEB_BUILD_GNU_TYPE)
 
 # Debian does not include 64-bit Python packages, so --with-python
