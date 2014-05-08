@@ -4,3 +4,4 @@ solve_PATH_MAX_issue.patch
 gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
 python-config.patch
 ppc64le.diff
+gdb-glibc-vdso-workaround.patch
