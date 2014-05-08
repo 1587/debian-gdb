@@ -89,6 +89,9 @@ ifneq (,$(filter $(DEB_HOST_ARCH),i386 powerpc sparc s390))
 endif
 endif
 
+distribution := $(shell lsb_release -is)
+deb_version := $(shell dpkg-parsechangelog | awk '/^Version:/ {print $$2}')
+
 BUILDDIRMULTIARCH = $(ALL_BUILDDIR)/objdir-multiarch
 
 run_tests := yes
@@ -122,6 +125,7 @@ export INSTALL
 # We pass srcdir explicitly to avoid an extra '/.' at the end of it.  That
 # causes a harmless, but ugly, testsuite failure in maint.exp.
 EXTRA_FLAGS := --disable-gdbtk --disable-shared \
+	--with-pkgversion='$(distribution) $(deb_version)' \
 	--srcdir=$(shell pwd) \
 	--disable-readline --with-system-readline --with-expat \
 	$(arch_config_args) --build=$(DEB_BUILD_GNU_TYPE)
@@ -186,16 +190,9 @@ ifneq (,$(filter parallel=%,$(subst $(COMMA), ,$(DEB_BUILD_OPTIONS))))
 endif
 
 DEB_MAKE_BUILD_TARGET = $(NJOBS) all
-distribution := $(shell lsb_release -is)
 
 BUILDDIRSOURCE := $(ALL_BUILDDIR)/gdb
 BUILDDIRMIN := $(ALL_BUILDDIR)/gdb-minimal
-
-post-patches::
-	if ! test -f gdb/version.in.backup; then \
-	  mv -f gdb/version.in gdb/version.in.backup; \
-	  sed -e 's/$$/ ($(distribution) $(DEB_VERSION))/' < gdb/version.in.backup > gdb/version.in; \
-	fi
 
 # This should probably be common-post-build-arch, but that runs during
 # install, under fakeroot, in CDBS 0.4.21.
