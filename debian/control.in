@@ -41,10 +41,10 @@ Homepage: http://www.gnu.org/s/gdb/
 
 Package: gdb@TS@
 Architecture: any
-Depends: gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390 s390x x32],
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends}
-Recommends: libc-dbg
+Recommends: libc-dbg,
+            gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390 s390x x32]
 Suggests: gdb-doc
 Description: GNU Debugger
  GDB is a source-level debugger, capable of breaking programs at
