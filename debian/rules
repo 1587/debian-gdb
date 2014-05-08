@@ -4,7 +4,7 @@ ALL_BUILDDIR := $(shell pwd)/build
 
 DEB_BUILDDIR := $(ALL_BUILDDIR)/objdir
 DEB_DH_INSTALL_SOURCEDIR := $(shell pwd)/debian/tmp
-#DEB_DH_STRIP_ARGS := --dbg-package=gdb-dbg
+DEB_DH_STRIP_ARGS_GDB := --dbg-package=gdb-dbg
 
 # Override CDBS's default CFLAGS, which also includes -Wall; gdb
 # does not handle -Wunused well with -Werror, but defaults to
