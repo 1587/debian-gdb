@@ -104,6 +104,9 @@ gdb (7.7-1) UNRELEASED; urgency=medium
   * d/control.in: update Vcs-* references
   * d/control.in: bump standards version, no changes required
   * d/compat, d/control.in: bump dh compat 9
+  * d/p/ppc64le.diff: apply upstream patch for ppc64le support
+  * d/control.in: add ppc64el architecture
+    - Thanks Frédéric Bonnard for report (closes: #744204)
 
  -- Hector Oron <zumbi@debian.org>  Thu, 08 May 2014 11:21:37 +0200
 
