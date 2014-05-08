@@ -7,7 +7,7 @@ Standards-Version: 3.9.5
 Build-Depends:
 # Packaging deps
                cdbs (>= 0.4.17),
-               debhelper (>= 7.0.50),
+               debhelper (>= 9),
                lsb-release,
                bzip2,
 # Other tool deps
