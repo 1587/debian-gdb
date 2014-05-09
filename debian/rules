@@ -272,14 +272,12 @@ endif
 binary-post-install/gdb64 ::
 	install -d debian/gdb64/usr/bin
 	install -s -m 755 $(BUILDDIR64)/gdb/gdb debian/gdb64/usr/bin/gdb64
-	dh_link -pgdb64 usr/share/man/man1/gdb.1.gz usr/share/man/man1/gdb64.1.gz
 	rm -rf debian/gdb64/usr/share/doc/gdb64
 	ln -s gdb debian/gdb64/usr/share/doc/gdb64
 
 binary-post-install/gdb-multiarch ::
 	install -d debian/gdb-multiarch/usr/bin
 	install -s -m 755 $(BUILDDIRMULTIARCH)/gdb/gdb debian/gdb-multiarch/usr/bin/gdb-multiarch
-	dh_link -pgdb-multiarch usr/share/man/man1/gdb.1.gz usr/share/man/man1/gdb-multiarch.1.gz
 	rm -rf debian/gdb-multiarch/usr/share/doc/gdb-multiarch
 	ln -s gdb debian/gdb-multiarch/usr/share/doc/gdb-multiarch
 
