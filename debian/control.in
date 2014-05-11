@@ -59,8 +59,8 @@ Package: gdb-minimal
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: gdb
-Breaks: gdb (<< 7.7~)
-Replaces: gdb (<< 7.7~)
+Breaks: gdb
+Replaces: gdb
 Description: GNU Debugger (minimal version)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
@@ -126,7 +126,9 @@ Description: GNU Debugger (source)
  to build GDB.
 
 Package: gdb-dbg
-Architecture: all
+Section: debug
+Priority: extra
+Architecture: any
 Depends: ${misc:Depends}
 Description: GNU Debugger (debug package)
  GDB is a source-level debugger, capable of breaking programs at
