@@ -182,7 +182,7 @@ DEB_CONFIGURE_FLAGS_MULTIARCH := $(DEB_CONFIGURE_EXTRA_FLAGS) \
 
 # Minimal flags
 DEB_CONFIGURE_FLAGS_MIN := --host=$(DEB_HOST_GNU_TYPE) $(EXTRA_FLAGS) \
-	--disable-tui --without-python
+	--disable-tui --without-python --without-babeltrace
 
 # Support parallel=<n> in DEB_BUILD_OPTIONS (see #209008)
 COMMA = ,
