@@ -32,6 +32,8 @@ Build-Depends:
                zlib1g-dev,
                libbz2-dev,
                liblzma-dev,
+               libbabeltrace-dev,
+               libbabeltrace-ctf-dev,
                python3-dev,
                libkvm-dev [kfreebsd-any],
                libunwind7-dev [ia64],

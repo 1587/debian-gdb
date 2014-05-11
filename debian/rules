@@ -128,6 +128,7 @@ EXTRA_FLAGS := --disable-gdbtk --disable-shared \
 	--with-pkgversion='$(distribution) $(deb_version)' \
 	--srcdir=$(shell pwd) \
 	--disable-readline --with-system-readline --with-expat \
+	--without-guile --with-babeltrace \
 	$(arch_config_args) --build=$(DEB_BUILD_GNU_TYPE)
 
 # Debian does not include 64-bit Python packages, so --with-python
