@@ -30,7 +30,6 @@ Build-Depends:
                libncurses5-dev, lib64ncurses5-dev [i386 powerpc s390 sparc],
                libreadline-dev, lib64readline6-dev [i386 powerpc s390 sparc],
                zlib1g-dev,
-               libbz2-dev,
                liblzma-dev,
                libbabeltrace-dev,
                libbabeltrace-ctf-dev,
