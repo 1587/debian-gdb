@@ -81,8 +81,8 @@ gdb (7.7-1) UNRELEASED; urgency=medium
       Already applied upstream.
     - Update linuxthreads_signal_handling.patch and
       gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
-  * debian/gdb-minimal.manpages: Remove because manpages are dead to us
-  * debian/rules:
+  * d/gdb-minimal.manpages: Remove because manpages are dead to us
+  * d/rules:
     - Update for the new release.
       * Don't expect all tests to pass, they never do.
         ("make check" finally stopped lying?)
@@ -96,7 +96,7 @@ gdb (7.7-1) UNRELEASED; urgency=medium
         (It's probably not all that likely that DEB_BUILD_OPTIONS would contain
         an item with nocheck as a substring, but still ...)
       * Use --disable-readline; we have our own ...
-  * debian/control:
+  * d/control:
     - Update Vcs-Git/Vcs-Browser URLs
 
   [ Héctor Orón Martínez ]
@@ -104,7 +104,8 @@ gdb (7.7-1) UNRELEASED; urgency=medium
     (closes: #696197)
   * d/control.in: update Vcs-* references
   * d/control.in: bump standards version, no changes required
-  * d/compat, d/control.in: bump dh compat 9
+  * d/compat, d/control.in: bump dh compat to 9 to get build-id based
+    debug info paths
   * d/p/ppc64le.diff: apply upstream patch for ppc64le support
   * d/control.in: add ppc64el architecture
     - Thanks Frédéric Bonnard for report
@@ -120,6 +121,14 @@ gdb (7.7-1) UNRELEASED; urgency=medium
     (closes: #738702)
   * d/rules: do not misuse the version field to encode the distro name
     (closes: #738331)
+
+  [ Samuel Bronson ]
+  * d/control.in: Misc fixes, like not building an
+    "Architecture: all".-dbg package
+  * d/control: Regenerate after above changes ...
+  * d/rules: Enable CTF support through babeltrace
+  * d/rules: Be more specific about which features to build with
+  * d/control.in, d/control: Drop B-D on libbz2-dev; gdb doesn't want it
 
  -- Hector Oron <zumbi@debian.org>  Thu, 08 May 2014 11:21:37 +0200
 
