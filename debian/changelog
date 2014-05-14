@@ -129,8 +129,11 @@ gdb (7.7-1) UNRELEASED; urgency=medium
   * d/rules: Enable CTF support through babeltrace
   * d/rules: Be more specific about which features to build with
   * d/control.in, d/control: Drop B-D on libbz2-dev; gdb doesn't want it
+  * debian/gdbserver.install: Don't install an empty gdbserver manpage either.
+  * d/watch, d/upstream-signing-key.pgp: Verify sigs; remove dh_make stuff
+  * d/control.in, d/control: Make gdb and gdb-minimal conflict as policy says
 
- -- Hector Oron <zumbi@debian.org>  Thu, 08 May 2014 11:21:37 +0200
+ -- Samuel Bronson <naesten@gmail.com>  Wed, 14 May 2014 12:52:07 -0400
 
 gdb (7.6.2-1.1) unstable; urgency=medium
 
