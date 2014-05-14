@@ -132,6 +132,7 @@ gdb (7.7-1) UNRELEASED; urgency=medium
   * debian/gdbserver.install: Don't install an empty gdbserver manpage either.
   * d/watch, d/upstream-signing-key.pgp: Verify sigs; remove dh_make stuff
   * d/control.in, d/control: Make gdb and gdb-minimal conflict as policy says
+  * d/include-binary-files: Appease dpkg-source about the upstream key ...
 
  -- Samuel Bronson <naesten@gmail.com>  Wed, 14 May 2014 12:52:07 -0400
 
