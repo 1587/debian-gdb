@@ -1,3 +1,7 @@
+Description: Use system python-config if available
+Author: Matthias Klose <doko@ubuntu.com>
+Forwarded: https://sourceware.org/ml/gdb-patches/2012-12/msg00751.html
+
 Index: b/gdb/configure.ac
 ===================================================================
 --- a/gdb/configure.ac
@@ -18,7 +22,7 @@ Index: b/gdb/configure.ac
        have_python_config=failed
        if test "${with_python}" != auto; then
 -        AC_ERROR(failure running python-config --includes)
-+        AC_ERROR(failure running ${python-config} --includes)
++        AC_ERROR(failure running ${python_config} --includes)
        fi
      fi
 -    python_libs=`${python_prog} ${srcdir}/python/python-config.py --ldflags`
@@ -27,7 +31,7 @@ Index: b/gdb/configure.ac
        have_python_config=failed
        if test "${with_python}" != auto; then
 -        AC_ERROR(failure running python-config --ldflags)
-+        AC_ERROR(failure running ${python-config} --ldflags)
++        AC_ERROR(failure running ${python_config} --ldflags)
        fi
      fi
 -    python_prefix=`${python_prog} ${srcdir}/python/python-config.py --exec-prefix`
@@ -36,7 +40,7 @@ Index: b/gdb/configure.ac
        have_python_config=failed
        if test "${with_python}" != auto; then
 -        AC_ERROR(failure running python-config --exec-prefix)
-+        AC_ERROR(failure running ${python-config} --exec-prefix)
++        AC_ERROR(failure running ${python_config} --exec-prefix)
        fi
      fi
    else
@@ -159,7 +163,7 @@ Index: b/gdb/configure
        have_python_config=failed
        if test "${with_python}" != auto; then
 -        as_fn_error "failure running python-config --includes" "$LINENO" 5
-+        as_fn_error "failure running ${python-config} --includes" "$LINENO" 5
++        as_fn_error "failure running ${python_config} --includes" "$LINENO" 5
        fi
      fi
 -    python_libs=`${python_prog} ${srcdir}/python/python-config.py --ldflags`
@@ -168,7 +172,7 @@ Index: b/gdb/configure
        have_python_config=failed
        if test "${with_python}" != auto; then
 -        as_fn_error "failure running python-config --ldflags" "$LINENO" 5
-+        as_fn_error "failure running ${python-config} --ldflags" "$LINENO" 5
++        as_fn_error "failure running ${python_config} --ldflags" "$LINENO" 5
        fi
      fi
 -    python_prefix=`${python_prog} ${srcdir}/python/python-config.py --exec-prefix`
@@ -177,7 +181,7 @@ Index: b/gdb/configure
        have_python_config=failed
        if test "${with_python}" != auto; then
 -        as_fn_error "failure running python-config --exec-prefix" "$LINENO" 5
-+        as_fn_error "failure running ${python-config} --exec-prefix" "$LINENO" 5
++        as_fn_error "failure running ${python_config} --exec-prefix" "$LINENO" 5
        fi
      fi
    else
