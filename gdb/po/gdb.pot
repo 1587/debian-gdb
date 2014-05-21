@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-06 06:42+0400\n"
+"POT-Creation-Date: 2014-05-05 14:56-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2527,22 +2527,22 @@ msgstr ""
 msgid "Num pushes too large: %d\n"
 msgstr ""
 
-#: avr-tdep.c:1483
+#: avr-tdep.c:1490
 msgid "ERR: info io_registers NOT supported by current target\n"
 msgstr ""
 
-#: avr-tdep.c:1491
+#: avr-tdep.c:1498
 msgid "Error fetching number of io registers\n"
 msgstr ""
 
-#: avr-tdep.c:1500
+#: avr-tdep.c:1507
 #, possible-c-format
 msgid ""
 "Target has %u io registers:\n"
 "\n"
 msgstr ""
 
-#: avr-tdep.c:1549
+#: avr-tdep.c:1556
 msgid "query remote avr target for io space register values"
 msgstr ""
 
@@ -8013,56 +8013,56 @@ msgstr ""
 msgid "Deprecated remotecache flag is %s.\n"
 msgstr ""
 
-#: dcache.c:564 dcache.c:629
+#: dcache.c:542 dcache.c:607
 msgid "No data cache available.\n"
 msgstr ""
 
-#: dcache.c:579
+#: dcache.c:557
 msgid "No such cache line exists.\n"
 msgstr ""
 
-#: dcache.c:585 dcache.c:645
+#: dcache.c:563 dcache.c:623
 #, possible-c-format
 msgid "Line %d: address %s [%d hits]\n"
 msgstr ""
 
-#: dcache.c:614
+#: dcache.c:592
 msgid "Usage: info dcache [linenumber]\n"
 msgstr ""
 
-#: dcache.c:622
+#: dcache.c:600
 #, possible-c-format
 msgid "Dcache %u lines of %u bytes each.\n"
 msgstr ""
 
-#: dcache.c:633
+#: dcache.c:611
 #, possible-c-format
 msgid "Contains data for %s\n"
 msgstr ""
 
-#: dcache.c:653
+#: dcache.c:631
 #, possible-c-format
 msgid "Cache state: %d active lines, %d hits\n"
 msgstr ""
 
-#: dcache.c:669
+#: dcache.c:647
 msgid "Dcache size must be greater than 0."
 msgstr ""
 
-#: dcache.c:683
+#: dcache.c:661
 #, possible-c-format
 msgid "Invalid dcache line size: %u (must be power of 2)."
 msgstr ""
 
-#: dcache.c:706
+#: dcache.c:684
 msgid "Set cache use for remote targets."
 msgstr ""
 
-#: dcache.c:707
+#: dcache.c:685
 msgid "Show cache use for remote targets."
 msgstr ""
 
-#: dcache.c:708
+#: dcache.c:686
 msgid ""
 "This used to enable the data cache for remote targets.  The cache\n"
 "functionality is now controlled by the memory region system and the\n"
@@ -8070,7 +8070,7 @@ msgid ""
 "exists only for compatibility reasons."
 msgstr ""
 
-#: dcache.c:718
+#: dcache.c:696
 msgid ""
 "Print information on the dcache performance.\n"
 "With no arguments, this command prints the cache configuration and a\n"
@@ -8078,28 +8078,28 @@ msgid ""
 "the contents of a given line."
 msgstr ""
 
-#: dcache.c:724
+#: dcache.c:702
 msgid "Use this command to set number of lines in dcache and line-size."
 msgstr ""
 
 #. allow_unknown
-#: dcache.c:727
+#: dcache.c:705
 msgid "Show dcachesettings."
 msgstr ""
 
-#: dcache.c:732
+#: dcache.c:710
 msgid "Set dcache line size in bytes (must be power of 2)."
 msgstr ""
 
-#: dcache.c:733
+#: dcache.c:711
 msgid "Show dcache line size."
 msgstr ""
 
-#: dcache.c:740
+#: dcache.c:718
 msgid "Set number of dcache lines."
 msgstr ""
 
-#: dcache.c:741
+#: dcache.c:719
 msgid "Show number of dcache lines."
 msgstr ""
 
@@ -12153,7 +12153,7 @@ msgid ""
 "Cannot remove breakpoint at address %s, no break instruction at such address."
 msgstr ""
 
-#: inf-child.c:110 windows-nat.c:2037
+#: inf-child.c:110 windows-nat.c:2054
 msgid "Use the \"run\" command to start a Unix child process."
 msgstr ""
 
@@ -12564,7 +12564,7 @@ msgstr ""
 msgid "The program being debugged is not being run.\n"
 msgstr ""
 
-#: infcmd.c:1832 infrun.c:6714
+#: infcmd.c:1832 infrun.c:6718
 msgid "Selected thread is running."
 msgstr ""
 
@@ -12637,7 +12637,7 @@ msgstr ""
 msgid "In %s,\n"
 msgstr ""
 
-#: infcmd.c:2527 target.c:2591
+#: infcmd.c:2527 target.c:2582
 msgid "A program is being debugged already.  Kill it? "
 msgstr ""
 
@@ -13187,7 +13187,7 @@ msgid ""
 "this platform."
 msgstr ""
 
-#: infrun.c:201 infrun.c:230 target.c:5013 target.c:5061
+#: infrun.c:201 infrun.c:230 target.c:5004 target.c:5052
 msgid "Cannot change this setting while the inferior is running."
 msgstr ""
 
@@ -13295,119 +13295,119 @@ msgstr ""
 msgid "Cannot step over breakpoint hit in wrong thread"
 msgstr ""
 
-#: infrun.c:6040 linux-fork.c:377 linux-fork.c:409
+#: infrun.c:6044 linux-fork.c:377 linux-fork.c:409
 #, possible-c-format
 msgid "[Switching to %s]\n"
 msgstr ""
 
-#: infrun.c:6051
+#: infrun.c:6055
 msgid "No unwaited-for children left.\n"
 msgstr ""
 
-#: infrun.c:6059
+#: infrun.c:6063
 msgid ""
 "Cannot remove breakpoints because program is no longer writable.\n"
 "Further execution is probably impossible.\n"
 msgstr ""
 
-#: infrun.c:6159
+#: infrun.c:6163
 msgid "Unknown value."
 msgstr ""
 
-#: infrun.c:6346
+#: infrun.c:6350
 msgid "Signal        Stop\tPrint\tPass to program\tDescription\n"
 msgstr ""
 
-#: infrun.c:6383
+#: infrun.c:6387
 msgid "signal to handle"
 msgstr ""
 
 #. Not a number and not a recognized flag word => complain.
-#: infrun.c:6486
+#: infrun.c:6490
 #, possible-c-format
 msgid "Unrecognized or ambiguous flag word: \"%s\"."
 msgstr ""
 
-#: infrun.c:6501
+#: infrun.c:6505
 #, possible-c-format
 msgid ""
 "%s is used by the debugger.\n"
 "Are you sure you want to change it? "
 msgstr ""
 
-#: infrun.c:6509
+#: infrun.c:6513
 msgid "Not confirmed, unchanged.\n"
 msgstr ""
 
-#: infrun.c:6587
+#: infrun.c:6591
 msgid "xdb command"
 msgstr ""
 
-#: infrun.c:6638
+#: infrun.c:6642
 msgid "Invalid signal handling flag.\n"
 msgstr ""
 
-#: infrun.c:6651
+#: infrun.c:6655
 msgid ""
 "Only signals 1-15 are valid as numeric signals.\n"
 "Use \"info signals\" for a list of symbolic signals."
 msgstr ""
 
-#: infrun.c:6694
+#: infrun.c:6698
 msgid ""
 "\n"
 "Use the \"handle\" command to change these tables.\n"
 msgstr ""
 
-#: infrun.c:6706
+#: infrun.c:6710
 msgid "No thread selected."
 msgstr ""
 
-#: infrun.c:6710
+#: infrun.c:6714
 msgid "The current thread has terminated"
 msgstr ""
 
-#: infrun.c:6745
+#: infrun.c:6749
 msgid "Unable to read siginfo"
 msgstr ""
 
-#: infrun.c:6766
+#: infrun.c:6770
 msgid "Unable to write siginfo"
 msgstr ""
 
-#: infrun.c:7004 stack.c:1826 stack.c:2051
+#: infrun.c:7008 stack.c:1826 stack.c:2051
 msgid "Unable to restore previously selected frame."
 msgstr ""
 
-#: infrun.c:7165
+#: infrun.c:7169
 msgid "Target does not support this operation."
 msgstr ""
 
-#: infrun.c:7175
+#: infrun.c:7179
 msgid "Forward.\n"
 msgstr ""
 
-#: infrun.c:7178
+#: infrun.c:7182
 msgid "Reverse.\n"
 msgstr ""
 
-#: infrun.c:7182
+#: infrun.c:7186
 #, possible-c-format
 msgid "bogus execution_direction value: %d"
 msgstr ""
 
-#: infrun.c:7191
+#: infrun.c:7195
 #, possible-c-format
 msgid "Resuming the execution of threads of all processes is %s.\n"
 msgstr ""
 
-#: infrun.c:7211 infrun.c:7244
+#: infrun.c:7215 infrun.c:7248
 msgid ""
 "What debugger does when program gets various signals.\n"
 "Specify a signal as argument to print info on that signal only."
 msgstr ""
 
-#: infrun.c:7216
+#: infrun.c:7220
 msgid ""
 "Specify how to handle signals.\n"
 "Usage: handle SIGNAL [ACTIONS]\n"
@@ -13434,7 +13434,7 @@ msgid ""
 "all signals cumulatively specified."
 msgstr ""
 
-#: infrun.c:7247
+#: infrun.c:7251
 msgid ""
 "Specify how to handle a signal.\n"
 "Args are signals and actions to apply to those signals.\n"
@@ -13453,46 +13453,46 @@ msgid ""
 "Pass and Stop may be combined."
 msgstr ""
 
-#: infrun.c:7267
+#: infrun.c:7271
 msgid ""
 "There is no `stop' command, but you can set a hook on `stop'.\n"
 "This allows you to set a list of commands to be run each time execution\n"
 "of the program stops."
 msgstr ""
 
-#: infrun.c:7272
+#: infrun.c:7276
 msgid "Set inferior debugging."
 msgstr ""
 
-#: infrun.c:7273
+#: infrun.c:7277
 msgid "Show inferior debugging."
 msgstr ""
 
-#: infrun.c:7274
+#: infrun.c:7278
 msgid "When non-zero, inferior specific debugging is enabled."
 msgstr ""
 
-#: infrun.c:7281
+#: infrun.c:7285
 msgid "Set displaced stepping debugging."
 msgstr ""
 
-#: infrun.c:7282
+#: infrun.c:7286
 msgid "Show displaced stepping debugging."
 msgstr ""
 
-#: infrun.c:7283
+#: infrun.c:7287
 msgid "When non-zero, displaced stepping specific debugging is enabled."
 msgstr ""
 
-#: infrun.c:7290
+#: infrun.c:7294
 msgid "Set whether gdb controls the inferior in non-stop mode."
 msgstr ""
 
-#: infrun.c:7291
+#: infrun.c:7295
 msgid "Show whether gdb controls the inferior in non-stop mode."
 msgstr ""
 
-#: infrun.c:7292
+#: infrun.c:7296
 msgid ""
 "When debugging a multi-threaded program and this setting is\n"
 "off (the default, also called all-stop mode), when one thread stops\n"
@@ -13507,30 +13507,30 @@ msgid ""
 "leave it stopped or free to run as needed."
 msgstr ""
 
-#: infrun.c:7367
+#: infrun.c:7371
 msgid "Set stopping for shared library events."
 msgstr ""
 
-#: infrun.c:7368
+#: infrun.c:7372
 msgid "Show stopping for shared library events."
 msgstr ""
 
-#: infrun.c:7369
+#: infrun.c:7373
 msgid ""
 "If nonzero, gdb will give control to the user when the dynamic linker\n"
 "notifies gdb of shared library events.  The most common event of interest\n"
 "to the user would be loading/unloading of a new library."
 msgstr ""
 
-#: infrun.c:7379
+#: infrun.c:7383
 msgid "Set debugger response to a program call of fork or vfork."
 msgstr ""
 
-#: infrun.c:7380
+#: infrun.c:7384
 msgid "Show debugger response to a program call of fork or vfork."
 msgstr ""
 
-#: infrun.c:7381
+#: infrun.c:7385
 msgid ""
 "A fork or vfork creates a new process.  follow-fork-mode can be:\n"
 "  parent  - the original process is debugged after a fork\n"
@@ -13539,15 +13539,15 @@ msgid ""
 "By default, the debugger will follow the parent process."
 msgstr ""
 
-#: infrun.c:7393
+#: infrun.c:7397
 msgid "Set debugger response to a program call of exec."
 msgstr ""
 
-#: infrun.c:7394
+#: infrun.c:7398
 msgid "Show debugger response to a program call of exec."
 msgstr ""
 
-#: infrun.c:7395
+#: infrun.c:7399
 msgid ""
 "An exec call replaces the program image of a process.\n"
 "\n"
@@ -13566,15 +13566,15 @@ msgid ""
 "By default, the debugger will use the same inferior."
 msgstr ""
 
-#: infrun.c:7416
+#: infrun.c:7420
 msgid "Set mode for locking scheduler during execution."
 msgstr ""
 
-#: infrun.c:7417
+#: infrun.c:7421
 msgid "Show mode for locking scheduler during execution."
 msgstr ""
 
-#: infrun.c:7418
+#: infrun.c:7422
 msgid ""
 "off  == no locking (threads may preempt at any time)\n"
 "on   == full locking (no thread except the current thread may run)\n"
@@ -13583,15 +13583,15 @@ msgid ""
 "\tOther threads may run while stepping over a function call ('next')."
 msgstr ""
 
-#: infrun.c:7428
+#: infrun.c:7432
 msgid "Set mode for resuming threads of all processes."
 msgstr ""
 
-#: infrun.c:7429
+#: infrun.c:7433
 msgid "Show mode for resuming threads of all processes."
 msgstr ""
 
-#: infrun.c:7430
+#: infrun.c:7434
 msgid ""
 "When on, execution commands (such as 'continue' or 'next') resume all\n"
 "threads of all processes.  When off (which is the default), execution\n"
@@ -13600,30 +13600,30 @@ msgid ""
 "mode (see help set scheduler-locking)."
 msgstr ""
 
-#: infrun.c:7440
+#: infrun.c:7444
 msgid "Set mode of the step operation."
 msgstr ""
 
-#: infrun.c:7441
+#: infrun.c:7445
 msgid "Show mode of the step operation."
 msgstr ""
 
-#: infrun.c:7442
+#: infrun.c:7446
 msgid ""
 "When set, doing a step over a function without debug line information\n"
 "will stop at the first instruction of that function. Otherwise, the\n"
 "function is skipped and the step command stops at a different source line."
 msgstr ""
 
-#: infrun.c:7451
+#: infrun.c:7455
 msgid "Set debugger's willingness to use displaced stepping."
 msgstr ""
 
-#: infrun.c:7452
+#: infrun.c:7456
 msgid "Show debugger's willingness to use displaced stepping."
 msgstr ""
 
-#: infrun.c:7453
+#: infrun.c:7457
 msgid ""
 "If on, gdb will use displaced stepping to step over breakpoints if it is\n"
 "supported by the target architecture.  If off, gdb will not use displaced\n"
@@ -13635,57 +13635,57 @@ msgid ""
 "use it in all-stop mode (see help set non-stop)."
 msgstr ""
 
-#: infrun.c:7465
+#: infrun.c:7469
 msgid ""
 "Set direction of execution.\n"
 "Options are 'forward' or 'reverse'."
 msgstr ""
 
-#: infrun.c:7467
+#: infrun.c:7471
 msgid "Show direction of execution (forward/reverse)."
 msgstr ""
 
-#: infrun.c:7468
+#: infrun.c:7472
 msgid "Tells gdb whether to execute forward or backward."
 msgstr ""
 
 #. Set/show detach-on-fork: user-settable mode.
-#: infrun.c:7474
+#: infrun.c:7478
 msgid "Set whether gdb will detach the child of a fork."
 msgstr ""
 
-#: infrun.c:7475
+#: infrun.c:7479
 msgid "Show whether gdb will detach the child of a fork."
 msgstr ""
 
-#: infrun.c:7476
+#: infrun.c:7480
 msgid "Tells gdb whether to detach the child of a fork."
 msgstr ""
 
-#: infrun.c:7483
+#: infrun.c:7487
 msgid "Set disabling of debuggee's virtual address space randomization."
 msgstr ""
 
-#: infrun.c:7484
+#: infrun.c:7488
 msgid "Show disabling of debuggee's virtual address space randomization."
 msgstr ""
 
-#: infrun.c:7485
+#: infrun.c:7489
 msgid ""
 "When this mode is on (which is the default), randomization of the virtual\n"
 "address space is disabled.  Standalone programs run with the randomization\n"
 "enabled by default on some platforms."
 msgstr ""
 
-#: infrun.c:7509
+#: infrun.c:7513
 msgid "Set whether gdb controls the inferior in observer mode."
 msgstr ""
 
-#: infrun.c:7510
+#: infrun.c:7514
 msgid "Show whether gdb controls the inferior in observer mode."
 msgstr ""
 
-#: infrun.c:7511
+#: infrun.c:7515
 msgid ""
 "In observer mode, GDB can get data from the inferior, but not\n"
 "affect its execution.  Registers and memory may not be changed,\n"
@@ -25001,72 +25001,72 @@ msgstr ""
 msgid "Cannot find thread-local variables on this target"
 msgstr ""
 
-#: target.c:1555
+#: target.c:1572
 msgid "Writing to flash memory forbidden in this context"
 msgstr ""
 
-#: target.c:1700
+#: target.c:1691
 #, possible-c-format
 msgid "Writing to memory is not allowed (addr %s, len %s)"
 msgstr ""
 
-#: target.c:1908
+#: target.c:1899
 msgid "Overlapping regions in memory map: ignoring"
 msgstr ""
 
-#: target.c:1958
+#: target.c:1949
 #, possible-c-format
 msgid "Mode for reading from readonly sections is %s.\n"
 msgstr ""
 
-#: target.c:2424
+#: target.c:2415
 #, possible-c-format
 msgid "target object %d, annex %s, contained unexpected null characters"
 msgstr ""
 
-#: target.c:2465
+#: target.c:2456
 msgid "May not insert breakpoints"
 msgstr ""
 
-#: target.c:2482
+#: target.c:2473
 msgid "May not remove breakpoints"
 msgstr ""
 
-#: target.c:2496
+#: target.c:2487
 #, possible-c-format
 msgid "Symbols from \"%s\".\n"
 msgstr ""
 
-#: target.c:2507
+#: target.c:2498
 msgid "\tWhile running this, GDB does not access memory from...\n"
 msgstr ""
 
-#: target.c:2594
+#: target.c:2585
 msgid "Program not killed."
 msgstr ""
 
-#: target.c:2636
+#: target.c:2627
 msgid "could not find a target to detach"
 msgstr ""
 
-#: target.c:2837
+#: target.c:2828
 msgid "could not find a target to follow fork"
 msgstr ""
 
-#: target.c:2863
+#: target.c:2854
 msgid "could not find a target to follow mourn inferior"
 msgstr ""
 
-#: target.c:2914
+#: target.c:2905
 msgid "Unable to allocate memory to perform the search."
 msgstr ""
 
-#: target.c:2922 target.c:2977
+#: target.c:2913 target.c:2968
 #, possible-c-format
 msgid "Unable to access %s bytes of target memory at %s, halting search."
 msgstr ""
 
-#: target.c:3067
+#: target.c:3058
 #, possible-c-format
 msgid ""
 "The \"%s\" target does not support \"run\".  Try \"help target\" or "
@@ -25076,184 +25076,184 @@ msgstr ""
 #. This function is only called if the target is running.  In that
 #. case there should have been a process_stratum target and it
 #. should either know how to create inferiors, or not...
-#: target.c:3075
+#: target.c:3066
 msgid "No targets found"
 msgstr ""
 
-#: target.c:3107
+#: target.c:3098
 #, possible-c-format
 msgid "Don't know how to %s.  Try \"help target\"."
 msgstr ""
 
-#: target.c:3294
+#: target.c:3285
 #, possible-c-format
 msgid "Can't determine the current address space of thread %s\n"
 msgstr ""
 
-#: target.c:3591
+#: target.c:3582
 #, possible-c-format
 msgid "target file %s contained unexpected null characters"
 msgstr ""
 
-#: target.c:3713 target.c:3721
+#: target.c:3704 target.c:3712
 msgid "Command not implemented for this target."
 msgstr ""
 
-#: target.c:3817
+#: target.c:3808
 msgid "could not find a target to attach"
 msgstr ""
 
-#: target.c:3866
+#: target.c:3857
 msgid "May not interrupt or stop the target, ignoring attempt"
 msgstr ""
 
-#: target.c:3989
+#: target.c:3980
 #, possible-c-format
 msgid "Writing to registers is not allowed (regno %d)"
 msgstr ""
 
-#: target.c:4980
+#: target.c:4971
 msgid "\"monitor\" command not supported by this target."
 msgstr ""
 
-#: target.c:4991
+#: target.c:4982
 msgid "The current target stack is:\n"
 msgstr ""
 
-#: target.c:5025
+#: target.c:5016
 #, possible-c-format
 msgid "Controlling the inferior in asynchronous mode is %s.\n"
 msgstr ""
 
-#: target.c:5094
+#: target.c:5085
 msgid "Set target debugging."
 msgstr ""
 
-#: target.c:5095
+#: target.c:5086
 msgid "Show target debugging."
 msgstr ""
 
-#: target.c:5096
+#: target.c:5087
 msgid ""
 "When non-zero, target debugging is enabled.  Higher numbers are more\n"
 "verbose.  Changes do not take effect until the next \"run\" or \"target\"\n"
 "command."
 msgstr ""
 
-#: target.c:5105
+#: target.c:5096
 msgid "Set mode for reading from readonly sections."
 msgstr ""
 
-#: target.c:5106
+#: target.c:5097
 msgid "Show mode for reading from readonly sections."
 msgstr ""
 
-#: target.c:5107
+#: target.c:5098
 msgid ""
 "When this mode is on, memory reads from readonly sections (such as .text)\n"
 "will be read from the object file instead of from the target.  This will\n"
 "result in significant performance improvement for remote targets."
 msgstr ""
 
-#: target.c:5116
+#: target.c:5107
 msgid "Send a command to the remote monitor (remote targets only)."
 msgstr ""
 
-#: target.c:5119
+#: target.c:5110
 msgid "Print the name of each layer of the internal target stack."
 msgstr ""
 
-#: target.c:5123
+#: target.c:5114
 msgid "Set whether gdb controls the inferior in asynchronous mode."
 msgstr ""
 
-#: target.c:5124
+#: target.c:5115
 msgid "Show whether gdb controls the inferior in asynchronous mode."
 msgstr ""
 
-#: target.c:5125
+#: target.c:5116
 msgid "Tells gdb whether to control the inferior in asynchronous mode."
 msgstr ""
 
-#: target.c:5133
+#: target.c:5124
 msgid "Set permission to write into registers."
 msgstr ""
 
-#: target.c:5134
+#: target.c:5125
 msgid "Show permission to write into registers."
 msgstr ""
 
-#: target.c:5135
+#: target.c:5126
 msgid ""
 "When this permission is on, GDB may write into the target's registers.\n"
 "Otherwise, any sort of write attempt will result in an error."
 msgstr ""
 
-#: target.c:5142
+#: target.c:5133
 msgid "Set permission to write into target memory."
 msgstr ""
 
-#: target.c:5143
+#: target.c:5134
 msgid "Show permission to write into target memory."
 msgstr ""
 
-#: target.c:5144
+#: target.c:5135
 msgid ""
 "When this permission is on, GDB may write into the target's memory.\n"
 "Otherwise, any sort of write attempt will result in an error."
 msgstr ""
 
-#: target.c:5151
+#: target.c:5142
 msgid "Set permission to insert breakpoints in the target."
 msgstr ""
 
-#: target.c:5152
+#: target.c:5143
 msgid "Show permission to insert breakpoints in the target."
 msgstr ""
 
-#: target.c:5153
+#: target.c:5144
 msgid ""
 "When this permission is on, GDB may insert breakpoints in the program.\n"
 "Otherwise, any sort of insertion attempt will result in an error."
 msgstr ""
 
-#: target.c:5160
+#: target.c:5151
 msgid "Set permission to insert tracepoints in the target."
 msgstr ""
 
-#: target.c:5161
+#: target.c:5152
 msgid "Show permission to insert tracepoints in the target."
 msgstr ""
 
-#: target.c:5162
+#: target.c:5153
 msgid ""
 "When this permission is on, GDB may insert tracepoints in the program.\n"
 "Otherwise, any sort of insertion attempt will result in an error."
 msgstr ""
 
-#: target.c:5169
+#: target.c:5160
 msgid "Set permission to insert fast tracepoints in the target."
 msgstr ""
 
-#: target.c:5170
+#: target.c:5161
 msgid "Show permission to insert fast tracepoints in the target."
 msgstr ""
 
-#: target.c:5171
+#: target.c:5162
 msgid ""
 "When this permission is on, GDB may insert fast tracepoints.\n"
 "Otherwise, any sort of insertion attempt will result in an error."
 msgstr ""
 
-#: target.c:5178
+#: target.c:5169
 msgid "Set permission to interrupt or signal the target."
 msgstr ""
 
-#: target.c:5179
+#: target.c:5170
 msgid "Show permission to interrupt or signal the target."
 msgstr ""
 
-#: target.c:5180
+#: target.c:5171
 msgid ""
 "When this permission is on, GDB may interrupt/stop the target's execution.\n"
 "Otherwise, any attempt to interrupt or stop will be ignored."
@@ -28173,31 +28173,31 @@ msgstr ""
 msgid "Unable to determine location of registers"
 msgstr ""
 
-#: windows-nat.c:313
+#: windows-nat.c:318
 #, possible-c-format
 msgid "SuspendThread (tid=0x%x) failed. (winerr %u)"
 msgstr ""
 
-#: windows-nat.c:401
+#: windows-nat.c:407
 #, possible-c-format
 msgid "[%s exited with code %u]\n"
 msgstr ""
 
-#: windows-nat.c:572
+#: windows-nat.c:578
 msgid "Can't get module info"
 msgstr ""
 
-#: windows-nat.c:582 windows-nat.c:591
+#: windows-nat.c:588 windows-nat.c:597
 #, possible-c-format
 msgid "Error getting dll name: %u."
 msgstr ""
 
-#: windows-nat.c:586
+#: windows-nat.c:592
 #, possible-c-format
 msgid "Error converting dll name to POSIX: %d."
 msgstr ""
 
-#: windows-nat.c:750
+#: windows-nat.c:756
 msgid "dll path too long"
 msgstr ""
 
@@ -28208,147 +28208,147 @@ msgstr ""
 #. 4 mysterious UNLOAD_DLL_DEBUG_EVENTs during the startup phase (these
 #. events are apparently caused by the WOW layer, the interface between
 #. 32bit and 64bit worlds).
-#: windows-nat.c:924
+#: windows-nat.c:930
 #, possible-c-format
 msgid "dll starting at %s not found."
 msgstr ""
 
-#: windows-nat.c:946
+#: windows-nat.c:952
 msgid "dll-symbols requires a file name"
 msgstr ""
 
-#: windows-nat.c:1327
+#: windows-nat.c:1344
 #, possible-c-format
 msgid "OpenProcess call failed, GetLastError = %u"
 msgstr ""
 
-#: windows-nat.c:1452
+#: windows-nat.c:1469
 msgid "Could not interrupt program.  Press Ctrl-c in the program console."
 msgstr ""
 
-#: windows-nat.c:1562
+#: windows-nat.c:1579
 #, possible-c-format
 msgid "During startup program exited with code 0x%x."
 msgstr ""
 
-#: windows-nat.c:1941
+#: windows-nat.c:1958
 msgid "Can't attach to process."
 msgstr ""
 
-#: windows-nat.c:1973
+#: windows-nat.c:1990
 #, possible-c-format
 msgid "Can't detach process %u (error %u)"
 msgstr ""
 
-#: windows-nat.c:2161
+#: windows-nat.c:2178
 msgid "No executable specified, use `target exec'."
 msgstr ""
 
-#: windows-nat.c:2178 windows-nat.c:2183
+#: windows-nat.c:2195 windows-nat.c:2200
 #, possible-c-format
 msgid "Error starting executable: %d"
 msgstr ""
 
-#: windows-nat.c:2196
+#: windows-nat.c:2213
 #, possible-c-format
 msgid "Error starting executable via shell: %d"
 msgstr ""
 
-#: windows-nat.c:2320
+#: windows-nat.c:2337
 #, possible-c-format
 msgid "Warning: Failed to open TTY %s, error %#x."
 msgstr ""
 
-#: windows-nat.c:2372
+#: windows-nat.c:2389
 #, possible-c-format
 msgid "Error creating process %s, (error %u)."
 msgstr ""
 
-#: windows-nat.c:2667
+#: windows-nat.c:2684
 msgid "Load dll library symbols from FILE."
 msgstr ""
 
-#: windows-nat.c:2677
+#: windows-nat.c:2694
 msgid "Set use of shell to start subprocess."
 msgstr ""
 
-#: windows-nat.c:2678
+#: windows-nat.c:2695
 msgid "Show use of shell to start subprocess."
 msgstr ""
 
-#: windows-nat.c:2685
+#: windows-nat.c:2702
 msgid "Break when an exception is detected in the Cygwin DLL itself."
 msgstr ""
 
-#: windows-nat.c:2686
+#: windows-nat.c:2703
 msgid "Show whether gdb breaks on exceptions in the Cygwin DLL itself."
 msgstr ""
 
-#: windows-nat.c:2693
+#: windows-nat.c:2710
 msgid "Set creation of new console when creating child process."
 msgstr ""
 
-#: windows-nat.c:2694
+#: windows-nat.c:2711
 msgid "Show creation of new console when creating child process."
 msgstr ""
 
-#: windows-nat.c:2700
+#: windows-nat.c:2717
 msgid "Set creation of new group when creating child process."
 msgstr ""
 
-#: windows-nat.c:2701
+#: windows-nat.c:2718
 msgid "Show creation of new group when creating child process."
 msgstr ""
 
-#: windows-nat.c:2707
+#: windows-nat.c:2724
 msgid "Set whether to display execution in child process."
 msgstr ""
 
-#: windows-nat.c:2708
+#: windows-nat.c:2725
 msgid "Show whether to display execution in child process."
 msgstr ""
 
-#: windows-nat.c:2714
+#: windows-nat.c:2731
 msgid "Set whether to display kernel events in child process."
 msgstr ""
 
-#: windows-nat.c:2715
+#: windows-nat.c:2732
 msgid "Show whether to display kernel events in child process."
 msgstr ""
 
-#: windows-nat.c:2721
+#: windows-nat.c:2738
 msgid "Set whether to display memory accesses in child process."
 msgstr ""
 
-#: windows-nat.c:2722
+#: windows-nat.c:2739
 msgid "Show whether to display memory accesses in child process."
 msgstr ""
 
-#: windows-nat.c:2729
+#: windows-nat.c:2746
 msgid "Set whether to display kernel exceptions in child process."
 msgstr ""
 
-#: windows-nat.c:2730
+#: windows-nat.c:2747
 msgid "Show whether to display kernel exceptions in child process."
 msgstr ""
 
-#: windows-nat.c:2739
+#: windows-nat.c:2756
 msgid "Display selectors infos."
 msgstr ""
 
-#: windows-nat.c:2755
+#: windows-nat.c:2772
 #, possible-c-format
 msgid "Invalid register %d in cygwin_set_dr.\n"
 msgstr ""
 
-#: windows-nat.c:2842
+#: windows-nat.c:2859
 #, possible-c-format
 msgid "obsolete '%s' found. Rename to '%s'."
 msgstr ""
 
 #. This will probably fail on Windows 9x/Me.  Let the user know
 #. that we're missing some functionality.
-#: windows-nat.c:2973
+#: windows-nat.c:2990
 msgid ""
 "cannot automatically find executable file or library to read symbols.\n"
 "Use \"file\" or \"dll\" command to load executable/libraries directly."

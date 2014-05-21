@@ -1,4 +1,4 @@
-gdb (7.7-1) UNRELEASED; urgency=medium
+gdb (7.7.1-1) UNRELEASED; urgency=medium
 
   [ Samuel Bronson ]
   * Switch to .xz for our ".orig" tarballs
@@ -133,6 +133,20 @@ gdb (7.7-1) UNRELEASED; urgency=medium
   * d/watch, d/upstream-signing-key.pgp: Verify sigs; remove dh_make stuff
   * d/control.in, d/control: Make gdb and gdb-minimal conflict as policy says
   * d/include-binary-files: Appease dpkg-source about the upstream key ...
+  * d/patches/python-config.patch: Add header, fix typo pointed out upstream
+  * d/sanitize-gdb.sh: stop filtering gdb-doc, drop all manpages from gdb
+  * Imported Upstream version 7.7.1
+    - GDB 7.7.1 provides the following fixes and improvements to GDB 7.7:
+      * PR win32/14018 (pc register not available error on Windows)
+      * PR python/16547 (GDB crashing on gdb.python/py-linetable.exp)
+      * PR build/16550 (64-bit GDB doesn't build on Solaris)
+      * PR gdb/16626 (auto-load regression: gdb uses wrong file to test safety)
+      * PR breakpoints/16292 (GDB oversteps a range in some cases.)
+      * PR gdb/16575 (stale breakpoint instructions in the code cache)
+      * PR gdb/16696 (AIX 32-bit cores, high section addresses)
+      * PR gdb/16721 (Erroneous backtrace on AVR)
+      * PR gdb/16832 (Erroneous backtrace on avrxmega architectures)
+      * PR build/16873 (GDB 7.7 does not build with GCC 4.9)
 
  -- Samuel Bronson <naesten@gmail.com>  Wed, 14 May 2014 12:52:07 -0400
 
