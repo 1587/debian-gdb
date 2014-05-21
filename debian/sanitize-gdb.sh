@@ -29,7 +29,6 @@ cd ..
 
 src=src/gdb-$version
 dest=gdb-$debversion
-dest2=gdb-doc-$version
 
 if ! test -d "$src"; then
   echo "Could not find source directory $src"
@@ -41,19 +40,13 @@ if test -z "$dest" || test -e "$dest"; then
   exit 1
 fi
 
-if test -z "$dest2" || test -e "$dest2"; then
-  echo "Could not create dest directory $dest2"
-  exit 1
-fi
-
 src=`cd "$src" && pwd`
 
 cp -a "$src" "$dest"
 pushd "$dest" > /dev/null
 
-# The GDB manual pages are not covered by the GFDL, but the simulator's
-# is.
-echo > sim/common/run.1
+# All of the manpages are GFDL'd now
+rm -f $(find . \( -name '*.[1-9]' \))
 
 # Almost all of the texinfo documentation is GFDL.  PSIM's is not, but
 # we don't need that manual especially anyway.  Special care must be taken
@@ -73,28 +66,9 @@ for f in $(find . \( -name \*.texinfo -o -name \*.texi \)); do
 done
 
 popd > /dev/null
-mkdir "$dest2"
-mkdir "$dest2"/readline
-cp -a "$src"/readline/doc "$dest2"/readline/doc
-mkdir "$dest2"/gdb
-cp -a "$src"/gdb/doc "$dest2"/gdb/doc
-cp -a "$src"/config "$dest2"/config
-
-# Supporting files.
-cp -a "$src"/COPYING* "$dest2/"
-cp -a "$src"/ChangeLog "$dest2/"
-cp -a "$src"/MAINTAINERS "$dest2/"
-cp -a "$src"/README* "$dest2/"
-cp -a "$src"/config.guess "$dest2/"
-cp -a "$src"/config.sub "$dest2/"
-cp -a "$src"/install-sh "$dest2/"
-cp -a "$src"/mkinstalldirs "$dest2/"
-cp -a "$src"/gdb/.gitignore "$dest2"/gdb/
-cp -a "$src"/gdb/version.in "$dest2"/gdb/
-cp -a "$src"/readline/[A-Z]* "$dest2"/readline/
 
 tar --auto-compress -cf "$dfsg" gdb-$debversion
-tar --auto-compress -cf "$doc" gdb-doc-$version
+bzcat "$tarball" | xz > "$doc"
 
 cd "$olddir"
 rm -rf $temp
