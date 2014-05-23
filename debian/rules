@@ -267,6 +267,8 @@ ifneq ($(DEB_CROSS),yes)
 	# Only ship a global gdbinit for the native GDB.
 	install -d debian/gdb$(TS)/etc/gdb
 	install -m 644 debian/gdbinit debian/gdb$(TS)/etc/gdb/
+	# Likewise gdb-add-index
+	install -m 755 gdb/contrib/gdb-add-index.sh debian/gdb$(TS)/usr/bin/gdb-add-index
 endif
 
 	rm -f debian/gdb$(TS)/usr/bin/$(TP)gdbtui
