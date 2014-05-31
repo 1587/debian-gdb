@@ -1,4 +1,4 @@
-gdb (7.7.1-1) UNRELEASED; urgency=medium
+gdb (7.7.1-1) unstable; urgency=medium
 
   [ Samuel Bronson ]
   * Switch to .xz for our ".orig" tarballs
@@ -147,8 +147,9 @@ gdb (7.7.1-1) UNRELEASED; urgency=medium
       * PR gdb/16721 (Erroneous backtrace on AVR)
       * PR gdb/16832 (Erroneous backtrace on avrxmega architectures)
       * PR build/16873 (GDB 7.7 does not build with GCC 4.9)
+        (Closes: #746855)
 
- -- Samuel Bronson <naesten@gmail.com>  Wed, 14 May 2014 12:52:07 -0400
+ -- Hector Oron <zumbi@debian.org>  Sat, 31 May 2014 11:12:46 +0200
 
 gdb (7.6.2-1.1) unstable; urgency=medium
 
