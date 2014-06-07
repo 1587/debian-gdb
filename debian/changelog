@@ -121,6 +121,7 @@ gdb (7.7.1-1) unstable; urgency=medium
     (closes: #738702)
   * d/rules: do not misuse the version field to encode the distro name
     (closes: #738331)
+  * d/copyright: update file to conform DEP5.
 
   [ Samuel Bronson ]
   * d/control.in: Misc fixes, like not building an
