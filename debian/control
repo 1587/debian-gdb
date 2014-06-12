@@ -19,7 +19,8 @@ Build-Depends:
                flex | flex-old,
                procps,
                g++-multilib [i386 powerpc s390 sparc],
-               gcj-jdk | gcj,
+# Do we really care that much about running the Java tests?
+#               gcj-jdk | gcj,
                gobjc,
                mig [hurd-any],
 # TeX[info] deps
