@@ -32,8 +32,9 @@ Build-Depends:
                libreadline-dev, lib64readline6-dev [i386 powerpc s390 sparc],
                zlib1g-dev,
                liblzma-dev,
-               libbabeltrace-dev,
-               libbabeltrace-ctf-dev,
+# babeltrace doesn't build for hurd yet :-(
+#               libbabeltrace-dev,
+#               libbabeltrace-ctf-dev,
                python3-dev,
                libkvm-dev [kfreebsd-any],
                libunwind7-dev [ia64],
