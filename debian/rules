@@ -135,7 +135,7 @@ EXTRA_FLAGS := --disable-gdbtk --disable-shared \
 # Debian does not include 64-bit Python packages, so --with-python
 # is here rather than in EXTRA_FLAGS.
 DEB_CONFIGURE_EXTRA_FLAGS := --host=$(DEB_HOST_GNU_TYPE) $(EXTRA_FLAGS) \
-	--enable-tui --with-python=python3 --without-babeltrace \
+	--enable-tui --with-python=python2 --without-babeltrace \
 	--with-zlib --with-lzma
 # --with-babeltrace
 
