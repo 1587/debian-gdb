@@ -1,5 +1,6 @@
-gdb (7.7.1-2) UNRELEASED; urgency=medium
+gdb (7.7.1-2) unstable; urgency=medium
 
+  [ Samuel Bronson ]
   * Don't require Java stuff just to gather test results we don't look at.
   * Disable babeltrace; it doesn't build everywhere.
     Thanks to Julien Cristau for the heads up.
@@ -8,7 +9,7 @@ gdb (7.7.1-2) UNRELEASED; urgency=medium
     Thanks to Ben Longbons for the report and Jakub Wilk for corroborating it.
     (Closes: #748711, Reopens: #727003)
 
- -- Samuel Bronson <naesten@gmail.com>  Fri, 13 Jun 2014 23:45:51 -0400
+ -- Hector Oron <zumbi@debian.org>  Wed, 18 Jun 2014 01:42:25 +0200
 
 gdb (7.7.1-1) unstable; urgency=medium
 
