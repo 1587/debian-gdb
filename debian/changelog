@@ -4,7 +4,7 @@ gdb (7.7.1-2) unstable; urgency=medium
   * Don't require Java stuff just to gather test results we don't look at.
   * Disable babeltrace; it doesn't build everywhere.
     Thanks to Julien Cristau for the heads up.
-  * Go back to python2; it's causing people trouble and doko never
+  * Go back to python2; it's causing people trouble and Matthias Klose never
     actually explained the need.
     Thanks to Ben Longbons for the report and Jakub Wilk for corroborating it.
     (Closes: #748711, Reopens: #727003)
