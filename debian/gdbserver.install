@@ -1,1 +1,2 @@
 usr/bin/gdbserver
+usr/lib/libinproctrace.so
