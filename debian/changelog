@@ -10,14 +10,15 @@ gdb (7.7.1-3) UNRELEASED; urgency=medium
       hurd-adapt-to-changed-MIG-output.patch
       hurd-adjust-to-startup-with-shell-changes.patch
       hurd-make-MIG-output-parsing-more-robust.patch
+    (Closes: #752574)
 
   [ Samuel Bronson ]
   * Ship /usr/lib/libinproctrace.so with gdbserver.
   * d/copyright: correct a licensecheck error; add required license texts/blurbs
-  * d/gdb.install: Include gcore in gdb package.
-    Thanks to Lorenzo Beretta for the report
+  * d/gdb.install: Include gcore in gdb package (Closes: #752317).
+    Thanks to Lorenzo Beretta for the report.
 
- -- Samuel Bronson <naesten@gmail.com>  Sat, 28 Jun 2014 19:16:00 -0400
+ -- Samuel Bronson <naesten@gmail.com>  Sun, 29 Jun 2014 19:39:19 -0400
 
 gdb (7.7.1-2) unstable; urgency=medium
 
