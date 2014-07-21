@@ -9,3 +9,4 @@ hurd-new-RPC-reply-stub-functions.patch
 hurd-adapt-to-changed-MIG-output.patch
 hurd-adjust-to-startup-with-shell-changes.patch
 hurd-make-MIG-output-parsing-more-robust.patch
+kfreebsd_bug752390.diff
