@@ -200,7 +200,7 @@ Files: gdb/common/i386-gcc-cpuid.h
  libdecnumber/dpd/decimal64.h
  include/dwarf2.h
 Copyright: 2005-2014, Free Software Foundation, Inc
-License: GPL-3+ with libgcc-3.1 exception
+License: GPL-3+ with GCC-Runtime-3.1 exception
 
 Files: sim/arm/armcopro.c
  sim/arm/armdefs.h
@@ -380,7 +380,7 @@ License: GPL-3+
  License version 3 can be found in the file
  `/usr/share/common-licenses/GPL-3'.
 
-License: GPL-3+ with libcc-3.1 exception
+License: GPL-3+ with GCC-Runtime-3.1 exception
  This file is part of GCC.
  .
  GCC is free software; you can redistribute it and/or modify it under
