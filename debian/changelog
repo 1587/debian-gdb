@@ -1,4 +1,4 @@
-gdb (7.7.1-3) UNRELEASED; urgency=medium
+gdb (7.7.1-3) unstable; urgency=medium
 
   [ Héctor Orón Martínez ]
   * d/changelog: replace nickname by real name in previous block
@@ -22,7 +22,7 @@ gdb (7.7.1-3) UNRELEASED; urgency=medium
     Thanks to Steven Chamberlain for a fix (Closes: #752390, #752295).
   * d/watch: Update to be more flexible about upstream tarball format.
 
- -- Samuel Bronson <naesten@gmail.com>  Sun, 29 Jun 2014 19:39:19 -0400
+ -- Samuel Bronson <naesten@gmail.com>  Sat, 09 Aug 2014 13:11:35 -0400
 
 gdb (7.7.1-2) unstable; urgency=medium
 
