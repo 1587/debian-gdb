@@ -287,6 +287,10 @@ binary-post-install/gdb-multiarch ::
 	rm -rf debian/gdb-multiarch/usr/share/doc/gdb-multiarch
 	ln -s gdb debian/gdb-multiarch/usr/share/doc/gdb-multiarch
 
+binary-post-install/gdbserver ::
+	# This file is only built on some arches (x86 ones, so far)
+	-cp -a debian/tmp/usr/lib/libinproctrace.so debian/gdbserver/usr/lib/
+
 binary-post-install/gdb-minimal ::
 	install -d debian/gdb-minimal/usr/bin
 	$(INSTALL) -m 755 -o root -g root \
