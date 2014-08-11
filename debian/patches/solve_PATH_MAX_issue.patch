@@ -6,9 +6,11 @@ Forwarded: http://sourceware.org/ml/gdb-patches/2013-05/msg00878.html
 Reviewed-By: Héctor Orón Martínez <zumbi@debian.org>
 Last-Update: 2013-06-08
 
---- a/gdb/nto-tdep.c	2013-05-23 14:28:24.000000000 +0000
-+++ b/gdb/nto-tdep.c	2013-05-23 15:01:24.000000000 +0000
-@@ -147,9 +147,11 @@ nto_find_and_open_solib (char *solib, un
+Index: gdb/gdb/nto-tdep.c
+===================================================================
+--- gdb.orig/gdb/nto-tdep.c	2014-08-11 18:33:00.197800126 +0200
++++ gdb/gdb/nto-tdep.c	2014-08-11 18:33:00.193800126 +0200
+@@ -146,9 +146,11 @@
  void
  nto_init_solib_absolute_prefix (void)
  {
@@ -21,7 +23,7 @@ Last-Update: 2013-06-08
  
    nto_root = nto_target ();
    if (strcmp (gdbarch_bfd_arch_info (target_gdbarch ())->arch_name, "i386") == 0)
-@@ -172,9 +174,13 @@ nto_init_solib_absolute_prefix (void)
+@@ -171,9 +173,13 @@
  	       == BFD_ENDIAN_BIG ? "be" : "le";
      }
  

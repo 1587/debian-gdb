@@ -2,11 +2,11 @@ Description: Use system python-config if available
 Author: Matthias Klose <doko@ubuntu.com>
 Forwarded: https://sourceware.org/ml/gdb-patches/2012-12/msg00751.html
 
-Index: b/gdb/configure.ac
+Index: gdb/gdb/configure.ac
 ===================================================================
---- a/gdb/configure.ac
-+++ b/gdb/configure.ac
-@@ -835,29 +835,31 @@
+--- gdb.orig/gdb/configure.ac	2014-08-11 18:33:07.877799854 +0200
++++ gdb/gdb/configure.ac	2014-08-11 18:33:07.873799854 +0200
+@@ -853,29 +853,31 @@
      esac
    esac
  
@@ -44,11 +44,11 @@ Index: b/gdb/configure.ac
        fi
      fi
    else
-Index: b/gdb/configure
+Index: gdb/gdb/configure
 ===================================================================
---- a/gdb/configure
-+++ b/gdb/configure
-@@ -656,6 +656,7 @@
+--- gdb.orig/gdb/configure	2014-08-11 18:33:07.877799854 +0200
++++ gdb/gdb/configure	2014-08-11 18:33:07.877799854 +0200
+@@ -661,6 +661,7 @@
  PYTHON_LIBS
  PYTHON_CPPFLAGS
  PYTHON_CFLAGS
@@ -56,7 +56,7 @@ Index: b/gdb/configure
  python_prog_path
  LTLIBEXPAT
  LIBEXPAT
-@@ -8104,29 +8105,122 @@
+@@ -8247,29 +8248,122 @@
      esac
    esac
  

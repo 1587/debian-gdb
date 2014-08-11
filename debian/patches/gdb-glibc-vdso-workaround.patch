@@ -11,9 +11,11 @@ gdb/
 	Work around PR libc/13097.
 	* solib.c (update_solib_list): Ignore "linux-vdso.so.1".
 
---- a/gdb/solib.c
-+++ b/gdb/solib.c
-@@ -783,8 +783,11 @@ update_solib_list (int from_tty, struct target_ops *target)
+Index: gdb/gdb/solib.c
+===================================================================
+--- gdb.orig/gdb/solib.c	2014-08-11 18:33:19.517799443 +0200
++++ gdb/gdb/solib.c	2014-08-11 18:33:19.513799443 +0200
+@@ -829,8 +829,11 @@
  
  	  TRY_CATCH (e, RETURN_MASK_ERROR)
  	    {
@@ -27,4 +29,3 @@ gdb/
  		{
  		  not_found++;
  		  if (not_found_filename == NULL)
-
