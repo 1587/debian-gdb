@@ -289,7 +289,7 @@ binary-post-install/gdb-multiarch ::
 
 binary-post-install/gdbserver ::
 	# This file is only built on some arches (x86 ones, so far)
-	-cp -a debian/tmp/usr/lib/libinproctrace.so debian/gdbserver/usr/lib/
+	-install -Da debian/tmp/usr/lib/libinproctrace.so debian/gdbserver/usr/lib/libinproctrace.so
 
 binary-post-install/gdb-minimal ::
 	install -d debian/gdb-minimal/usr/bin
