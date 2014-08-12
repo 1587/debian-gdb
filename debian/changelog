@@ -1,3 +1,9 @@
+gdb (7.7.1+dfsg-2) unstable; urgency=medium
+
+  * Fix FTBFS on non-x86 trying to install unbuilt libinproctrace.so
+
+ -- Samuel Bronson <naesten@gmail.com>  Tue, 12 Aug 2014 16:21:03 -0400
+
 gdb (7.7.1+dfsg-1) unstable; urgency=medium
 
   [ Héctor Orón Martínez ]
