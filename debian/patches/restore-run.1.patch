@@ -4,7 +4,7 @@ diff --git a/sim/run.1 b/sim/run.1
 new file mode 100644
 index 0000000..7a8505f
 --- /dev/null
-+++ b/sim/run.1
++++ b/sim/common/run.1
 @@ -0,0 +1,475 @@
 +.\" Copyright (c) 1993, 2004, 2010, 2011 Free Software Foundation
 +.\" See section COPYING for conditions for redistribution
