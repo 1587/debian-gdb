@@ -1,6 +1,6 @@
 Description: Temporary patch to make up for overzealous manpage stripping
 
-diff --git a/sim/run.1 b/sim/run.1
+diff --git a/sim/common/run.1 b/sim/common/run.1
 new file mode 100644
 index 0000000..7a8505f
 --- /dev/null
