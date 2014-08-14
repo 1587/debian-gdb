@@ -1,3 +1,15 @@
+gdb (7.7.1+dfsg-3) unstable; urgency=medium
+
+  * d/p/restore-run.1.patch: Temporary patch to fix sim FTBFS.
+    Turns out that without sim/common/run.1, sim fails to build.
+    This doesn't have any cover texts or invariant sections,
+    so in this patch we simply add it back.
+    (It turns out that sim doesn't support x86.)
+  * d/sanitize-gdb.sh: In future, only strip manpages from gdb/ subtree.
+  * d/NEWS: Add warning about impending switch to Python 3
+
+ -- Samuel Bronson <naesten@gmail.com>  Thu, 14 Aug 2014 18:16:50 -0400
+
 gdb (7.7.1+dfsg-2) unstable; urgency=medium
 
   * Fix FTBFS on non-x86 trying to install unbuilt libinproctrace.so
