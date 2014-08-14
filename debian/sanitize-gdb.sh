@@ -45,8 +45,8 @@ src=`cd "$src" && pwd`
 cp -a "$src" "$dest"
 pushd "$dest" > /dev/null
 
-# All of the manpages are GFDL'd now
-rm -f $(find . \( -name '*.[1-9]' \))
+# All of the gdb manpages are GFDL'd now
+rm -f $(find gdb \( -name '*.[1-9]' \))
 
 # Almost all of the texinfo documentation is GFDL.  PSIM's is not, but
 # we don't need that manual especially anyway.  Special care must be taken
