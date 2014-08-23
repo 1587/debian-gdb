@@ -1,7 +1,5 @@
 /* Intel 80386/80486-specific support for 32-bit ELF
-   Copyright 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002,
-   2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013
-   Free Software Foundation, Inc.
+   Copyright (C) 1993-2014 Free Software Foundation, Inc.
 
    This file is part of BFD, the Binary File Descriptor library.
 
@@ -4977,14 +4975,46 @@ elf_i386_finish_dynamic_sections (bfd *output_bfd,
   return TRUE;
 }
 
-/* Return address for Ith PLT stub in section PLT, for relocation REL
-   or (bfd_vma) -1 if it should not be included.  */
+/* Return address in section PLT for the Ith GOTPLT relocation, for
+   relocation REL or (bfd_vma) -1 if it should not be included.  */
 
 static bfd_vma
-elf_i386_plt_sym_val (bfd_vma i, const asection *plt,
-		      const arelent *rel ATTRIBUTE_UNUSED)
+elf_i386_plt_sym_val (bfd_vma i, const asection *plt, const arelent *rel)
 {
-  return plt->vma + (i + 1) * GET_PLT_ENTRY_SIZE (plt->owner);
+  bfd *abfd;
+  const struct elf_i386_backend_data *bed;
+  bfd_vma plt_offset;
+
+  /* Only match R_386_JUMP_SLOT and R_386_IRELATIVE.  */
+  if (rel->howto->type != R_386_JUMP_SLOT
+      && rel->howto->type != R_386_IRELATIVE)
+    return (bfd_vma) -1;
+
+  abfd = plt->owner;
+  bed = get_elf_i386_backend_data (abfd);
+  plt_offset = bed->plt->plt_entry_size;
+
+  if (elf_elfheader (abfd)->e_ident[EI_OSABI] != ELFOSABI_GNU)
+    return plt->vma + (i + 1) * plt_offset;
+
+  while (plt_offset < plt->size)
+    {
+      bfd_vma reloc_offset;
+      bfd_byte reloc_offset_raw[4];
+
+      if (!bfd_get_section_contents (abfd, (asection *) plt,
+				     reloc_offset_raw,
+				     plt_offset + bed->plt->plt_reloc_offset,
+				     sizeof (reloc_offset_raw)))
+	return (bfd_vma) -1;
+
+      reloc_offset = H_GET_32 (abfd, reloc_offset_raw);
+      if (reloc_offset == i * sizeof (Elf32_External_Rel))
+	return plt->vma + plt_offset;
+      plt_offset += bed->plt->plt_entry_size;
+    }
+
+  abort ();
 }
 
 /* Return TRUE if symbol should be hashed in the `.gnu.hash' section.  */
@@ -5020,7 +5050,7 @@ elf_i386_add_symbol_hook (bfd * abfd,
   return TRUE;
 }
 
-#define TARGET_LITTLE_SYM		bfd_elf32_i386_vec
+#define TARGET_LITTLE_SYM		i386_elf32_vec
 #define TARGET_LITTLE_NAME		"elf32-i386"
 #define ELF_ARCH			bfd_arch_i386
 #define ELF_TARGET_ID			I386_ELF_DATA
@@ -5074,7 +5104,7 @@ elf_i386_add_symbol_hook (bfd * abfd,
 /* FreeBSD support.  */
 
 #undef	TARGET_LITTLE_SYM
-#define	TARGET_LITTLE_SYM		bfd_elf32_i386_freebsd_vec
+#define	TARGET_LITTLE_SYM		i386_elf32_fbsd_vec
 #undef	TARGET_LITTLE_NAME
 #define	TARGET_LITTLE_NAME		"elf32-i386-freebsd"
 #undef	ELF_OSABI
@@ -5107,7 +5137,7 @@ elf_i386_fbsd_post_process_headers (bfd *abfd, struct bfd_link_info *info)
 /* Solaris 2.  */
 
 #undef	TARGET_LITTLE_SYM
-#define	TARGET_LITTLE_SYM		bfd_elf32_i386_sol2_vec
+#define	TARGET_LITTLE_SYM		i386_elf32_sol2_vec
 #undef	TARGET_LITTLE_NAME
 #define	TARGET_LITTLE_NAME		"elf32-i386-sol2"
 
@@ -5135,7 +5165,7 @@ elf_i386_fbsd_post_process_headers (bfd *abfd, struct bfd_link_info *info)
 /* Native Client support.  */
 
 #undef	TARGET_LITTLE_SYM
-#define	TARGET_LITTLE_SYM		bfd_elf32_i386_nacl_vec
+#define	TARGET_LITTLE_SYM		i386_elf32_nacl_vec
 #undef	TARGET_LITTLE_NAME
 #define	TARGET_LITTLE_NAME		"elf32-i386-nacl"
 #undef	elf32_bed
@@ -5324,7 +5354,7 @@ elf32_i386_nacl_elf_object_p (bfd *abfd)
 /* VxWorks support.  */
 
 #undef	TARGET_LITTLE_SYM
-#define TARGET_LITTLE_SYM		bfd_elf32_i386_vxworks_vec
+#define TARGET_LITTLE_SYM		i386_elf32_vxworks_vec
 #undef	TARGET_LITTLE_NAME
 #define TARGET_LITTLE_NAME		"elf32-i386-vxworks"
 #undef	ELF_OSABI
