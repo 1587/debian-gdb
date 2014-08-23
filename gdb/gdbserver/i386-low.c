@@ -20,7 +20,6 @@
 #include "server.h"
 #include "target.h"
 #include "i386-low.h"
-#include "break-common.h"
 
 /* Support for 8-byte wide hw watchpoints.  */
 #ifndef TARGET_HAS_DR_LEN_8
@@ -314,6 +313,7 @@ i386_remove_aligned_watchpoint (struct i386_debug_reg_state *state,
 				CORE_ADDR addr, unsigned len_rw_bits)
 {
   int i, retval = -1;
+  int all_vacant = 1;
 
   ALL_DEBUG_REGISTERS (i)
     {
@@ -326,11 +326,30 @@ i386_remove_aligned_watchpoint (struct i386_debug_reg_state *state,
 	      /* Reset our mirror.  */
 	      state->dr_mirror[i] = 0;
 	      I386_DR_DISABLE (state, i);
+	      /* Even though not strictly necessary, clear out all
+		 bits in DR_CONTROL related to this debug register.
+		 Debug output is clearer when we don't have stale bits
+		 in place.  This also allows the assertion below.  */
+	      I386_DR_SET_RW_LEN (state, i, 0);
 	    }
 	  retval = 0;
 	}
+
+      if (!I386_DR_VACANT (state, i))
+	all_vacant = 0;
     }
 
+  if (all_vacant)
+    {
+      /* Even though not strictly necessary, clear out all of
+	 DR_CONTROL, so that when we have no debug registers in use,
+	 we end up with DR_CONTROL == 0.  The Linux support relies on
+	 this for an optimization.  Plus, it makes for clearer debug
+	 output.  */
+      state->dr_control_mirror &= ~DR_LOCAL_SLOWDOWN;
+
+      gdb_assert (state->dr_control_mirror == 0);
+    }
   return retval;
 }
 
@@ -403,31 +422,6 @@ Invalid value %d of operation in i386_handle_nonaligned_watchpoint.\n",
   return retval;
 }
 
-#define Z_PACKET_HW_BP '1'
-#define Z_PACKET_WRITE_WP '2'
-#define Z_PACKET_READ_WP '3'
-#define Z_PACKET_ACCESS_WP '4'
-
-/* Map the protocol watchpoint type TYPE to enum target_hw_bp_type.  */
-
-static enum target_hw_bp_type
-Z_packet_to_hw_type (char type)
-{
-  switch (type)
-    {
-    case Z_PACKET_HW_BP:
-      return hw_execute;
-    case Z_PACKET_WRITE_WP:
-      return hw_write;
-    case Z_PACKET_READ_WP:
-      return hw_read;
-    case Z_PACKET_ACCESS_WP:
-      return hw_access;
-    default:
-      fatal ("Z_packet_to_hw_type: bad watchpoint type %c", type);
-    }
-}
-
 /* Update the inferior debug registers state, in INF_STATE, with the
    new debug registers state, in NEW_STATE.  */
 
@@ -457,10 +451,10 @@ i386_update_inferior_debug_regs (struct i386_debug_reg_state *inf_state,
 
 int
 i386_low_insert_watchpoint (struct i386_debug_reg_state *state,
-			    char type_from_packet, CORE_ADDR addr, int len)
+			    enum target_hw_bp_type type,
+			    CORE_ADDR addr, int len)
 {
   int retval;
-  enum target_hw_bp_type type = Z_packet_to_hw_type (type_from_packet);
   /* Work on a local copy of the debug registers, and on success,
      commit the change back to the inferior.  */
   struct i386_debug_reg_state local_state = *state;
@@ -493,14 +487,14 @@ i386_low_insert_watchpoint (struct i386_debug_reg_state *state,
 
 /* Remove a watchpoint that watched the memory region which starts at
    address ADDR, whose length is LEN bytes, and for accesses of the
-   type TYPE_FROM_PACKET.  Return 0 on success, -1 on failure.  */
+   type TYPE.  Return 0 on success, -1 on failure.  */
 
 int
 i386_low_remove_watchpoint (struct i386_debug_reg_state *state,
-			    char type_from_packet, CORE_ADDR addr, int len)
+			    enum target_hw_bp_type type,
+			    CORE_ADDR addr, int len)
 {
   int retval;
-  enum target_hw_bp_type type = Z_packet_to_hw_type (type_from_packet);
   /* Work on a local copy of the debug registers, and on success,
      commit the change back to the inferior.  */
   struct i386_debug_reg_state local_state = *state;

@@ -15,6 +15,13 @@
 @deftypefun extern void observer_detach_@var{event} (struct observer *@var{observer});
 @deftypefun extern void observer_notify_@var{event} (void);
 @deftypefun void normal_stop (struct bpstats *@var{bs}, int @var{print_frame})
+@deftypefun void signal_received (enum gdb_signal @var{siggnal})
+@deftypefun void end_stepping_range (void)
+@deftypefun void signal_exited (enum gdb_signal @var{siggnal})
+@deftypefun void exited (int @var{exitstatus})
+@deftypefun void no_history (void)
+@deftypefun void sync_execution_done (void)
+@deftypefun void command_error (void)
 @deftypefun void target_changed (struct target_ops *@var{target})
 @deftypefun void executable_changed (void)
 @deftypefun void inferior_created (struct target_ops *@var{objfile}, int @var{from_tty})
