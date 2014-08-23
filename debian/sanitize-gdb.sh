@@ -10,9 +10,9 @@ fi
 
 tardir=$(dirname "$tarball")
 tardir=$(cd "$tardir" && pwd)
-version=$(basename "$tarball" | sed "s/^gdb-//; s/\.tar\.bz2\$//")
+version=$(basename "$tarball" | sed "s/^gdb-//; s/\.tar\.\(gz\|xz\|bz2\)\$//")
 debversion=${version}
-tarball="$tardir"/gdb-$version.tar.bz2
+tarball="$tardir"/$(basename "$tarball")
 dfsg="$tardir/gdb_$debversion.orig.tar.xz"
 doc="$tardir/gdb-doc_$version.orig.tar.xz"
 
@@ -68,7 +68,16 @@ done
 popd > /dev/null
 
 tar --auto-compress -cf "$dfsg" gdb-$debversion
-bzcat "$tarball" | xz > "$doc"
 
+case "$tarball" in
+    *.xz)       cp "$tarball" "$doc"            ;;
+    *.bz2)      bzcat "$tarball" | xz > "$doc"  ;;
+    *.gz)       zcat "$tarball"  | xz > "$doc"  ;;
+    *)
+        echo "wtf is: $tarball"
+        ;;
+esac
+
+# XXX maybe we should install this as an exit handler?
 cd "$olddir"
 rm -rf $temp
