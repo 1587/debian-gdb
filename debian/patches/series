@@ -3,11 +3,4 @@ linuxthreads_signal_handling.patch
 solve_PATH_MAX_issue.patch
 gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
 python-config.patch
-ppc64le.diff
 gdb-glibc-vdso-workaround.patch
-hurd-new-RPC-reply-stub-functions.patch
-hurd-adapt-to-changed-MIG-output.patch
-hurd-adjust-to-startup-with-shell-changes.patch
-hurd-make-MIG-output-parsing-more-robust.patch
-kfreebsd_bug752390.diff
-restore-run.1.patch
