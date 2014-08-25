@@ -1,3 +1,60 @@
+gdb (7.8-1) experimental; urgency=medium
+
+  * d/sanitize-gdb.sh: Don't assume input is .tar.bz2
+  * Imported Upstream version 7.8
+    - GDB 7.8 brings new targets, features and improvements, including:
+      * Guile scripting support. [Not enabled for Debian!]
+      * Python scripting enhancements.
+      * New commands:
+        ** guile
+        ** guile-repl
+        ** info auto-load guile-scripts [REGEXP]
+      * New options:
+        ** maint ada set ignore-descriptive-types (on|off)
+        ** maint set target-async (on|off)
+        ** set|show auto-load guile-scripts (on|off)
+        ** set|show auto-connect-native-target
+        ** set|show guile print-stack (none|message|full)
+        ** set|show mi-async (on|off)
+        ** set|show print symbol-loading (off|brief|full)
+        ** set|show record btrace replay-memory-access (read-only|read-write)
+      * Deprecated commands:
+        ** "dll-symbols" and its two aliases ("add-shared-symbol-files" and
+           "assf"). Use the "sharedlibrary" command instead.
+        ** "set|show remotebaud". Use "set|show serial baud" instead.
+      * Remote Protocol:
+        ** The qXfer:btrace:read packet supports a new annex 'delta'.
+      * GDB/MI:
+        ** A new option "-gdb-set mi-async" replaces "-gdb-set target-async".
+      * New target configurations:
+        ** PowerPC64 GNU/Linux little-endian       powerpc64le-*-linux*
+      * btrace enhancements:
+         ** The btrace record target now supports the 'record goto' command.
+         ** The btrace record target supports limited reverse execution and
+            replay.
+      * ISO C99 variable length automatic arrays support.
+      * It is no longer required to "set target-async on" in order to use
+        background execution commands (e.g., "c&", "s&", etc.).
+      * "catch syscall" now implemented on s390*-linux* targets.
+      * The "compare-sections" command now works on all targets.
+      * The "target native" command now connects to the native target, and
+        can be used to launch native programs, even if "set
+        auto-connect-native-target" is set to off.
+  * debian/patches: Update for new upstream version
+    - Remove patches subsumed by new upstream version/tarball:
+      + ppc64le.diff
+      + hurd-new-RPC-reply-stub-functions.patch
+      + hurd-adapt-to-changed-MIG-output.patch
+      + hurd-adjust-to-startup-with-shell-changes.patch
+      + hurd-make-MIG-output-parsing-more-robust.patch
+      + kfreebsd_bug752390.diff
+      + restore-run.1.patch
+    - Adjust patches to work with new upstream version:
+      + gdb-fortran-main.patch: Update for upstream changes
+      + python-config.patch: Remove parts applied upstream
+
+ -- Samuel Bronson <naesten@gmail.com>  Mon, 25 Aug 2014 00:14:56 -0400
+
 gdb (7.7.1+dfsg-3) unstable; urgency=medium
 
   * d/p/restore-run.1.patch: Temporary patch to fix sim FTBFS.
