@@ -59,7 +59,11 @@ gdb (7.8-1) experimental; urgency=medium
     + Add gdb-python2 package for use with python2-only scripts
   * Enable babeltrace on supported arches
 
- -- Samuel Bronson <naesten@gmail.com>  Tue, 26 Aug 2014 01:19:51 -0400
+  [ Samuel Bronson ]
+  * Make gdb-python2 provide gdb (= ${binary:Version}).
+  * Totally rewrite the NEWS entry about the Python changes.
+
+ -- Samuel Bronson <naesten@gmail.com>  Tue, 26 Aug 2014 15:34:03 -0400
 
 gdb (7.7.1+dfsg-3) unstable; urgency=medium
 
