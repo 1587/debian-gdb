@@ -1,19 +1,70 @@
-gdb (7.8-1) unstable; urgency=medium
+gdb (7.8-1) experimental; urgency=medium
 
-  WARNING: gdb will use Python 3 by default for jessie.
-  
-  Please update your Python scripts to work on both Python 2 and 3 as soon
-  as possible; the "six" module may be useful for inspiration here.
-  
-  Users who find this problematic may use python-gdb2 as a stopgap, but
-  any package supplying GDB scripts that depend on one or the other IS
-  BUGGY.  Anyone caught using Depends:, Conflicts:, or Breaks: to force
-  one or the other WILL be dealt with MOST SEVERELY.
-  
-  (However, if such bugs stem from GDB or Python doing something
-  stupid, we'll be lenient.)
+  WARNING: gdb now uses Python 3 by default.
 
- -- Samuel Bronson <naesten@gmail.com>  Thu, 14 Aug 2014 17:39:05 -0400
+  [To return to this notice later, see /usr/share/doc/gdb/NEWS.Debian or
+  so, though you probably already knew that.]
+
+  * Please update your Python scripts to work on both Python 2 and 3 as
+    soon as possible.
+
+  * Users: For the time being, you may switch back to Python 2 by
+    installing gdb-python2.  The gdb-python2 package is likely to be
+    dropped before <jessie+1>, assuming we don't hit any really serious
+    problems.
+
+    Please report bugs for any problems we might care about, whether in or
+    out of Debian, so we can track the impact and assist in dealing with
+    any issues.  (Include "python" in the subject.)
+
+    - If the problem is with a script from a package that's in Debian,
+      (even if the Debian package does not install that script),
+      please report a bug against the package and [X-Debbugs-]CC us:
+
+      + Run "reportbug --list-cc=gdb@packages.debian.org <package-or-file>"
+        and follow the prompts.
+
+    - If the problem is with scripts from packages that aren't in Debian
+      but are in free software, report a bug against gdb:
+
+      + Run "reportbug gdb" and follow the prompts.
+      + Tell us (1) where to get the software and (2) how to get in touch
+        with upstream (preferably in the form of a link to a report about it
+        in the upstream bugtracker).
+
+        If the project doesn't welcome contributions, please let us know
+        so we don't waste time writing patches.
+
+      We don't *promise* to fix such problems, but we still want to know
+      about them, and we're likely to take a stab at them if it doesn't take
+      too long to get from initiating a VCS checkout to having the software
+      built.
+
+    - If the problem is with private scripts but you think it's because of
+      a deficiency in GDB, please construct a minimal example of the issue
+      and report that to us, too:
+
+      + Run "reportbug gdb" and follow the prompts.
+      + Include your example in the email.
+      + Links to any relevant bug reports/discussion are appreciated (as
+        always).
+
+  * Packages will be considered buggy if their GDB scripts do not work
+    with both Python 2 and Python 3.
+
+  * Packages will be considered RC buggy if they conflict with, break, or
+    depend on either gdb or gdb-python2 just because of such scripts.
+
+  * The "six" module may be useful for reference/inspiration here:
+      <https://pythonhosted.org/six/>
+    as might these pages:
+      <https://wiki.python.org/moin/Python3.0>
+      <http://docs.pythonsprints.com/python3_porting/py-porting.html>
+
+    Packagers: If you would like us to make each gdb package pull in the
+    appropriate "six" module, we would be happy to do that.
+
+ -- Samuel Bronson <naesten@gmail.com>  Tue, 26 Aug 2014 14:04:20 -0400
 
 gdb (7.4really-1) unstable; urgency=low
 
