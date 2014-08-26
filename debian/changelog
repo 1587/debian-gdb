@@ -1,5 +1,6 @@
 gdb (7.8-1) experimental; urgency=medium
 
+  [ Samuel Bronson ]
   * d/sanitize-gdb.sh: Don't assume input is .tar.bz2
   * Imported Upstream version 7.8
     - GDB 7.8 brings new targets, features and improvements, including:
@@ -53,7 +54,12 @@ gdb (7.8-1) experimental; urgency=medium
       + gdb-fortran-main.patch: Update for upstream changes
       + python-config.patch: Remove parts applied upstream
 
- -- Samuel Bronson <naesten@gmail.com>  Mon, 25 Aug 2014 00:14:56 -0400
+  [ Héctor Orón Martínez ]
+  * Switch gdb to python3 (Closes: #752581)
+    + Add gdb-python2 package for use with python2-only scripts
+  * Enable babeltrace on supported arches
+
+ -- Samuel Bronson <naesten@gmail.com>  Tue, 26 Aug 2014 01:19:51 -0400
 
 gdb (7.7.1+dfsg-3) unstable; urgency=medium
 
