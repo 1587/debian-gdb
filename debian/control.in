@@ -19,7 +19,8 @@ Build-Depends:
                flex | flex-old,
                procps,
                g++-multilib [i386 powerpc s390 sparc],
-               gcj-jdk | gcj,
+# Do we really care that much about running the Java tests?
+#               gcj-jdk | gcj,
                gobjc,
                mig [hurd-any],
 # TeX[info] deps
@@ -31,8 +32,10 @@ Build-Depends:
                libreadline-dev, lib64readline6-dev [i386 powerpc s390 sparc],
                zlib1g-dev,
                liblzma-dev,
-               libbabeltrace-dev,
-               libbabeltrace-ctf-dev,
+               libbabeltrace-dev [amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x],
+               libbabeltrace-ctf-dev [amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x],
+               python-dev,
+# Python3 build
                python3-dev,
                libkvm-dev [kfreebsd-any],
                libunwind7-dev [ia64],
@@ -41,6 +44,22 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-gdb/gdb.git
 Homepage: http://www.gnu.org/s/gdb/
 
 Package: gdb@TS@
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: libc-dbg,
+            gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390 s390x x32]
+Suggests: gdb-doc
+Conflicts: gdb
+Replaces: gdb
+Description: GNU Debugger
+ GDB is a source-level debugger, capable of breaking programs at
+ any specific line, displaying variable values, and determining
+ where errors occurred. Currently, gdb supports C, C++, D,
+ Objective-C, Fortran, Java, OpenCL C, Pascal, assembly, Modula-2,
+ Go, and Ada. A must-have for any serious programmer.
+
+Package: gdb-python2@TS@
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
