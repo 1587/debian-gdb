@@ -361,6 +361,7 @@ DEB_INSTALL_CHANGELOGS_ALL =
 DEB_INSTALL_DOCS_gdb$(TS) = gdb/NEWS gdb/README gdb/doc/refcard.tex \
 	$(DEB_BUILDDIR)/gdb/doc/refcard.dvi \
 	$(DEB_BUILDDIR)/gdb/doc/refcard.ps \
+	debian/README.python_switch \
 	gdb/contrib/
 DEB_INSTALL_CHANGELOGS_gdb$(TS) = gdb/ChangeLog
 ifneq ($(DEB_CROSS),yes)
@@ -370,6 +371,7 @@ endif
 DEB_INSTALL_DOCS_gdb-python2$(TS) = gdb/NEWS gdb/README gdb/doc/refcard.tex \
 	$(DEB_BUILDDIR)/gdb/doc/refcard.dvi \
 	$(DEB_BUILDDIR)/gdb/doc/refcard.ps \
+	debian/README.python_switch \
 	gdb/contrib/
 DEB_INSTALL_CHANGELOGS_gdb-python2$(TS) = gdb/ChangeLog
 ifneq ($(DEB_CROSS),yes)
