@@ -60,7 +60,7 @@ gdb (7.8-1) experimental; urgency=medium
   * Enable babeltrace on supported arches
 
   [ Samuel Bronson ]
-  * Make gdb-python2 provide gdb (= ${binary:Version}).
+  * Make gdb-python2 provide gdb.
   * Totally rewrite the NEWS entry about the Python changes.
     + And split out most of the new text to README.python_switch.
 
