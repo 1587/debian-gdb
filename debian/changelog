@@ -1,3 +1,11 @@
+gdb (7.7.1+dfsg-4) unstable; urgency=medium
+
+  * d/rules: fix FTBFS on newer dpkg changes.
+    (Closes: #766754)
+  * d/sanitize-gdb.sh: Don't assume input is .tar.bz2
+
+ -- Hector Oron <zumbi@debian.org>  Fri, 07 Nov 2014 17:05:49 +0100
+
 gdb (7.7.1+dfsg-3) unstable; urgency=medium
 
   * d/p/restore-run.1.patch: Temporary patch to fix sim FTBFS.
