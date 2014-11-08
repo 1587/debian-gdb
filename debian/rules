@@ -34,6 +34,8 @@ DEB_BUILD_GNU_TYPE := $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 DEB_HOST_GNU_SYSTEM := $(shell dpkg-architecture -qDEB_HOST_GNU_SYSTEM)
 DEB_HOST_GNU_CPU := $(shell dpkg-architecture -qDEB_HOST_GNU_CPU)
 DEB_HOST_GNU_TYPE := $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_TARGET_ARCH := $(shell dpkg-architecture -qDEB_TARGET_ARCH)
+DEB_TARGET_GNU_TYPE := $(shell dpkg-architecture -qDEB_TARGET_GNU_TYPE)
 
 # Cross configuration support.  Check for an environment variable
 # $GDB_TARGET, or a file debian/target.
@@ -44,10 +46,6 @@ GDB_TARGET := $(DEBIAN_TARGET_FILE)
 endif
 endif
 
-DEB_TARGET_ARCH	:= $(shell dpkg-architecture -f \
-		     -a$(GDB_TARGET) -qDEB_HOST_ARCH 2>/dev/null)
-DEB_TARGET_GNU_TYPE := $(shell dpkg-architecture -f \
-			 -a$(DEB_TARGET_ARCH) -qDEB_HOST_GNU_TYPE 2>/dev/null)
 DEB_TARGET_ALIAS ?= $(DEB_TARGET_GNU_TYPE)
 
 ifneq ($(GDB_TARGET),)
