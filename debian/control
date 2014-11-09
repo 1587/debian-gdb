@@ -3,7 +3,7 @@ Maintainer: Héctor Orón Martínez <zumbi@debian.org>
 Uploaders: Luca Bruno <lucab@debian.org>, Samuel Bronson <naesten@gmail.com>
 Section: devel
 Priority: optional
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Build-Depends:
 # Packaging deps
                cdbs (>= 0.4.17),
