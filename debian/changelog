@@ -1,3 +1,13 @@
+gdb (7.7.1+dfsg-5) unstable; urgency=medium
+
+  * d/p/fix-ftbfs-arm64.patch
+    - Include asm/ptrace.h. A recent change to glibc removed asm/ptrace.h from
+      user.h for AArch64. This meant that cross-native builds of gdbserver
+      using trunk glibc broke because linux-aarch64-low.c because
+      user_hwdebug_state couldn't be found.
+
+ -- Hector Oron <zumbi@debian.org>  Sun, 09 Nov 2014 11:36:01 +0100
+
 gdb (7.7.1+dfsg-4) unstable; urgency=medium
 
   * d/rules: fix FTBFS on newer dpkg changes.
