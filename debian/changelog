@@ -26,8 +26,11 @@ gdb (7.8.1-1) UNRELEASED; urgency=medium
       + PR python/17372 (python hangs when displaying help())
       + PR python/17408 (../../gdb/infrun.c:5256: internal-error:
         switch_back_to_stepped_thread: Assertion `!schedlock_applies(1)' failed.)
-    - Fix --batch mode parameter (Closes: #763518)
-  * Bump Standars Version stanza, no changes needed. 
+    - Fix --batch mode parameter
+      (Closes: #763518)
+  * d/control*: Bump Standars Version stanza, no changes needed. 
+  * d/rules: fix FTBFS caused by dpkg 1.17.17 changes.
+    (Closes: #766754)
 
  -- Hector Oron <zumbi@debian.org>  Sun, 09 Nov 2014 16:29:31 +0100
 
