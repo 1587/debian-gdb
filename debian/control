@@ -150,7 +150,7 @@ Package: gdb-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gdb (= ${binary:Version})
 Description: GNU Debugger (debug package)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining

@@ -28,7 +28,9 @@ gdb (7.8.1-1) UNRELEASED; urgency=medium
         switch_back_to_stepped_thread: Assertion `!schedlock_applies(1)' failed.)
     - Fix --batch mode parameter
       (Closes: #763518)
-  * d/control*: Bump Standars Version stanza, no changes needed. 
+  * d/control*:
+    - Bump Standars Version stanza, no changes needed.
+    - -dbg depends on main binary version.
   * d/rules: fix FTBFS caused by dpkg 1.17.17 changes.
     (Closes: #766754)
 
