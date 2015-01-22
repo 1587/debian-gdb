@@ -1,3 +1,47 @@
+2015-01-15  Joel Brobecker  <brobecker@adacore.com>
+
+	* version.in: Set GDB version number to 7.8.2.
+
+2015-01-14  Pedro Alves  <palves@redhat.com>
+
+	PR gdb/17525
+	* breakpoint.c: Include "interps.h".
+	(bpstat_do_actions_1): Also check whether the interpreter is
+	async.
+
+2015-01-14  Pedro Alves  <palves@redhat.com>
+
+	PR cli/17828
+	* infrun.c (reinstall_readline_callback_handler_cleanup): Don't
+	reinstall if the interpreter is sync.
+
+2014-12-31  Joel Brobecker  <brobecker@adacore.com>
+
+	PR backtrace/16215:
+	* dwarf2-frame.c (dwarf2_frame_cfa): Remove the restriction
+	the frame unwinder must either be the dwarf2_frame_unwind
+	or the dwarf2_tailcall_frame_unwind.  Verify that this_frame's
+	stack_addr is valid before calling get_frame_base.  Throw
+	an error if not valid.
+
+2014-12-15  Jan Kratochvil  <jan.kratochvil@redhat.com>
+
+	PR symtab/17642
+	* gdbtypes.c (resolve_dynamic_type_internal): Apply check_typedef to
+	TYPE if not TYPE_CODE_TYPEDEF.
+
+2014-12-15  Jan Kratochvil  <jan.kratochvil@redhat.com>
+
+	* gdbtypes.c (resolve_dynamic_type_internal): Reindent the code.
+
+2014-10-29  Joel Brobecker  <brobecker@adacore.com>
+
+	* version.in: Set GDB version number to 7.8.1.DATE-cvs.
+
+2014-10-29  Joel Brobecker  <brobecker@adacore.com>
+
+	GDB 7.8.1 released.
+
 2014-10-29  Joel Brobecker  <brobecker@adacore.com>
 
 	* version.in: Set GDB version number to 7.8.1.

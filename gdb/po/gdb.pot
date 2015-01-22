@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-29 12:50-0700\n"
+"POT-Creation-Date: 2015-01-15 15:03+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5626,7 +5626,7 @@ msgstr ""
 #. Should never come here as hookc would be 0.
 #: cli/cli-script.c:1586 complaints.c:304 exceptions.c:159 exceptions.c:176
 #: exceptions.c:203 hppa-tdep.c:3082 hppa-tdep.c:3095 infcall.c:687
-#: infcmd.c:1489 infrun.c:3430 language.c:448 mi/mi-out.c:334 mi/mi-out.c:352
+#: infcmd.c:1489 infrun.c:3440 language.c:448 mi/mi-out.c:334 mi/mi-out.c:352
 #: mips-tdep.c:265 mips-tdep.c:424 mips-tdep.c:2116 mips-tdep.c:5560
 #: mips-tdep.c:6676 mn10300-tdep.c:125 reggroups.c:219 remote.c:1359
 #: remote.c:6697 remote.c:7930 utils.c:747 utils.c:772
@@ -8361,8 +8361,8 @@ msgid ""
 "unavailable"
 msgstr ""
 
-#: dwarf2-frame.c:1524
-msgid "can't compute CFA for this frame"
+#: dwarf2-frame.c:1522
+msgid "can't compute CFA for this frame: frame base not available"
 msgstr ""
 
 #: dwarf2-frame.c:1595
@@ -10984,59 +10984,59 @@ msgid ""
 "structure type"
 msgstr ""
 
-#: gdbtypes.c:2151
+#: gdbtypes.c:2157
 #, possible-c-format
 msgid "Internal: Cannot demangle mangled name `%s'."
 msgstr ""
 
-#: gdbtypes.c:2964
+#: gdbtypes.c:2970
 #, possible-c-format
 msgid "Unsupported field kind %d by check_types_equal"
 msgstr ""
 
-#: gdbtypes.c:3519
+#: gdbtypes.c:3525
 #, possible-c-format
 msgid ") length %d\n"
 msgstr ""
 
-#: gdbtypes.c:3657
+#: gdbtypes.c:3663
 msgid " <same as already seen type>\n"
 msgstr ""
 
-#: gdbtypes.c:4094
+#: gdbtypes.c:4100
 #, possible-c-format
 msgid "Unexpected type field location kind: %d"
 msgstr ""
 
-#: gdbtypes.c:4697
+#: gdbtypes.c:4703
 msgid "Set debugging of C++ overloading."
 msgstr ""
 
-#: gdbtypes.c:4698
+#: gdbtypes.c:4704
 msgid "Show debugging of C++ overloading."
 msgstr ""
 
-#: gdbtypes.c:4699
+#: gdbtypes.c:4705
 msgid "When enabled, ranking of the functions is displayed."
 msgstr ""
 
-#: gdbtypes.c:4708
+#: gdbtypes.c:4714
 msgid ""
 "Set resolution of opaque struct/class/union types (if set before loading "
 "symbols)."
 msgstr ""
 
-#: gdbtypes.c:4710
+#: gdbtypes.c:4716
 msgid ""
 "Show resolution of opaque struct/class/union types (if set before loading "
 "symbols)."
 msgstr ""
 
-#: gdbtypes.c:4719
+#: gdbtypes.c:4725
 msgid "Set strict type checking."
 msgstr ""
 
-#: gdbtypes.c:4720
+#: gdbtypes.c:4726
 msgid "Show strict type checking."
 msgstr ""
 
@@ -13378,7 +13378,7 @@ msgstr ""
 msgid "The program being debugged is not being run.\n"
 msgstr ""
 
-#: infcmd.c:1830 infrun.c:6767
+#: infcmd.c:1830 infrun.c:6777
 msgid "Selected thread is running."
 msgstr ""
 
@@ -14092,132 +14092,132 @@ msgstr ""
 msgid "Program exited while detaching"
 msgstr ""
 
-#: infrun.c:2984
+#: infrun.c:2994
 msgid "completed.\n"
 msgstr ""
 
-#: infrun.c:3513
+#: infrun.c:3523
 #, possible-c-format
 msgid "unhandled stop_soon: %d"
 msgstr ""
 
-#: infrun.c:3584
+#: infrun.c:3594
 msgid "Cannot fill $_exitsignal with the correct signal number.\n"
 msgstr ""
 
-#: infrun.c:6070
+#: infrun.c:6080
 msgid "Unknown value."
 msgstr ""
 
-#: infrun.c:6137 linux-fork.c:378 linux-fork.c:410
+#: infrun.c:6147 linux-fork.c:378 linux-fork.c:410
 #, possible-c-format
 msgid "[Switching to %s]\n"
 msgstr ""
 
-#: infrun.c:6148
+#: infrun.c:6158
 msgid "No unwaited-for children left.\n"
 msgstr ""
 
-#: infrun.c:6156
+#: infrun.c:6166
 msgid ""
 "Cannot remove breakpoints because program is no longer writable.\n"
 "Further execution is probably impossible.\n"
 msgstr ""
 
-#: infrun.c:6399
+#: infrun.c:6409
 msgid "Signal        Stop\tPrint\tPass to program\tDescription\n"
 msgstr ""
 
-#: infrun.c:6436
+#: infrun.c:6446
 msgid "signal to handle"
 msgstr ""
 
 #. Not a number and not a recognized flag word => complain.
-#: infrun.c:6539
+#: infrun.c:6549
 #, possible-c-format
 msgid "Unrecognized or ambiguous flag word: \"%s\"."
 msgstr ""
 
-#: infrun.c:6554
+#: infrun.c:6564
 #, possible-c-format
 msgid ""
 "%s is used by the debugger.\n"
 "Are you sure you want to change it? "
 msgstr ""
 
-#: infrun.c:6562
+#: infrun.c:6572
 msgid "Not confirmed, unchanged.\n"
 msgstr ""
 
-#: infrun.c:6640
+#: infrun.c:6650
 msgid "xdb command"
 msgstr ""
 
-#: infrun.c:6691
+#: infrun.c:6701
 msgid "Invalid signal handling flag.\n"
 msgstr ""
 
-#: infrun.c:6704
+#: infrun.c:6714
 msgid ""
 "Only signals 1-15 are valid as numeric signals.\n"
 "Use \"info signals\" for a list of symbolic signals."
 msgstr ""
 
-#: infrun.c:6747
+#: infrun.c:6757
 msgid ""
 "\n"
 "Use the \"handle\" command to change these tables.\n"
 msgstr ""
 
-#: infrun.c:6759
+#: infrun.c:6769
 msgid "No thread selected."
 msgstr ""
 
-#: infrun.c:6763
+#: infrun.c:6773
 msgid "The current thread has terminated"
 msgstr ""
 
-#: infrun.c:6798
+#: infrun.c:6808
 msgid "Unable to read siginfo"
 msgstr ""
 
-#: infrun.c:6819
+#: infrun.c:6829
 msgid "Unable to write siginfo"
 msgstr ""
 
-#: infrun.c:7057 stack.c:1831 stack.c:2056
+#: infrun.c:7067 stack.c:1831 stack.c:2056
 msgid "Unable to restore previously selected frame."
 msgstr ""
 
-#: infrun.c:7204
+#: infrun.c:7214
 msgid "Target does not support this operation."
 msgstr ""
 
-#: infrun.c:7214
+#: infrun.c:7224
 msgid "Forward.\n"
 msgstr ""
 
-#: infrun.c:7217
+#: infrun.c:7227
 msgid "Reverse.\n"
 msgstr ""
 
-#: infrun.c:7221
+#: infrun.c:7231
 #, possible-c-format
 msgid "bogus execution_direction value: %d"
 msgstr ""
 
-#: infrun.c:7230
+#: infrun.c:7240
 #, possible-c-format
 msgid "Resuming the execution of threads of all processes is %s.\n"
 msgstr ""
 
-#: infrun.c:7250 infrun.c:7283
+#: infrun.c:7260 infrun.c:7293
 msgid ""
 "What debugger does when program gets various signals.\n"
 "Specify a signal as argument to print info on that signal only."
 msgstr ""
 
-#: infrun.c:7255
+#: infrun.c:7265
 msgid ""
 "Specify how to handle signals.\n"
 "Usage: handle SIGNAL [ACTIONS]\n"
@@ -14244,7 +14244,7 @@ msgid ""
 "all signals cumulatively specified."
 msgstr ""
 
-#: infrun.c:7286
+#: infrun.c:7296
 msgid ""
 "Specify how to handle a signal.\n"
 "Args are signals and actions to apply to those signals.\n"
@@ -14263,46 +14263,46 @@ msgid ""
 "Pass and Stop may be combined."
 msgstr ""
 
-#: infrun.c:7306
+#: infrun.c:7316
 msgid ""
 "There is no `stop' command, but you can set a hook on `stop'.\n"
 "This allows you to set a list of commands to be run each time execution\n"
 "of the program stops."
 msgstr ""
 
-#: infrun.c:7311
+#: infrun.c:7321
 msgid "Set inferior debugging."
 msgstr ""
 
-#: infrun.c:7312
+#: infrun.c:7322
 msgid "Show inferior debugging."
 msgstr ""
 
-#: infrun.c:7313
+#: infrun.c:7323
 msgid "When non-zero, inferior specific debugging is enabled."
 msgstr ""
 
-#: infrun.c:7320
+#: infrun.c:7330
 msgid "Set displaced stepping debugging."
 msgstr ""
 
-#: infrun.c:7321
+#: infrun.c:7331
 msgid "Show displaced stepping debugging."
 msgstr ""
 
-#: infrun.c:7322
+#: infrun.c:7332
 msgid "When non-zero, displaced stepping specific debugging is enabled."
 msgstr ""
 
-#: infrun.c:7329
+#: infrun.c:7339
 msgid "Set whether gdb controls the inferior in non-stop mode."
 msgstr ""
 
-#: infrun.c:7330
+#: infrun.c:7340
 msgid "Show whether gdb controls the inferior in non-stop mode."
 msgstr ""
 
-#: infrun.c:7331
+#: infrun.c:7341
 msgid ""
 "When debugging a multi-threaded program and this setting is\n"
 "off (the default, also called all-stop mode), when one thread stops\n"
@@ -14317,30 +14317,30 @@ msgid ""
 "leave it stopped or free to run as needed."
 msgstr ""
 
-#: infrun.c:7406
+#: infrun.c:7416
 msgid "Set stopping for shared library events."
 msgstr ""
 
-#: infrun.c:7407
+#: infrun.c:7417
 msgid "Show stopping for shared library events."
 msgstr ""
 
-#: infrun.c:7408
+#: infrun.c:7418
 msgid ""
 "If nonzero, gdb will give control to the user when the dynamic linker\n"
 "notifies gdb of shared library events.  The most common event of interest\n"
 "to the user would be loading/unloading of a new library."
 msgstr ""
 
-#: infrun.c:7418
+#: infrun.c:7428
 msgid "Set debugger response to a program call of fork or vfork."
 msgstr ""
 
-#: infrun.c:7419
+#: infrun.c:7429
 msgid "Show debugger response to a program call of fork or vfork."
 msgstr ""
 
-#: infrun.c:7420
+#: infrun.c:7430
 msgid ""
 "A fork or vfork creates a new process.  follow-fork-mode can be:\n"
 "  parent  - the original process is debugged after a fork\n"
@@ -14349,15 +14349,15 @@ msgid ""
 "By default, the debugger will follow the parent process."
 msgstr ""
 
-#: infrun.c:7432
+#: infrun.c:7442
 msgid "Set debugger response to a program call of exec."
 msgstr ""
 
-#: infrun.c:7433
+#: infrun.c:7443
 msgid "Show debugger response to a program call of exec."
 msgstr ""
 
-#: infrun.c:7434
+#: infrun.c:7444
 msgid ""
 "An exec call replaces the program image of a process.\n"
 "\n"
@@ -14376,15 +14376,15 @@ msgid ""
 "By default, the debugger will use the same inferior."
 msgstr ""
 
-#: infrun.c:7455
+#: infrun.c:7465
 msgid "Set mode for locking scheduler during execution."
 msgstr ""
 
-#: infrun.c:7456
+#: infrun.c:7466
 msgid "Show mode for locking scheduler during execution."
 msgstr ""
 
-#: infrun.c:7457
+#: infrun.c:7467
 msgid ""
 "off  == no locking (threads may preempt at any time)\n"
 "on   == full locking (no thread except the current thread may run)\n"
@@ -14393,15 +14393,15 @@ msgid ""
 "\tOther threads may run while stepping over a function call ('next')."
 msgstr ""
 
-#: infrun.c:7467
+#: infrun.c:7477
 msgid "Set mode for resuming threads of all processes."
 msgstr ""
 
-#: infrun.c:7468
+#: infrun.c:7478
 msgid "Show mode for resuming threads of all processes."
 msgstr ""
 
-#: infrun.c:7469
+#: infrun.c:7479
 msgid ""
 "When on, execution commands (such as 'continue' or 'next') resume all\n"
 "threads of all processes.  When off (which is the default), execution\n"
@@ -14410,30 +14410,30 @@ msgid ""
 "mode (see help set scheduler-locking)."
 msgstr ""
 
-#: infrun.c:7479
+#: infrun.c:7489
 msgid "Set mode of the step operation."
 msgstr ""
 
-#: infrun.c:7480
+#: infrun.c:7490
 msgid "Show mode of the step operation."
 msgstr ""
 
-#: infrun.c:7481
+#: infrun.c:7491
 msgid ""
 "When set, doing a step over a function without debug line information\n"
 "will stop at the first instruction of that function. Otherwise, the\n"
 "function is skipped and the step command stops at a different source line."
 msgstr ""
 
-#: infrun.c:7490
+#: infrun.c:7500
 msgid "Set debugger's willingness to use displaced stepping."
 msgstr ""
 
-#: infrun.c:7491
+#: infrun.c:7501
 msgid "Show debugger's willingness to use displaced stepping."
 msgstr ""
 
-#: infrun.c:7492
+#: infrun.c:7502
 msgid ""
 "If on, gdb will use displaced stepping to step over breakpoints if it is\n"
 "supported by the target architecture.  If off, gdb will not use displaced\n"
@@ -14445,57 +14445,57 @@ msgid ""
 "use it in all-stop mode (see help set non-stop)."
 msgstr ""
 
-#: infrun.c:7504
+#: infrun.c:7514
 msgid ""
 "Set direction of execution.\n"
 "Options are 'forward' or 'reverse'."
 msgstr ""
 
-#: infrun.c:7506
+#: infrun.c:7516
 msgid "Show direction of execution (forward/reverse)."
 msgstr ""
 
-#: infrun.c:7507
+#: infrun.c:7517
 msgid "Tells gdb whether to execute forward or backward."
 msgstr ""
 
 #. Set/show detach-on-fork: user-settable mode.
-#: infrun.c:7513
+#: infrun.c:7523
 msgid "Set whether gdb will detach the child of a fork."
 msgstr ""
 
-#: infrun.c:7514
+#: infrun.c:7524
 msgid "Show whether gdb will detach the child of a fork."
 msgstr ""
 
-#: infrun.c:7515
+#: infrun.c:7525
 msgid "Tells gdb whether to detach the child of a fork."
 msgstr ""
 
-#: infrun.c:7522
+#: infrun.c:7532
 msgid "Set disabling of debuggee's virtual address space randomization."
 msgstr ""
 
-#: infrun.c:7523
+#: infrun.c:7533
 msgid "Show disabling of debuggee's virtual address space randomization."
 msgstr ""
 
-#: infrun.c:7524
+#: infrun.c:7534
 msgid ""
 "When this mode is on (which is the default), randomization of the virtual\n"
 "address space is disabled.  Standalone programs run with the randomization\n"
 "enabled by default on some platforms."
 msgstr ""
 
-#: infrun.c:7548
+#: infrun.c:7558
 msgid "Set whether gdb controls the inferior in observer mode."
 msgstr ""
 
-#: infrun.c:7549
+#: infrun.c:7559
 msgid "Show whether gdb controls the inferior in observer mode."
 msgstr ""
 
-#: infrun.c:7550
+#: infrun.c:7560
 msgid ""
 "In observer mode, GDB can get data from the inferior, but not\n"
 "affect its execution.  Registers and memory may not be changed,\n"
