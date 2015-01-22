@@ -218,14 +218,6 @@ build-python2-stamp:
 	cd $(BUILDDIRPYTHON2) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
 	touch $@
 
-build/gdb64:: build64-stamp
-build64-stamp:
-	mkdir -p $(BUILDDIR64)
-	cd $(BUILDDIR64) && CC="$(CC64)" CFLAGS="$(CFLAGS64)" AR=ar \
-	  $(shell pwd)/configure $(DEB_CONFIGURE_NORMAL_ARGS) $(DEB_CONFIGURE_DEBUG_ARGS) $(DEB_CONFIGURE_FLAGS_64)
-	cd $(BUILDDIR64) && $(DEB_MAKE_ENVVARS) $(MAKE) $(NJOBS)
-	touch $@
-
 build/gdb-multiarch:: build-multiarch-stamp
 build-multiarch-stamp:
 	mkdir -p $(BUILDDIRMULTIARCH)
@@ -302,12 +294,6 @@ endif
 	rm -f debian/gdb$(TS)/usr/bin/$(TP)gdbtui
 	install -m 755 debian/gdbtui debian/gdb$(TS)/usr/bin/$(TP)gdbtui
 
-binary-post-install/gdb64 ::
-	install -d debian/gdb64/usr/bin
-	install -s -m 755 $(BUILDDIR64)/gdb/gdb debian/gdb64/usr/bin/gdb64
-	rm -rf debian/gdb64/usr/share/doc/gdb64
-	ln -s gdb debian/gdb64/usr/share/doc/gdb64
-
 binary-post-install/gdb-multiarch ::
 	install -d debian/gdb-multiarch/usr/bin
 	install -s -m 755 $(BUILDDIRMULTIARCH)/gdb/gdb debian/gdb-multiarch/usr/bin/gdb-multiarch
@@ -346,7 +332,7 @@ debian/control:: debian/control.in $(CROSS_FORCE)
 		| sed "s/@TS@/$(TS)/g" \
 		> debian/control
 ifeq ($(DEB_CROSS),yes)
-	sed -i "/Package: gdb64/,\$$ d" -i "/Package: gdb-multiarch/,\$$ d" debian/control
+	sed -i "/Package: gdb-multiarch/,\$$ d" debian/control
 	sed "s+/gdb+/$(TP)gdb+g; s+usr/share/$(TP)gdb+usr/share/gdb$(TS)+g" \
 		debian/gdb.install > debian/gdb$(TS).install
 	sed "s+/gdb+/$(TP)gdb+g; s+usr/share/$(TP)gdb+usr/share/gdb-python2$(TS)+g" \
