@@ -66,25 +66,6 @@ ifdef GDB_TARGET
   TP = $(DEB_TARGET_ALIAS)-
   TS = -$(DEB_TARGET_ALIAS)
   CROSS_FORCE = FORCE
-else
-ifneq (,$(filter $(DEB_HOST_ARCH),i386 powerpc sparc s390))
-  build64 = yes
-  CC64 = gcc -m64
-  CFLAGS64 = $(CFLAGS)
-  BUILDDIR64 = $(ALL_BUILDDIR)/objdir64
-  ifeq ($(DEB_HOST_ARCH),i386)
-    HOST64 = x86_64-linux-gnu
-  endif
-  ifeq ($(DEB_HOST_ARCH),powerpc)
-    HOST64 = powerpc64-linux-gnu
-  endif
-  ifeq ($(DEB_HOST_ARCH),sparc)
-    HOST64 = sparc64-linux-gnu
-  endif
-  ifeq ($(DEB_HOST_ARCH),s390)
-    HOST64 = s390x-linux-gnu
-  endif
-endif
 endif
 
 distribution := $(shell lsb_release -is)
@@ -139,10 +120,6 @@ EXTRA_FLAGS := --disable-gdbtk --disable-shared \
 # is here rather than in EXTRA_FLAGS.
 DEB_CONFIGURE_EXTRA_FLAGS := --host=$(DEB_HOST_GNU_TYPE) $(EXTRA_FLAGS) \
 	--enable-tui --with-zlib --with-lzma --with-python=python3
-
-# 64-bit flags
-DEB_CONFIGURE_FLAGS_64 := --host=$(HOST64) $(EXTRA_FLAGS) \
-	--enable-tui --without-babeltrace
 
 # multiarch targets; this is taken from the binutils-multiarch package but
 # doesn't seem like a terribly nice list; see
@@ -242,7 +219,7 @@ endif
 	touch $@
 
 clean::
-	rm -f check-stamp build64-stamp build-multiarch-stamp
+	rm -f check-stamp build-multiarch-stamp
 	rm -rf $(ALL_BUILDDIR)
 
 	if test -f gdb/version.in.backup; then \
