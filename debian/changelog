@@ -1,3 +1,16 @@
+gdb (7.8.2-1) experimental; urgency=medium
+
+  * Imported Upstream version 7.8.2
+    - This is a minor corrective release over GDB 7.8.1, fixing the following issues:
+      + PR symtab/17642 ([7.8 regression] internal-error: resolve_dynamic_struct: Assertion `TYPE_NFIELDS (type) > 0' failed.)
+      + PR binutils/17677 (_bfd_elf_get_synthetic_symtab runs in O(n^2) complexity)
+      + PR gdb/16215 (SPARC: can't compute CFA for this frame)
+      + PR gdb/17525 (target-async: breakpoint commands not executed when program run from -x script)
+      + PR cli/17828 ([7.8 regression] -batch -ex r breaks terminal) 
+  * d/{control*,gdb64*,rules}: drop gdb64 support.
+
+ -- Hector Oron <zumbi@debian.org>  Thu, 22 Jan 2015 02:24:52 +0100
+
 gdb (7.8.1-1) experimental; urgency=medium
 
   * Imported Upstream version 7.8.1
