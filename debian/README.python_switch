@@ -80,7 +80,7 @@ For jessie, GDB uses Python 3 by default.
     ship you scripts) needing to either reinvent pieces of the "six"
     package or pull in python-six *and* python3-six (thus keeping both
     versions of python installed) when the user may not even have or
-    want to use gdb: there *are* other uses for -dbg packagse, and
+    want to use gdb: there *are* other uses for -dbg packages, and
     some scripts are shipped in lib packages anyway.
 
   - However, this probably won't be too helpful from an upstream PoV
