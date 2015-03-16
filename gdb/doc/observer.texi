@@ -1,6 +1,6 @@
 @c This file is part of the GDB manual.
 @c
-@c Copyright (C) 2003-2014 Free Software Foundation, Inc.
+@c Copyright (C) 2003-2015 Free Software Foundation, Inc.
 @c
 @c See the file gdbint.texinfo for copying conditions.
 @c
@@ -52,4 +52,7 @@
 @deftypefun void tsv_created (const struct trace_state_variable *@var{tsv})
 @deftypefun void tsv_deleted (const struct trace_state_variable *@var{tsv})
 @deftypefun void tsv_modified (const struct trace_state_variable *@var{tsv})
+@deftypefun void inferior_call_pre (ptid_t @var{thread}, CORE_ADDR @var{address})
+@deftypefun void inferior_call_post (ptid_t @var{thread}, CORE_ADDR @var{address})
+@deftypefun void register_changed (struct frame_info *@var{frame}, int @var{regnum})
 @deftypefun void test_notification (int @var{somearg})
