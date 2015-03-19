@@ -1,3 +1,47 @@
+gdb (7.9-1) experimental; urgency=medium
+
+  * Imported Upstream version 7.9
+    - GDB 7.9 brings new targets, features and improvements, including:
+      + Many improvements in GDB's Python scripting API.
+      + Compilation and injection of source code into the inferior
+        (requires GCC 5.0 or higher built with libcc1.so).
+      + On resume, GDB now always passes the signal the program had stopped
+        for to the thread the signal was sent to, even if the user changed
+        threads before resuming.  Previously GDB would often (but not
+        always) deliver the signal to the thread that happens to be current
+        at resume time.
+      + Conversely, the "signal" command now consistently delivers the
+        requested signal to the current thread.  GDB now asks for
+        confirmation if the program had stopped for a signal and the user
+        switched threads meanwhile.
+      + Hardware watchpoint support on x86 GNU Hurd.
+      + New target: MIPS SDE, mips*-sde*-elf*
+      + New commands:
+        - add-auto-load-scripts-directory directory
+        - compile code [-r|-raw] [--] [source code]
+        - compile file [-r|-raw] filename
+        - demangle [-l language] [--] name
+        - maint print user-registers
+        - queue-signal signal-name-or-number
+      + New options
+        - set debug symbol-lookup
+        - show debug symbol-lookup
+      + MI changes
+        - New exit-code field in -list-thread-groups command output
+      + Support for these obsolete configurations has been removed.
+        - Alpha running OSF/1 (or Tru64)          alpha*-*-osf*
+        - SGI Irix-5.x                            mips-*-irix5*
+        - SGI Irix-6.x                            mips-*-irix6*
+        - VAX running (4.2 - 4.3 Reno) BSD        vax-*-bsd*
+        - VAX running Ultrix                      vax-*-ultrix*
+      + The "dll-symbols" command, and its two aliases
+        ("add-shared-symbol-files" and "assf"), have been removed.
+        Use the "sharedlibrary" command, or its alias "share", instead.
+  * d/README.python_switch: fix typo. (Closes: #761688)
+  * Replace gdb64 packages by gdb multiarch. (Closes: #775948)
+
+ -- Hector Oron <zumbi@debian.org>  Thu, 19 Mar 2015 13:18:58 +0100
+
 gdb (7.8.2-1) experimental; urgency=medium
 
   * Imported Upstream version 7.8.2
