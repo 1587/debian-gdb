@@ -8,9 +8,9 @@ Origin: vendor, http://bugs.debian.org/669043
 
 Index: gdb/gdb/common/signals.c
 ===================================================================
---- gdb.orig/gdb/common/signals.c	2014-05-04 22:13:56.000000000 -0400
-+++ gdb/gdb/common/signals.c	2014-05-04 22:13:56.000000000 -0400
-@@ -343,6 +343,15 @@
+--- gdb.orig/gdb/common/signals.c	2015-08-16 17:33:27.927325991 +0200
++++ gdb/gdb/common/signals.c	2015-08-16 17:33:27.923325152 +0200
+@@ -332,6 +332,15 @@
      return GDB_SIGNAL_INFO;
  #endif
  
@@ -28,8 +28,8 @@ Index: gdb/gdb/common/signals.c
      {
 Index: gdb/include/gdb/signals.def
 ===================================================================
---- gdb.orig/include/gdb/signals.def	2014-05-04 22:13:56.000000000 -0400
-+++ gdb/include/gdb/signals.def	2014-05-04 22:13:56.000000000 -0400
+--- gdb.orig/include/gdb/signals.def	2015-08-16 17:33:27.927325991 +0200
++++ gdb/include/gdb/signals.def	2015-08-16 17:33:27.923325152 +0200
 @@ -194,7 +194,11 @@
  SET (GDB_EXC_SOFTWARE, 149, "EXC_SOFTWARE", "Software generated exception")
  SET (GDB_EXC_BREAKPOINT, 150, "EXC_BREAKPOINT", "Breakpoint")
