@@ -1,7 +1,5 @@
- gdb (7.9-2) UNRELEASED; urgency=medium
- .
-   * d/p/load-versioned-libcc1.patch:
-     - load libcc1.so.0 instead unversioned file.
+* d/p/load-versioned-libcc1.patch:
+  - load libcc1.so.0 instead unversioned file.
 Author: Hector Oron <zumbi@debian.org>
 
 ---
