@@ -1,9 +1,21 @@
-gdb (7.9-2) UNRELEASED; urgency=medium
+gdb (7.9.1-1) unstable; urgency=medium
 
+  * Imported Upstream version 7.9.1:
+    - This is a minor corrective release over GDB 7.9, fixing the following issues:
+      + PR build/18033 (C++ style comment used in gdb/iq2000-tdep.c and gdb/compile/compile-*.c)
+      + PR build/18298 ("compile" command cannot find compiler if tools configured with triplet instead of quadruplet)
+      + PR tui/18311 (Random SEGV when displaying registers in TUI mode)
+      + PR python/18299 (exception when registering a global pretty-printer in verbose mode)
+      + PR python/18066 (argument "word" seems broken in Command.complete (text, word))
+      + PR pascal/17815 (Fix pascal behavior for class fields with testcase)
+      + PR python/18285 (ptype expr-with-xmethod causes SEGV)
   * d/p/load-versioned-libcc1.patch:
     - load libcc1.so.0 instead unversioned file.
+  * d/p/Segmentation-fault-on-add-symbol-file-command.patch:
+    - fix: segfault on add-symbol-file
+  * d/patches: refresh
 
- -- Hector Oron <zumbi@debian.org>  Mon, 23 Mar 2015 09:41:28 +0100
+ -- Hector Oron <zumbi@debian.org>  Wed, 19 Aug 2015 21:27:17 +0200
 
 gdb (7.9-1) experimental; urgency=medium
 
