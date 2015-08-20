@@ -1,0 +1,59 @@
+Description: Fixes documentation build
+ gdb-doc (7.4-1) unstable; urgency=low
+ .
+   * New upstream release.
+   * Update Standards-Version to 3.9.3 (no changes required).
+Author: Hector Oron <zumbi@debian.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- /dev/null
++++ gdb-doc-7.4/gdb/doc/configure.ac
+@@ -0,0 +1,12 @@
++AC_PREREQ(2.64)
++AC_INIT(refcard.tex)
++sinclude(../../config/acx.m4)
++AC_PROG_INSTALL
++AC_PROG_LN_S
++
++READLINE_TEXI_INCFLAG='-I $(READLINE_DIR)'
++AC_SUBST(READLINE_TEXI_INCFLAG)
++
++ACX_PKGVERSION([GDB])
++ACX_BUGURL([http://www.gnu.org/software/gdb/bugs/])
++AC_OUTPUT(Makefile)
+--- gdb-doc-7.4.orig/gdb/doc/Makefile.in
++++ gdb-doc-7.4/gdb/doc/Makefile.in
+@@ -45,9 +45,9 @@ gdbdir = $(srcdir)/..
+ TEXIDIR=${gdbdir}/../texinfo
+ 
+ # where to find makeinfo, preferably one designed for texinfo-2
+-MAKEINFO = @MAKEINFO@
+-MAKEINFOFLAGS = @MAKEINFOFLAGS@
+-MAKEINFO_EXTRA_FLAGS = @MAKEINFO_EXTRA_FLAGS@
++MAKEINFO = makeinfo
++MAKEINFOFLAGS = 
++MAKEINFO_EXTRA_FLAGS = 
+ MAKEINFO_CMD = $(MAKEINFO) $(MAKEINFOFLAGS) $(MAKEINFO_EXTRA_FLAGS)
+ 
+ MAKEHTML = $(MAKEINFO_CMD) --html
+@@ -526,7 +526,7 @@ annotate/index.html: $(ANNOTATE_DOC_FILE
+ 
+ force:
+ 
+-Makefile: Makefile.in $(host_makefile_frag) ../config.status
++Makefile: Makefile.in $(host_makefile_frag) ./config.status
+ 	cd .. && $(SHELL) ./config.status doc/Makefile
+ 
+ 

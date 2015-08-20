@@ -1,0 +1,129 @@
+gdb-doc (7.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Hector Oron <zumbi@debian.org>  Fri, 18 May 2012 11:47:25 +0200
+
+gdb-doc (7.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.9.3 (no changes required).
+  * Add patch for fixing documentation build.
+  * Autoregenerate gdb/doc/configure on every build.
+
+ -- Hector Oron <zumbi@debian.org>  Sat, 25 Feb 2012 17:33:14 +0100
+
+gdb-doc (7.3-2) unstable; urgency=low
+
+  * Add missing texlive-latex-base build dependency.
+    - Thanks Jeremy Bicha (Closes: #642962)
+
+ -- Hector Oron <zumbi@debian.org>  Mon, 26 Sep 2011 09:53:27 +0100
+
+gdb-doc (7.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Regenerate gdb/doc/configure.
+  * Add myself to debian/copyright. 
+  * Enable PDF format. 
+  * Drop dir.gz from info directory. 
+  * Add build dependency on texlive-generic-recommended.
+
+ -- Hector Oron <zumbi@debian.org>  Wed, 14 Sep 2011 00:36:23 +0200
+
+gdb-doc (7.2-2) unstable; urgency=low
+
+  * New maintainer. (Closes: #631742: ITA: gdb-doc -- The GNU Debugger
+    Documentation).
+  * Add lintian override for description starting with article.
+  * Force build directory removal when calling clean target.
+
+ -- Hector Oron <zumbi@debian.org>  Thu, 14 Jul 2011 01:39:03 +0100
+
+gdb-doc (7.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Mon, 06 Sep 2010 18:57:04 -0400
+
+gdb-doc (7.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.8.4 (no changes required).
+  * Switch to 3.0 (quilt) source package format.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Fri, 19 Mar 2010 16:25:16 -0400
+
+gdb-doc (7.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Tue, 13 Oct 2009 18:21:46 -0400
+
+gdb-doc (6.8.50.20090628-1) unstable; urgency=low
+
+  * New upstream snapshot.
+  * Include HTML manuals.
+  * Update Standards-Version to 3.8.2 (no changes required).
+  * Added doc-base support.
+  * Remove the accidentally packaged annotations manual.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Sun, 05 Jul 2009 19:08:27 -0400
+
+gdb-doc (6.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * Trim changelog from the gdb package.
+  * Clean up quilt build dependency.
+  * Update Standards-Version to 3.7.3 (no changes required).
+
+ -- Daniel Jacobowitz <dan@debian.org>  Thu, 27 Mar 2008 18:13:18 -0400
+
+gdb-doc (6.7.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Mon, 03 Dec 2007 10:16:12 -0500
+
+gdb-doc (6.6.90.20070912-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update copyright notice.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Mon, 17 Sep 2007 15:46:47 -0400
+
+gdb-doc (6.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Change priority to optional.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Sat, 27 Jan 2007 22:00:26 -0500
+
+gdb-doc (6.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.7.2 (no changes required).
+
+ -- Daniel Jacobowitz <dan@debian.org>  Fri,  3 Nov 2006 00:48:36 -0500
+
+gdb-doc (6.4.90-1) unstable; urgency=low
+
+  * New upstream release (GDB 6.5 prerelease).
+
+ -- Daniel Jacobowitz <dan@debian.org>  Tue,  6 Jun 2006 09:01:23 -0400
+
+gdb-doc (6.4.50.20060511-2) unstable; urgency=low
+
+  * Correct a typo in debian/gdb-doc.info which caused install-info
+    to be skipped.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Fri, 12 May 2006 09:03:07 -0400
+
+gdb-doc (6.4.50.20060511-1) unstable; urgency=low
+
+  * New package, containing only the GDB manuals, based on the previous
+    GDB packaging.
+  * Update debian/copyright for the current version of the FDL and the new
+    FSF address.
+
+ -- Daniel Jacobowitz <dan@debian.org>  Thu, 11 May 2006 15:17:33 -0400

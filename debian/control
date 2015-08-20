@@ -1,0 +1,21 @@
+Source: gdb-doc
+Maintainer: Hector Oron <zumbi@debian.org>
+Section: non-free/devel
+Priority: optional
+Standards-Version: 3.9.3
+Build-Depends: cdbs (>= 0.4.17), debhelper (>= 7)
+Build-Depends-Indep: autoconf, texinfo (>= 4.7-2.2), texlive-generic-recommended, texlive-latex-base
+
+Package: gdb-doc
+Architecture: all
+Section: non-free/doc
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: gdb (<< 6.4.50.20060511-1), insight (<< 6.1+cvs.2004.04.07-1)
+Description: The GNU Debugger Documentation
+ GDB is a source-level debugger, capable of breaking programs at
+ any specific line, displaying variable values, and determining
+ where errors occurred. Currently, it works for C, C++, Fortran,
+ Modula 2 and Java programs. A must-have for any serious
+ programmer.
+ .
+ This package contains the GDB and GDB Internals manuals.

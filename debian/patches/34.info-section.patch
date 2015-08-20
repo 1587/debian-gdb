@@ -1,0 +1,48 @@
+Debian-local:
+  Use the Development section, for consistency with other Debian packages.
+
+---
+ gdb/doc/gdb.texinfo    |    2 +-
+ gdb/doc/gdbint.texinfo |    2 +-
+ gdb/doc/stabs.texinfo  |    2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+Index: gdb-doc-7.1/gdb/doc/gdb.texinfo
+===================================================================
+--- gdb-doc-7.1.orig/gdb/doc/gdb.texinfo	2010-02-12 16:35:54.000000000 -0500
++++ gdb-doc-7.1/gdb/doc/gdb.texinfo	2010-03-19 16:37:08.000000000 -0400
+@@ -39,7 +39,7 @@
+ 
+ @c This is a dir.info fragment to support semi-automated addition of
+ @c manuals to an info tree.
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Gdb: (gdb).                     The GNU debugger.
+ @end direntry
+Index: gdb-doc-7.1/gdb/doc/gdbint.texinfo
+===================================================================
+--- gdb-doc-7.1.orig/gdb/doc/gdbint.texinfo	2010-02-12 23:57:11.000000000 -0500
++++ gdb-doc-7.1/gdb/doc/gdbint.texinfo	2010-03-19 16:37:27.000000000 -0400
+@@ -3,7 +3,7 @@
+ @include gdb-cfg.texi
+ @settitle @value{GDBN} Internals
+ @setchapternewpage off
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Gdb-Internals: (gdbint).	The GNU debugger's internals.
+ @end direntry
+Index: gdb-doc-7.1/gdb/doc/stabs.texinfo
+===================================================================
+--- gdb-doc-7.1.orig/gdb/doc/stabs.texinfo	2010-01-01 02:54:37.000000000 -0500
++++ gdb-doc-7.1/gdb/doc/stabs.texinfo	2010-03-19 16:37:08.000000000 -0400
+@@ -7,7 +7,7 @@
+ 
+ @c This is a dir.info fragment to support semi-automated addition of
+ @c manuals to an info tree.
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Stabs: (stabs).                 The "stabs" debugging information format.   
+ @end direntry

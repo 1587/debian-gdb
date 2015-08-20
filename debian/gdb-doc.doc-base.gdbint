@@ -1,0 +1,16 @@
+Document: gdbint
+Title: GDB Internals Manual
+Abstract: This manual describes the internals of GDB,
+ the GNU symbolic debugger.
+Section: Programming
+
+Format: Info
+Index: /usr/share/info/gdbint.info.gz
+Files: /usr/share/info/gdbint.info*
+
+Format: HTML
+Index: /usr/share/doc/gdb-doc/html/gdbint/index.html
+Files: /usr/share/doc/gdb-doc/html/gdbint/*.html
+
+Format: PDF
+Files: /usr/share/doc/gdb-doc/pdf/gdbint.pdf.gz
