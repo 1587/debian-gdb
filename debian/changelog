@@ -1,3 +1,11 @@
+gdb-doc (7.9.1-1) UNRELEASED; urgency=medium
+
+  * Imported Upstream version 7.9.1
+  * Add debian/watch file with gpg checking
+  * Refresh patches for new upstream version
+
+ -- Agustin Henze <tin@debian.org>  Thu, 20 Aug 2015 21:31:42 +0200
+
 gdb-doc (7.4.1-1) unstable; urgency=low
 
   * New upstream release.
