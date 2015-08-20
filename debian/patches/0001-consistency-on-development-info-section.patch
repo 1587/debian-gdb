@@ -1,0 +1,44 @@
+--- a/bfd/doc/bfd.texinfo
++++ b/bfd/doc/bfd.texinfo
+@@ -5,7 +5,7 @@
+ @synindex fn cp
+ 
+ @ifnottex
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Bfd: (bfd).                   The Binary File Descriptor library.
+ @end direntry
+--- a/gdb/doc/annotate.texinfo
++++ b/gdb/doc/annotate.texinfo
+@@ -4,7 +4,7 @@
+ 
+ @c This is a dir.info fragment to support semi-automated addition of
+ @c manuals to an info tree.
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Annotate: (annotate).                 The obsolete annotation interface.
+ @end direntry
+--- a/gdb/doc/gdb.texinfo
++++ b/gdb/doc/gdb.texinfo
+@@ -42,7 +42,7 @@
+ 
+ @c This is a dir.info fragment to support semi-automated addition of
+ @c manuals to an info tree.
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Gdb: (gdb).                     The GNU debugger.
+ * gdbserver: (gdb) Server.        The GNU debugging server.
+--- a/gdb/doc/stabs.texinfo
++++ b/gdb/doc/stabs.texinfo
+@@ -7,7 +7,7 @@
+ 
+ @c This is a dir.info fragment to support semi-automated addition of
+ @c manuals to an info tree.
+-@dircategory Software development
++@dircategory Development
+ @direntry
+ * Stabs: (stabs).                 The "stabs" debugging information format.   
+ @end direntry
