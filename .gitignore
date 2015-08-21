@@ -1,6 +1,7 @@
 # General build directories
 /build/
 /debian/tmp/
+/.pc/
 
 # Package-specific build directories
 /debian/gdb/
