@@ -68,7 +68,7 @@ Suggests: gdb-doc
 Provides: gdb
 Conflicts: gdb
 Replaces: gdb
-Description: GNU Debugger
+Description: GNU Debugger (linked against python2)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
  where errors occurred. Currently, gdb supports C, C++, D,
