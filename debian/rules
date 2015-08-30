@@ -112,14 +112,14 @@ EXTRA_FLAGS := --disable-gdbtk --disable-shared \
 	--with-pkgversion='$(distribution) $(deb_version)' \
 	--srcdir=$(shell pwd) \
 	--disable-readline --with-system-readline --with-expat \
-	--without-zlib --without-lzma \
+	--with-system-zlib --without-lzma \
 	--without-guile --without-babeltrace \
 	$(arch_config_args) --build=$(DEB_BUILD_GNU_TYPE)
 
 # Debian does not include 64-bit Python packages, so --with-python
 # is here rather than in EXTRA_FLAGS.
 DEB_CONFIGURE_EXTRA_FLAGS := --host=$(DEB_HOST_GNU_TYPE) $(EXTRA_FLAGS) \
-	--enable-tui --with-zlib --with-lzma --with-python=python3
+	--enable-tui --with-lzma --with-python=python3
 
 # multiarch targets; this is taken from the binutils-multiarch package but
 # doesn't seem like a terribly nice list; see
