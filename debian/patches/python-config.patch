@@ -9,9 +9,9 @@ Forwarded: https://sourceware.org/ml/gdb-patches/2012-12/msg00751.html
 
 Index: gdb/gdb/configure
 ===================================================================
---- gdb.orig/gdb/configure	2015-08-16 17:33:35.644878829 +0200
-+++ gdb/gdb/configure	2015-08-16 17:33:35.640878053 +0200
-@@ -670,6 +670,7 @@
+--- gdb.orig/gdb/configure	2015-08-30 13:26:22.785688423 +0200
++++ gdb/gdb/configure	2015-08-30 13:26:22.781688309 +0200
+@@ -673,6 +673,7 @@
  PYTHON_LIBS
  PYTHON_CPPFLAGS
  PYTHON_CFLAGS
@@ -19,7 +19,7 @@ Index: gdb/gdb/configure
  python_prog_path
  LTLIBEXPAT
  LIBEXPAT
-@@ -8334,29 +8335,122 @@
+@@ -8609,29 +8610,122 @@
      esac
    esac
  
@@ -150,9 +150,9 @@ Index: gdb/gdb/configure
    else
 Index: gdb/gdb/configure.ac
 ===================================================================
---- gdb.orig/gdb/configure.ac	2015-08-16 17:33:35.644878829 +0200
-+++ gdb/gdb/configure.ac	2015-08-16 17:33:35.640878053 +0200
-@@ -834,29 +834,31 @@
+--- gdb.orig/gdb/configure.ac	2015-08-30 13:26:22.785688423 +0200
++++ gdb/gdb/configure.ac	2015-08-30 13:26:22.781688309 +0200
+@@ -840,29 +840,31 @@
      esac
    esac
  

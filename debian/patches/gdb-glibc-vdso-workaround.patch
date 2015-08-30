@@ -13,11 +13,11 @@ gdb/
 
 Index: gdb/gdb/solib.c
 ===================================================================
---- gdb.orig/gdb/solib.c	2015-08-16 17:33:40.065716413 +0200
-+++ gdb/gdb/solib.c	2015-08-16 17:33:40.065716413 +0200
-@@ -821,8 +821,11 @@
+--- gdb.orig/gdb/solib.c	2015-08-30 13:26:26.737800740 +0200
++++ gdb/gdb/solib.c	2015-08-30 13:26:26.733800627 +0200
+@@ -888,8 +888,11 @@
  
- 	  TRY_CATCH (e, RETURN_MASK_ERROR)
+ 	  TRY
  	    {
 -	      /* Fill in the rest of the `struct so_list' node.  */
 -	      if (!solib_map_sections (i))
