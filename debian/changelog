@@ -1,3 +1,41 @@
+gdb (7.10-1) unstable; urgency=medium
+
+  * Imported Upstream version 7.10:
+    - Improved support for accessing shared libraries directly from
+      the target system when debugging remotely.
+    - Various Guile and Python scripting improvements, including (but not
+      limited to):
+      + Support for auto-loading Python/Guile scripts contained
+        in a special section named `.debug_gdb_scripts'.
+      + Support for writing a frame unwinder in Python.
+    - Support for record-replay and reverse debugging on Aarch64 Linux.
+    - GDB now has support for fork events on extended-remote Linux targets
+      (Linux kernels 2.5.60 and later).
+    - Support for DTrace USDT (Userland Static Defined Tracing) probes
+      on x86_64 GNU/Linux targets.
+    - Vector ABI support on S/390 GNU/Linux targets.
+    - GDB now reads the GDBHISTSIZE environment variable rather than
+      HISTSIZE to determine the size of GDB's command history.
+    - Support for setting the parity when connecting to the target
+      using a serial interface.
+    - It is now possible to limit the number of candidates to be
+      considered during completion.
+    - Support for Sun's version of the "stabs" debug file format
+      has been removed.
+    - Support for the following targets and native configurations has
+      been removed:
+      + HP/PA running HP-UX (hppa*-*-hpux*)
+      + Itanium running HP-UX (ia64-*-hpux*)
+  * d/control: make more explicit gdb-python2 is linked with python2.
+    (Closes: #761421)
+  * Drop libgdb-dev postinst. Not needed anymore.
+  * d/rules: configure with --with-system-zlib all targets
+  * sanitize: drop chm embedded files
+  * d/control.in,rules: attempt to manage python files (*.pyc) with cdbs
+    (Closes: #786384)
+
+ -- Hector Oron <zumbi@debian.org>  Wed, 02 Sep 2015 04:04:33 +0200
+
 gdb (7.9.1-1) unstable; urgency=medium
 
   * Imported Upstream version 7.9.1:
