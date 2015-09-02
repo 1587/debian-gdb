@@ -15,7 +15,7 @@ DEB_WARNING_FLAGS :=
 include /usr/share/cdbs/1/rules/debhelper.mk
 
 # This implements building using a configure script and Makefile.
-include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/class/python-autotools.mk
 
 # The top-level configure script fails to pass these down properly ...
 export CPPFLAGS
