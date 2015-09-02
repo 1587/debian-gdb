@@ -55,6 +55,7 @@ rm -f $(find gdb \( -name '*.[1-9]' \))
 # versions.
 
 rm -f $(find . \( -name \*.info -o -name \*.info-\* \))
+rm -f $(find . \( -name \*.chm \))
 
 for f in $(find . \( -name \*.texinfo -o -name \*.texi \)); do
   if test $(basename $f) = observer.texi; then
