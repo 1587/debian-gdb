@@ -95,6 +95,9 @@ Description: GNU Debugger (minimal version)
 Package: gdb-multiarch
 Architecture: any
 Depends: gdb (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Conflicts: gdb-arm-none-eabi
+Breaks: gdb-arm-none-eabi
+Provides: gdb-arm-none-eabi
 Description: GNU Debugger (with support for multiple architectures)
  GDB is a source-level debugger, capable of breaking programs at
  any specific line, displaying variable values, and determining
