@@ -236,28 +236,15 @@ clean::
 
 binary-post-install/gdb$(TS) ::
 	if [ -x debian/tmp/usr/bin/run ]; then				\
-		mv debian/tmp/usr/bin/run					\
+		install -m 755 debian/tmp/usr/bin/run					\
 		  debian/gdb$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run;		\
-		mv debian/tmp/usr/share/man/man1/run.1			\
+		install -m 644 debian/tmp/usr/share/man/man1/run.1			\
 		  debian/gdb$(TS)/usr/share/man/man1/$(DEB_TARGET_ALIAS)-run.1;	\
 	fi
 ifeq ($(run_tests),yes)
 	install -d debian/gdb$(TS)/usr/share/doc/gdb
 	install -m 644 $(DEB_BUILDDIR)/gdb/testsuite/gdb.sum \
 		debian/gdb$(TS)/usr/share/doc/gdb/check.log
-endif
-
-binary-post-install/gdb-python2$(TS) ::
-	if [ -x debian/tmp/usr/bin/run ]; then				\
-		mv debian/tmp/usr/bin/run					\
-		  debian/gdb-python2$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run;		\
-		mv debian/tmp/usr/share/man/man1/run.1			\
-		  debian/gdb-python2$(TS)/usr/share/man/man1/$(DEB_TARGET_ALIAS)-run.1;	\
-	fi
-ifeq ($(run_tests),yes)
-	install -d debian/gdb-python2$(TS)/usr/share/doc/gdb
-	install -m 644 $(DEB_BUILDDIR)/gdb/testsuite/gdb.sum \
-		debian/gdb-python2$(TS)/usr/share/doc/gdb/check.log
 endif
 
 ifneq ($(DEB_CROSS),yes)
@@ -270,6 +257,27 @@ endif
 
 	rm -f debian/gdb$(TS)/usr/bin/$(TP)gdbtui
 	install -m 755 debian/gdbtui debian/gdb$(TS)/usr/bin/$(TP)gdbtui
+
+binary-post-install/gdb-python2$(TS) ::
+	install -d debian/gdb-python24$(TS)/usr/bin
+	install -s -m 755 $(BUILDDIRPYTHON2)/gdb/gdb debian/gdb-python2$(TS)/usr/bin/gdb
+	if [ -x debian/tmp/usr/bin/run ]; then				\
+		install -m 755 debian/tmp/usr/bin/run					\
+		  debian/gdb-python2$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run;		\
+		install -m 644 debian/tmp/usr/share/man/man1/run.1			\
+		  debian/gdb-python2$(TS)/usr/share/man/man1/$(DEB_TARGET_ALIAS)-run.1;	\
+	fi
+
+ifneq ($(DEB_CROSS),yes)
+	# Only ship a global gdbinit for the native GDB.
+	install -d debian/gdb-python2$(TS)/etc/gdb
+	install -m 644 debian/gdbinit debian/gdb-python2$(TS)/etc/gdb/
+	# Likewise gdb-add-index
+	install -m 755 gdb/contrib/gdb-add-index.sh debian/gdb-python2$(TS)/usr/bin/gdb-add-index
+endif
+
+	rm -f debian/gdb-python2$(TS)/usr/bin/$(TP)gdbtui
+	install -m 755 debian/gdbtui debian/gdb-python2$(TS)/usr/bin/$(TP)gdbtui
 
 binary-post-install/gdb-multiarch ::
 	install -d debian/gdb-multiarch/usr/bin
