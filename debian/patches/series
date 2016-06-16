@@ -5,4 +5,3 @@ gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
 python-config.patch
 gdb-glibc-vdso-workaround.patch
 load-versioned-libcc1.patch
-Segmentation-fault-on-add-symbol-file-command.patch

@@ -11,11 +11,9 @@ gdb/
 	Work around PR libc/13097.
 	* solib.c (update_solib_list): Ignore "linux-vdso.so.1".
 
-Index: gdb/gdb/solib.c
-===================================================================
---- gdb.orig/gdb/solib.c	2015-08-30 13:26:26.737800740 +0200
-+++ gdb/gdb/solib.c	2015-08-30 13:26:26.733800627 +0200
-@@ -888,8 +888,11 @@
+--- a/gdb/solib.c
++++ b/gdb/solib.c
+@@ -891,8 +891,11 @@
  
  	  TRY
  	    {
