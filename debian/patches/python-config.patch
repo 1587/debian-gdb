@@ -7,10 +7,8 @@ Forwarded: https://sourceware.org/ml/gdb-patches/2012-12/msg00751.html
  gdb/configure.ac |  14 ++++----
  2 files changed, 108 insertions(+), 12 deletions(-)
 
-Index: gdb/gdb/configure
-===================================================================
---- gdb.orig/gdb/configure	2015-08-30 13:26:22.785688423 +0200
-+++ gdb/gdb/configure	2015-08-30 13:26:22.781688309 +0200
+--- a/gdb/configure
++++ b/gdb/configure
 @@ -673,6 +673,7 @@
  PYTHON_LIBS
  PYTHON_CPPFLAGS
@@ -19,7 +17,7 @@ Index: gdb/gdb/configure
  python_prog_path
  LTLIBEXPAT
  LIBEXPAT
-@@ -8609,29 +8610,122 @@
+@@ -9040,29 +9041,122 @@
      esac
    esac
  
@@ -148,10 +146,8 @@ Index: gdb/gdb/configure
        fi
      fi
    else
-Index: gdb/gdb/configure.ac
-===================================================================
---- gdb.orig/gdb/configure.ac	2015-08-30 13:26:22.785688423 +0200
-+++ gdb/gdb/configure.ac	2015-08-30 13:26:22.781688309 +0200
+--- a/gdb/configure.ac
++++ b/gdb/configure.ac
 @@ -840,29 +840,31 @@
      esac
    esac
