@@ -147,12 +147,10 @@ MULTIARCH_TARGETS := \
 	s390-linux-gnu \
 	s390x-linux-gnu \
 	sh-linux-gnu \
-	sh64-linux-gnu \
 	sparc-linux-gnu \
 	sparc64-linux-gnu \
 	x86_64-linux-gnu \
-	m32r-linux-gnu \
-	spu
+	m32r-linux-gnu 
 
 # broken, see https://launchpad.net/bugs/1233185
 #MULTIARCH_TARGETS := all
