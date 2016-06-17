@@ -233,11 +233,13 @@ clean::
 	find bfd -name bfd.info\* | xargs --no-run-if-empty touch
 
 binary-post-install/gdb$(TS) ::
-	if [ -x debian/tmp/usr/bin/run ]; then				\
-		install -m 755 debian/tmp/usr/bin/run					\
-		  debian/gdb$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run;		\
-		install -m 644 debian/tmp/usr/share/man/man1/run.1			\
-		  debian/gdb$(TS)/usr/share/man/man1/$(DEB_TARGET_ALIAS)-run.1;	\
+	if [ -x debian/tmp/usr/bin/run ]; then \
+		mv debian/tmp/usr/bin/run \
+		  debian/gdb$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run; \
+	fi
+	if [ -r debian/tmp/usr/share/man/man1/run.1 ]; then \
+		mv debian/tmp/usr/share/man/man1/run.1 \
+		  debian/gdb$(TS)/usr/share/man/man1/$(DEB_TARGET_ALIAS)-run.1; \
 	fi
 ifeq ($(run_tests),yes)
 	install -d debian/gdb$(TS)/usr/share/doc/gdb
@@ -259,9 +261,11 @@ endif
 binary-post-install/gdb-python2$(TS) ::
 	install -d debian/gdb-python24$(TS)/usr/bin
 	install -s -m 755 $(BUILDDIRPYTHON2)/gdb/gdb debian/gdb-python2$(TS)/usr/bin/gdb
-	if [ -x debian/tmp/usr/bin/run ]; then				\
-		install -m 755 debian/tmp/usr/bin/run					\
-		  debian/gdb-python2$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run;		\
+	if [ -x debian/tmp/usr/bin/run ]; then  \
+		install -m 755 debian/tmp/usr/bin/run \
+		  debian/gdb-python2$(TS)/usr/bin/$(DEB_TARGET_ALIAS)-run; \
+	fi
+	if [ -r debian/tmp/usr/share/man/man1/run.1 ]; then  \
 		install -m 644 debian/tmp/usr/share/man/man1/run.1			\
 		  debian/gdb-python2$(TS)/usr/share/man/man1/$(DEB_TARGET_ALIAS)-run.1;	\
 	fi
