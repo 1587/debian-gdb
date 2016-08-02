@@ -1,3 +1,23 @@
+gdb (7.11.1-2) unstable; urgency=medium
+
+  * Fix build when run.1 is missing
+
+ -- Riku Voipio <riku.voipio@linaro.org>  Fri, 17 Jun 2016 15:43:34 +0300
+
+gdb (7.11.1-1) unstable; urgency=medium
+
+  * New upstream version
+  * Ack NMU, Fixed gdb-python, thanks Andreas!
+
+ -- Riku Voipio <riku.voipio@linaro.org>  Thu, 16 Jun 2016 14:49:19 +0300
+
+gdb (7.10-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix build of gdb-python2 package (Closes: #798401)
+
+ -- Andreas Bombe <aeb@debian.org>  Sat, 28 May 2016 17:22:54 +0200
+
 gdb (7.10-1) unstable; urgency=medium
 
   * Imported Upstream version 7.10:
