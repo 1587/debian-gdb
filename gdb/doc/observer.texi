@@ -25,7 +25,7 @@
 @deftypefun void target_changed (struct target_ops *@var{target})
 @deftypefun void executable_changed (void)
 @deftypefun void inferior_created (struct target_ops *@var{objfile}, int @var{from_tty})
-@deftypefun void record_changed (struct inferior *@var{inferior}, int @var{started})
+@deftypefun void record_changed (struct inferior *@var{inferior}, int @var{started}, const char *@var{method}, const char *@var{format})
 @deftypefun void solib_loaded (struct so_list *@var{solib})
 @deftypefun void solib_unloaded (struct so_list *@var{solib})
 @deftypefun void new_objfile (struct objfile *@var{objfile})
@@ -56,3 +56,4 @@
 @deftypefun void inferior_call_post (ptid_t @var{thread}, CORE_ADDR @var{address})
 @deftypefun void register_changed (struct frame_info *@var{frame}, int @var{regnum})
 @deftypefun void test_notification (int @var{somearg})
+@deftypefun void user_selected_context_changed (user_selected_what @var{selection})
