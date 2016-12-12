@@ -130,6 +130,7 @@ MULTIARCH_TARGETS := \
 	arm-linux-gnu \
 	arm-linux-gnueabi \
 	arm-linux-gnueabihf \
+	arm-none-eabi \
 	hppa-linux-gnu \
 	i686-linux-gnu \
 	ia64-linux-gnu \
