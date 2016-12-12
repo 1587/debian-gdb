@@ -8,10 +8,10 @@ Origin: vendor, http://bugs.debian.org/669043
 
 Index: gdb/gdb/common/signals.c
 ===================================================================
---- gdb.orig/gdb/common/signals.c	2015-08-16 17:33:27.927325991 +0200
-+++ gdb/gdb/common/signals.c	2015-08-16 17:33:27.923325152 +0200
-@@ -332,6 +332,15 @@
-     return GDB_SIGNAL_INFO;
+--- gdb.orig/gdb/common/signals.c	2016-12-12 16:57:27.818426265 +0100
++++ gdb/gdb/common/signals.c	2016-12-12 16:57:27.814426226 +0100
+@@ -336,6 +336,15 @@
+     return GDB_SIGNAL_LIBRT;
  #endif
  
 +#if defined(__GLIBC__) && defined(__FreeBSD_kernel__)
@@ -28,18 +28,18 @@ Index: gdb/gdb/common/signals.c
      {
 Index: gdb/include/gdb/signals.def
 ===================================================================
---- gdb.orig/include/gdb/signals.def	2015-08-16 17:33:27.927325991 +0200
-+++ gdb/include/gdb/signals.def	2015-08-16 17:33:27.923325152 +0200
-@@ -194,7 +194,11 @@
- SET (GDB_EXC_SOFTWARE, 149, "EXC_SOFTWARE", "Software generated exception")
- SET (GDB_EXC_BREAKPOINT, 150, "EXC_BREAKPOINT", "Breakpoint")
+--- gdb.orig/include/gdb/signals.def	2016-12-12 16:57:27.818426265 +0100
++++ gdb/include/gdb/signals.def	2016-12-12 16:58:41.527153514 +0100
+@@ -196,7 +196,11 @@
  
-+SET (TARGET_SIGNAL_LINUXTHREADS_RESTART, 151, "32", "LinuxThreads restart signal")
-+SET (TARGET_SIGNAL_LINUXTHREADS_CANCEL, 152, "33", "LinuxThreads cancel signal")
-+SET (TARGET_SIGNAL_LINUXTHREADS_DEBUG, 153, "34", "LinuxThreads debug signal")
+ SET (GDB_SIGNAL_LIBRT, 151, "SIGLIBRT", "librt internal signal")
+ 
++SET (TARGET_SIGNAL_LINUXTHREADS_RESTART, 152, "32", "LinuxThreads restart signal")
++SET (TARGET_SIGNAL_LINUXTHREADS_CANCEL, 153, "33", "LinuxThreads cancel signal")
++SET (TARGET_SIGNAL_LINUXTHREADS_DEBUG, 154, "34", "LinuxThreads debug signal")
 +
  /* If you are adding a new signal, add it just above this comment.  */
  
  /* Last and unused enum value, for sizing arrays, etc.  */
--SET (GDB_SIGNAL_LAST, 151, NULL, "GDB_SIGNAL_LAST")
-+SET (GDB_SIGNAL_LAST, 154, NULL, "GDB_SIGNAL_LAST")
+-SET (GDB_SIGNAL_LAST, 152, NULL, "GDB_SIGNAL_LAST")
++SET (GDB_SIGNAL_LAST, 155, NULL, "GDB_SIGNAL_LAST")
