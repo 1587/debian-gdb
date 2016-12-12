@@ -1,3 +1,16 @@
+gdb (7.12-1) unstable; urgency=medium
+
+  [ Agustin Henze ]
+  * Add `arm-none-eabi` as target for bare metal embedded systems
+  * Set Conflicts, Breaks and Provides fields to replace gdb-arm-none-eabi for gdb-multiarch
+
+  [ Héctor Orón Martínez ]
+  * New upstream version 7.12
+  * debian/patches: refresh patchset
+  * migrate from dbg to dbgsym debug package
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Mon, 12 Dec 2016 17:04:48 +0100
+
 gdb (7.11.1-2) unstable; urgency=medium
 
   * Fix build when run.1 is missing
