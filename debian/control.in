@@ -31,8 +31,8 @@ Build-Depends:
                libreadline-dev,
                zlib1g-dev,
                liblzma-dev,
-               libbabeltrace-dev [amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x],
-               libbabeltrace-ctf-dev [amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x],
+               libbabeltrace-dev [amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel mipsel64 powerpc s390x],
+               libbabeltrace-ctf-dev [amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel mipsel64 powerpc s390x],
                python-dev,
 # Python3 build
                python3-dev,
@@ -48,7 +48,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${python3:Depends}
 Recommends: libc-dbg,
-            gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390 s390x x32]
+            gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel mipsel64 powerpc powerpcspe ppc64 ppc64el s390 s390x x32]
 Suggests: gdb-doc
 Conflicts: gdb
 Replaces: gdb
@@ -64,7 +64,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
 Recommends: libc-dbg,
-            gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390 s390x x32]
+            gdbserver [amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel mipsel64 powerpc powerpcspe ppc64 ppc64el s390 s390x x32]
 Suggests: gdb-doc
 Provides: gdb@TS@
 Conflicts: gdb
@@ -109,7 +109,7 @@ Description: GNU Debugger (with support for multiple architectures)
  target architectures.
 
 Package: gdbserver
-Architecture: amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel powerpc powerpcspe ppc64 ppc64el s390 s390x x32
+Architecture: amd64 armel armhf arm64 i386 ia64 m32r m68k mips mipsel mipsel64 powerpc powerpcspe ppc64 ppc64el s390 s390x x32
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: gdb (<< 7.0.1-1)
 Description: GNU Debugger (remote server)
