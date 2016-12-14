@@ -23,7 +23,7 @@ Build-Depends:
                gobjc,
                mig [hurd-any],
 # GNU/kFreeBSD deps
-               libutil-freebsd-dev,
+               libutil-freebsd-dev [kfreebsd-any],
 # TeX[info] deps
                texinfo (>= 4.7-2.2),
                texlive-base,
