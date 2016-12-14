@@ -20,6 +20,7 @@ include /usr/share/cdbs/1/class/python-autotools.mk
 # The top-level configure script fails to pass these down properly ...
 export CPPFLAGS
 export LDFLAGS
+CPPFLAGS += -fPIC
 
 # Always install into debian/tmp, even if we are only building one package.
 DEB_DESTDIR := $(shell pwd)/debian/tmp
