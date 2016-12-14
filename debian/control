@@ -46,6 +46,7 @@ Homepage: http://www.gnu.org/s/gdb/
 
 Package: gdb
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${python3:Depends}
@@ -63,6 +64,7 @@ Description: GNU Debugger
 
 Package: gdb-python2
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends}
 Recommends: libc-dbg
