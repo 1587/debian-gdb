@@ -1,3 +1,25 @@
+gdb (7.12-2) unstable; urgency=medium
+
+  * debian/control*:
+    - add mipsel64 arch to gdbserver.
+    (Closes: #835522)
+    - demote gdbserver to suggests.
+    (Closes: #820459)
+    - gdb-multiarch alternatively depend on gdb-python2.
+    (Closes: #798405)
+    - add kFreeBSD build depend on libutil-freebsd-dev.
+    - restrict libutil-freebsd-dev to kfreebsd arches.
+    - declare gdb{,-python2} multi-arch same.
+  * debian/gdb{,-python2}.install: add jit-reader header.
+    (Closes: #761903)
+  * debian/rules:
+    - build with fPIC, attempt to fix build failures on kfreebsd and x32.
+    - lowercase package name on DEB_DH_STRIP_ARGS.
+  * debian/patches: drop linuxthreads_signal_handling.patch
+    - kFreeBSD seem to be using fptl now, no need for linuxthreads signals.
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Wed, 14 Dec 2016 12:18:36 +0100
+
 gdb (7.12-1) unstable; urgency=medium
 
   [ Agustin Henze ]
