@@ -1,3 +1,12 @@
+gdb (7.12-3) unstable; urgency=medium
+
+  * debian/patches:
+    - backport build fixes for Hurd.
+    (Closes: #834575)
+  * debian/rules: clean target, remove debian/files.
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Thu, 15 Dec 2016 01:50:31 +0100
+
 gdb (7.12-2) unstable; urgency=medium
 
   * debian/control*:
