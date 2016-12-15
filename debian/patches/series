@@ -4,3 +4,16 @@ gdb-6.5-bz185337-resolve-tls-without-debuginfo-v2.patch
 python-config.patch
 gdb-glibc-vdso-workaround.patch
 load-versioned-libcc1.patch
+
+# Hurd support - upstream backports
+0001-Hurd-Adjust-to-Per-inferior-Inferior-qualified-threa.patch
+#0003-Hurd-C-Explicitly-cast-void.patch
+0004-Hurd-C-Avoid-GNU-C-nested-functions.patch
+0005-Hurd-C-Avoid-const-char-to-char-casts.patch
+0006-Hurd-C-kern_return_t-vs.-error_t.patch
+0007-Hurd-C-Mach-Hurd-headers-and-MIG-stubs-are-not-yet-f.patch
+0008-Hurd-In-the-CLI-use-parse_thread_id-instead-of-globa.patch
+0021-Avoid-PATH_MAX-usage.patch
+0022-Hurd-Adjust-to-changes-to-push-pruning-old-threads-d.patch
+explicit-cast-void.patch
+hurd-backport-for-7.12-branch.patch
