@@ -17,3 +17,6 @@ load-versioned-libcc1.patch
 0022-Hurd-Adjust-to-changes-to-push-pruning-old-threads-d.patch
 explicit-cast-void.patch
 hurd-backport-for-7.12-branch.patch
+
+# Fixes picked from upstream
+814558.patch
