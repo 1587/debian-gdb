@@ -1,3 +1,16 @@
+gdb (7.12-4) unstable; urgency=medium
+
+  * debian/sanitize-gdb.sh: drop chm from doc tarball as well.
+    - lintian complains *.chm files are included without sources
+  * Revert "debian/control: declare gdb{,-python2} m-a same"
+    (Closes: #848362)
+  * debian/patches: fix python framefilter.
+    - get address as long instead of unsigned long.
+      (Closes: #814558)
+  * debian/gbp.conf: add upstream branch, pristine-tar.
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Sun, 18 Dec 2016 01:44:24 +0100
+
 gdb (7.12-3) unstable; urgency=medium
 
   * debian/patches:
