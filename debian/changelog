@@ -1,3 +1,9 @@
+gdb (7.12-6) unstable; urgency=medium
+
+  * debian/patches: import 7.12 branch fixes
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Thu, 19 Jan 2017 11:28:25 +0100
+
 gdb (7.12-5) unstable; urgency=medium
 
   * debian/control{,.in}: replace mipsel64 by mips64el.
